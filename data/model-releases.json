@@ -575,6 +575,57 @@
 ],
 "items": [
 {
+"id": "qwen-20261116-qwen4-max",
+"ref": "qwen-20261116-qwen4-max",
+"date": "2026-11-16",
+"lab": "qwen",
+"mod": [
+"llm"
+],
+"fam": "qwen",
+"name": "Qwen4-Max",
+"full": "Qwen4-Max: 2.4T/71B-active MoE, 1M context, API only (secondary sources)",
+"src": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/",
+"flag": 1,
+"open": 0,
+"st": "ga",
+"sec": 1
+},
+{
+"id": "google-20261112-gemini-4-hydrogen",
+"ref": "google-20261112-gemini-4-hydrogen",
+"date": "2026-11-12",
+"lab": "google",
+"mod": [
+"llm"
+],
+"fam": "gemini",
+"name": "Gemini 4 Hydrogen",
+"full": "Gemini 4 Hydrogen: fast Gemini 4 model replacing Gemini 3.8 Flash",
+"src": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+"flag": 1,
+"open": 0,
+"st": "ga",
+"sec": 0
+},
+{
+"id": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+"ref": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+"date": "2026-11-09",
+"lab": "anthropic",
+"mod": [
+"llm"
+],
+"fam": "claude",
+"name": "Claude Fable 5.2 / Mythos 5.2",
+"full": "Claude Fable 5.2 (generally available) and Claude Mythos 5.2 (verified organisations only)",
+"src": "https://www.anthropic.com/claude/fable",
+"flag": 1,
+"open": 0,
+"st": "ga",
+"sec": 0
+},
+{
 "id": "openai-20261104-images-2-6",
 "date": "2026-11-04",
 "lab": "openai",

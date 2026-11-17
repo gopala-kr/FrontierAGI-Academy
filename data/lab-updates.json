@@ -2,7 +2,7 @@
  "about": "Frontier lab announcements, newest first. Curated by hand: every item links to its source. Dates are release/announcement dates; 'YYYY-MM' means only the month is confirmed. Benchmark and pricing facts are as announced by the lab.",
  "range": [
   "2021-10-01",
-  "2026-11-10"
+  "2026-11-17"
  ],
  "labs": [
   [
@@ -117,6 +117,50 @@
   ]
  ],
  "items": [
+  {
+   "id": "qwen-20261116-qwen4-max",
+   "date": "2026-11-16",
+   "lab": "qwen",
+   "type": "model",
+   "title": "Qwen4-Max",
+   "summary": "Alibaba's new flagship after a limited preview: a sparse mixture-of-experts model reported at 2.4T total and 71B active parameters, native vision and a 1M-token context. API only, no weights; Alibaba says smaller Qwen4 models will be open-sourced later. Alibaba reports about 60% lower cost per task than its predecessor on its own benchmark. Figures from secondary coverage.",
+   "facts": [
+    "No public weights",
+    "2.4T total / 71B active (reported)",
+    "1M-token context"
+   ],
+   "source": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/",
+   "flagship": true
+  },
+  {
+   "id": "google-20261112-gemini-4-hydrogen",
+   "date": "2026-11-12",
+   "lab": "google",
+   "type": "model",
+   "title": "Gemini 4 Hydrogen",
+   "summary": "The fast, low-cost member of the Gemini 4 family for everyday coding and agent work. It replaces Gemini 3.8 Flash in Search, the Gemini app and developer tools. Google says it scores above Gemini 4 Argon on the Artificial Analysis Intelligence Index at its default thinking level and runs about 2.5 times faster than 3.8 Flash (company claims).",
+   "facts": [
+    "Replaces Gemini 3.8 Flash",
+    "Rolling out in Search, Gemini app, developer tools"
+   ],
+   "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "flagship": true
+  },
+  {
+   "id": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "date": "2026-11-09",
+   "lab": "anthropic",
+   "type": "model",
+   "title": "Claude Fable 5.2 and Claude Mythos 5.2",
+   "summary": "Anthropic's new top models for hard technical work. Fable 5.2 is generally available; Mythos 5.2 goes only to vetted organisations through Anthropic's life-sciences and cyber verification programmes. Anthropic reports 69.9% on FrontierSWE v2 for Fable 5.2 (Opus 5.5: 62.3%); press coverage also reports lower prices and fewer refusals than Fable 5.1. Benchmark and pricing figures are the company's, as reported. Disclosure: Claude, made by Anthropic, helps write this site.",
+   "facts": [
+    "Fable 5.2 generally available",
+    "Mythos 5.2 restricted to verified organisations",
+    "FrontierSWE v2 69.9% (Anthropic-reported)"
+   ],
+   "source": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+   "flagship": true
+  },
   {
    "id": "meta-20261012-muse-wonder-1-0",
    "date": "2026-10-12",

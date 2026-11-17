@@ -575,6 +575,38 @@
 ],
 "items": [
 {
+"id": "elevenlabs-20261110-scribe-v3",
+"date": "2026-11-10",
+"lab": "elevenlabs",
+"mod": [
+"speech"
+],
+"fam": "eleven",
+"name": "Scribe v3 + v3 Live",
+"full": "Scribe v3 (batch) and Scribe v3 Live (~150 ms) speech-to-text; ElevenLabs reports 27% fewer word errors than Scribe v2 (company benchmark)",
+"src": "https://elevenlabs.io/blog/scribe-v3",
+"flag": 0,
+"open": 0,
+"st": "ga",
+"sec": 0
+},
+{
+"id": "google-20261105-gemini-omni-1-2-flash",
+"date": "2026-11-05",
+"lab": "google",
+"mod": [
+"video"
+],
+"fam": "veo",
+"name": "Gemini Omni 1.2 Flash",
+"full": "Gemini Omni 1.2 Flash: video generation and editing with audio, clips up to 15 s, generally available on the Gemini API and Google Cloud",
+"src": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+"flag": 0,
+"open": 0,
+"st": "ga",
+"sec": 0
+},
+{
 "id": "qwen-20261116-qwen4-max",
 "ref": "qwen-20261116-qwen4-max",
 "date": "2026-11-16",

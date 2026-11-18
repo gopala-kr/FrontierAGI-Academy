@@ -35,6 +35,48 @@
     .amm-pr small { display:block; color:#475569; font-size:.8rem; margin-top:3px; } .amm-pr em { display:block; font-style:normal; font-weight:700; font-size:.8rem; margin-top:4px; color:#b45309; }
     .amm-kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:8px; } .amm-kpi { border:1px solid #fde68a; background:#fffbeb; border-radius:12px; padding:10px 12px; } .amm-kpi b { display:block; font-size:1.5rem; color:#92400e; } .amm-kpi span { display:block; font-weight:700; font-size:.82rem; } .amm-kpi small { display:block; color:#64748b; font-size:.78rem; }
     .amm-rd { display:flex; align-items:center; gap:10px; padding:6px 0; border-bottom:1px solid #f1f5f9; } .amm-rd .n { flex:0 0 42%; } .amm-rd .n a { font-weight:700; color:#0f172a; text-decoration:none; } .amm-rd small { display:block; color:#64748b; font-size:.76rem; } .amm-rd .amm-bar { height:12px; }
+
+    /* ---- Layers tower ---- */
+    .tw-wrap { background:linear-gradient(180deg,#1c1917,#292524); border-radius:16px; padding:14px; color:#f5f5f4; position:relative; }
+    .tw-bar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:10px; font-size:.82rem; }
+    .tw-bar button { border:1px solid #57534e; background:#292524; color:#e7e5e4; border-radius:99px; padding:5px 11px; font-weight:700; cursor:pointer; font-size:.8rem; }
+    .tw-bar button.on { background:#f59e0b; color:#1c1917; border-color:#f59e0b; }
+    .tw-bar select, .tw-bar input { background:#292524; color:#e7e5e4; border:1px solid #57534e; border-radius:8px; padding:4px 6px; }
+    .tw-yr { font-weight:800; color:#fbbf24; min-width:3.2em; display:inline-block; }
+    .tw-main { display:grid; grid-template-columns: 1fr 300px; gap:14px; }
+    .tw-stack { position:relative; display:flex; flex-direction:column-reverse; gap:6px; padding-right:46px; padding-left:40px; }
+    .tw-band { position:relative; border-radius:10px; padding:8px 10px; cursor:pointer; background:var(--bg); border:1px solid rgba(255,255,255,.12); box-shadow:0 4px 14px rgba(0,0,0,.35); transition:transform .25s, opacity .25s, box-shadow .25s; opacity:0; transform:translateY(18px); animation:twUp .5s ease forwards; animation-delay:var(--d); }
+    @keyframes twUp { to { opacity:1; transform:none; } }
+    .tw-stack.dim .tw-band { opacity:.35; } .tw-stack.dim .tw-band.lit { opacity:1; transform:translateX(6px) scale(1.01); box-shadow:0 8px 26px rgba(245,158,11,.35); }
+    .tw-band h4 { margin:0 0 5px; font-size:.86rem; display:flex; justify-content:space-between; gap:8px; color:#fff; }
+    .tw-band h4 small { font-weight:700; opacity:.85; }
+    .tw-chips { display:flex; flex-wrap:wrap; gap:4px; }
+    .tw-chip { font-size:.72rem; padding:2px 8px; border-radius:99px; background:#fafaf9; color:#1c1917; font-weight:700; border:1.5px solid #fafaf9; transition:opacity .3s, transform .3s; }
+    .tw-chip.c { background:transparent; color:#fafaf9; }
+    .tw-chip.e { background:transparent; color:#fde68a; border-style:dashed; border-color:#fde68a; }
+    .tw-chip.e::before { content:'↑ '; }
+    .tw-chip.off { opacity:.08; transform:scale(.9); }
+    .tw-chip.hl { background:#f59e0b; border-color:#f59e0b; color:#1c1917; }
+    .tw-ver { position:absolute; right:0; top:0; bottom:0; width:36px; border-radius:10px; background:linear-gradient(180deg,#16a34a,#065f46); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 0 16px rgba(22,163,74,.55); }
+    .tw-ver span { writing-mode:vertical-rl; transform:rotate(180deg); font-size:.74rem; font-weight:800; letter-spacing:.04em; }
+    .tw-svg { position:absolute; inset:0; pointer-events:none; overflow:visible; }
+    .tw-svg path { fill:none; stroke:#fbbf24; stroke-width:2; stroke-dasharray:3 7; opacity:.8; animation:twFlow 1.4s linear infinite; }
+    @keyframes twFlow { to { stroke-dashoffset:-20; } }
+    .tw-card { background:#fafaf9; color:#1c1917; border-radius:12px; padding:12px; font-size:.84rem; align-self:start; position:sticky; top:100px; }
+    .tw-card h3 { margin:0 0 6px; font-size:1rem; } .tw-card p { margin:4px 0; }
+    .tw-g { height:10px; border-radius:99px; background:linear-gradient(90deg,#16a34a,#d97706,#dc2626); position:relative; margin:6px 0 2px; }
+    .tw-g i { position:absolute; top:-4px; width:4px; height:18px; background:#1c1917; border-radius:2px; }
+    .tw-leg { display:flex; gap:10px; flex-wrap:wrap; font-size:.74rem; color:#d6d3d1; margin-top:10px; }
+    .tw-leg b { display:inline-block; width:12px; height:12px; border-radius:3px; vertical-align:-2px; margin-right:4px; }
+    .tw-sig { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px; }
+    .tw-sig div { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px; font-size:.84rem; } .tw-sig b { display:block; font-size:1rem; color:#9a3412; }
+    .tw-tip { position:fixed; z-index:50; background:#1c1917; color:#fafaf9; padding:6px 9px; border-radius:8px; font-size:.76rem; pointer-events:none; max-width:240px; display:none; box-shadow:0 4px 14px rgba(0,0,0,.4); }
+    .tw-x { display:none; }
+    @media (max-width:768px) { .tw-main { grid-template-columns:1fr; } .tw-svg { display:none; } .tw-stack { padding-right:0; padding-left:0; }
+      .tw-ver { position:relative; width:auto; height:auto; padding:8px; order:-1; } .tw-ver span { writing-mode:horizontal-tb; transform:none; }
+      .tw-card { position:fixed; left:0; right:0; bottom:0; top:auto; z-index:40; border-radius:14px 14px 0 0; max-height:60vh; overflow:auto; box-shadow:0 -8px 30px rgba(0,0,0,.35); display:none; }
+      .tw-card.open { display:block; } .tw-x { display:block; float:right; border:0; background:#e7e5e4; border-radius:99px; padding:2px 9px; font-weight:800; cursor:pointer; } .tw-sig { grid-template-columns:1fr; } }
+    @media (prefers-reduced-motion: reduce) { .tw-band { animation:none; opacity:1; transform:none; } .tw-svg path { animation:none; } }
     body.amm-embed .navbar, body.amm-embed .nav-panel-wrap, body.amm-embed .nav-backdrop, body.amm-embed .amm-hero, body.amm-embed .amm-note, body.amm-embed .to-top { display:none !important; }
     body.amm-embed main { padding-top:0 !important; } body.amm-embed .amm { padding:8px 10px; }
     .amm-latest { display:block; margin:12px 0; border:2px solid #b45309; border-radius:12px; padding:10px 14px; text-decoration:none; color:#1c1917; background:#fffbeb; } .amm-latest span { display:block; font-size:.72rem; font-weight:800; text-transform:uppercase; color:#b45309; } .amm-latest b { display:block; font-size:1.05rem; } .amm-latest small { color:#57534e; }
@@ -170,7 +212,16 @@
     <div class="amm-note">⚠️ Company facts come from the site&#x27;s sourced maps and reports (secondary sources and company figures marked in the Interlude articles). Scores, overlaps and predictions are our judgement. <b>Disclosure:</b> Claude, made by Anthropic, helps write this site; Anthropic is one of the labs mapped, under the same rules as the others.</div>
     <a class="amm-latest" href="../blog/market-pulse-2026-11.html"><span>📰 Latest issue</span><b>AI Market Pulse, November 2026</b><small>GPT-6.2, Gemini 4 Hydrogen, Fable 5.2, Qwen4-Max, Inkling 2 Small open weights · funding · predictions check-in →</small></a>
     <div class="amm-tabs" id="ammTabs"><button data-t="layers" class="on">🗺️ Layers</button><button data-t="invest">💰 Investments</button><button data-t="startups">🚀 Start-ups</button><button data-t="customers">👥 Customers</button><button data-t="pred">🔮 Predictions</button></div>
-    <section class="amm-p on" id="t-layers"><h2>Who competes at each layer</h2><p class="amm-cap">Bar = commoditisation index (0 scarce → 10 commodity, our model; Interlude Part 5). <a href="../blog/market-ai-stack-2026.html">Read Part 1 →</a></p><div class="amm-scroll"><table class="amm-t" id="layT"></table></div></section>
+    <section class="amm-p on" id="t-layers"><h2>Who competes at each layer</h2><p class="amm-cap">The AI stack as a tower, chips at the bottom, applications at the top. Tap a layer for details. Colours, open-option ratings and entry years are our model (see the notes under the tower). <a href="../blog/market-ai-stack-2026.html">Read the stack brief →</a></p>
+      <div class="tw-wrap"><div class="tw-bar"><span>Colour:</span><button data-m="idx" class="on">Commoditisation</button><button data-m="ov">Lab overlap</button><button data-m="open">Open vs closed</button>
+        <label>Company <select id="twCo"><option value="">— highlight —</option></select></label>
+        <label>Year <input type="range" id="twYr" min="2023" max="2026" step="1" value="2026" aria-label="Timeline year"> <span class="tw-yr" id="twYrL">Nov 2026</span></label></div>
+        <div class="tw-main"><div class="tw-stack" id="twS"><svg class="tw-svg" id="twA"></svg><div class="tw-ver" id="twV" data-i="8"><span>✅ Verification &amp; environments · checks every layer</span></div></div>
+          <div class="tw-card" id="twC"></div></div>
+        <div class="tw-leg" id="twL"></div>
+        <div class="tw-leg"><span><span class="tw-chip">Leader</span></span><span><span class="tw-chip c">Challenger</span></span><span><span class="tw-chip e">Moving in</span></span><span>Dashed amber arrows = frontier labs moving up the stack.</span></div></div>
+      <div class="tw-sig" id="twSig"></div>
+      <p class="amm-cap">Notes: commoditisation index from the commoditisation brief (our model). Lab overlap = average 0–3 overlap score of the 2026 start-ups in that layer (our judgement, start-ups dataset; layers with none show n/a). Open-option rating 0–2 is our judgement. Entry years are approximate and only drive the timeline slider.</p><div class="tw-tip" id="twT"></div></section>
     <section class="amm-p" id="t-invest"><h2>Investments tracking</h2><p class="amm-cap">Quarterly AI funding totals and the largest rounds, as reported by the named source (secondary; sources disagree, so both totals are shown). Updated as new quarters are reported. <a href="../blog/market-funding-entrants-2026.html">Read Part 3 →</a></p><div class="amm-kpis" id="ivQ"></div><h3 style="margin:14px 0 6px">Tracked rounds by theme ($B)</h3><div id="ivT"></div><h3 style="margin:14px 0 6px">Largest rounds tracked ($B)</h3><div id="ivR"></div></section>
     <section class="amm-p" id="t-startups"><h2>New entrants by layer</h2><p class="amm-cap">A sourced sample of 23 companies (not a census). Colour = our judgement of how directly frontier labs compete (0 none → 3 head-on). <a href="../blog/market-funding-entrants-2026.html">Read Part 3 →</a></p><div class="amm-filters" id="stF"></div><div class="amm-grid" id="stG"></div></section>
     <section class="amm-p" id="t-customers"><h2>What customers need</h2><p class="amm-cap">Needs scored 1–5 (our assumptions, informed by 2026 surveys; Interlude Part 4). Tap a segment.</p><div class="amm-scroll"><table class="amm-t amm-heat" id="cuT"></table></div><div class="amm-out" id="cuO"></div></section>
@@ -183,11 +234,68 @@
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   if (/[?&]embed=1/.test(location.search)) { document.body.classList.add('amm-embed'); document.querySelectorAll('a[href]').forEach(function (a) { if (!/^https?:/.test(a.getAttribute('href'))) a.target = '_top'; }); }
-  var LAY = [["Chips & compute", "NVIDIA · Google TPU · AWS Trainium · AMD", "CoreWeave · Crusoe · Groq · Cerebras", "Labs (own chips, campuses)", 2.0], ["Frontier models", "OpenAI · Google · Anthropic · Meta · xAI", "Chinese closed flagships (Qwen4-Max)", "—", 6.0], ["Open-weight models", "Qwen · DeepSeek · Mistral · Kimi · NVIDIA", "Thinking Machines (Inkling 2 Small)", "Meta moved away", 8.8], ["Harnesses", "Claude Code · Codex · Gemini CLI/Jules", "Cursor · Cognition", "Every lab", 6.0], ["Frameworks", "Agents SDK · ADK · LangGraph · Agent Framework", "CrewAI", "Labs give them away", 6.0], ["Runtimes", "AgentCore · Vertex Agent Engine · Foundry", "LangSmith Deployment · Temporal", "Clouds", 4.4], ["Builders", "Copilot Studio · Zapier · n8n · Make", "—", "Labs (agent builders)", 4.0], ["Applications", "ChatGPT · Gemini · Claude apps", "Harvey · Sierra · River AI", "Labs (vertical editions)", 5.0], ["Verification & environments", "Few independents", "Maestro (scenario)", "Labs (internal gates)", 1.8]], SEG = ["Consumers", "Developers", "SMBs", "Enterprises (unregulated)", "Regulated enterprises", "Governments / sovereign", "AI labs (buying evals/envs)"], NEEDS = ["reliability", "compliance", "cost", "integration", "speed"], SC = [[2, 1, 5, 1, 5], [3, 1, 4, 3, 5], [3, 2, 5, 4, 3], [4, 3, 3, 5, 3], [5, 5, 2, 4, 2], [5, 5, 2, 3, 1], [5, 4, 2, 2, 3]];
+  var SEG = ["Consumers", "Developers", "SMBs", "Enterprises (unregulated)", "Regulated enterprises", "Governments / sovereign", "AI labs (buying evals/envs)"], NEEDS = ["reliability", "compliance", "cost", "integration", "speed"], SC = [[2, 1, 5, 1, 5], [3, 1, 4, 3, 5], [3, 2, 5, 4, 3], [4, 3, 3, 5, 3], [5, 5, 2, 4, 2], [5, 5, 2, 3, 1], [5, 4, 2, 2, 3]];
   $('ammTabs').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; [].forEach.call(this.children, function (x) { x.classList.toggle('on', x === b); });
     document.querySelectorAll('.amm-p').forEach(function (p) { p.classList.toggle('on', p.id === 't-' + b.dataset.t); }); });
-  $('layT').innerHTML = '<tr><th>Layer</th><th>Leaders</th><th>Challengers</th><th>Moving in</th><th>Commodity index</th></tr>' + LAY.map(function (r) { var c = r[4] >= 6 ? '#dc2626' : r[4] >= 4 ? '#d97706' : '#16a34a';
-    return '<tr><td><b>' + r[0] + '</b></td><td>' + r[1] + '</td><td>' + r[2] + '</td><td>' + r[3] + '</td><td><span class="amm-bar"><i style="width:' + r[4] * 10 + '%;background:' + c + '"></i></span> ' + r[4].toFixed(1) + '</td></tr>'; }).join('');
+  /* Layers tower: [name, index, open 0-2, entrants-dataset layer key, brief slug, [[company, role L/C/E, approx entry year]]] */
+  var TW = [["Chips & compute", 2.0, 0, "compute", "market-ai-stack-2026", [["NVIDIA","L",2012],["Google TPU","L",2016],["AWS Trainium","L",2020],["AMD","L",2023],["CoreWeave","C",2019],["Crusoe","C",2022],["Groq","C",2023],["Cerebras","C",2019],["OpenAI","E",2025],["Anthropic","E",2025],["Meta","E",2024]]],
+    ["Frontier models", 6.0, 0, "models", "market-lab-playbooks-2026", [["OpenAI","L",2018],["Google","L",2018],["Anthropic","L",2023],["Meta","L",2023],["xAI","L",2023],["Qwen","C",2023]]],
+    ["Open-weight models", 8.8, 2, "models", "market-commoditisation-2026", [["Qwen","L",2023],["DeepSeek","L",2023],["Mistral","L",2023],["Kimi","L",2024],["NVIDIA","L",2024],["Thinking Machines","C",2026]]],
+    ["Harnesses", 6.0, 1, "harness", "market-lab-playbooks-2026", [["Anthropic","L",2025],["OpenAI","L",2025],["Google","L",2025],["Cursor","C",2023],["Cognition","C",2024]]],
+    ["Frameworks", 6.0, 2, "frameworks", "market-commoditisation-2026", [["OpenAI","L",2025],["Google","L",2025],["LangChain","L",2023],["Microsoft","L",2023],["CrewAI","C",2024]]],
+    ["Runtimes", 4.4, 1, "runtimes", "market-ai-stack-2026", [["AWS","L",2025],["Google","L",2024],["Microsoft","L",2024],["LangChain","C",2024],["Temporal","C",2023]]],
+    ["Builders", 4.0, 1, "builders", "market-ai-stack-2026", [["Microsoft","L",2023],["Zapier","L",2023],["n8n","L",2023],["Make","L",2024],["OpenAI","E",2025],["Google","E",2025]]],
+    ["Applications", 5.0, 0, "apps", "market-ai-customers-2026", [["OpenAI","L",2022],["Google","L",2023],["Anthropic","L",2023],["Harvey","C",2023],["Sierra","C",2024],["River AI","C",2025],["Anthropic","E",2025],["OpenAI","E",2025]]],
+    ["Verification & environments", 1.8, 1, "data", "market-predictions-2027", [["Few independents","L",2023],["Maestro (scenario)","C",2026],["Labs (internal gates)","E",2024]]]];
+  var LABEL = { "Anthropic": "Anthropic (Claude, Claude Code)", "OpenAI": "OpenAI (ChatGPT, Codex, Agents SDK)", "Google": "Google (Gemini, Jules, ADK, Vertex)", "Microsoft": "Microsoft (Copilot Studio, Agent Framework, Foundry)", "AWS": "AWS (AgentCore)", "LangChain": "LangChain (LangGraph, LangSmith)" };
+  var ROLE = { L: 'leader', C: 'challenger', E: 'moving in' }, mode = 'idx', yr = 2026, co = '', cur = -1, OV = {};
+  function colr(i) { var b = TW[i], v;
+    if (mode === 'idx') { v = b[1] / 10; return v >= .6 ? '#7f1d1d' : v >= .4 ? '#78350f' : '#14532d'; }
+    if (mode === 'open') return ['#3f3f46', '#1e3a8a', '#0e7490'][b[2]];
+    v = OV[b[3]]; if (v == null) return '#44403c'; return v >= 2.5 ? '#7f1d1d' : v >= 1.5 ? '#78350f' : '#14532d'; }
+  function legend() { $('twL').innerHTML = mode === 'idx' ? '<span><b style="background:#14532d"></b>Scarce (index under 4)</span><span><b style="background:#78350f"></b>Middle (4–6)</span><span><b style="background:#7f1d1d"></b>Commodity (6+)</span>'
+    : mode === 'open' ? '<span><b style="background:#3f3f46"></b>Mostly closed</span><span><b style="background:#1e3a8a"></b>Mixed</span><span><b style="background:#0e7490"></b>Open options plentiful</span>'
+    : '<span><b style="background:#14532d"></b>Labs rarely compete (under 1.5)</span><span><b style="background:#78350f"></b>Some overlap</span><span><b style="background:#7f1d1d"></b>Labs compete head-on (2.5+)</span><span><b style="background:#44403c"></b>n/a</span>'; }
+  function draw() { var st = $('twS'); [].slice.call(st.querySelectorAll('.tw-band')).forEach(function (x) { x.remove(); });
+    TW.slice(0, 8).forEach(function (b, i) { var d = document.createElement('div'), pl = b[5].filter(function (c) { return c[1] !== 'E'; }).length;
+      d.className = 'tw-band'; d.dataset.i = i; d.style.setProperty('--bg', colr(i)); d.style.setProperty('--d', (i * 70) + 'ms'); d.style.minHeight = (40 + pl * 5) + 'px';
+      d.innerHTML = '<h4>' + b[0] + '<small>index ' + b[1].toFixed(1) + '</small></h4><div class="tw-chips">' + b[5].map(function (c) { var on = c[2] <= yr, h = co && c[0] === co;
+        return '<span class="tw-chip ' + (c[1] === 'L' ? '' : c[1].toLowerCase()) + (on ? '' : ' off') + (h ? ' hl' : '') + '" data-c="' + c[0] + '" data-r="' + c[1] + '" data-y="' + c[2] + '">' + c[0] + '</span>'; }).join('') + '</div>';
+      st.appendChild(d); });
+    $('twV').style.background = mode === 'idx' ? '' : colr(8); light(); setTimeout(arrows, 30); }
+  function arrows() { var st = $('twS'), sv = $('twA'), R = st.getBoundingClientRect(), bs = st.querySelectorAll('.tw-band'); if (!bs.length || innerWidth <= 768) { sv.innerHTML = ''; return; }
+    var src = bs[1].getBoundingClientRect(), out = '';
+    [0, 3, 6, 7].forEach(function (t) { var r = bs[t].getBoundingClientRect(), x1 = src.left - R.left, y1 = src.top + src.height / 2 - R.top, x2 = r.left - R.left, y2 = r.top + r.height / 2 - R.top, cx = Math.max(4, x1 - 14 - Math.abs(y2 - y1) * .06);
+      out += '<path marker-end="url(#twM)" d="M' + x1 + ' ' + y1 + ' C' + cx + ' ' + y1 + ' ' + cx + ' ' + y2 + ' ' + x2 + ' ' + y2 + '"/>'; });
+    sv.setAttribute('width', R.width); sv.setAttribute('height', R.height); sv.innerHTML = '<defs><marker id="twM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:#fbbf24;stroke:none;animation:none"/></marker></defs>' + out; }
+  function light() { var st = $('twS'), on = cur >= 0 || co; st.classList.toggle('dim', !!on);
+    [].forEach.call(st.querySelectorAll('.tw-band'), function (x) { var i = +x.dataset.i; x.classList.toggle('lit', i === cur || (!!co && cur < 0 && TW[i][5].some(function (c) { return c[0] === co; }))); }); }
+  function card(i) { var b = TW[i], g = function (r) { var x = b[5].filter(function (c) { return c[1] === r && c[2] <= yr; }).map(function (c) { return LABEL[c[0]] || c[0]; }); return x.length ? x.join(' · ') : '—'; }, ov = OV[b[3]];
+    var rk = TW.slice().sort(function (a, c) { return c[1] - a[1]; }).indexOf(b) + 1;
+    $('twC').innerHTML = '<button class="tw-x" aria-label="Close">✕</button><h3>' + b[0] + '</h3><div class="tw-g"><i style="left:calc(' + b[1] * 10 + '% - 2px)"></i></div><small>Commoditisation ' + b[1].toFixed(1) + ' / 10 · rank ' + rk + ' of 9 (our model)</small>'
+      + '<p><b>Leaders:</b> ' + g('L') + '</p><p><b>Challengers:</b> ' + g('C') + '</p><p><b>Moving in:</b> ' + g('E') + '</p>'
+      + '<p><b>Lab overlap of 2026 start-ups:</b> ' + (ov == null ? 'n/a' : ov.toFixed(1) + ' / 3 (' + OV['n_' + b[3]] + ' companies)') + '</p><p><b>Open options:</b> ' + ['mostly closed', 'mixed', 'plentiful'][b[2]] + '</p>'
+      + '<p><a href="../blog/' + b[4] + '.html">Read the brief →</a></p>';
+    $('twC').classList.add('open'); }
+  $('twS').addEventListener('click', function (e) { var b = e.target.closest('.tw-band, .tw-ver'); if (!b) return; cur = +b.dataset.i; card(cur); light(); $('twT').style.display = 'none'; });
+  $('twC').addEventListener('click', function (e) { if (e.target.closest('.tw-x')) { $('twC').classList.remove('open'); cur = -1; light(); } });
+  $('twS').addEventListener('mouseover', function (e) { var c = e.target.closest('.tw-chip'), t = $('twT'); if (!c) { t.style.display = 'none'; return; }
+    t.innerHTML = '<b>' + (LABEL[c.dataset.c] || c.dataset.c) + '</b><br>' + ROLE[c.dataset.r] + ' · in this layer since about ' + c.dataset.y + ' (approximate)'; t.style.display = 'block'; });
+  $('twS').addEventListener('mousemove', function (e) { var t = $('twT'); t.style.left = (e.clientX + 12) + 'px'; t.style.top = (e.clientY + 14) + 'px'; });
+  $('twS').addEventListener('mouseleave', function () { $('twT').style.display = 'none'; });
+  document.querySelector('.tw-bar').addEventListener('click', function (e) { var b = e.target.closest('button[data-m]'); if (!b) return; mode = b.dataset.m;
+    [].forEach.call(document.querySelectorAll('.tw-bar button'), function (x) { x.classList.toggle('on', x === b); }); legend(); draw(); });
+  var cos = {}; TW.forEach(function (b) { b[5].forEach(function (c) { cos[c[0]] = (cos[c[0]] || 0) + 1; }); });
+  $('twCo').innerHTML += Object.keys(cos).filter(function (k) { return cos[k] > 1; }).sort().map(function (k) { return '<option>' + k + '</option>'; }).join('');
+  $('twCo').addEventListener('change', function () { co = this.value; cur = -1; $('twC').classList.remove('open'); draw(); });
+  $('twYr').addEventListener('input', function () { yr = +this.value; $('twYrL').textContent = yr === 2026 ? 'Nov 2026' : yr; draw(); if (cur >= 0) card(cur); });
+  addEventListener('resize', arrows);
+  var lay = TW.map(function (b) { return [b[0], new Set(b[5].map(function (c) { return c[0]; }))]; }), top = Object.keys(cos).map(function (k) { return [k, lay.filter(function (l) { return l[1].has(k); }).length]; }).sort(function (a, b) { return b[1] - a[1]; })[0];
+  var srt = TW.slice().sort(function (a, b) { return b[1] - a[1]; });
+  $('twSig').innerHTML = '<div><b>' + srt[0][0] + '</b>Most commoditised layer · index ' + srt[0][1].toFixed(1) + '</div><div><b>' + srt[8][0] + '</b>Scarcest layer · index ' + srt[8][1].toFixed(1) + '</div><div><b>' + top[0] + '</b>Plays in the most layers: ' + top[1] + ' of 9 in this map</div>';
+  legend(); draw(); card(1); $('twC').classList.remove('open'); if (innerWidth > 768) $('twC').classList.add('open');
+  fetch('../data/ai-entrants-2026.json').then(function (r) { return r.json(); }).then(function (d) { var s = {}, n = {}; d.items.forEach(function (x) { s[x.layer] = (s[x.layer] || 0) + x.overlap; n[x.layer] = (n[x.layer] || 0) + 1; });
+    Object.keys(s).forEach(function (k) { OV[k] = s[k] / n[k]; OV['n_' + k] = n[k]; }); if (mode === 'ov') draw(); if (cur >= 0) card(cur); }).catch(function () {});
   var OC = ['#16a34a', '#0369a1', '#d97706', '#dc2626'], ST = [], sel = 'all';
   function drawSt() { var xs = ST.filter(function (x) { return sel === 'all' || x.layer === sel; });
     $('stG').innerHTML = xs.map(function (x) { return '<a class="amm-c" href=\x22' + x.src + '\x22 target="_blank" rel="noopener" style="--c:' + OC[x.overlap] + '"><b>' + x.name + '</b><span>' + x.theme + '</span><small>' + x.round + (x.val ? ' · $' + x.val + 'B valuation' : '') + (x.sec ? ' ⚠️' : '') + '</small><em>lab overlap ' + x.overlap + '/3</em></a>'; }).join(''); }

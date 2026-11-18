@@ -311,7 +311,15 @@
         "maestro-s2-frontier-lab-ships",
         "maestro-s2-market-shifts",
         "maestro-s2-partnerships",
-        "maestro-s2-ceo-scorecard",
+        "maestro-s2-ceo-scorecard"
+      ]
+    },
+    {
+      "id": "sec-market",
+      "title": "Reading the Market, November 2026",
+      "short": "Reading the Market, November 2026",
+      "icon": "🗺️",
+      "slugs": [
         "maestro-int-stack-map",
         "maestro-int-lab-playbooks",
         "maestro-int-startups",

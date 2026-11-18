@@ -1,0 +1,108 @@
+{
+ "about": "AI investment tracking. Quarterly totals and individual rounds as reported by the named source (all secondary: treat as approximate; sources disagree). Amounts in $ billions. Add new quarters and rounds with a source.",
+ "quarters": [
+  {
+   "q": "2026-Q2",
+   "total": 153.1,
+   "src": "https://www.lexology.com/library/detail.aspx?g=2a174149-378d-493a-8fa2-1ac4d9388bcc",
+   "by": "CB Insights (reported)",
+   "note": "global AI funding"
+  },
+  {
+   "q": "2026-Q3",
+   "total": 103.3,
+   "src": "https://www.lexology.com/library/detail.aspx?g=2a174149-378d-493a-8fa2-1ac4d9388bcc",
+   "by": "CB Insights (reported)",
+   "note": "down 33% from Q2; top four rounds ~ $23.9B"
+  },
+  {
+   "q": "2026-Q3",
+   "total": 102,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "by": "Crunchbase",
+   "note": "64% of all global venture funding; 27 rounds of $1B+"
+  }
+ ],
+ "rounds": [
+  {
+   "name": "OpenAI",
+   "when": "2026-Q3",
+   "amt": 10,
+   "stage": "late-stage",
+   "theme": "frontier lab",
+   "src": "https://www.lexology.com/library/detail.aspx?g=2a174149-378d-493a-8fa2-1ac4d9388bcc"
+  },
+  {
+   "name": "Databricks",
+   "when": "2026-Q3",
+   "amt": 5,
+   "stage": "late-stage",
+   "theme": "data & AI platform",
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/"
+  },
+  {
+   "name": "Safe Superintelligence (SSI)",
+   "when": "2026-Q3",
+   "amt": 5,
+   "stage": "corporate minority (NVIDIA-led)",
+   "theme": "neolab",
+   "src": "https://www.lexology.com/library/detail.aspx?g=2a174149-378d-493a-8fa2-1ac4d9388bcc"
+  },
+  {
+   "name": "Crusoe",
+   "when": "2026-Q3",
+   "amt": 3.9,
+   "stage": "late-stage",
+   "theme": "neocloud",
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/"
+  },
+  {
+   "name": "Cognition",
+   "when": "2026-Q3",
+   "amt": 2,
+   "stage": "late-stage",
+   "theme": "coding agents",
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/"
+  },
+  {
+   "name": "River AI",
+   "when": "2026-Q3",
+   "amt": 1.1,
+   "stage": "Series A",
+   "theme": "applications",
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/"
+  },
+  {
+   "name": "Walden Robotics",
+   "when": "2026-Q3",
+   "amt": 0.3,
+   "stage": "seed",
+   "theme": "robotics",
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/"
+  },
+  {
+   "name": "Sierra",
+   "when": "2026-05",
+   "amt": 0.95,
+   "stage": "growth",
+   "theme": "vertical agents",
+   "src": "https://www.opus.pro/blog/hottest-ai-startups-2026"
+  },
+  {
+   "name": "Harvey",
+   "when": "2026-03",
+   "amt": 0.2,
+   "stage": "growth",
+   "theme": "vertical agents",
+   "src": "https://www.crv.com/content/hottest-ai-startups-in-silicon-valley"
+  },
+  {
+   "name": "Cursor (Anysphere)",
+   "when": "2025-11",
+   "amt": 2.3,
+   "stage": "Series D",
+   "theme": "coding agents",
+   "src": "https://en.wikipedia.org/wiki/Cursor_(company)"
+  }
+ ]
+}

@@ -238,7 +238,13 @@
         "agentic-codex",
         "agentic-gemini-jules",
         "agentic-deep-agents",
-        "agentic-hermes-agent"
+        "agentic-hermes-agent",
+        "agentic-frameworks-compared",
+        "agentic-openai-agents-sdk",
+        "agentic-google-adk",
+        "agentic-langgraph",
+        "agentic-crewai",
+        "agentic-claude-sdk-microsoft"
       ]
     },
     {

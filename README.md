@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**317 articles** · **32 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-11
+**323 articles** · **32 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -343,8 +343,8 @@ What runs between a request and the 400th tool call: the map → sandboxes → d
 
 #### 🧩 Agentic AI System Designs: The Agent Systems the Labs Have Built, Taken Apart
 
-Four kinds of agent system (frameworks, harnesses, runtimes, builders), each system dismantled layer by layer: an eight-layer architecture, one task traced through it, failure modes, security, how to build one from scratch and what it costs. Wave 1: the map and five harnesses.  
-<sub>7 articles</sub>
+Four kinds of agent system (frameworks, harnesses, runtimes, builders), each system dismantled layer by layer: an eight-layer architecture, one task traced through it, failure modes, security, how to build one from scratch and what it costs. Wave 1: the map, the agent loop and five harnesses. Wave 2: six frameworks, one triage agent.  
+<sub>13 articles</sub>
 
 🆕 *Newest series.*
 
@@ -357,6 +357,12 @@ Four kinds of agent system (frameworks, harnesses, runtimes, builders), each sys
 | 5 | 🐙 [Gemini CLI, Antigravity and Jules, Taken Apart: Google’s Two Kinds of Harness](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-gemini-jules.html) | 11 min |
 | 6 | 🕸️ [Deep Agents, Taken Apart: A Harness You Can Embed](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-deep-agents.html) | 11 min |
 | 7 | 📚 [Hermes Agent, Taken Apart: The Self-Improving Harness](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-hermes-agent.html) | 11 min |
+| 8 | 🧱 [Agent Frameworks Compared: Five Ways to Wire an Agent](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-frameworks-compared.html) | 10 min |
+| 9 | 🧱 [OpenAI Agents SDK, Taken Apart: Agents, Handoffs and Guardrails](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-openai-agents-sdk.html) | 13 min |
+| 10 | 🧱 [Google ADK, Taken Apart: Agents as Nodes in a Graph](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-google-adk.html) | 13 min |
+| 11 | 🧱 [LangChain and LangGraph, Taken Apart: State, Graphs and Checkpoints](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-langgraph.html) | 14 min |
+| 12 | 🧱 [CrewAI, Taken Apart: Crews of Roles, Flows of Control](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-crewai.html) | 13 min |
+| 13 | 🧱 [Claude Agent SDK and Microsoft Agent Framework, Taken Apart: A Harness as a Library vs an Explicit Graph](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-claude-sdk-microsoft.html) | 14 min |
 
 
 ### Run the Machine · The Maestro

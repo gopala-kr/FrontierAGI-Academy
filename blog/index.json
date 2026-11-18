@@ -1,6 +1,96 @@
 {
   "posts": [
     {
+      "slug": "agentic-frameworks-compared",
+      "title": "Agent Frameworks Compared: Five Ways to Wire an Agent",
+      "excerpt": "Six agent frameworks, one triage agent: where each puts the control (handoff, graph, crew, hook, typed edge), a chooser, feature and loop-dial matrices, and what each pattern costs per ticket.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "10 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Frameworks"
+      ],
+      "emoji": "🧱",
+      "featured": false
+    },
+    {
+      "slug": "agentic-openai-agents-sdk",
+      "title": "OpenAI Agents SDK, Taken Apart: Agents, Handoffs and Guardrails",
+      "excerpt": "The lightest major framework: agents as configurations, a Runner loop, handoffs between specialists, guardrails and approvals. The triage agent traced, eight layers, runnable mini-version, cost model.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "13 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Frameworks"
+      ],
+      "emoji": "🧱",
+      "featured": false
+    },
+    {
+      "slug": "agentic-google-adk",
+      "title": "Google ADK, Taken Apart: Agents as Nodes in a Graph",
+      "excerpt": "ADK 2.0 makes an agent one node in a workflow graph next to code steps, parallel checks and human pauses. The triage agent with one model call, eight layers, runnable mini-version.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "13 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Frameworks"
+      ],
+      "emoji": "🧱",
+      "featured": false
+    },
+    {
+      "slug": "agentic-langgraph",
+      "title": "LangChain and LangGraph, Taken Apart: State, Graphs and Checkpoints",
+      "excerpt": "A graph over shared state, saved after every step, so runs pause for a human and resume days later; LangChain 1.0 create_agent with middleware on top. Triage agent, eight layers, mini-version.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "14 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Frameworks"
+      ],
+      "emoji": "🧱",
+      "featured": false
+    },
+    {
+      "slug": "agentic-crewai",
+      "title": "CrewAI, Taken Apart: Crews of Roles, Flows of Control",
+      "excerpt": "Agents with roles and goals working through tasks, wrapped in event-driven flows for the predictable parts. Why crews cost more per ticket, with a runnable mini-version.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "13 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Frameworks"
+      ],
+      "emoji": "🧱",
+      "featured": false
+    },
+    {
+      "slug": "agentic-claude-sdk-microsoft",
+      "title": "Claude Agent SDK and Microsoft Agent Framework, Taken Apart: A Harness as a Library vs an Explicit Graph",
+      "excerpt": "Opposite ends of the framework range: Claude Code's loop shaped with hooks and permissions, versus the AutoGen + Semantic Kernel successor with typed workflow graphs. The triage agent both ways.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "14 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Frameworks"
+      ],
+      "emoji": "🧱",
+      "featured": false
+    },
+    {
       "slug": "agentic-agent-loop",
       "title": "Inside the Agent Loop: How Five Harnesses Think, Act and Stop",
       "excerpt": "The one cycle every harness runs, the ten dials each product sets differently, five loops side by side, a runnable loop lab, and an RSI level for each loop: four L1 task loops, and Hermes Agent's L4 pattern.",

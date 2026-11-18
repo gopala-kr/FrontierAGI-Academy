@@ -249,7 +249,12 @@
         "agentic-bedrock-agentcore",
         "agentic-langsmith-deployment",
         "agentic-temporal",
-        "agentic-vertex-foundry"
+        "agentic-vertex-foundry",
+        "agentic-builders-compared",
+        "agentic-n8n",
+        "agentic-zapier",
+        "agentic-copilot-studio",
+        "agentic-make"
       ]
     },
     {

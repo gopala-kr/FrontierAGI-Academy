@@ -61,6 +61,81 @@
       "featured": false
     },
     {
+      "slug": "agentic-builders-compared",
+      "title": "Agent Builders Compared: Agents Without Code",
+      "excerpt": "The same support agent built on n8n, Zapier, Copilot Studio and Make: four billing units for the same tickets, a chooser, where builders hit the wall and how teams graduate to code. Completes the series.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "9 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Builders"
+      ],
+      "emoji": "🧩",
+      "featured": false
+    },
+    {
+      "slug": "agentic-n8n",
+      "title": "n8n, Taken Apart: A Builder with Escape Hatches",
+      "excerpt": "An AI Agent node on a self-hostable canvas, billed per workflow run: the support agent traced node by node, its execution count, and the signs it is time to move to code.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "11 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Builders"
+      ],
+      "emoji": "🧩",
+      "featured": false
+    },
+    {
+      "slug": "agentic-zapier",
+      "title": "Zapier Agents, Taken Apart: Thousands of Apps as Tools",
+      "excerpt": "Zaps, Agents and Zapier MCP: the same support agent three ways, and what each costs in tasks and activities.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "11 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Builders"
+      ],
+      "emoji": "🧩",
+      "featured": false
+    },
+    {
+      "slug": "agentic-copilot-studio",
+      "title": "Microsoft Copilot Studio, Taken Apart: Agents Inside the Tenant",
+      "excerpt": "Generative orchestration, Power Platform connectors, agent flows and tenant governance: the support agent in Microsoft 365 and its bill in Copilot Credits.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "11 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Builders"
+      ],
+      "emoji": "🧩",
+      "featured": false
+    },
+    {
+      "slug": "agentic-make",
+      "title": "Make, Taken Apart: Visual Scenarios with an Agent Inside",
+      "excerpt": "Modules, routers, filters and an AI Agent module on Make's canvas, with the new credit-based bill: the support agent traced and priced.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "11 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Builders"
+      ],
+      "emoji": "🧩",
+      "featured": false
+    },
+    {
       "slug": "agentic-runtimes-compared",
       "title": "Agent Runtimes Compared: Where Agents Live in Production",
       "excerpt": "Four runtimes, one production workload: the crash test (only an event history plus an idempotency key refunds exactly once), the six runtime jobs, a chooser, framework pairings and what hosting really costs.",

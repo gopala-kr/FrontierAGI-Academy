@@ -61,6 +61,81 @@
       "featured": false
     },
     {
+      "slug": "agentic-runtimes-compared",
+      "title": "Agent Runtimes Compared: Where Agents Live in Production",
+      "excerpt": "Four runtimes, one production workload: the crash test (only an event history plus an idempotency key refunds exactly once), the six runtime jobs, a chooser, framework pairings and what hosting really costs.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "10 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Runtimes"
+      ],
+      "emoji": "⚙️",
+      "featured": false
+    },
+    {
+      "slug": "agentic-bedrock-agentcore",
+      "title": "Amazon Bedrock AgentCore, Taken Apart: Separate Services Around Any Agent",
+      "excerpt": "Isolated sessions, a tool gateway, per-tenant identity, memory and observability around an agent written in any framework, and what AgentCore leaves to you: durability and long waits.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "13 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Runtimes"
+      ],
+      "emoji": "⚙️",
+      "featured": false
+    },
+    {
+      "slug": "agentic-langsmith-deployment",
+      "title": "LangSmith Deployment, Taken Apart: Threads, Runs and Checkpoints as a Service",
+      "excerpt": "The runtime formerly called LangGraph Platform: threads, queued runs, interrupts that wait days without holding a worker, double-texting policies, and billing by nodes executed.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "12 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Runtimes"
+      ],
+      "emoji": "⚙️",
+      "featured": false
+    },
+    {
+      "slug": "agentic-temporal",
+      "title": "Temporal, Taken Apart: Durable Execution Under an Agent",
+      "excerpt": "Workflows, activities and event-history replay: the triage agent survives a crash and refunds exactly once; waits for an approval signal for days; the OpenAI Agents SDK integration.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "13 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Runtimes"
+      ],
+      "emoji": "⚙️",
+      "featured": false
+    },
+    {
+      "slug": "agentic-vertex-foundry",
+      "title": "Vertex AI Agent Engine and Azure AI Foundry Agent Service, Taken Apart: The Hyperscaler Runtimes",
+      "excerpt": "Google's and Microsoft's managed agent platforms side by side: sessions vs threads, Memory Bank, cloud identity, hosted agents, and what neither handles for you.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "13 min",
+      "tags": [
+        "Agentic AI",
+        "Agent Runtimes"
+      ],
+      "emoji": "⚙️",
+      "featured": false
+    },
+    {
       "slug": "agentic-frameworks-compared",
       "title": "Agent Frameworks Compared: Five Ways to Wire an Agent",
       "excerpt": "Six agent frameworks, one triage agent: where each puts the control (handoff, graph, crew, hook, typed edge), a chooser, feature and loop-dial matrices, and what each pattern costs per ticket.",

@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**327 articles** · **32 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
+**332 articles** · **32 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -343,8 +343,8 @@ What runs between a request and the 400th tool call: the map → sandboxes → d
 
 #### 🧩 Agentic AI System Designs: The Agent Systems the Labs Have Built, Taken Apart
 
-Four kinds of agent system (frameworks, harnesses, runtimes, builders), each system dismantled layer by layer: an eight-layer architecture, one task traced through it, failure modes, security, how to build one from scratch and what it costs. Wave 1: the map, the agent loop and five harnesses. Wave 2: six frameworks, one triage agent.  
-<sub>13 articles</sub>
+Four kinds of agent system (frameworks, harnesses, runtimes, builders), each system dismantled layer by layer: an eight-layer architecture, one task traced through it, failure modes, security, how to build one from scratch and what it costs. Wave 1: the map, the agent loop and five harnesses. Wave 2: six frameworks, one triage agent. Wave 3: four runtimes, one production workload.  
+<sub>18 articles</sub>
 
 🆕 *Newest series.*
 
@@ -363,6 +363,11 @@ Four kinds of agent system (frameworks, harnesses, runtimes, builders), each sys
 | 11 | 🧱 [LangChain and LangGraph, Taken Apart: State, Graphs and Checkpoints](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-langgraph.html) | 14 min |
 | 12 | 🧱 [CrewAI, Taken Apart: Crews of Roles, Flows of Control](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-crewai.html) | 13 min |
 | 13 | 🧱 [Claude Agent SDK and Microsoft Agent Framework, Taken Apart: A Harness as a Library vs an Explicit Graph](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-claude-sdk-microsoft.html) | 14 min |
+| 14 | ⚙️ [Agent Runtimes Compared: Where Agents Live in Production](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-runtimes-compared.html) | 10 min |
+| 15 | ⚙️ [Amazon Bedrock AgentCore, Taken Apart: Separate Services Around Any Agent](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-bedrock-agentcore.html) | 13 min |
+| 16 | ⚙️ [LangSmith Deployment, Taken Apart: Threads, Runs and Checkpoints as a Service](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-langsmith-deployment.html) | 12 min |
+| 17 | ⚙️ [Temporal, Taken Apart: Durable Execution Under an Agent](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-temporal.html) | 13 min |
+| 18 | ⚙️ [Vertex AI Agent Engine and Azure AI Foundry Agent Service, Taken Apart: The Hyperscaler Runtimes](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-vertex-foundry.html) | 13 min |
 
 
 ### Run the Machine · The Maestro

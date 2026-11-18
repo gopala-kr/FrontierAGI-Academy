@@ -51,6 +51,7 @@
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-sandboxes.html</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-tool-gateways.html</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-agent-loop.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-bedrock-agentcore.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-claude-code.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-claude-sdk-microsoft.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-codex.html</loc><lastmod>2026-11-07</lastmod></url>
@@ -62,10 +63,14 @@
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-google-adk.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-hermes-agent.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-langgraph.html</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-langsmith-deployment.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-loop-explained.html</loc><lastmod>2026-06-22</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-openai-agents-sdk.html</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-runtimes-compared.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-systems-map.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-systems-multi-step-goals.html</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-temporal.html</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-vertex-foundry.html</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-benchmarks-measuring-the-undefined.html</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-capability-stack-mapped.html</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-debate-scaling-vs-new-architectures.html</loc><lastmod>2026-09-12</lastmod></url>

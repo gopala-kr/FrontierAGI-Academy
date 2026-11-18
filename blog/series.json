@@ -244,7 +244,12 @@
         "agentic-google-adk",
         "agentic-langgraph",
         "agentic-crewai",
-        "agentic-claude-sdk-microsoft"
+        "agentic-claude-sdk-microsoft",
+        "agentic-runtimes-compared",
+        "agentic-bedrock-agentcore",
+        "agentic-langsmith-deployment",
+        "agentic-temporal",
+        "agentic-vertex-foundry"
       ]
     },
     {

@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**345 articles** · **33 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
+**346 articles** · **34 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -406,7 +406,7 @@ Phase 0 (the idea) → Phase 1 (securing the machine) → Phase 2 (building the 
 #### 🎼 The Maestro, Season 2: Scaling the Factory
 
 Phase 5 (founder to CEO) → Phase 6 (the research engine) → Phase 7 (Maestro-2) → Phase 8 (the product grows up) → Phase 9 (competing at the frontier). 23 parts, published phase by phase; Phase 5 is out now.  
-<sub>23 articles · 🧭 [Hub page](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro-journey.html)</sub>
+<sub>25 articles · 🧭 [Hub page](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro-journey.html)</sub>
 
 🆕 *Newest series.*
 
@@ -435,22 +435,31 @@ Phase 5 (founder to CEO) → Phase 6 (the research engine) → Phase 7 (Maestro-
 | 21 | 🌊 [The Maestro, Season 2, Part 21: Market Shifts](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-market-shifts.html) | 12 min |
 | 22 | 🤝 [The Maestro, Season 2, Part 22: Partnerships and Distribution](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-partnerships.html) | 12 min |
 | 23 | 📊 [The Maestro, Season 2, Part 23: The CEO Scorecard, Season 2](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-ceo-scorecard.html) | 12 min |
+| 24 | 🛡️ [The Maestro, Bridge to Season 3, Part 1: Safe Areas to Bet On](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-bridge-safe-bets.html) | 10 min |
+| 25 | 🎯 [The Maestro, Bridge to Season 3, Part 2: Positioning Maestro](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-bridge-positioning.html) | 10 min |
 
-#### 🗺️ Reading the Market, November 2026
+#### 📰 AI Market Pulse: the month in the AI market
 
-Real, sourced market research, told through the Maestro story (an interlude between Season 2 and Season 3): the stack, how the labs compete, what start-ups and investors are betting on, who the customers are, what is commoditising, dated predictions, safe bets and positioning.  
-<sub>8 articles</sub>
+One issue a month: the top moves, funding, what the labs shipped, new entrants, customer signals and a check on our 2027 predictions.  
+<sub>1 articles</sub>
 
 | # | Article | Read |
 |---|---|---|
-| 1 | 🗺️ [The Maestro, Interlude, Part 1: The AI Stack in November 2026](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-stack-map.html) | 11 min |
-| 2 | 🧭 [The Maestro, Interlude, Part 2: How the Frontier Labs Compete](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-lab-playbooks.html) | 11 min |
-| 3 | 🚀 [The Maestro, Interlude, Part 3: What Start-ups and New Entrants Are Betting On](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-startups.html) | 11 min |
-| 4 | 👥 [The Maestro, Interlude, Part 4: Who the AI Customers Are, and What They Expect](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-customers.html) | 11 min |
-| 5 | 📉 [The Maestro, Interlude, Part 5: What Is Commoditising, and How Fast](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-commoditisation.html) | 10 min |
-| 6 | 🔮 [The Maestro, Interlude, Part 6: Where the Frontier Labs Are Heading](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-predictions.html) | 11 min |
-| 7 | 🛡️ [The Maestro, Interlude, Part 7: Safe Areas to Bet On](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-safe-bets.html) | 10 min |
-| 8 | 🎯 [The Maestro, Interlude, Part 8: Positioning Maestro](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-int-positioning.html) | 10 min |
+| 1 | 📰 [AI Market Pulse, November 2026: Issue #1](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-pulse-2026-11.html) | 5 min |
+
+#### 📚 Foundations: the AI market, November 2026
+
+Six research briefs, each with key takeaways, signals, evidence and a method section: the stack, the labs, funding and new entrants, customers, commoditisation, and dated predictions for 2027.  
+<sub>6 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🗺️ [The AI Stack in November 2026: Who Competes at Each Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-ai-stack-2026.html) | 7 min |
+| 2 | 🧭 [How the Frontier Labs Compete: Six Playbooks, Three Patterns](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-lab-playbooks-2026.html) | 7 min |
+| 3 | 💰 [Where AI Money Went in 2026: Funding and New Entrants](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-funding-entrants-2026.html) | 7 min |
+| 4 | 👥 [Who Buys AI, and What They Expect: Customers in 2026](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-ai-customers-2026.html) | 7 min |
+| 5 | 📉 [What Is Becoming a Commodity in AI, and What Stays Scarce](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-commoditisation-2026.html) | 6 min |
+| 6 | 🔮 [Ten Predictions for AI in 2027, Written Down to Be Scored](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-predictions-2027.html) | 7 min |
 
 
 ### 02 · Learn How LLMs Work

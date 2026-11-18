@@ -1,8 +1,108 @@
 {
   "posts": [
     {
-      "slug": "maestro-int-positioning",
-      "title": "The Maestro, Interlude, Part 8: Positioning Maestro",
+      "slug": "market-pulse-2026-11",
+      "title": "AI Market Pulse, November 2026: Issue #1",
+      "excerpt": "The month in the AI market: GPT-6.2, Gemini 4 Hydrogen, Fable 5.2, Qwen4-Max and Inkling 2 Small's open weights; the latest funding numbers; and a check on our 2027 predictions.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-18",
+      "readTime": "5 min",
+      "tags": [
+        "AI Market",
+        "Market Pulse"
+      ],
+      "emoji": "📰",
+      "featured": false
+    },
+    {
+      "slug": "market-ai-stack-2026",
+      "title": "The AI Stack in November 2026: Who Competes at Each Layer",
+      "excerpt": "A layer-by-layer map of the AI industry from chips to applications: leaders, challengers, who is moving in, and the thin verification layer. Research brief.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-18",
+      "readTime": "7 min",
+      "tags": [
+        "AI Market"
+      ],
+      "emoji": "🗺️",
+      "featured": false
+    },
+    {
+      "slug": "market-lab-playbooks-2026",
+      "title": "How the Frontier Labs Compete: Six Playbooks, Three Patterns",
+      "excerpt": "What OpenAI, Google, Anthropic, Meta, Microsoft and the Chinese labs build, price and distribute, and the three patterns they share. Research brief.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-18",
+      "readTime": "7 min",
+      "tags": [
+        "AI Market"
+      ],
+      "emoji": "🧭",
+      "featured": false
+    },
+    {
+      "slug": "market-funding-entrants-2026",
+      "title": "Where AI Money Went in 2026: Funding and New Entrants",
+      "excerpt": "AI took about 64% of global venture money in Q3 2026 (reported). Where the largest rounds went, crowded vs quiet bets, and exposure to the labs. Research brief.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-18",
+      "readTime": "7 min",
+      "tags": [
+        "AI Market",
+        "Investments"
+      ],
+      "emoji": "💰",
+      "featured": false
+    },
+    {
+      "slug": "market-ai-customers-2026",
+      "title": "Who Buys AI, and What They Expect: Customers in 2026",
+      "excerpt": "What 2026 surveys say about AI use, ROI and the pilot gap, and which customers value verifiable trust most. Research brief.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-18",
+      "readTime": "7 min",
+      "tags": [
+        "AI Market"
+      ],
+      "emoji": "👥",
+      "featured": false
+    },
+    {
+      "slug": "market-commoditisation-2026",
+      "title": "What Is Becoming a Commodity in AI, and What Stays Scarce",
+      "excerpt": "Open-weight share of releases fell from 53% to 22% while quality converged; a layer-by-layer commoditisation index. Research brief.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-18",
+      "readTime": "6 min",
+      "tags": [
+        "AI Market"
+      ],
+      "emoji": "📉",
+      "featured": false
+    },
+    {
+      "slug": "market-predictions-2027",
+      "title": "Ten Predictions for AI in 2027, Written Down to Be Scored",
+      "excerpt": "Ten dated, falsifiable predictions about the frontier labs and the AI market, with confidences, to be scored in public. Research brief.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-18",
+      "readTime": "7 min",
+      "tags": [
+        "AI Market"
+      ],
+      "emoji": "🔮",
+      "featured": false
+    },
+    {
+      "slug": "maestro-bridge-positioning",
+      "title": "The Maestro, Bridge to Season 3, Part 2: Positioning Maestro",
       "excerpt": "Maestro against lab agent platforms, hyperscaler runtimes, evaluation start-ups and builders: 4.10 vs 3.00–3.45 for regulated buyers. A one-page position, what would change the decision, and the choice of Season 3.",
       "author": "FrontierAGI Team",
       "authorInitials": "FL",
@@ -16,9 +116,9 @@
       "featured": false
     },
     {
-      "slug": "maestro-int-safe-bets",
-      "title": "The Maestro, Interlude, Part 7: Safe Areas to Bet On",
-      "excerpt": "Twelve positions scored on lab-entry risk, commoditisation, Maestro's advantage, market size and customer pull. The independent gate and verification API leads (+9); the harness and a consumer assistant are where the labs win.",
+      "slug": "maestro-bridge-safe-bets",
+      "title": "The Maestro, Bridge to Season 3, Part 1: Safe Areas to Bet On",
+      "excerpt": "Twelve positions scored on lab-entry risk, commoditisation, Maestro's advantage (built on the Reading the Market briefs), market size and customer pull. The independent gate and verification API leads (+9); the harness and a consumer assistant are where the labs win.",
       "author": "FrontierAGI Team",
       "authorInitials": "FL",
       "date": "2026-11-18",
@@ -28,96 +128,6 @@
         "AI Market"
       ],
       "emoji": "🛡️",
-      "featured": false
-    },
-    {
-      "slug": "maestro-int-predictions",
-      "title": "The Maestro, Interlude, Part 6: Where the Frontier Labs Are Heading",
-      "excerpt": "Ten dated predictions for 2027 with confidences, evidence and what would prove each wrong: labs own agent platforms (85%), restricted tiers, self-improvement ratings, open parity, the pilot gap. To be scored in public.",
-      "author": "FrontierAGI Team",
-      "authorInitials": "FL",
-      "date": "2026-11-18",
-      "readTime": "11 min",
-      "tags": [
-        "Maestro",
-        "AI Market"
-      ],
-      "emoji": "🔮",
-      "featured": false
-    },
-    {
-      "slug": "maestro-int-commoditisation",
-      "title": "The Maestro, Interlude, Part 5: What Is Commoditising, and How Fast",
-      "excerpt": "Open-weight share of LLM releases fell from 53% to 22% in the site's data while quality converged and prices fell. A commoditisation index ranks every layer, from open models (8.8) to verification (1.8).",
-      "author": "FrontierAGI Team",
-      "authorInitials": "FL",
-      "date": "2026-11-18",
-      "readTime": "10 min",
-      "tags": [
-        "Maestro",
-        "AI Market"
-      ],
-      "emoji": "📉",
-      "featured": false
-    },
-    {
-      "slug": "maestro-int-customers",
-      "title": "The Maestro, Interlude, Part 4: Who the AI Customers Are, and What They Expect",
-      "excerpt": "From consumers to governments: what 2026 surveys say about AI use, ROI and the pilot gap (most agent pilots never reach production), and which customers value verifiable trust most.",
-      "author": "FrontierAGI Team",
-      "authorInitials": "FL",
-      "date": "2026-11-18",
-      "readTime": "11 min",
-      "tags": [
-        "Maestro",
-        "AI Market"
-      ],
-      "emoji": "👥",
-      "featured": false
-    },
-    {
-      "slug": "maestro-int-startups",
-      "title": "The Maestro, Interlude, Part 3: What Start-ups and New Entrants Are Betting On",
-      "excerpt": "Q3 2026: AI took about 64% of global venture money (reported). Where the 2026 rounds went, which bets are crowded (coding agents) and which are quiet, from a sourced 23-company sample, plus the wrapper test.",
-      "author": "FrontierAGI Team",
-      "authorInitials": "FL",
-      "date": "2026-11-18",
-      "readTime": "11 min",
-      "tags": [
-        "Maestro",
-        "AI Market"
-      ],
-      "emoji": "🚀",
-      "featured": false
-    },
-    {
-      "slug": "maestro-int-lab-playbooks",
-      "title": "The Maestro, Interlude, Part 2: How the Frontier Labs Compete",
-      "excerpt": "A year of 2026 announcements read lab by lab: what OpenAI, Google, Anthropic, Meta, Microsoft and Chinese labs build, price and distribute, and three shared patterns: moving into agents, restricted tiers, self-improvement ratings.",
-      "author": "FrontierAGI Team",
-      "authorInitials": "FL",
-      "date": "2026-11-18",
-      "readTime": "11 min",
-      "tags": [
-        "Maestro",
-        "AI Market"
-      ],
-      "emoji": "🧭",
-      "featured": false
-    },
-    {
-      "slug": "maestro-int-stack-map",
-      "title": "The Maestro, Interlude, Part 1: The AI Stack in November 2026",
-      "excerpt": "Who competes at each of eight layers of the AI stack in Nov 2026, from chips to applications, where labs are moving in, and the thin verification layer where Maestro sits. Uses the site's own release data.",
-      "author": "FrontierAGI Team",
-      "authorInitials": "FL",
-      "date": "2026-11-18",
-      "readTime": "11 min",
-      "tags": [
-        "Maestro",
-        "AI Market"
-      ],
-      "emoji": "🗺️",
       "featured": false
     },
     {

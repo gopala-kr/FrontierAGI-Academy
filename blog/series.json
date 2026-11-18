@@ -311,23 +311,32 @@
         "maestro-s2-frontier-lab-ships",
         "maestro-s2-market-shifts",
         "maestro-s2-partnerships",
-        "maestro-s2-ceo-scorecard"
+        "maestro-s2-ceo-scorecard",
+        "maestro-bridge-safe-bets",
+        "maestro-bridge-positioning"
+      ]
+    },
+    {
+      "id": "sec-pulse",
+      "title": "AI Market Pulse: the month in the AI market",
+      "short": "AI Market Pulse",
+      "icon": "📰",
+      "slugs": [
+        "market-pulse-2026-11"
       ]
     },
     {
       "id": "sec-market",
-      "title": "Reading the Market, November 2026",
-      "short": "Reading the Market, November 2026",
-      "icon": "🗺️",
+      "title": "Foundations: the AI market, November 2026",
+      "short": "Foundations",
+      "icon": "📚",
       "slugs": [
-        "maestro-int-stack-map",
-        "maestro-int-lab-playbooks",
-        "maestro-int-startups",
-        "maestro-int-customers",
-        "maestro-int-commoditisation",
-        "maestro-int-predictions",
-        "maestro-int-safe-bets",
-        "maestro-int-positioning"
+        "market-ai-stack-2026",
+        "market-lab-playbooks-2026",
+        "market-funding-entrants-2026",
+        "market-ai-customers-2026",
+        "market-commoditisation-2026",
+        "market-predictions-2027"
       ]
     },
     {

@@ -1,0 +1,23 @@
+{
+  "note": "Global corporate investment in AI (Quid data, Stanford AI Index). Editions revise earlier years; each value carries the edition it came from. 2026 is a different measure (venture funding, quarterly, as reported).",
+  "years": [
+    {"y": 2013, "total": 14.57, "private": null, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2014, "total": 19.04, "private": null, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2015, "total": 25.43, "private": null, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2016, "total": 33.82, "private": null, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2017, "total": 53.72, "private": 25.72, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2018, "total": 79.62, "private": 43.1, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2019, "total": 103.27, "private": 58.18, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2020, "total": 202.49, "private": 64.02, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2021, "total": 337.4, "private": 132.36, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2022, "total": 234.95, "private": 103.4, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2023, "total": 189.16, "private": 95.99, "src": "AI Index 2024, Fig. 4.3.1", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2024, "total": 253, "private": 151.5, "src": "AI Index 2026 (as reported by secondary sources; the 2025 edition gave private $150.8B)", "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy", "sec": 1},
+    {"y": 2025, "total": 581.69, "private": 344.66, "src": "AI Index 2026 economy chapter (search excerpt; page not reachable from our sandbox)", "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy", "sec": 1}
+  ],
+  "genai": [
+    {"y": 2023, "v": 25.23, "src": "AI Index 2024, Fig. 4.3.3", "url": "https://hai-production.s3.amazonaws.com/files/hai_ai-index-report-2024_chapter4.pdf", "sec": 0},
+    {"y": 2025, "v": 170.9, "src": "AI Index 2026 as reported by secondary sources", "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy", "sec": 1}
+  ],
+  "missing": "2010–2012: the AI Index corporate-investment series starts in 2013, and we have no comparable sourced figure for earlier years. 2013–2016 private investment is in the chart but not labelled, so we leave it blank."
+}

@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**323 articles** · **32 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
+**327 articles** · **32 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -396,7 +396,7 @@ Phase 0 (the idea) → Phase 1 (securing the machine) → Phase 2 (building the 
 #### 🎼 The Maestro, Season 2: Scaling the Factory
 
 Phase 5 (founder to CEO) → Phase 6 (the research engine) → Phase 7 (Maestro-2) → Phase 8 (the product grows up) → Phase 9 (competing at the frontier). 23 parts, published phase by phase; Phase 5 is out now.  
-<sub>19 articles · 🧭 [Hub page](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro-journey.html)</sub>
+<sub>23 articles · 🧭 [Hub page](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro-journey.html)</sub>
 
 🆕 *Newest series.*
 
@@ -421,6 +421,10 @@ Phase 5 (founder to CEO) → Phase 6 (the research engine) → Phase 7 (Maestro-
 | 17 | 🔌 [The Maestro, Season 2, Part 17: Model-Agnostic or Not?](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-model-agnostic.html) | 6 min |
 | 18 | 🏢 [The Maestro, Season 2, Part 18: Enterprise Adoption](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-enterprise.html) | 5 min |
 | 19 | 📈 [The Maestro, Season 2, Part 19: Adoption Metrics That Matter](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-adoption-metrics.html) | 6 min |
+| 20 | ⚔️ [The Maestro, Season 2, Part 20: When a Frontier Lab Ships Your Product](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-frontier-lab-ships.html) | 13 min |
+| 21 | 🌊 [The Maestro, Season 2, Part 21: Market Shifts](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-market-shifts.html) | 12 min |
+| 22 | 🤝 [The Maestro, Season 2, Part 22: Partnerships and Distribution](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-partnerships.html) | 12 min |
+| 23 | 📊 [The Maestro, Season 2, Part 23: The CEO Scorecard, Season 2](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/maestro-s2-ceo-scorecard.html) | 12 min |
 
 
 ### 02 · Learn How LLMs Work

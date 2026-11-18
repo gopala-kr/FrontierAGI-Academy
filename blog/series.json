@@ -297,7 +297,11 @@
         "maestro-s2-harness-product",
         "maestro-s2-model-agnostic",
         "maestro-s2-enterprise",
-        "maestro-s2-adoption-metrics"
+        "maestro-s2-adoption-metrics",
+        "maestro-s2-frontier-lab-ships",
+        "maestro-s2-market-shifts",
+        "maestro-s2-partnerships",
+        "maestro-s2-ceo-scorecard"
       ]
     },
     {

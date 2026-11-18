@@ -1,6 +1,66 @@
 {
   "posts": [
     {
+      "slug": "maestro-s2-ceo-scorecard",
+      "title": "The Maestro, Season 2, Part 23: The CEO Scorecard, Season 2",
+      "excerpt": "Month 54: 6 green, 2 amber, 2 red against targets set at the Series A. What lasted (gate record, environments, retention) and what did not (the harness as a moat). 30.3 months of runway and three paths with conditions. Closes Season 2.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "12 min",
+      "tags": [
+        "AI Factories",
+        "Maestro"
+      ],
+      "emoji": "📊",
+      "featured": false
+    },
+    {
+      "slug": "maestro-s2-partnerships",
+      "title": "The Maestro, Season 2, Part 22: Partnerships and Distribution",
+      "excerpt": "A cloud marketplace, a systems integrator and a frontier lab offer partnerships. Partners add $8.86M of year-one net revenue; the lab's credits-for-exclusivity offer is declined because it would end the gate's independence.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "12 min",
+      "tags": [
+        "AI Factories",
+        "Maestro"
+      ],
+      "emoji": "🤝",
+      "featured": false
+    },
+    {
+      "slug": "maestro-s2-market-shifts",
+      "title": "The Maestro, Season 2, Part 21: Market Shifts",
+      "excerpt": "Tokens 5x cheaper, an open-weight model at parity, buyers paying per task: margin can rise from 66% to 76%, or fall to 46% on old infrastructure. Three good projects are killed, Maestro-3 among them.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "12 min",
+      "tags": [
+        "AI Factories",
+        "Maestro"
+      ],
+      "emoji": "🌊",
+      "featured": false
+    },
+    {
+      "slug": "maestro-s2-frontier-lab-ships",
+      "title": "The Maestro, Season 2, Part 20: When a Frontier Lab Ships Your Product",
+      "excerpt": "A frontier lab bundles an agent close to Maestro's product: 36% of revenue at risk, but the gate and customer environments (38%) are barely touched. The company turns the gate into a trust layer for any model. Opens Phase 9.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-18",
+      "readTime": "13 min",
+      "tags": [
+        "AI Factories",
+        "Maestro"
+      ],
+      "emoji": "⚔️",
+      "featured": false
+    },
+    {
       "slug": "agentic-frameworks-compared",
       "title": "Agent Frameworks Compared: Five Ways to Wire an Agent",
       "excerpt": "Six agent frameworks, one triage agent: where each puts the control (handoff, graph, crew, hook, typed edge), a chooser, feature and loop-dial matrices, and what each pattern costs per ticket.",

@@ -28,7 +28,7 @@
     .aih-svg .grow { animation:aihG .6s ease both; } @keyframes aihG { from { opacity:0; } to { opacity:1; } }
     .aih-leg { display:flex; gap:12px; flex-wrap:wrap; font-size:.76rem; color:#d6d3d1; } .aih-leg b { display:inline-block; width:12px; height:12px; border-radius:3px; vertical-align:-2px; margin-right:4px; }
     .aih-info { background:#fafaf9; color:#1c1917; border-radius:10px; padding:10px 12px; font-size:.86rem; margin-top:10px; min-height:3em; }
-    .aih-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:12px; } .aih-kpis div { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px; font-size:.82rem; } .aih-kpis b { display:block; font-size:1.25rem; color:#9a3412; }
+    .aih-kpis { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:12px; } .aih-kpis div { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px; font-size:.82rem; } .aih-kpis b { display:block; font-size:1.25rem; color:#9a3412; }
     .aih-t { width:100%; border-collapse:collapse; font-size:.84rem; margin-top:14px; } .aih-t th, .aih-t td { border-bottom:1px solid #e7e5e4; padding:6px 8px; text-align:left; }
     .aih-cap { color:#57534e; font-size:.84rem; line-height:1.55; }
     @media (max-width:768px) { .aih-kpis { grid-template-columns:1fr 1fr; } }
@@ -165,12 +165,12 @@
     <div class="aih-box">
       <div class="aih-bar"><span>Show:</span><button data-v="total" class="on">Corporate total</button><button data-v="private">Private investment</button><button data-v="both">Both</button><span style="margin-left:auto">Scale:</span><button data-s="lin" class="on">Linear</button><button data-s="log">Log</button></div>
       <svg class="aih-svg" id="aihC" viewBox="0 0 960 380" role="img" aria-label="AI investment by year, 2010 to 2026"></svg>
-      <div class="aih-leg"><span><b style="background:#d97706"></b>Corporate investment in AI (M&amp;A, minority stakes, private investment, public offerings)</span><span><b style="background:#0d9488"></b>Private investment</span><span><b style="background:#a855f7"></b>Generative AI (private)</span><span><b style="background:#57534e"></b>No comparable data</span><span>Striped = ⚠️ secondary source</span></div>
+      <div class="aih-leg"><span><b style="background:#d97706"></b>Corporate investment in AI (M&amp;A, minority stakes, private investment, public offerings)</span><span><b style="background:#0d9488"></b>Private investment</span><span><b style="background:#a855f7"></b>Generative AI (private)</span><span><b style="background:#be123c"></b>* 2026 Q1–Q3 venture funding (CB Insights, different measure)</span><span><b style="background:#57534e"></b>No comparable data</span><span>Striped = ⚠️ secondary source</span></div>
       <div class="aih-info" id="aihI">Tap a bar for its source.</div>
     </div>
     <div class="aih-kpis" id="aihK"></div>
     <h2>2026 so far, quarter by quarter</h2>
-    <p class="aih-cap">2026 uses a different measure (global AI venture funding as reported by CB Insights and Crunchbase), so it is shown on its own and not added to the yearly chart.</p>
+    <p class="aih-cap">2026 uses a different measure (global AI venture funding as reported by CB Insights and Crunchbase). The red 2026 bar in the chart is the CB Insights Q1–Q3 sum ($482.4B), drawn in its own colour because it is not the AI Index measure; Q4 is not reported yet. Other trackers give higher Q1 totals (Crunchbase ~$242B, PitchBook ~$255.5B ⚠️), and CB Insights later reportedly revised Q1 to $237.6B ⚠️.</p>
     <div id="aihQ"></div>
     <div class="aih-more">
       <h2>The numbers</h2><table class="aih-t" id="aihT"></table>
@@ -186,11 +186,12 @@
   if (/[?&]embed=1/.test(location.search)) { document.body.classList.add('aih-embed'); document.querySelectorAll('a[href]').forEach(function (a) { if (!/^https?:/.test(a.getAttribute('href'))) a.target = '_top'; }); }
   function fmt(v) { return v == null ? '—' : '$' + (v >= 100 ? Math.round(v) : v.toFixed(1)) + 'B'; }
   function draw() { var Y = [], i, g = {}; D.genai.forEach(function (x) { g[x.y] = x; });
-    for (i = 2010; i <= 2025; i++) Y.push(D.years.filter(function (x) { return x.y === i; })[0] || { y: i });
+    for (i = 2010; i <= 2026; i++) Y.push(D.years.filter(function (x) { return x.y === i; })[0] || { y: i });
     var nar = innerWidth < 700, W = nar ? 420 : 960, H = nar ? 460 : 380, L = nar ? 44 : 56, B = H - 50, T = 20, mx = 600, bw = (W - L - 10) / Y.length, sy = function (v) { if (sc === 'log') return B - (Math.log10(Math.max(v, 1)) / Math.log10(mx)) * (B - T); return B - v / mx * (B - T); };
     var s = '<defs><pattern id="hz" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="transparent"/><line x1="0" y1="0" x2="0" y2="6" stroke="rgba(0,0,0,.35)" stroke-width="3"/></pattern></defs>';
     (sc === 'log' ? [1, 10, 100, 600] : [0, 100, 200, 300, 400, 500, 600]).forEach(function (t) { s += '<line x1="' + L + '" x2="' + (W - 6) + '" y1="' + sy(t) + '" y2="' + sy(t) + '" stroke="#44403c"/><text x="' + (L - 6) + '" y="' + (sy(t) + 4) + '" text-anchor="end">$' + t + 'B</text>'; });
     Y.forEach(function (r, k) { var x = L + k * bw + 4, w = bw - 8, d = k * 40;
+      if (r.y === 2026 && D.ytd2026) { var v6 = D.ytd2026.v; s += '<text x="' + (x + w / 2) + '" y="' + (B + 18) + '" text-anchor="middle">' + (bw < 40 ? "'26" : '2026') + '</text><rect class="b grow" data-y="2026" x="' + x + '" y="' + sy(v6) + '" width="' + w + '" height="' + (B - sy(v6)) + '" rx="3" fill="#be123c"/><text class="v" x="' + (x + w / 2) + '" y="' + (sy(v6) - 5) + '" text-anchor="middle">' + Math.round(v6) + '*</text>'; return; }
       s += '<text x="' + (x + w / 2) + '" y="' + (B + 18) + '" text-anchor="middle">' + (bw < 40 ? "'" + String(r.y).slice(2) : r.y) + '</text>';
       if (r.total == null) { s += '<rect class="b" data-y="' + r.y + '" x="' + x + '" y="' + (B - 14) + '" width="' + w + '" height="14" rx="3" fill="#57534e"/><text x="' + (x + w / 2) + '" y="' + (B - 20) + '" text-anchor="middle" style="font-size:11px">n/a</text>'; return; }
       var bars = view === 'both' ? [['total', '#d97706', x, w / 2], ['private', '#0d9488', x + w / 2, w / 2]] : [[view, view === 'total' ? '#d97706' : '#0d9488', x, w]];
@@ -199,7 +200,7 @@
         if (!nar || view !== 'both') s += '<text class="v" x="' + (b[2] + b[3] / 2) + '" y="' + (sy(v) - 5) + '" text-anchor="middle">' + Math.round(v) + '</text>'; });
       if (g[r.y] && view !== 'total') { var v = g[r.y].v; s += '<rect class="b" data-y="' + r.y + '" x="' + (x + w * .3) + '" y="' + sy(v) + '" width="' + (w * .4) + '" height="' + (B - sy(v)) + '" rx="2" fill="#a855f7" opacity=".9"/>'; } });
     $('aihC').setAttribute('viewBox', '0 0 ' + W + ' ' + H); $('aihC').innerHTML = s; }
-  function info(y) { var r = D.years.filter(function (x) { return x.y === y; })[0], g = D.genai.filter(function (x) { return x.y === y; })[0];
+  function info(y) { if (y === 2026 && D.ytd2026) { var z6 = D.ytd2026; $('aihI').innerHTML = '<b>2026 so far</b>: $' + z6.v + 'B, ' + z6.label + '. ' + z6.note + ' <a href=\x22' + z6.url + '\x22 target="_blank" rel="noopener">CB Insights Q1 report</a>'; return; } var r = D.years.filter(function (x) { return x.y === y; })[0], g = D.genai.filter(function (x) { return x.y === y; })[0];
     if (!r) { $('aihI').innerHTML = '<b>' + y + '</b>: no comparable sourced figure. ' + D.missing; return; }
     $('aihI').innerHTML = '<b>' + y + '</b>: corporate investment ' + fmt(r.total) + ', private ' + fmt(r.private) + (g ? ', generative AI ' + fmt(g.v) + (g.sec ? ' ⚠️' : '') : '') + '. Source: <a href=\x22' + r.url + '\x22 target="_blank" rel="noopener">' + r.src + '</a>' + (r.sec ? ' ⚠️' : ''); }
   $('aihC').addEventListener('click', function (e) { var b = e.target.closest('[data-y]'); if (b) info(+b.dataset.y); });
@@ -209,7 +210,7 @@
   addEventListener('resize', function () { if (D) draw(); });
   fetch('../data/ai-investment-history.json').then(function (r) { return r.json(); }).then(function (d) { D = d; draw(); info(2025);
     var a = d.years[0], z = d.years[d.years.length - 1], pk = d.years.slice(0, -2).reduce(function (m, x) { return x.total > m.total ? x : m; });
-    $('aihK').innerHTML = '<div><b>' + Math.round(z.total / a.total) + '×</b>corporate AI investment, ' + a.y + ' → ' + z.y + '</div><div><b>' + fmt(z.total) + ' ⚠️</b>' + z.y + ' record (AI Index 2026)</div><div><b>' + pk.y + '</b>earlier peak (' + fmt(pk.total) + '), then two years of decline</div><div><b>' + fmt(d.genai[1].v) + ' ⚠️</b>generative AI private investment, 2025 (from ' + fmt(d.genai[0].v) + ' in 2023)</div>';
+    $('aihK').style.gridTemplateColumns = ''; $('aihK').innerHTML = (d.ytd2026 ? '<div><b>$' + d.ytd2026.v + 'B</b>2026 AI venture funding, Q1–Q3 (CB Insights)</div>' : '') + '<div><b>' + Math.round(z.total / a.total) + '×</b>corporate AI investment, ' + a.y + ' → ' + z.y + '</div><div><b>' + fmt(z.total) + ' ⚠️</b>' + z.y + ' record (AI Index 2026)</div><div><b>' + pk.y + '</b>earlier peak (' + fmt(pk.total) + '), then two years of decline</div><div><b>' + fmt(d.genai[1].v) + ' ⚠️</b>generative AI private investment, 2025 (from ' + fmt(d.genai[0].v) + ' in 2023)</div>';
     $('aihT').innerHTML = '<tr><th>Year</th><th>Corporate total</th><th>Private</th><th>Source</th></tr>' + d.years.slice().reverse().map(function (r) { return '<tr><td>' + r.y + '</td><td>' + fmt(r.total) + '</td><td>' + fmt(r.private) + '</td><td><a href=\x22' + r.url + '\x22 target="_blank" rel="noopener">' + r.src + '</a>' + (r.sec ? ' ⚠️' : '') + '</td></tr>'; }).join('');
     $('aihM').textContent = 'Not covered: ' + d.missing; })
     .catch(function () { $('aihI').textContent = 'Could not load the data.'; });

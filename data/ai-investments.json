@@ -1,6 +1,6 @@
 {
  "about": "AI investment tracking. Quarterly totals and individual rounds as reported by the named source (all secondary: treat as approximate; sources disagree). Amounts in $ billions. Add new quarters and rounds with a source.",
- "quarters": [
+ "quarters": [{"q": "2026-Q1", "total": 226, "src": "https://www.cbinsights.com/research/report/ai-trends-q1-2026/", "by": "CB Insights", "note": "up 216% from ~$72B in Q4 2025; OpenAI $122B round = 54%; later reported revised to $237.6B (secondary)"}, 
   {
    "q": "2026-Q2",
    "total": 153.1,

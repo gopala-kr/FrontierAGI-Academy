@@ -30,6 +30,8 @@
     .aih-info { background:#fafaf9; color:#1c1917; border-radius:10px; padding:10px 12px; font-size:.86rem; margin-top:10px; min-height:3em; }
     .aih-kpis { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:12px; } .aih-kpis div { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px; font-size:.82rem; } .aih-kpis b { display:block; font-size:1.25rem; color:#9a3412; }
     .aih-t { width:100%; border-collapse:collapse; font-size:.84rem; margin-top:14px; } .aih-t th, .aih-t td { border-bottom:1px solid #e7e5e4; padding:6px 8px; text-align:left; }
+    .aih-ab button { border-color:#d6d3d1; background:#fff; color:#1c1917; } .aih-ab button.on { background:#b45309; color:#fff; border-color:#b45309; }
+    .aih-g { margin:10px 0 4px; font-weight:800; font-size:.86rem; display:flex; justify-content:space-between; } .aih-ar { display:flex; gap:8px; align-items:center; font-size:.82rem; margin:3px 0; } .aih-ar span.n { min-width:15em; max-width:15em; } .aih-ar span.t { flex:1; background:#f5f5f4; border-radius:99px; height:12px; overflow:hidden; } .aih-ar i { display:block; height:100%; border-radius:99px; } @media (max-width:768px) { .aih-ar span.n { min-width:8.5em; max-width:8.5em; font-size:.76rem; } }
     .aih-cap { color:#57534e; font-size:.84rem; line-height:1.55; }
     @media (max-width:768px) { .aih-kpis { grid-template-columns:1fr 1fr; } }
     @media (prefers-reduced-motion: reduce) { .aih-svg .grow { animation:none; } }
@@ -169,6 +171,10 @@
       <div class="aih-info" id="aihI">Tap a bar for its source.</div>
     </div>
     <div class="aih-kpis" id="aihK"></div>
+    <h2>Where the money went: AI areas</h2>
+    <p class="aih-cap">Pick a year. <b>2023</b>: private AI investment by focus area from the AI Index 2024 (Quid, Fig. 4.3.16; the four groups are our own grouping). <b>2026</b>: the largest 2026 rounds by theme from our tracked rounds (company-reported amounts; a sample, not a total). The two use different categories.</p>
+    <div class="aih-bar aih-ab"><button data-a="2023" class="on">2023 · AI Index focus areas</button><button data-a="2026">2026 · largest rounds by theme</button></div>
+    <div id="aihA"></div><p class="aih-cap" id="aihAs"></p>
     <h2>2026 so far, quarter by quarter</h2>
     <p class="aih-cap">2026 uses a different measure (global AI venture funding as reported by CB Insights and Crunchbase). The red 2026 bar in the chart is the CB Insights Q1–Q3 sum ($482.4B), drawn in its own colour because it is not the AI Index measure; Q4 is not reported yet. Other trackers give higher Q1 totals (Crunchbase ~$242B, PitchBook ~$255.5B ⚠️), and CB Insights later reportedly revised Q1 to $237.6B ⚠️.</p>
     <div id="aihQ"></div>
@@ -208,13 +214,24 @@
     if (b.dataset.v) view = b.dataset.v; if (b.dataset.s) sc = b.dataset.s;
     [].forEach.call(this.querySelectorAll('button'), function (x) { x.classList.toggle('on', x.dataset.v ? x.dataset.v === view : x.dataset.s === sc); }); draw(); });
   addEventListener('resize', function () { if (D) draw(); });
-  fetch('../data/ai-investment-history.json').then(function (r) { return r.json(); }).then(function (d) { D = d; draw(); info(2025);
+  var GC = { 'Core AI': '#d97706', 'Industry applications': '#0d9488', 'Physical & hardware': '#6366f1', 'Media & consumer': '#db2777' }, RN = [], AY = '2023';
+  function areas() { var out = '', it, mx, gs = {};
+    if (AY === '2023') { if (!D || !D.areas2023) return; it = D.areas2023.items; mx = it[0].v; it.forEach(function (x) { (gs[x.g] = gs[x.g] || []).push(x); });
+      Object.keys(GC).forEach(function (g) { var xs = gs[g] || [], sm = xs.reduce(function (a, x) { return a + x.v; }, 0);
+        out += '<div class="aih-g"><span style="color:' + GC[g] + '">' + g + '</span><span>$' + sm.toFixed(1) + 'B</span></div>' + xs.map(function (x) { return '<div class="aih-ar"><span class="n">' + x.a + '</span><span class="t"><i style="width:' + (x.v / mx * 100) + '%;background:' + GC[g] + '"></i></span><b>$' + x.v.toFixed(2) + 'B</b></div>'; }).join(''); });
+      $('aihAs').innerHTML = 'Source: <a href=\x22' + D.areas2023.url + '\x22 target="_blank" rel="noopener">' + D.areas2023.src + '</a>. ' + D.areas2023.groups_note; }
+    else { var th = {}; RN.forEach(function (r) { (th[r.theme] = th[r.theme] || []).push(r); }); var ks = Object.keys(th).map(function (k) { return [k, th[k].reduce(function (a, r) { return a + r.amt; }, 0)]; }).sort(function (a, b) { return b[1] - a[1]; }); mx = ks.length ? ks[0][1] : 1;
+      out = ks.map(function (k) { return '<div class="aih-ar"><span class="n"><b>' + k[0] + '</b><br><small>' + th[k[0]].map(function (r) { return r.name; }).join(', ') + '</small></span><span class="t"><i style="width:' + (k[1] / mx * 100) + '%;background:#be123c"></i></span><b>$' + (Math.round(k[1] * 100) / 100) + 'B</b></div>'; }).join('');
+      $('aihAs').innerHTML = 'From <a href="ai-market-map.html">the AI Market Map</a> rounds data (each round links its source there). Only the largest tracked rounds, so these are not totals by area.'; }
+    $('aihA').innerHTML = out; }
+  document.querySelector('.aih-ab').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; AY = b.dataset.a; [].forEach.call(this.children, function (x) { x.classList.toggle('on', x === b); }); areas(); });
+  fetch('../data/ai-investment-history.json').then(function (r) { return r.json(); }).then(function (d) { D = d; draw(); info(2025); areas();
     var a = d.years[0], z = d.years[d.years.length - 1], pk = d.years.slice(0, -2).reduce(function (m, x) { return x.total > m.total ? x : m; });
     $('aihK').style.gridTemplateColumns = ''; $('aihK').innerHTML = (d.ytd2026 ? '<div><b>$' + d.ytd2026.v + 'B</b>2026 AI venture funding, Q1–Q3 (CB Insights)</div>' : '') + '<div><b>' + Math.round(z.total / a.total) + '×</b>corporate AI investment, ' + a.y + ' → ' + z.y + '</div><div><b>' + fmt(z.total) + ' ⚠️</b>' + z.y + ' record (AI Index 2026)</div><div><b>' + pk.y + '</b>earlier peak (' + fmt(pk.total) + '), then two years of decline</div><div><b>' + fmt(d.genai[1].v) + ' ⚠️</b>generative AI private investment, 2025 (from ' + fmt(d.genai[0].v) + ' in 2023)</div>';
     $('aihT').innerHTML = '<tr><th>Year</th><th>Corporate total</th><th>Private</th><th>Source</th></tr>' + d.years.slice().reverse().map(function (r) { return '<tr><td>' + r.y + '</td><td>' + fmt(r.total) + '</td><td>' + fmt(r.private) + '</td><td><a href=\x22' + r.url + '\x22 target="_blank" rel="noopener">' + r.src + '</a>' + (r.sec ? ' ⚠️' : '') + '</td></tr>'; }).join('');
     $('aihM').textContent = 'Not covered: ' + d.missing; })
     .catch(function () { $('aihI').textContent = 'Could not load the data.'; });
-  fetch('../data/ai-investments.json').then(function (r) { return r.json(); }).then(function (d) { var m = Math.max.apply(null, d.quarters.map(function (q) { return q.total; }));
+  fetch('../data/ai-investments.json').then(function (r) { return r.json(); }).then(function (d) { RN = d.rounds; if (AY === '2026') areas(); var m = Math.max.apply(null, d.quarters.map(function (q) { return q.total; }));
     $('aihQ').innerHTML = d.quarters.map(function (q) { return '<div style="display:flex;gap:10px;align-items:center;margin:6px 0;font-size:.86rem"><b style="min-width:5.5em">' + q.q + '</b><span style="flex:1;background:#f5f5f4;border-radius:99px;height:14px;overflow:hidden"><i style="display:block;height:100%;width:' + (q.total / m * 100) + '%;background:#b45309"></i></span><b>$' + q.total + 'B</b><small><a href=\x22' + q.src + '\x22 target="_blank" rel="noopener">' + q.by + '</a></small></div>'; }).join(''); }).catch(function () {});
 })();
 </script>

@@ -214,7 +214,7 @@
     <a class="amm-latest" href="../blog/market-pulse-2026-11.html"><span>📰 Latest issue</span><b>AI Market Pulse, November 2026</b><small>GPT-6.2, Gemini 4 Hydrogen, Fable 5.2, Qwen4-Max, Inkling 2 Small open weights · funding · predictions check-in →</small></a>
     <div class="amm-tabs" id="ammTabs"><button data-t="layers" class="on">🗺️ Layers</button><button data-t="invest">💰 Investments</button><button data-t="startups">🚀 Start-ups</button><button data-t="customers">👥 Customers</button><button data-t="pred">🔮 Predictions</button></div>
     <section class="amm-p on" id="t-layers"><h2>Who competes at each layer</h2><p class="amm-cap">The AI stack as a tower, chips at the bottom, applications at the top. Tap a layer for details. Colours, open-option ratings and entry years are our model (see the notes under the tower). <a href="../blog/market-ai-stack-2026.html">Read the stack brief →</a></p>
-      <div class="tw-wrap"><div class="tw-bar"><span>Colour:</span><button data-m="idx" class="on">Commoditisation</button><button data-m="ov">Lab overlap</button><button data-m="open">Open vs closed</button>
+      <div class="tw-wrap"><div class="tw-bar"><span>Colour:</span><button data-m="ov" class="on">Lab overlap</button><button data-m="idx">Commoditisation</button><button data-m="open">Open vs closed</button>
         <label>Company <select id="twCo"><option value="">— highlight —</option></select></label>
         <label>Year <input type="range" id="twYr" min="2023" max="2026" step="1" value="2026" aria-label="Timeline year"> <span class="tw-yr" id="twYrL">Nov 2026</span></label></div>
         <div class="tw-main"><div class="tw-stack" id="twS"><svg class="tw-svg" id="twA"></svg><div class="tw-ver" id="twV" data-i="8"><span>✅ Verification &amp; environments · checks every layer</span></div></div>
@@ -249,7 +249,7 @@
     ["Applications", 5.0, 0, "apps", "market-ai-customers-2026", [["OpenAI","L",2022],["Google","L",2023],["Anthropic","L",2023],["Harvey","C",2023],["Sierra","C",2024],["River AI","C",2025],["Anthropic","E",2025],["OpenAI","E",2025]]],
     ["Verification & environments", 1.8, 1, "data", "market-predictions-2027", [["Few independents","L",2023],["Maestro (scenario)","C",2026],["Labs (internal gates)","E",2024]]]];
   var LABEL = { "Anthropic": "Anthropic (Claude, Claude Code)", "OpenAI": "OpenAI (ChatGPT, Codex, Agents SDK)", "Google": "Google (Gemini, Jules, ADK, Vertex)", "Microsoft": "Microsoft (Copilot Studio, Agent Framework, Foundry)", "AWS": "AWS (AgentCore)", "LangChain": "LangChain (LangGraph, LangSmith)" };
-  var ROLE = { L: 'leader', C: 'challenger', E: 'moving in' }, mode = 'idx', yr = 2026, co = '', cur = -1, OV = {};
+  var ROLE = { L: 'leader', C: 'challenger', E: 'moving in' }, mode = 'ov', yr = 2026, co = '', cur = -1, OV = {};
   function colr(i) { var b = TW[i], v;
     if (mode === 'idx') { v = b[1] / 10; return v >= .6 ? '#7f1d1d' : v >= .4 ? '#78350f' : '#14532d'; }
     if (mode === 'open') return ['#3f3f46', '#1e3a8a', '#0e7490'][b[2]];

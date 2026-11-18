@@ -1,0 +1,258 @@
+{
+ "about": "Hand-curated sample of AI companies and new entrants, Nov 2026. Rounds and valuations as reported (sec=1: secondary source). 'overlap' = our judgement (0-3) of how directly frontier labs compete with the company's core product. Not a complete census.",
+ "items": [
+  {
+   "name": "Thinking Machines Lab",
+   "theme": "neolab",
+   "layer": "models",
+   "round": "$2B seed",
+   "val": 12,
+   "date": "2025-07",
+   "overlap": 3,
+   "src": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+   "sec": 1
+  },
+  {
+   "name": "Safe Superintelligence (SSI)",
+   "theme": "neolab",
+   "layer": "models",
+   "round": "$5B corporate round led by NVIDIA (Q3 2026, reported)",
+   "val": null,
+   "date": "2026-09",
+   "overlap": 3,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "sec": 1
+  },
+  {
+   "name": "Mistral AI",
+   "theme": "open-weight lab",
+   "layer": "models",
+   "round": "Mistral Large 4 open weights (Oct 2026)",
+   "val": null,
+   "date": "2026-10",
+   "overlap": 3,
+   "src": "https://mistral.ai/news/mistral-large-4-oss/",
+   "sec": 0
+  },
+  {
+   "name": "Cognition",
+   "theme": "coding agents",
+   "layer": "harness",
+   "round": "$2B (Q3 2026, reported)",
+   "val": null,
+   "date": "2026-09",
+   "overlap": 3,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "sec": 1
+  },
+  {
+   "name": "Cursor (Anysphere)",
+   "theme": "coding agents",
+   "layer": "harness",
+   "round": "$2.3B Series D",
+   "val": 29.3,
+   "date": "2025-11",
+   "overlap": 3,
+   "src": "https://en.wikipedia.org/wiki/Cursor_(company)",
+   "sec": 1
+  },
+  {
+   "name": "Harvey",
+   "theme": "vertical agents (legal)",
+   "layer": "apps",
+   "round": "$200M",
+   "val": 11,
+   "date": "2026-03",
+   "overlap": 1,
+   "src": "https://www.crv.com/content/hottest-ai-startups-in-silicon-valley",
+   "sec": 1
+  },
+  {
+   "name": "Sierra",
+   "theme": "vertical agents (support)",
+   "layer": "apps",
+   "round": "$950M",
+   "val": 15,
+   "date": "2026-05",
+   "overlap": 2,
+   "src": "https://www.opus.pro/blog/hottest-ai-startups-2026",
+   "sec": 1
+  },
+  {
+   "name": "Databricks",
+   "theme": "data & AI platform",
+   "layer": "data",
+   "round": "$5B (Q3 2026, reported)",
+   "val": null,
+   "date": "2026-09",
+   "overlap": 1,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "sec": 1
+  },
+  {
+   "name": "Crusoe",
+   "theme": "neocloud / infrastructure",
+   "layer": "compute",
+   "round": "$3.9B (Q3 2026, reported)",
+   "val": null,
+   "date": "2026-09",
+   "overlap": 0,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "sec": 1
+  },
+  {
+   "name": "CoreWeave",
+   "theme": "neocloud / infrastructure",
+   "layer": "compute",
+   "round": "public company",
+   "val": null,
+   "date": "2025-03",
+   "overlap": 0,
+   "src": "https://en.wikipedia.org/wiki/CoreWeave",
+   "sec": 1
+  },
+  {
+   "name": "LangChain",
+   "theme": "agent frameworks & tooling",
+   "layer": "frameworks",
+   "round": "framework + LangSmith",
+   "val": null,
+   "date": "2025-10",
+   "overlap": 2,
+   "src": "https://www.langchain.com/blog/langchain-langgraph-1dot0",
+   "sec": 0
+  },
+  {
+   "name": "CrewAI",
+   "theme": "agent frameworks & tooling",
+   "layer": "frameworks",
+   "round": "open source + platform",
+   "val": null,
+   "date": "2026-11",
+   "overlap": 2,
+   "src": "https://docs.crewai.com",
+   "sec": 1
+  },
+  {
+   "name": "Temporal",
+   "theme": "agent infrastructure",
+   "layer": "runtimes",
+   "round": "durable execution; OpenAI Agents SDK integration GA Mar 2026",
+   "val": null,
+   "date": "2026-03",
+   "overlap": 1,
+   "src": "https://temporal.io/blog/announcing-openai-agents-sdk-integration",
+   "sec": 0
+  },
+  {
+   "name": "n8n",
+   "theme": "agent builders",
+   "layer": "builders",
+   "round": "fair-code builder",
+   "val": null,
+   "date": "2026-10",
+   "overlap": 1,
+   "src": "https://n8n.io",
+   "sec": 1
+  },
+  {
+   "name": "Zapier",
+   "theme": "agent builders",
+   "layer": "builders",
+   "round": "Agents + MCP",
+   "val": null,
+   "date": "2026-11",
+   "overlap": 2,
+   "src": "https://zapier.com/pricing",
+   "sec": 1
+  },
+  {
+   "name": "ElevenLabs",
+   "theme": "voice models",
+   "layer": "models",
+   "round": "Scribe v3 (Nov 2026)",
+   "val": null,
+   "date": "2026-11",
+   "overlap": 2,
+   "src": "https://elevenlabs.io/blog/scribe-v3",
+   "sec": 0
+  },
+  {
+   "name": "World Labs",
+   "theme": "world models",
+   "layer": "models",
+   "round": "Marble",
+   "val": null,
+   "date": "2026",
+   "overlap": 2,
+   "src": "https://www.worldlabs.ai",
+   "sec": 1
+  },
+  {
+   "name": "Unitree Robotics",
+   "theme": "robotics",
+   "layer": "physical",
+   "round": "$9.0B IPO (Q3 2026, reported)",
+   "val": null,
+   "date": "2026-09",
+   "overlap": 0,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "sec": 1
+  },
+  {
+   "name": "Walden Robotics",
+   "theme": "robotics",
+   "layer": "physical",
+   "round": "$300M seed (Q3 2026, reported)",
+   "val": null,
+   "date": "2026-09",
+   "overlap": 0,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "sec": 1
+  },
+  {
+   "name": "River AI",
+   "theme": "early-stage (Series A)",
+   "layer": "apps",
+   "round": "$1.1B Series A (Q3 2026, reported)",
+   "val": null,
+   "date": "2026-09",
+   "overlap": 1,
+   "src": "https://news.crunchbase.com/venture/q3-2026-north-america-startup-funding-falls-ai-exits-data/",
+   "sec": 1
+  },
+  {
+   "name": "Moonshot AI (Kimi)",
+   "theme": "open-weight lab",
+   "layer": "models",
+   "round": "Kimi K3.1 Pro",
+   "val": null,
+   "date": "2026",
+   "overlap": 3,
+   "src": "https://en.wikipedia.org/wiki/Kimi_(chatbot)",
+   "sec": 1
+  },
+  {
+   "name": "Groq",
+   "theme": "inference chips",
+   "layer": "compute",
+   "round": "inference hardware + cloud",
+   "val": null,
+   "date": "2025",
+   "overlap": 0,
+   "src": "https://groq.com",
+   "sec": 1
+  },
+  {
+   "name": "Cerebras",
+   "theme": "inference chips",
+   "layer": "compute",
+   "round": "wafer-scale inference",
+   "val": null,
+   "date": "2025",
+   "overlap": 0,
+   "src": "https://www.cerebras.ai",
+   "sec": 1
+  }
+ ]
+}

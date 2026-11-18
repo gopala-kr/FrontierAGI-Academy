@@ -1,0 +1,96 @@
+{
+ "about": "Predictions for 2027 made in The Maestro Interlude (Nov 2026). Confidence is our judgement. 'check' is the date to score each prediction; 'wrong_if' says what would prove it wrong. Outcomes are filled in when checked.",
+ "made": "2026-11-18",
+ "items": [
+  {
+   "id": 1,
+   "claim": "Every frontier lab ships its own agent platform (harness + builder + runtime) to enterprises",
+   "check": "2027-06",
+   "conf": 0.85,
+   "evidence": "OpenAI, Google, Anthropic and Microsoft already ship coding agents and agent platforms (agentic series waves 1-4)",
+   "wrong_if": "A frontier lab exits or spins out its agent platform",
+   "outcome": null
+  },
+  {
+   "id": 2,
+   "claim": "Open-weight models reach parity with the best closed model on a major coding benchmark within 6 months of each closed release",
+   "check": "2027-06",
+   "conf": 0.6,
+   "evidence": "Mistral Large 4, Qwen4-Max, Inkling 2 Small, Kimi K3.1 in Oct-Nov 2026 (Model Release Map)",
+   "wrong_if": "The gap on the Benchmark Tracker widens two quarters in a row",
+   "outcome": null
+  },
+  {
+   "id": 3,
+   "claim": "At least two more labs publish a self-improvement capability rating for a released model",
+   "check": "2027-06",
+   "conf": 0.7,
+   "evidence": "GPT-6.2 Astra reported as rated High for AI self-improvement (Nov 2026)",
+   "wrong_if": "No new self-improvement ratings in system cards by mid-2027",
+   "outcome": null
+  },
+  {
+   "id": 4,
+   "claim": "Third-party evaluation becomes a routine purchase for EU general-purpose AI providers with systemic risk",
+   "check": "2027-12",
+   "conf": 0.55,
+   "evidence": "EU AI Act GPAI obligations; external evaluators named in codes of practice",
+   "wrong_if": "Obligations delayed or evaluations kept fully in-house",
+   "outcome": null
+  },
+  {
+   "id": 5,
+   "claim": "Price per million tokens for frontier-class models falls at least 50% again by end of 2027",
+   "check": "2027-12",
+   "conf": 0.7,
+   "evidence": "Cheaper tiers each quarter (Hydrogen, Sol, Haiku) and lower list prices (GPT-6.2)",
+   "wrong_if": "List prices flat or rising across three labs",
+   "outcome": null
+  },
+  {
+   "id": 6,
+   "claim": "Restricted-access models for cyber and bio become a standard product tier at three or more labs",
+   "check": "2027-06",
+   "conf": 0.75,
+   "evidence": "Mythos 5.2, GPT-6 Cyber, Gemini 4 Carbon (Lab Updates)",
+   "wrong_if": "Labs fold these back into general models",
+   "outcome": null
+  },
+  {
+   "id": 7,
+   "claim": "Agent-to-agent purchasing (an agent buys a service from another company's agent) appears in a major platform's GA product",
+   "check": "2027-12",
+   "conf": 0.45,
+   "evidence": "MCP, A2A and agent marketplaces (owner's notes on Rauch)",
+   "wrong_if": "No GA agent-payment product by end 2027",
+   "outcome": null
+  },
+  {
+   "id": 8,
+   "claim": "Most enterprise agent pilots still do not reach production in 2027 surveys",
+   "check": "2027-12",
+   "conf": 0.65,
+   "evidence": "Forrester: ~88% of agent pilots never reach production; Gartner: 40% of agentic projects cancelled by 2027 (reported)",
+   "wrong_if": "Major surveys report majority in production at scale",
+   "outcome": null
+  },
+  {
+   "id": 9,
+   "claim": "A frontier lab acquires an evaluation, environment or agent-infrastructure start-up",
+   "check": "2027-12",
+   "conf": 0.6,
+   "evidence": "Acqui-hires and acquisitions through 2025-2026",
+   "wrong_if": "No such acquisition announced",
+   "outcome": null
+  },
+  {
+   "id": 10,
+   "claim": "Labs avoid on-premises deployment inside regulated customers' own data centres",
+   "check": "2027-12",
+   "conf": 0.55,
+   "evidence": "Labs sell through clouds; on-prem goes via hyperscalers (AI Factory as a Service series)",
+   "wrong_if": "A frontier lab ships its own on-prem appliance",
+   "outcome": null
+  }
+ ]
+}

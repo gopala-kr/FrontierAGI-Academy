@@ -311,7 +311,15 @@
         "maestro-s2-frontier-lab-ships",
         "maestro-s2-market-shifts",
         "maestro-s2-partnerships",
-        "maestro-s2-ceo-scorecard"
+        "maestro-s2-ceo-scorecard",
+        "maestro-int-stack-map",
+        "maestro-int-lab-playbooks",
+        "maestro-int-startups",
+        "maestro-int-customers",
+        "maestro-int-commoditisation",
+        "maestro-int-predictions",
+        "maestro-int-safe-bets",
+        "maestro-int-positioning"
       ]
     },
     {

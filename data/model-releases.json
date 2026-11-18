@@ -205,6 +205,12 @@
 "Wayve",
 "Wy",
 "#65a30d"
+],
+[
+"thinkingmachines",
+"Thinking Machines",
+"TM",
+"#0f766e"
 ]
 ],
 "families": [
@@ -515,6 +521,10 @@
 [
 "hunyuanworld",
 "HunyuanWorld"
+],
+[
+"inkling",
+"Inkling"
 ]
 ],
 "tiers": [
@@ -574,6 +584,39 @@
 ]
 ],
 "items": [
+{
+"id": "openai-20261117-gpt-6-2-astra-and-sol",
+"ref": "openai-20261117-gpt-6-2-astra-and-sol",
+"date": "2026-11-17",
+"lab": "openai",
+"mod": [
+"llm"
+],
+"fam": "gpt",
+"name": "GPT-6.2 Astra / Sol",
+"full": "GPT-6.2 Astra and GPT-6.2 Sol: ChatGPT Work, Codex and API",
+"src": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531",
+"flag": 1,
+"open": 0,
+"st": "ga",
+"sec": 0
+},
+{
+"id": "thinkingmachines-20261112-inkling-2-small",
+"date": "2026-11-12",
+"lab": "thinkingmachines",
+"mod": [
+"llm"
+],
+"fam": "inkling",
+"name": "Inkling 2 Small (open weights)",
+"full": "Inkling 2 Small: 594B MoE, 17B active; on Tinker from 5 Nov, weights on Hugging Face under Apache 2.0 from 12 Nov",
+"src": "https://x.com/thinkymachines/status/2120982625582195011",
+"flag": 1,
+"open": 1,
+"st": "ga",
+"sec": 0
+},
 {
 "id": "elevenlabs-20261110-scribe-v3",
 "date": "2026-11-10",

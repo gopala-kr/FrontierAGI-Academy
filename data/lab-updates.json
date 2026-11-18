@@ -2,7 +2,7 @@
  "about": "Frontier lab announcements, newest first. Curated by hand: every item links to its source. Dates are release/announcement dates; 'YYYY-MM' means only the month is confirmed. Benchmark and pricing facts are as announced by the lab.",
  "range": [
   "2021-10-01",
-  "2026-11-17"
+  "2026-11-18"
  ],
  "labs": [
   [
@@ -117,6 +117,20 @@
   ]
  ],
  "items": [
+  {
+   "id": "openai-20261117-gpt-6-2-astra-and-sol",
+   "date": "2026-11-17",
+   "lab": "openai",
+   "type": "model",
+   "title": "GPT-6.2 Astra and GPT-6.2 Sol",
+   "summary": "OpenAI's update to its two GPT-6 lines: Astra for demanding professional work in science, law and finance, Sol as the cheaper everyday model. Available in ChatGPT Work and Codex for paid plans and in the API. OpenAI reports Astra +6.2 points over its predecessor on GDPval v2 with 22% fewer output tokens and a lower API price; coverage says Astra is OpenAI's first externally released model rated High for AI self-improvement under its own framework. Figures are OpenAI's claims.",
+   "facts": [
+    "Astra API price about 20% below GPT-6 Astra (reported)",
+    "Rated High for AI self-improvement (reported)"
+   ],
+   "source": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531",
+   "flagship": true
+  },
   {
    "id": "qwen-20261116-qwen4-max",
    "date": "2026-11-16",

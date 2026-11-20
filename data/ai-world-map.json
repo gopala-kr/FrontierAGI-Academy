@@ -95,6 +95,11 @@
    "Switzerland",
    46.8,
    8.2
+  ],
+  "158": [
+   "Taiwan",
+   23.7,
+   121.0
   ]
  },
  "layers": [
@@ -185,7 +190,8 @@
     "380": 13824,
     "246": 11912,
     "756": 10752,
-    "724": 4480
+    "724": 4480,
+    "158": 1844
    },
    "detail": {
     "840": "US Department of Energy flagship systems only: Aurora 63,744 Intel GPUs (Argonne), El Capitan 44,544 AMD MI300A (Livermore), Frontier 37,632 AMD MI250X (Oak Ridge)",
@@ -198,12 +204,13 @@
     "380": "Leonardo (CINECA, EuroHPC): 13,824 NVIDIA A100 (3,456 nodes × 4)",
     "246": "LUMI (CSC, EuroHPC): 11,912 AMD MI250X ⚠️ count via an aggregator (Flopper.io)",
     "756": "Alps (CSCS): 10,752 NVIDIA GH200 ⚠️ from the operator's node count, not re-read in this session",
-    "724": "MareNostrum 5 accelerated partition (BSC, EuroHPC): 4,480 NVIDIA H100 ⚠️ count via an aggregator (Flopper.io)"
+    "724": "MareNostrum 5 accelerated partition (BSC, EuroHPC): 4,480 NVIDIA H100 ⚠️ count via an aggregator (Flopper.io)",
+    "158": "Nano 4 (NCHC, national lab; launched 1 Jun 2026): 1,700+ NVIDIA H200 (pre-launch figure ⚠️) + 2 GB200 NVL72 racks (144 Blackwell GPUs); an HGX B300 system not counted"
    },
    "source": "Official system pages and announcements per country (see each country's line); India from the Indian government; South Korea from secondary reporting ⚠️",
    "src": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3",
    "sec": 1,
-   "note": "Solid bubbles = operating; dashed rings = announced or under way (not added to the totals). Counts accelerators in named national systems, not all compute a country can reach, and mixes GPU generations (an H100 ≠ an MI250X). China's state-owned AI compute is not disclosed, so it is blank. Saudi Arabia's HUMAIN and the UAE's G42 are state-owned or state-backed companies; no operating GPU count for either has been published, so they appear only as plans. Canada's C$890M sovereign compute programme and the EU AI Gigafactories have no chip counts yet. GPU counts for Frontier, Aurora, ABCI 3.0 and Alps come from their operators' published node counts and could not be re-read from this sandbox.",
+   "note": "Solid bubbles = operating; dashed rings = announced or under way (not added to the totals). Counts accelerators in named national systems, not all compute a country can reach, and mixes GPU generations (an H100 ≠ an MI250X). China publishes compute only in EFLOPS, not GPUs, so it is listed under \"Disclosed in other units\" with no bubble. Saudi Arabia's HUMAIN and the UAE's G42 are state-owned or state-backed companies; no operating GPU count for either has been published, so they appear only as plans. Canada's C$890M sovereign compute programme and the EU AI Gigafactories have no chip counts yet. GPU counts for Frontier, Aurora, ABCI 3.0 and Alps come from their operators' published node counts and could not be re-read from this sandbox.",
    "planned": {
     "784": [
      100000,
@@ -225,6 +232,9 @@
      8000,
      "IT4LIA AI factory: 8,000+ NVIDIA Blackwell GPUs, contracted Apr 2026 ⚠️"
     ]
+   },
+   "other": {
+    "156": "No GPU count published. China reports national intelligent computing capacity of 2,185 EFLOPS (FP16) at end-June 2026 (MIIT), built through the state-led 'East Data, West Computing' programme: 8 national hubs, 10 clusters, 17 approved regional nodes; target 9,800 EFLOPS by 2030. That total includes commercial capacity, so it is not a sovereign-only GPU figure. Epoch AI estimates China received 9.6% of the world's AI compute 2022 → Jun 2026 (see the ⚡ AI compute tab)."
    }
   },
   {

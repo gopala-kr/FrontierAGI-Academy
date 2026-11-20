@@ -1014,3 +1014,56 @@ function initBackToTop() {
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
+
+
+/* ── Homepage sub-sections (series spotlights) and graphs (embedded maps): +/− collapse (owner's request, 20 Nov 2026) ──
+   Collapsed by default; an opened block is remembered in localStorage 'fa-sub'. The header (label, title, description)
+   stays visible; links into a collapsed block open it. */
+(function () {
+  function init() {
+    if (!document.querySelector('.home-hero')) return;
+    var KEY = 'fa-sub', saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+    var blocks = [];
+    document.querySelectorAll('.home-series-spotlight, .home-idea-embed').forEach(function (el) {
+      var isEmb = el.classList.contains('home-idea-embed'), head = [];
+      if (isEmb) {
+        var hd = el.querySelector(':scope > .home-model-embed-hd');
+        if (!hd) {
+          var fr = el.querySelector('iframe'); hd = document.createElement('div'); hd.className = 'home-model-embed-hd';
+          hd.innerHTML = '<div class="home-rsimap-title"></div>'; hd.firstChild.textContent = fr ? (fr.getAttribute('title') || 'Interactive map') : 'Interactive map';
+          el.insertBefore(hd, el.firstChild);
+        }
+        head = [hd];
+      } else {
+        head = [].filter.call(el.children, function (c) { return c.matches('.home-layer-label, .home-series-tag, .home-series-title, .home-series-desc'); });
+      }
+      if (!head.length) return;
+      var tEl = el.querySelector('.home-series-title, .home-rsimap-title'), title = tEl ? tEl.textContent.trim() : '';
+      var key = el.id || title; if (!key) return;
+      head.forEach(function (h) { h.classList.add('sub-head'); });
+      var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sub-toggle';
+      el.classList.add('sub-block'); el.insertBefore(btn, el.firstChild);
+      function set(col, store) {
+        el.classList.toggle('sub-collapsed', col);
+        btn.textContent = col ? '+' : '−'; btn.setAttribute('aria-expanded', String(!col));
+        btn.setAttribute('aria-label', (col ? 'Expand: ' : 'Collapse: ') + title);
+        if (store) { saved[key] = col ? 1 : 0; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {} }
+      }
+      btn.addEventListener('click', function (e) { e.stopPropagation(); set(!el.classList.contains('sub-collapsed'), true); });
+      head.forEach(function (h) { h.addEventListener('click', function (e) { if (e.target.closest('a, button, input, select')) return; set(!el.classList.contains('sub-collapsed'), true); }); });
+      set(saved[key] !== 0, false);
+      blocks.push({ el: el, set: set });
+    });
+    function openFor(id) {
+      var t = id && document.getElementById(id); if (!t) return;
+      // jump-nav targets are often an empty anchor placed just before the block (.home-layer-anchor)
+      if (!t.closest('.sub-block')) { var n = t.nextElementSibling; for (var i = 0; n && i < 3 && !n.classList.contains('sub-block'); i++) n = n.nextElementSibling; if (n && n.classList.contains('sub-block')) t = n; }
+      blocks.forEach(function (b) { if ((b.el.contains(t) || b.el === t) && b.el.classList.contains('sub-collapsed')) b.set(false, true); });
+    }
+    document.addEventListener('click', function (e) { var a = e.target.closest('a[href^="#"]'); if (a) setTimeout(function () { openFor(a.getAttribute('href').slice(1)); }, 0); }, true);
+    if (location.hash) openFor(location.hash.slice(1));
+    window.addEventListener('hashchange', function () { openFor(location.hash.slice(1)); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();

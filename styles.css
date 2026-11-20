@@ -6953,3 +6953,13 @@ body {
 .sec-peek a:hover { border-color: var(--sc); color: var(--sc); }
 .sec-peek .pk-new { color: var(--sc); font-weight: 800; margin-right: 2px; }
 @media (max-width: 768px) { .sec-peek a:nth-child(n+3) { display: none; } .sec-peek a { max-width: 100%; } }
+
+
+/* ── Homepage sub-section and graph collapse (20 Nov 2026) ── */
+.sub-block { position: relative; }
+.sub-block > .sub-toggle { position: absolute; top: 14px; right: 14px; z-index: 3; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--sp-accent, var(--sc, #4f46e5)); background: #fff; color: var(--sp-accent, var(--sc, #4f46e5)); font-size: 1.5rem; line-height: 1; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 3px 10px rgba(15,23,42,.1); transition: background .15s, color .15s; }
+.sub-block > .sub-toggle:hover { background: var(--sp-accent, var(--sc, #4f46e5)); color: #fff; }
+.sub-block .sub-head { cursor: pointer; padding-right: 56px; }
+.sub-block.sub-collapsed > *:not(.sub-head):not(.sub-toggle) { display: none !important; }
+.sub-block.sub-collapsed { padding-bottom: 14px !important; }
+@media (max-width: 768px) { .sub-block > .sub-toggle { width: 34px; height: 34px; font-size: 1.3rem; top: 10px; right: 10px; } .sub-block .sub-head { padding-right: 44px; } }

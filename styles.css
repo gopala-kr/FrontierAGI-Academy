@@ -6930,7 +6930,7 @@ body:not(.home-searching) .sec-collapsed > .container > *:not(.sec-band) { displ
 
 /* align the LLM pipeline section band with the other sections (its own rule adds 24px side padding) */
 .pipeline-section.sec-band-on { padding-right: 0; }
-@media (max-width: 1099px) { .pipeline-section.sec-band-on { padding-left: 0; } }
+@media (max-width: 1099px), (min-width: 1580px) { .pipeline-section.sec-band-on { padding-left: 0; } }
 
 
 /* ── Homepage hero: What's new strip + compact Pulse + band previews (20 Nov 2026) ── */

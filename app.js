@@ -964,7 +964,7 @@ function initBackToTop() {
       }
       linked.forEach(function (l) { l.style.setProperty('--st', th[1]); l.classList.add('sec-tint'); });
       var all = [sec].concat(linked), nSer = 0, nArt = 0;
-      all.forEach(function (x) { nSer += x.querySelectorAll('.home-series-spotlight').length; nArt += x.querySelectorAll('.home-series-card').length; });
+      all.forEach(function (x) { nSer += x.querySelectorAll('.home-series-spotlight:not(.home-topic)').length; nArt += x.querySelectorAll('.home-series-card:not(.tp-card)').length; });
       cnt.textContent = (nSer ? nSer + (nSer > 1 ? ' series' : ' series') : '') + (nSer && nArt ? ' · ' : '') + (nArt ? nArt + ' articles' : '');
       function set(col, store) {
         sec.classList.toggle('sec-collapsed', col); linked.forEach(function (l) { l.classList.toggle('sec-hidden', col); });

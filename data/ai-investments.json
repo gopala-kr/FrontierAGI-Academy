@@ -1,6 +1,13 @@
 {
  "about": "AI investment tracking. Quarterly totals and individual rounds as reported by the named source (all secondary: treat as approximate; sources disagree). Amounts in $ billions. Add new quarters and rounds with a source.",
- "quarters": [{"q": "2026-Q1", "total": 226, "src": "https://www.cbinsights.com/research/report/ai-trends-q1-2026/", "by": "CB Insights", "note": "up 216% from ~$72B in Q4 2025; OpenAI $122B round = 54%; later reported revised to $237.6B (secondary)"}, 
+ "quarters": [
+  {
+   "q": "2026-Q1",
+   "total": 226,
+   "src": "https://www.cbinsights.com/research/report/ai-trends-q1-2026/",
+   "by": "CB Insights",
+   "note": "up 216% from ~$72B in Q4 2025; OpenAI $122B round = 54%; later reported revised to $237.6B (secondary)"
+  },
   {
    "q": "2026-Q2",
    "total": 153.1,
@@ -24,6 +31,54 @@
   }
  ],
  "rounds": [
+  {
+   "name": "OpenAI (additional, reported)",
+   "when": "2026-11",
+   "amt": 11,
+   "stage": "late-stage, at a reported $1.25T valuation ⚠️",
+   "theme": "frontier lab",
+   "src": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+  },
+  {
+   "name": "Mirendil",
+   "when": "2026-11",
+   "amt": 1,
+   "stage": "Series A (~$1B, WSJ via secondary ⚠️)",
+   "theme": "neolab",
+   "src": "https://alpha-maven.com/story/venture-capital/this-startup-raised-1-billion-to-build-ai-faster-and-with-fewer-humans-wsj"
+  },
+  {
+   "name": "Mercor",
+   "when": "2026-11",
+   "amt": 0.75,
+   "stage": "Series D (valuation reports conflict)",
+   "theme": "data & AI platform",
+   "src": "https://news.crunchbase.com/venture/biggest-startup-funding-rounds-agentic-ai-infrastructure-mirendil-mercor/"
+  },
+  {
+   "name": "Fractile",
+   "when": "2026-11",
+   "amt": 0.72,
+   "stage": "Series C, $7B valuation (reported)",
+   "theme": "AI chips",
+   "src": "https://www.analyticsinsight.net/news/weekly-startup-news-openai-fractile-uforce-lead-this-weeks-funding-rounds"
+  },
+  {
+   "name": "Genesis AI",
+   "when": "2026-11",
+   "amt": 0.5,
+   "stage": "$3.5B valuation (reported)",
+   "theme": "robotics",
+   "src": "https://www.bloomberg.com/news/articles/2026-11-17/nvidia-backed-genesis-ai-raises-funds-at-3-5-billion-valuation"
+  },
+  {
+   "name": "Model ML",
+   "when": "2026-11",
+   "amt": 0.25,
+   "stage": "$1.5B valuation (reported)",
+   "theme": "vertical agents",
+   "src": "https://www.bloomberg.com/news/articles/2026-11-17/ai-startup-for-bankers-raises-funds-at-1-5-billion-value"
+  },
   {
    "name": "OpenAI",
    "when": "2026-Q3",

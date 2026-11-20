@@ -468,7 +468,7 @@ Six research briefs, each with key takeaways, signals, evidence and a method sec
 | 6 | 🔮 [Ten Predictions for AI in 2027, Written Down to Be Scored](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-predictions-2027.html) | 7 min |
 
 
-### 04 · Become a Researcher
+### 02 · Become a Researcher
 
 #### 🎓 AGI Researcher Foundations: An 11-Part Curriculum
 
@@ -518,7 +518,7 @@ What it actually takes to work on AGI — papers to read, labs to target, a real
 | 3 | 🗺️ [The Research Frontier Map: What Every Major AI Lab Is Actually Betting On](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-research-frontier-map-labs-compared.html) | 75 min |
 
 
-### 05 · Build a Company
+### 03 · Build a Company
 
 #### 🚀 Founding an AGI Startup: The Complete 12-Part Series
 
@@ -567,7 +567,7 @@ Two pieces on the productivity paradox — what happens to jobs, growth, and the
 | 2 | 🌐 [The AI Productivity Paradox: When Economic Growth Stops Needing Humans](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-civilization.html) | 20 min |
 
 
-### 02 · Learn How LLMs Work
+### 04 · Learn How LLMs Work
 
 #### 🛠️ How LLMs Are Built: One In-Depth Article per Stage
 
@@ -640,7 +640,7 @@ Recursive self-improvement as it actually exists in 2026: agents that evolve the
 | 6 | 🧩 [Open Problems in Recursive Self-Improvement: A Research Map](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/open-problems-in-rsi.html) | 40 min |
 
 
-### 02b · Go Deeper · The Models
+### 04b · Go Deeper · The Models
 
 #### 🧬 Architecture & Learning Technique: How the Field Actually Got Here
 
@@ -735,7 +735,7 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 | 11 | 🧑‍🔬 [The AI Researcher Atlas: 50 People Who Built the Field](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-atlas.html) | 65 min |
 
 
-### 03 · Take a Course
+### 05 · Take a Course
 
 #### 🧱 Language Modeling from Scratch: A Guide to Stanford's CS336
 

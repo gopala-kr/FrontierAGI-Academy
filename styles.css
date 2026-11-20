@@ -7001,3 +7001,7 @@ body.home-searching .sec-maps { display: none; }
 .tp-card .home-series-card-meta { font-size: .76rem; color: #64748b; margin-top: 6px; }
 .soon-badge { display: inline-block; background: color-mix(in srgb, var(--sp-accent) 14%, #fff); color: var(--sp-accent); font-weight: 800; font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; border-radius: 99px; padding: 2px 8px; }
 @media (max-width: 768px) { .home-topic-grid { grid-template-columns: 1fr; } }
+
+/* ═══ Benchmark Tracker + Model Release Map right under the Capability Pulse (owner's request 20 Nov 2026) ═══ */
+.home-dash-maps { margin-top: 18px; display: grid; gap: 14px; }
+.home-dash-maps .home-idea-embed { margin: 0; border: 1.5px solid rgba(165,180,252,.55); }

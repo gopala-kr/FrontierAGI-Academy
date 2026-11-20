@@ -2503,6 +2503,18 @@
    ],
    "why": "A self-improving research agent whose proposers and solutions improve over checked research problems.",
    "basis": "abstract"
+  },
+  {
+   "id": "2611.18856",
+   "t": "Self-Improvement Memory Enables Continual Recursive Self-Improvement",
+   "l": 5,
+   "f": "3",
+   "o": [
+    "3",
+    "2"
+   ],
+   "why": "Google Cloud AI / DeepMind (with Penn State): a memory attached to the harness optimizer that records each edit's rationale, predicted and observed outcome and context, so the improvement process keeps getting better as benchmarks and policy models change (\"continual recursive self-improvement\").",
+   "basis": "abstract"
   }
  ],
  "reviewed": "All arXiv candidates found up to 2026-10-26 reviewed on 2026-10-27 from title and abstract opening. Methods that implement a self-improvement loop were added; benchmarks, surveys, audits, attack and safety studies, empirical studies and pure theory or position pieces were left out."

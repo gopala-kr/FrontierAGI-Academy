@@ -6927,3 +6927,7 @@ body {
   .sec-band .sec-toggle { width: 44px; height: 44px; font-size: 1.7rem; }
 }
 @media (prefers-reduced-motion: reduce) { .sec-band .sec-toggle { transition: none; } }
+
+/* align the LLM pipeline section band with the other sections (its own rule adds 24px side padding) */
+.pipeline-section.sec-band-on { padding-right: 0; }
+@media (max-width: 1099px) { .pipeline-section.sec-band-on { padding-left: 0; } }

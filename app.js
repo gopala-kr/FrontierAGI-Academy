@@ -867,3 +867,28 @@ function initBackToTop() {
   b.addEventListener('click', function () { var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches; window.scrollTo({ top: 0, behavior: calm ? 'auto' : 'smooth' }); });
   upd();
 }
+
+
+/* ── Latest from the Academy carousel: auto-advance, pause on hover/focus/touch, arrows ── */
+(function () {
+  function init() {
+    var wrap = document.getElementById('ltCarousel'); if (!wrap) return;
+    var track = wrap.querySelector('.lt-grid'), timer = null, paused = false;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function step() { var c = track.querySelector('.lt-card'); return c ? c.getBoundingClientRect().width + 14 : 300; }
+    function go(dir) {
+      var max = track.scrollWidth - track.clientWidth - 2;
+      if (dir > 0 && track.scrollLeft >= max) track.scrollTo({ left: 0 });
+      else if (dir < 0 && track.scrollLeft <= 2) track.scrollTo({ left: max });
+      else track.scrollBy({ left: dir * step() });
+    }
+    wrap.querySelector('.lt-prev').addEventListener('click', function () { go(-1); restart(); });
+    wrap.querySelector('.lt-next').addEventListener('click', function () { go(1); restart(); });
+    function restart() { clearInterval(timer); if (!reduce) timer = setInterval(function () { if (!paused && !document.hidden) go(1); }, 3500); }
+    ['mouseenter', 'focusin', 'touchstart'].forEach(function (e) { wrap.addEventListener(e, function () { paused = true; }, { passive: true }); });
+    ['mouseleave', 'focusout'].forEach(function (e) { wrap.addEventListener(e, function () { paused = false; }); });
+    wrap.addEventListener('touchend', function () { setTimeout(function () { paused = false; }, 4000); }, { passive: true });
+    restart();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();

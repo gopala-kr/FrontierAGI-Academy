@@ -898,3 +898,58 @@ function initBackToTop() {
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
+
+
+/* ── Homepage: collapse / expand each main section (owner's request, 20 Nov 2026) ──
+   Each top-level .home-section with a heading gets a toggle; the state is remembered in localStorage
+   'fa-collapsed'. #grp-run2 (Season 2) follows #grp-run. Following a link into a collapsed section opens it. */
+(function () {
+  function init() {
+    var main = document.querySelector('.home-hero'); if (!main) return;
+    var KEY = 'fa-collapsed', saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+    function save() { try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {} }
+    var secs = [];
+    document.querySelectorAll('div.home-section, div.pipeline-section').forEach(function (sec) {
+      if (sec.dataset.secFollow) return;
+      var c = sec.querySelector(':scope > .container'); if (!c) return;
+      var hd = c.querySelector(':scope > .home-section-hd'), title;
+      if (hd) { var h = hd.querySelector('h2'); title = h ? h.textContent.trim() : ''; }
+      else if (sec.id === 'grp-market') {
+        hd = document.createElement('div'); hd.className = 'home-section-hd'; hd.innerHTML = '<h2>AI Market Map &amp; Investments</h2>';
+        c.insertBefore(hd, c.firstChild); title = 'AI Market Map & Investments';
+      } else return;
+      var key = sec.id || title; if (!key) return;
+      var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sec-toggle';
+      hd.appendChild(btn);
+      var linked = [], nx = sec.nextElementSibling;
+      while (nx) {
+        if (nx.matches && nx.matches('div.home-section') && (!nx.id || nx.id === 'grp-run2') && !nx.querySelector(':scope > .container > .home-section-hd')) { nx.dataset.secFollow = '1'; linked.push(nx); nx = nx.nextElementSibling; }
+        else if (nx.matches && !nx.matches('div.home-section, div.pipeline-section') && !nx.querySelector('.home-section, .pipeline-section')) nx = nx.nextElementSibling;
+        else break;
+      }
+      function set(col, store) {
+        sec.classList.toggle('sec-collapsed', col); linked.forEach(function (l) { l.classList.toggle('sec-hidden', col); });
+        btn.setAttribute('aria-expanded', String(!col));
+        btn.innerHTML = col ? '▸ Expand section' : '▾ Collapse';
+        if (store) { if (col) saved[key] = 1; else delete saved[key]; save(); }
+      }
+      btn.addEventListener('click', function () { set(!sec.classList.contains('sec-collapsed'), true); });
+      set(!!saved[key], false);
+      secs.push({ sec: sec, set: set, linked: linked });
+    });
+    if (!secs.length) return;
+    var bar = document.createElement('div'); bar.className = 'sec-all';
+    bar.innerHTML = '<button type="button" data-a="0">▾ Expand all sections</button><button type="button" data-a="1">▸ Collapse all</button>';
+    bar.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; secs.forEach(function (s) { s.set(b.dataset.a === '1', true); }); });
+    secs[0].sec.parentNode.insertBefore(bar, secs[0].sec);
+    function openFor(id) {
+      var el = id && document.getElementById(id); if (!el) return;
+      secs.forEach(function (s) { if ((s.sec.contains(el) || s.linked.some(function (l) { return l.contains(el); })) && s.sec.classList.contains('sec-collapsed')) s.set(false, true); });
+    }
+    document.addEventListener('click', function (e) { var a = e.target.closest('a[href^="#"]'); if (a) openFor(a.getAttribute('href').slice(1)); }, true);
+    if (location.hash) openFor(location.hash.slice(1));
+    window.addEventListener('hashchange', function () { openFor(location.hash.slice(1)); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();

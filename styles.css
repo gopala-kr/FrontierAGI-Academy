@@ -6882,3 +6882,17 @@ body {
 .lt-pn a:hover { text-decoration: underline; }
 .lt-pn .lt-nx { text-align: right; margin-left: auto; }
 .lt-pn .lt-none { color: #9ca3af; font-weight: 500; }
+
+
+/* ── Homepage section collapse / expand (20 Nov 2026) ── */
+.home-section-hd { position: relative; }
+.sec-toggle { display: inline-flex; align-items: center; gap: 4px; margin-top: 10px; padding: 6px 14px; border-radius: 99px; border: 1px solid #c7d2fe; background: #eef2ff; color: #4338ca; font-weight: 700; font-size: .8rem; cursor: pointer; }
+.sec-toggle:hover { background: #e0e7ff; }
+.sec-collapsed > .container > *:not(.home-section-hd) { display: none !important; }
+.sec-collapsed { padding-bottom: 18px !important; }
+.sec-collapsed .home-section-hd { margin-bottom: 0; }
+.sec-collapsed .home-section-hd > p, .sec-collapsed .home-section-hd > .home-model-embed-hd { display: none; }
+.sec-hidden { display: none !important; }
+.sec-all { display: flex; justify-content: center; gap: 8px; padding: 14px 16px 0; }
+.sec-all button { padding: 6px 14px; border-radius: 99px; border: 1px solid #e5e7eb; background: #fff; color: #374151; font-weight: 700; font-size: .8rem; cursor: pointer; }
+.sec-all button:hover { border-color: #c7d2fe; color: #4338ca; }

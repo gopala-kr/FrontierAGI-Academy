@@ -444,15 +444,19 @@ def render_latest_block(manifest, series_owner):
         if ser:
             slugs = [x for x in ser["slugs"] if x in manifest]
             i = slugs.index(p["slug"]) if p["slug"] in slugs else 0
-            lo = max(0, min(i - 3, len(slugs) - 6))
-            win = slugs[lo:lo + 6]
-            dots = "".join(
-                f'<a href="blog/{x}.html" class="lt-dot{" is-here" if x == p["slug"] else ""}" data-slug="{x}" '
-                f'title="{html.escape(manifest[x]["title"], quote=True)}"><span class="lt-sr">{html.escape(manifest[x]["title"])}</span></a>'
-                for x in win)
-            more = f'<span class="lt-more">+{len(slugs) - len(win)}</span>' if len(slugs) > len(win) else ""
+            n = len(slugs)
+            def short(x):
+                t = manifest[x]["title"]
+                t = t.split(": ", 1)[1] if ": " in t else t
+                return html.escape(t if len(t) <= 34 else t[:32].rstrip() + "…")
+            prev = (f'<a href="blog/{slugs[i - 1]}.html" class="lt-pv" title="{html.escape(manifest[slugs[i - 1]]["title"], quote=True)}">‹ {short(slugs[i - 1])}</a>'
+                    if i > 0 else '<span class="lt-pv lt-none">Start of series</span>')
+            nxt = (f'<a href="blog/{slugs[i + 1]}.html" class="lt-nx" title="{html.escape(manifest[slugs[i + 1]]["title"], quote=True)}">{short(slugs[i + 1])} ›</a>'
+                   if i + 1 < n else '<span class="lt-nx lt-none">Latest part</span>')
             trail = (f'<div class="lt-thread"><span class="lt-thread-name">{html.escape(ser["icon"])} {html.escape(ser["short"])}'
-                     f' · {i + 1} of {len(slugs)}</span><div class="lt-trail">{dots}{more}</div></div>')
+                     f' · Part {i + 1} of {n}<span class="lt-read" hidden></span></span>'
+                     f'<div class="lt-prog" data-slugs="{" ".join(slugs)}" title="Part {i + 1} of {n}"><i class="lt-pos" style="width:{(i + 1) / n * 100:.1f}%"></i><i class="lt-done"></i></div>'
+                     f'<div class="lt-pn">{prev}{nxt}</div></div>')
         else:
             trail = '<div class="lt-thread"><span class="lt-thread-name">✳️ Standalone article</span></div>'
         d = datetime.strptime(p["date"], "%Y-%m-%d").strftime("%-d %b %Y")

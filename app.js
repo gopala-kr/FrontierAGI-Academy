@@ -608,7 +608,13 @@ async function initLatestThreads() {
   const root = document.getElementById('latestThreads');
   if (!root) return;
   const read = faReadList(), readSet = new Set(read.map(x => x.s));
-  root.querySelectorAll('.lt-dot').forEach(d => { if (readSet.has(d.dataset.slug)) d.classList.add('is-read'); });
+  root.querySelectorAll('.lt-prog').forEach(p => {
+    const sl = (p.dataset.slugs || '').split(' ').filter(Boolean), done = sl.filter(x => readSet.has(x)).length;
+    if (!done) return;
+    p.querySelector('.lt-done').style.width = (done / sl.length * 100).toFixed(1) + '%';
+    const lab = p.parentElement.querySelector('.lt-read');
+    if (lab) { lab.textContent = ' · you\'ve read ' + done; lab.hidden = false; }
+  });
   let posts, series;
   try {
     const [a, b] = await Promise.all([fetch('blog/index.json'), fetch('blog/series.json')]);

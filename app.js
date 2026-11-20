@@ -932,10 +932,10 @@ function initBackToTop() {
         sec.classList.toggle('sec-collapsed', col); linked.forEach(function (l) { l.classList.toggle('sec-hidden', col); });
         btn.setAttribute('aria-expanded', String(!col));
         btn.innerHTML = col ? '▸ Expand section' : '▾ Collapse';
-        if (store) { if (col) saved[key] = 1; else delete saved[key]; save(); }
+        if (store) { saved[key] = col ? 1 : 0; save(); }
       }
       btn.addEventListener('click', function () { set(!sec.classList.contains('sec-collapsed'), true); });
-      set(!!saved[key], false);
+      set(saved[key] !== 0, false);  // collapsed by default; a section the visitor opened stays open
       secs.push({ sec: sec, set: set, linked: linked });
     });
     if (!secs.length) return;

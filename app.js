@@ -904,6 +904,16 @@ function initBackToTop() {
    Each top-level .home-section with a heading gets a toggle; the state is remembered in localStorage
    'fa-collapsed'. #grp-run2 (Season 2) follows #grp-run. Following a link into a collapsed section opens it. */
 (function () {
+  // colour per section: [accent, tint, description when the section has none, kicker when it has none]
+  var THEME = {
+    latestThreads: ['#4f46e5', '#f5f5ff', 'The newest articles on the site, with where each sits in its series.', 'New this week'],
+    'grp-labs': ['#2563eb', '#f2f7ff', 'Every release and announcement from 13 frontier labs, newest first, each linked to its source.', 'Frontier lab updates'],
+    'grp-progress': ['#7c3aed', '#f8f5ff'], 'grp-frontier': ['#0d9488', '#f0fbf9'], 'grp-build': ['#d97706', '#fffaf0'],
+    'grp-run': ['#be123c', '#fff5f7'],
+    'grp-market': ['#78350f', '#fbf8f4', 'Who competes at each layer of the AI stack, where AI investment is going, and monthly market briefs.', 'Market research'],
+    'sec-llm-lifecycle': ['#0284c7', '#f0f9ff'], 'grp-courses': ['#16a34a', '#f2fcf5'], 'grp-researcher': ['#9333ea', '#faf5ff'],
+    'grp-company': ['#ea580c', '#fff7f0'], 'Explore Everything': ['#475569', '#f6f8fa']
+  };
   function init() {
     var main = document.querySelector('.home-hero'); if (!main) return;
     var KEY = 'fa-collapsed', saved = {};
@@ -920,27 +930,47 @@ function initBackToTop() {
         c.insertBefore(hd, c.firstChild); title = 'AI Market Map & Investments';
       } else return;
       var key = sec.id || title; if (!key) return;
-      var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sec-toggle';
-      hd.appendChild(btn);
+      // ── band: kicker + big title + description on the left, counts + big +/− on the right ──
+      var th = THEME[key] || THEME[title] || ['#475569', '#f1f5f9', ''];
+      sec.style.setProperty('--sc', th[0]); sec.style.setProperty('--st', th[1]);
+      sec.classList.add('sec-band-on');
+      var eb = hd.querySelector('.eyebrow'), h2 = hd.querySelector('h2'), ps = hd.querySelector(':scope > p');
+      var band = document.createElement('div'); band.className = 'sec-band'; band.setAttribute('role', 'button'); band.tabIndex = 0;
+      var left = document.createElement('div'); left.className = 'sec-band-l';
+      var k = document.createElement('div'); k.className = 'sec-kicker'; k.textContent = eb ? eb.textContent.trim() : (th[3] || '');
+      var t = document.createElement('div'); t.className = 'sec-title'; t.textContent = title;
+      var dsc = document.createElement('div'); dsc.className = 'sec-desc'; dsc.textContent = ps ? ps.textContent.trim() : (th[2] || '');
+      if (k.textContent) left.appendChild(k); left.appendChild(t); if (dsc.textContent) left.appendChild(dsc);
+      var right = document.createElement('div'); right.className = 'sec-band-r';
+      var cnt = document.createElement('div'); cnt.className = 'sec-count'; right.appendChild(cnt);
+      var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sec-toggle'; btn.tabIndex = -1; right.appendChild(btn);
+      band.appendChild(left); band.appendChild(right);
+      hd.classList.add('sec-hd-orig'); c.insertBefore(band, hd);
       var linked = [], nx = sec.nextElementSibling;
       while (nx) {
         if (nx.matches && nx.matches('div.home-section') && (!nx.id || nx.id === 'grp-run2') && !nx.querySelector(':scope > .container > .home-section-hd')) { nx.dataset.secFollow = '1'; linked.push(nx); nx = nx.nextElementSibling; }
         else if (nx.matches && !nx.matches('div.home-section, div.pipeline-section') && !nx.querySelector('.home-section, .pipeline-section')) nx = nx.nextElementSibling;
         else break;
       }
+      linked.forEach(function (l) { l.style.setProperty('--st', th[1]); l.classList.add('sec-tint'); });
+      var all = [sec].concat(linked), nSer = 0, nArt = 0;
+      all.forEach(function (x) { nSer += x.querySelectorAll('.home-series-spotlight').length; nArt += x.querySelectorAll('.home-series-card').length; });
+      cnt.textContent = (nSer ? nSer + (nSer > 1 ? ' series' : ' series') : '') + (nSer && nArt ? ' · ' : '') + (nArt ? nArt + ' articles' : '');
       function set(col, store) {
         sec.classList.toggle('sec-collapsed', col); linked.forEach(function (l) { l.classList.toggle('sec-hidden', col); });
-        btn.setAttribute('aria-expanded', String(!col));
-        btn.innerHTML = col ? '▸ Expand section' : '▾ Collapse';
+        band.setAttribute('aria-expanded', String(!col));
+        btn.innerHTML = col ? '+' : '−'; btn.setAttribute('aria-label', col ? 'Expand section' : 'Collapse section');
         if (store) { saved[key] = col ? 1 : 0; save(); }
       }
-      btn.addEventListener('click', function () { set(!sec.classList.contains('sec-collapsed'), true); });
+      function tog(e) { if (e.target.closest('a')) return; set(!sec.classList.contains('sec-collapsed'), true); }
+      band.addEventListener('click', tog);
+      band.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(e); } });
       set(saved[key] !== 0, false);  // collapsed by default; a section the visitor opened stays open
       secs.push({ sec: sec, set: set, linked: linked });
     });
     if (!secs.length) return;
     var bar = document.createElement('div'); bar.className = 'sec-all';
-    bar.innerHTML = '<button type="button" data-a="0">▾ Expand all sections</button><button type="button" data-a="1">▸ Collapse all</button>';
+    bar.innerHTML = '<button type="button" data-a="0">+ Expand all sections</button><button type="button" data-a="1">− Collapse all</button>';
     bar.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; secs.forEach(function (s) { s.set(b.dataset.a === '1', true); }); });
     secs[0].sec.parentNode.insertBefore(bar, secs[0].sec);
     function openFor(id) {

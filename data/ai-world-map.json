@@ -138,7 +138,41 @@
    "src": "https://www.secondtalent.com/resources/countries-leading-ai-development/",
    "primary": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
    "sec": 1,
-   "note": "Latest full year (2025, published April 2026). The AI Index notes private figures likely understate China's AI spending because of government guidance funds. 2024 figures (AI Index 2025): US $109.1B, China $9.3B, UK $4.5B. For 2026 so far, see the AI Investment Tracker (venture totals Q1–Q3)."
+   "note": "Latest full year (2025, published April 2026). The AI Index notes private figures likely understate China's AI spending because of government guidance funds. 2024 figures (AI Index 2025): US $109.1B, China $9.3B, UK $4.5B. For 2026 so far, see the AI Investment Tracker (venture totals Q1–Q3).",
+   "years": [
+    {
+     "title": "Private AI investment, 2025",
+     "values": {
+      "840": 285.9,
+      "156": 12.4,
+      "826": 5.9,
+      "250": 4.36,
+      "124": 4.28,
+      "356": 4.09,
+      "276": 3.89,
+      "376": 3.58
+     },
+     "source": "Stanford AI Index 2026, Economy chapter (Quid data): US $285.9B and China $12.4B from the report page; the other six from a country list reproducing it",
+     "src": "https://www.secondtalent.com/resources/countries-leading-ai-development/",
+     "primary": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+     "sec": 1,
+     "note": "Latest full year (2025, published April 2026). The AI Index notes private figures likely understate China's AI spending because of government guidance funds. 2024 figures (AI Index 2025): US $109.1B, China $9.3B, UK $4.5B. For 2026 so far, see the AI Investment Tracker (venture totals Q1–Q3).",
+     "label": "2025 (full year)"
+    },
+    {
+     "label": "2026 so far",
+     "title": "AI start-up funding, 2026 so far (latest reported)",
+     "values": {
+      "840": 319,
+      "156": 33,
+      "826": 16.5
+     },
+     "source": "Crunchbase data as reported in secondary coverage (The Founder Nation)",
+     "src": "https://www.thefoundernation.com/the-ai-funding-boom-of-2026-is-unlike-anything-venture-capital-has-seen-before/",
+     "sec": 1,
+     "note": "Year to date, a different measure from the AI Index (venture funding to AI start-ups, Crunchbase). US $319B is about 88% of all AI start-up funding so far in 2026. The China and UK totals come from the same article, which does not say clearly whether they are AI-only, so read them as upper bounds ⚠️. Other countries have no 2026 figure in the sources we could read. The full 2026 by-country table arrives with the AI Index 2027 (April 2027)."
+    }
+   ]
   },
   {
    "id": "startups",

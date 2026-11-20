@@ -424,6 +424,23 @@ def render_whats_new(manifest, lab_data):
     return f'{WHATSNEW_START}\n    <div class="whats-new" aria-label="What changed lately">{body}</div>\n    {WHATSNEW_END}'
 
 
+def asset_version(name):
+    """Short content hash of a shared asset, so browsers fetch the new file after every change."""
+    import hashlib
+    return hashlib.sha1((ROOT / name).read_bytes()).hexdigest()[:8]
+
+
+_ASSET_V = {}
+
+
+def bust_assets(s):
+    """Add/refresh ?v=<hash> on links to styles.css and app.js (any relative prefix)."""
+    for name in ("styles.css", "app.js"):
+        v = _ASSET_V.setdefault(name, asset_version(name))
+        s = re.sub(r'((?:href|src)="(?:\.\./)*' + re.escape(name) + r')(?:\?v=[0-9a-f]+)?"', r'\1?v=' + v + '"', s)
+    return s
+
+
 def render_lab_blocks(data):
     """Homepage ticker strip (latest 12) and 'Latest from the Labs' section (latest 6)."""
     labs = {l[0]: l for l in data["labs"]}
@@ -907,6 +924,7 @@ def main():
         s = f.read_text(encoding="utf-8")
         s = replace_nav(s, render_nav(nav_template, f), f)
         s = replace_seo(s, render_seo(f, s, manifest))
+        s = bust_assets(s)
         if f.name == "index.html" and f.parent == ROOT:
             s = sync_series_counts(s)
             s = replace_block(s, LABSTRIP_START, LABSTRIP_END, lab_strip)

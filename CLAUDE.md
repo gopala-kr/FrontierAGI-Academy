@@ -129,6 +129,7 @@ python3 scripts/build.py --check  # what CI runs: fails if anything is stale or 
 - Nav source of truth: `partials/nav.html` (`{{ROOT}}`/`{{PAGES}}`/`{{BLOG}}` path prefixes, `{{ACTIVE_x}}` tab markers). Pages hold it between `<!-- NAV:START -->`/`<!-- NAV:END -->` — never hand-edit that block.
 - SEO block (`<!-- SEO:START -->…<!-- SEO:END -->`) after `<title>`: description, canonical, Open Graph, Twitter card. Blog posts take title/excerpt/date from `blog/index.json`; other pages use their first intro paragraph.
 - Social preview image: `assets/og-default.png`.
+- Cache-busting (20 Nov 2026): build.py adds `?v=<8-char content hash>` to every page's `styles.css` / `app.js` link (`bust_assets()`), so visitors get new CSS/JS right after a change instead of a stale cached copy. Run the build after editing either file; `--check` fails if the hashes are stale.
 - Series footer (`<!-- SERIES:START -->…<!-- SERIES:END -->`, before `</main>` in every post): prev/next links. A series = one homepage spotlight grid, in card order, so adding a card to the right grid on `index.html` is all it takes — build.py picks it up.
 - `blog/series.json` (generated): every series with its short label, icon and ordered slugs. `pages/blog.html` builds its sidebar categories and card labels from it. Manifest `tags` are no longer used for navigation.
 - Homepage "· N Articles" counts on spotlight tags are kept in sync automatically.

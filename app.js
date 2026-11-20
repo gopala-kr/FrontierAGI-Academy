@@ -871,11 +871,11 @@ function initBackToTop() {
 
 /* ── Latest from the Academy carousel: auto-advance, pause on hover/focus/touch, arrows ── */
 (function () {
-  function init() {
-    var wrap = document.getElementById('ltCarousel'); if (!wrap) return;
-    var track = wrap.querySelector('.lt-grid'), timer = null, paused = false;
+  function init() { document.querySelectorAll('.lt-carousel').forEach(setup); }
+  function setup(wrap) {
+    var track = wrap.querySelector('.lt-grid, .lt-track'), timer = null, paused = false;
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function step() { var c = track.querySelector('.lt-card'); return c ? c.getBoundingClientRect().width + 14 : 300; }
+    function step() { var c = track.firstElementChild; return c ? c.getBoundingClientRect().width + 14 : 300; }
     function go(dir) {
       var max = track.scrollWidth - track.clientWidth - 2;
       if (dir > 0 && track.scrollLeft >= max) track.scrollTo({ left: 0 });

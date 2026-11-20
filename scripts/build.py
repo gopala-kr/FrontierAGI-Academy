@@ -411,11 +411,15 @@ def render_lab_blocks(data):
         f'<span class="lablatest-top"><i>{e(labs[it["lab"]][2])}</i>{e(labs[it["lab"]][1])} · {icon[it["type"]]}</span>'
         f'<strong>{e(it["title"])}</strong><span class="lablatest-sum">{e(it["summary"])}</span>'
         f'<time datetime="{it["date"]}">{fmt_lab_date(it["date"])}</time></a>'
-        for it in data["items"][:6])
+        for it in data["items"][:12])
     latest = (f'{LABLATEST_START}\n<div class="home-section lablatest" id="grp-labs">\n  <div class="container">\n'
               f'    <div class="home-section-hd">\n      <div class="eyebrow">Frontier Lab Updates</div>\n'
               f'      <h2>Latest from the Labs</h2>\n      <p>Every release and announcement from {len(labs)} frontier labs over the last five years — models, products, APIs, pricing and research — newest first, each linked to its source.</p>\n    </div>\n'
-              f'    <div class="lablatest-grid">{cards}\n    </div>\n'
+              '    <div class="lt-carousel" id="labCarousel" aria-roledescription="carousel">\n'
+              '      <button type="button" class="lt-nav lt-prev" aria-label="Previous updates">‹</button>\n'
+              f'      <div class="lablatest-grid lt-track" tabindex="0">{cards}\n      </div>\n'
+              '      <button type="button" class="lt-nav lt-next" aria-label="Next updates">›</button>\n'
+              '    </div>\n'
               f'    <a href="pages/lab-updates.html" class="lablatest-all">See all {len(data["items"])} updates, filter by lab →</a>\n  </div>\n</div>\n{LABLATEST_END}')
     return strip, latest
 

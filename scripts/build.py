@@ -383,7 +383,7 @@ def render_capability_pulse():
             rows.append(f'\n        <a class="agi-pulse-row" href="pages/benchmarks.html" title="{e(tip)}">'
                         f'<span class="lbl">{e(label)} <b>{e(vs)}{" ⚠️" if top.get("sec") else ""}</b></span>'
                         f'<div class="agi-pulse-track"><div class="agi-pulse-fill" style="background:{col}" data-target="{width:.1f}"></div></div>'
-                        f'<span class="agi-pulse-src">{e(b[1])} · {e(mname)}{" · saturated" if b[0] in PULSE_SATURATED else ""}</span></a>')
+                        f'<span class="agi-pulse-src"><i>{e(b[1])} · {e(mname)}{" · saturated" if b[0] in PULSE_SATURATED else ""}</i></span></a>')
     return (f'{PULSE_START}\n    <div class="agi-pulse" id="agiPulse">\n      <div class="agi-pulse-hd">\n'
             f'        <span>Frontier Capability Pulse: best published score per category</span>\n'
             f'        <span class="live-dot"><i></i> Data to {fmt_lab_date(latest)}</span>\n      </div>\n'

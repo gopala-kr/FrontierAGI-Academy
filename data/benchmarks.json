@@ -311,6 +311,15 @@
    100,
    "Research-level mathematics; Epoch AI reports every Tier 4 problem has now been solved by some model (saturated)",
    "Epoch AI"
+  ],
+  [
+   "posttrainbench-1-1",
+   "PostTrainBench v1.1",
+   "airnd",
+   "%",
+   100,
+   "Agents get a base model, a GPU budget and a target task and must post-train the model themselves; scored on the trained model. Run by the benchmark authors, not the labs (a few entries may be provider-submitted)",
+   "PostTrainBench authors (arXiv 2603.08640)"
   ]
  ],
  "scores": [
@@ -1534,6 +1543,39 @@
    "src": "https://llmlearner.com/rankings/frontier-math-tier-4-v2",
    "sec": 1,
    "note": ""
+  },
+  {
+   "m": "anthropic-20260922-claude-opus-5-5",
+   "b": "posttrainbench-1-1",
+   "v": 49.3,
+   "d": "2026-10-31",
+   "rep": "independent",
+   "by": "PostTrainBench v1.1 leaderboard, as mirrored by BenchLM",
+   "src": "https://benchlm.ai/benchmarks/posttrainbench-v1-1",
+   "sec": 1,
+   "note": "Claude Opus 5.5; same figure on Inference360's mirror"
+  },
+  {
+   "m": "google-20260930-gemini-4-argon",
+   "b": "posttrainbench-1-1",
+   "v": 45.3,
+   "d": "2026-10-31",
+   "rep": "independent",
+   "by": "PostTrainBench v1.1 leaderboard, as mirrored by BenchLM",
+   "src": "https://benchlm.ai/benchmarks/posttrainbench-v1-1",
+   "sec": 1,
+   "note": "Gemini 4 Argon; same figure on Inference360's mirror"
+  },
+  {
+   "m": "openai-20260904-gpt-6-astra",
+   "b": "posttrainbench-1-1",
+   "v": 44.3,
+   "d": "2026-10-31",
+   "rep": "independent",
+   "by": "PostTrainBench v1.1 leaderboard, as mirrored by BenchLM",
+   "src": "https://benchlm.ai/benchmarks/posttrainbench-v1-1",
+   "sec": 1,
+   "note": "GPT-6 Astra; same figure on Inference360's mirror"
   }
  ]
 }

@@ -6965,16 +6965,11 @@ body:not(.home-searching) .sub-block.sub-collapsed > *:not(.sub-head):not(.sub-t
 @media (max-width: 768px) { .sub-block > .sub-toggle { width: 34px; height: 34px; font-size: 1.3rem; top: 10px; right: 10px; } .sub-block .sub-head { padding-right: 44px; } }
 
 
-/* ── What's new + Capability Pulse moved below the hero (20 Nov 2026) ── */
-.home-dash { padding: 28px 0 8px !important; background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%) !important; }
+/* ── What's new + Capability Pulse below the hero, same dark theme as the hero (20 Nov 2026) ── */
+.home-dash { padding: 8px 0 40px !important; background: radial-gradient(1200px 400px at 50% 0%, rgba(79,70,229,.18), transparent 70%), #050b1f !important; border-top: 1px solid rgba(255,255,255,.06); }
 .home-dash .whats-new, .home-dash .agi-pulse { width: auto; left: auto; transform: none; }
 .home-dash .whats-new { margin: 0; }
-.home-dash .agi-pulse { margin: 18px 0 0; background: #fff; }
-.home-dash .wn-card { background: #fff; border: 1px solid #e0e7ff; color: #334155; box-shadow: 0 4px 14px rgba(15,23,42,.05); backdrop-filter: none; }
-.home-dash .wn-card:hover { background: #f5f7ff; border-color: #c7d2fe; }
-.home-dash .wn-k { color: #4f46e5; }
-.home-dash .wn-card strong { color: #0f172a; }
-.home-dash .wn-m { color: #64748b; }
+.home-dash .agi-pulse { margin: 18px 0 0; background: rgba(255,255,255,.93); box-shadow: 0 12px 40px rgba(0,0,0,.35); }
 
 /* while the article search is active, collapsed sections and blocks open so matches are visible */
 body.home-searching .sec-peek { display: none; }

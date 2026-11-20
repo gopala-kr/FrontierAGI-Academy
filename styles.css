@@ -6973,3 +6973,11 @@ body:not(.home-searching) .sub-block.sub-collapsed > *:not(.sub-head):not(.sub-t
 
 /* while the article search is active, collapsed sections and blocks open so matches are visible */
 body.home-searching .sec-peek { display: none; }
+
+/* ═══ Homepage section bands: interactive-map chips (owner's request, 20 Nov 2026) ═══ */
+.sec-maps { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; }
+.sec-maps-l { font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--sc); margin-right: 4px; }
+.sec-maps a { font-size: .76rem; font-weight: 700; padding: 4px 11px; border-radius: 99px; background: color-mix(in srgb, var(--sc) 10%, #fff); border: 1px solid color-mix(in srgb, var(--sc) 40%, #fff); color: var(--sc); text-decoration: none; max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sec-maps a:hover { background: var(--sc); color: #fff; }
+@media (max-width: 768px) { .sec-maps a { max-width: 100%; } }
+body.home-searching .sec-maps { display: none; }

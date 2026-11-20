@@ -905,6 +905,15 @@ function initBackToTop() {
    'fa-collapsed'. #grp-run2 (Season 2) follows #grp-run. Following a link into a collapsed section opens it. */
 (function () {
   // colour per section: [accent, tint, description when the section has none, kicker when it has none]
+  // extra interactive pages per section, shown with the maps found in the section
+  var MAPX = {
+    latestThreads: [['pages/threads.html', 'Reading Threads']], 'grp-labs': [['pages/lab-updates.html', 'Frontier Lab Updates']],
+    'grp-progress': [['pages/idea-map.html', 'AI Idea Map in 3D']],
+    'grp-software': [['pages/ml-layer.html', 'ML Layer at a Glance'], ['pages/data-layer.html', 'Data Layer at a Glance'], ['pages/eval-layer.html', 'Evaluation at a Glance'], ['pages/agent-layer.html', 'Agent Layer at a Glance']],
+    'grp-agentsys': [['pages/agentic-systems.html', 'Agentic Systems at a Glance']],
+    'grp-run': [['pages/maestro-journey.html', "Gopala's Journey"], ['pages/maestro.html', 'Maestro Mission Control']],
+    'sec-llm-lifecycle': [['pages/frontier-model-learning.html', 'Interactive LLM Course']]
+  };
   var THEME = {
     latestThreads: ['#4f46e5', '#f5f5ff', 'The newest articles on the site, with where each sits in its series.', '01 · New this week'],
     'grp-labs': ['#2563eb', '#f2f7ff', 'Every release and announcement from 13 frontier labs, newest first, each linked to its source.', '02 · Frontier lab updates'],
@@ -967,6 +976,20 @@ function initBackToTop() {
       band.addEventListener('click', tog);
       band.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(e); } });
       set(saved[key] !== 0, false);  // collapsed by default; a section the visitor opened stays open
+      // interactive maps in this section as chips (always visible on the band)
+      var maps = [], mseen = {};
+      all.forEach(function (x) { x.querySelectorAll('.home-idea-embed').forEach(function (em) {
+        var tt = em.querySelector('.home-rsimap-title'), ln = em.querySelector('a.home-idea-embed-link'), fr = em.querySelector('iframe');
+        var href = ln ? ln.getAttribute('href') : (fr ? (fr.getAttribute('src') || fr.getAttribute('data-src') || '').replace(/\?.*$/, '') : '');
+        if (!href || mseen[href]) return; mseen[href] = 1;
+        var full = tt ? tt.textContent.trim() : href; maps.push({ h: href, t: full.split(':')[0].trim(), f: full });
+      }); });
+      (MAPX[key] || MAPX[sec.id] || []).forEach(function (x) { if (!mseen[x[0]]) { mseen[x[0]] = 1; maps.push({ h: x[0], t: x[1], f: x[1] }); } });
+      if (maps.length) {
+        var mp = document.createElement('div'); mp.className = 'sec-maps';
+        mp.innerHTML = '<span class="sec-maps-l">Interactive maps</span>' + maps.map(function (x) { return '<a href=\x22' + x.h + '\x22 title=\x22' + x.f.replace(/\x22/g, '&quot;') + '\x22>🗺️ ' + x.t.replace(/</g, '&lt;') + '</a>'; }).join('');
+        left.appendChild(mp);
+      }
       secs.push({ sec: sec, set: set, linked: linked, peek: peek });
     });
     if (!secs.length) return;

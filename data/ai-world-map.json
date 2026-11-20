@@ -110,6 +110,11 @@
    "Brazil",
    -10.0,
    -52.0
+  ],
+  "036": [
+   "Australia",
+   -25.0,
+   134.0
   ]
  },
  "layers": [
@@ -203,7 +208,8 @@
     "724": 4480,
     "158": 1844,
     "643": 700,
-    "076": 248
+    "076": 248,
+    "036": 776
    },
    "detail": {
     "840": "US Department of Energy flagship systems only: Aurora 63,744 Intel GPUs (Argonne), El Capitan 44,544 AMD MI300A (Livermore), Frontier 37,632 AMD MI250X (Oak Ridge)",
@@ -219,12 +225,13 @@
     "724": "MareNostrum 5 accelerated partition (BSC, EuroHPC): 4,480 NVIDIA H100 ⚠️ count via an aggregator (Flopper.io)",
     "158": "Nano 4 (NCHC, national lab; launched 1 Jun 2026): 1,700+ NVIDIA H200 (pre-launch figure ⚠️) + 2 GB200 NVL72 racks (144 Blackwell GPUs); an HGX B300 system not counted",
     "643": "Sber (majority state-owned) Christofari Neo: 700+ NVIDIA A100 bought before sanctions ⚠️ secondary. Not counted: Yandex's three supercomputers (3,776 A100, a private company; its data centres were hit by drone strikes in Oct 2026). No government total published; export controls block new Western GPUs",
-    "076": "Santos Dumont (LNCC, 2025 upgrade funded by Petrobras): 62 blades × 4 NVIDIA H100 = 248 H100 in its largest partition (our arithmetic from the published blade count); the AMD MI300A partition is not counted"
+    "076": "Santos Dumont (LNCC, 2025 upgrade funded by Petrobras): 62 blades × 4 NVIDIA H100 = 248 H100 in its largest partition (our arithmetic from the published blade count); the AMD MI300A partition is not counted",
+    "036": "Gadi (NCI, national facility): 776 GPUs including accelerator nodes per Supercomputing Australia ⚠️ (UQ lists 640; 120 H200 were added recently). Not counted: Pawsey's Setonix (AMD MI250X nodes, total not found). NCI says demand is ~3× capacity"
    },
    "source": "Official system pages and announcements per country (see each country's line); India from the Indian government; South Korea from secondary reporting ⚠️",
    "src": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3",
    "sec": 1,
-   "note": "Solid bubbles = operating; dashed rings = announced or under way (not added to the totals). Counts accelerators in named national systems, not all compute a country can reach, and mixes GPU generations (an H100 ≠ an MI250X). China publishes compute only in EFLOPS, not GPUs, so it is listed under \"Disclosed in other units\" with no bubble. Saudi Arabia's HUMAIN and the UAE's G42 are state-owned or state-backed companies; no operating GPU count for either has been published, so they appear only as plans. Canada's C$890M sovereign compute programme and the EU AI Gigafactories have no chip counts yet. GPU counts for Frontier, Aurora, ABCI 3.0 and Alps come from their operators' published node counts and could not be re-read from this sandbox.",
+   "note": "Solid bubbles = operating; dashed rings = announced or under way (not added to the totals). Counts accelerators in named national systems, not all compute a country can reach, and mixes GPU generations (an H100 ≠ an MI250X). China publishes compute only in EFLOPS, not GPUs, so it is listed under \"No GPU count\" with no bubble; Canada's public programme has no chip count yet. Saudi Arabia's HUMAIN and the UAE's G42 are state-owned or state-backed companies; no operating GPU count for either has been published, so they appear only as plans. Canada's C$890M sovereign compute programme and the EU AI Gigafactories have no chip counts yet. GPU counts for Frontier, Aurora, ABCI 3.0 and Alps come from their operators' published node counts and could not be re-read from this sandbox.",
    "planned": {
     "784": [
      100000,
@@ -252,7 +259,8 @@
     ]
    },
    "other": {
-    "156": "No GPU count published. China reports national intelligent computing capacity of 2,185 EFLOPS (FP16) at end-June 2026 (MIIT), built through the state-led 'East Data, West Computing' programme: 8 national hubs, 10 clusters, 17 approved regional nodes; target 9,800 EFLOPS by 2030. That total includes commercial capacity, so it is not a sovereign-only GPU figure. Epoch AI estimates China received 9.6% of the world's AI compute 2022 → Jun 2026 (see the ⚡ AI compute tab)."
+    "156": "No GPU count published. China reports national intelligent computing capacity of 2,185 EFLOPS (FP16) at end-June 2026 (MIIT), built through the state-led 'East Data, West Computing' programme: 8 national hubs, 10 clusters, 17 approved regional nodes; target 9,800 EFLOPS by 2030. That total includes commercial capacity, so it is not a sovereign-only GPU figure. Epoch AI estimates China received 9.6% of the world's AI compute 2022 → Jun 2026 (see the ⚡ AI compute tab).",
+    "124": "No operating government GPU count found. The federal Sovereign AI Compute Strategy (Dec 2024) funds a public supercomputer through the AI Sovereign Compute Infrastructure Programme (C$705M–890M reported; applications closed 1 Jun 2026, results pending, no chip count yet) plus an AI Compute Access Fund; Budget 2026 pledged support for 500 MW of sovereign capacity. Private sovereign-cloud builds (TELUS, Bell–Cohere 2,304 Grace Blackwell GPUs) are not government-owned and are not counted. Existing national research systems (Digital Research Alliance) were not counted for lack of a sourced GPU total"
    }
   },
   {

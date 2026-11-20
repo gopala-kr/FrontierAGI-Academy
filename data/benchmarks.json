@@ -66,6 +66,16 @@
    "agi",
    "AGI-style reasoning",
    "#0f172a"
+  ],
+  [
+   "econ",
+   "Real economic work",
+   "#065f46"
+  ],
+  [
+   "pref",
+   "Human preference",
+   "#9333ea"
   ]
  ],
  "benchmarks": [
@@ -320,6 +330,24 @@
    100,
    "Agents get a base model, a GPU budget and a target task and must post-train the model themselves; scored on the trained model. Run by the benchmark authors, not the labs (a few entries may be provider-submitted)",
    "PostTrainBench authors (arXiv 2603.08640)"
+  ],
+  [
+   "gdpval-2",
+   "GDPval v2",
+   "econ",
+   "%",
+   100,
+   "Long real-world tasks from professional occupations (consulting, finance, design), graded against expert work; run by OpenAI, so scores are lab-reported",
+   "OpenAI"
+  ],
+  [
+   "lmarena-text",
+   "LMArena Text (Elo)",
+   "pref",
+   "elo",
+   null,
+   "Rating from blind side-by-side votes by users; top models sit within overlapping margins, so small gaps are noise",
+   "LMArena (arena.ai)"
   ]
  ],
  "scores": [
@@ -1576,6 +1604,50 @@
    "src": "https://benchlm.ai/benchmarks/posttrainbench-v1-1",
    "sec": 1,
    "note": "GPT-6 Astra; same figure on Inference360's mirror"
+  },
+  {
+   "m": "openai-20261117-gpt-6-2-astra-and-sol",
+   "b": "gdpval-2",
+   "v": 50.4,
+   "d": "2026-11-17",
+   "rep": "lab",
+   "by": "OpenAI launch figures, as relayed by a secondary site",
+   "src": "https://www.intelligentliving.co/gpt-62-astra-vs-sol-smarter-default/",
+   "sec": 1,
+   "note": "GPT-6.2 Astra; +6.2 points over GPT-6 Astra (44.2%)"
+  },
+  {
+   "m": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "b": "gdpval-2",
+   "v": 44.8,
+   "d": "2026-11-17",
+   "rep": "other",
+   "by": "OpenAI's GPT-6.2 launch table, as relayed by a secondary site",
+   "src": "https://www.intelligentliving.co/gpt-62-astra-vs-sol-smarter-default/",
+   "sec": 1,
+   "note": "Claude Fable 5.2, as run by OpenAI"
+  },
+  {
+   "m": "google-20261028-gemini-4-carbon",
+   "b": "lmarena-text",
+   "v": 1526,
+   "d": "2026-11-06",
+   "rep": "independent",
+   "by": "LMArena, as relayed by Developers Digest",
+   "src": "https://www.developersdigest.tech/benchmarks/lmarena",
+   "sec": 1,
+   "note": "±9, preliminary; other trackers show 1528–1538"
+  },
+  {
+   "m": "anthropic-20260922-claude-opus-5-5",
+   "b": "lmarena-text",
+   "v": 1509,
+   "d": "2026-11-09",
+   "rep": "independent",
+   "by": "LMArena, as relayed by a daily tracker",
+   "src": "https://www.benchleader.com/benchmarks/lmarena_text",
+   "sec": 1,
+   "note": "Margins overlap with the top models"
   }
  ]
 }

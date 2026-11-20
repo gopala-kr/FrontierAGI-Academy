@@ -239,7 +239,7 @@
 (function () {
   var EMBED = new URLSearchParams(location.search).has('embed'); if (EMBED) document.body.classList.add('bt-embed');
   var $ = function (id) { return document.getElementById(id); }, D, MR = {}, LAB = {}, view = 'grid', cat = 'all', rep = 'all', pick = null;
-  var EM = { general: '🧠', coding: '💻', computer: '🖱️', knowledge: '📚', multimodal: '🖼️', longctx: '📜', science: '🔬', cyber: '🛡️', horizon: '⏱️', factual: '✅', airnd: '🔬', tools: '🔧' }, esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); };
+  var EM = { general: '🧠', coding: '💻', computer: '🖱️', knowledge: '📚', multimodal: '🖼️', longctx: '📜', science: '🔬', cyber: '🛡️', horizon: '⏱️', factual: '✅', airnd: '🔬', tools: '🔧', agi: '🧩' }, esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); };
   Promise.all([fetch('../data/benchmarks.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }), fetch('../data/model-releases.json', { cache: 'no-cache' }).then(function (r) { return r.json(); })]).then(function (x) {
     D = x[0]; x[1].labs.forEach(function (l) { LAB[l[0]] = l; }); x[1].items.forEach(function (i) { MR[i.id] = i; });
     $('btCats').innerHTML = '<button data-c="all" class="on" style="--c:#1e1b4b">🌈 All categories</button>' + D.categories.map(function (c) { return '<button data-c="' + c[0] + '" style="--c:' + c[2] + '">' + (EM[c[0]] || '') + ' ' + c[1] + '</button>'; }).join('');

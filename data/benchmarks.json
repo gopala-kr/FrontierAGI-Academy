@@ -61,6 +61,11 @@
    "tools",
    "Tool calling",
    "#be185d"
+  ],
+  [
+   "agi",
+   "AGI-style reasoning",
+   "#0f172a"
   ]
  ],
  "benchmarks": [
@@ -270,6 +275,42 @@
    100,
    "Multi-step tool use against real MCP servers",
    "Scale Labs leaderboard"
+  ],
+  [
+   "arc-agi-3",
+   "ARC-AGI-3",
+   "agi",
+   "%",
+   100,
+   "Interactive puzzle games that are easy for people and new to the model; the ARC Prize team's main AGI test. Scores differ by harness and effort setting",
+   "ARC Prize Foundation"
+  ],
+  [
+   "arc-agi-2",
+   "ARC-AGI-2",
+   "agi",
+   "%",
+   100,
+   "Abstract grid puzzles; reported close to saturation by late 2026",
+   "ARC Prize Foundation"
+  ],
+  [
+   "hle",
+   "Humanity's Last Exam",
+   "agi",
+   "%",
+   100,
+   "2,500 expert-written questions across many fields; scores depend on tools, effort and subset",
+   "Center for AI Safety and Scale AI"
+  ],
+  [
+   "frontiermath-t4-v2",
+   "FrontierMath Tier 4 (v2)",
+   "agi",
+   "%",
+   100,
+   "Research-level mathematics; Epoch AI reports every Tier 4 problem has now been solved by some model (saturated)",
+   "Epoch AI"
   ]
  ],
  "scores": [
@@ -1405,6 +1446,94 @@
    "src": "https://labs.scale.com/leaderboard/mcp_atlas",
    "sec": 1,
    "note": "Could not open the leaderboard page directly"
+  },
+  {
+   "m": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "b": "arc-agi-3",
+   "v": 81.2,
+   "d": "2026-11-16",
+   "rep": "independent",
+   "by": "ARC Prize results, as mirrored by BenchLM",
+   "src": "https://benchlm.ai/benchmarks/arcagi3",
+   "sec": 1,
+   "note": "Claude Fable 5.2, xhigh effort; not checked on arcprize.org"
+  },
+  {
+   "m": "openai-20260904-gpt-6-astra",
+   "b": "arc-agi-3",
+   "v": 62.71,
+   "d": "2026-10-23",
+   "rep": "independent",
+   "by": "ARC Prize standard harness, as relayed by a leaderboard aggregator",
+   "src": "https://llmlearner.com/rankings/arc-agi-3",
+   "sec": 1,
+   "note": "Standard harness; different setup from the 81.2% row"
+  },
+  {
+   "m": "openai-20260904-gpt-6-astra",
+   "b": "arc-agi-2",
+   "v": 95.0,
+   "d": "2026-11-01",
+   "rep": "independent",
+   "by": "Leaderboard aggregator",
+   "src": "https://llm-stats.com/benchmarks/arc-agi-v2",
+   "sec": 1,
+   "note": "Near saturation; another page credits GPT-5.6 Sol with 92.5%"
+  },
+  {
+   "m": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "b": "hle",
+   "v": 74.3,
+   "d": "2026-11-18",
+   "rep": "independent",
+   "by": "Artificial Analysis",
+   "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+   "sec": 1,
+   "note": "Claude Fable 5.2, max effort; seen via search excerpt"
+  },
+  {
+   "m": "google-20261028-gemini-4-carbon",
+   "b": "hle",
+   "v": 69.1,
+   "d": "2026-10-28",
+   "rep": "lab",
+   "by": "Google launch figures, as relayed by Klu",
+   "src": "https://klu.ai/benchmarks/humanitys-last-exam",
+   "sec": 1,
+   "note": "Gemini 4 Carbon (High); Artificial Analysis's run gives 60.4%"
+  },
+  {
+   "m": "openai-20260929-gpt-6-1-sol",
+   "b": "frontiermath-t4-v2",
+   "v": 100,
+   "d": "2026-10-15",
+   "rep": "independent",
+   "by": "Epoch AI run, as relayed by a leaderboard aggregator",
+   "src": "https://llmlearner.com/rankings/frontier-math-tier-4-v2",
+   "sec": 1,
+   "note": "Benchmark saturated"
+  },
+  {
+   "m": "openai-20260904-gpt-6-astra",
+   "b": "frontiermath-t4-v2",
+   "v": 97.6,
+   "d": "2026-10-15",
+   "rep": "independent",
+   "by": "Epoch AI run, as relayed by a leaderboard aggregator",
+   "src": "https://llmlearner.com/rankings/frontier-math-tier-4-v2",
+   "sec": 1,
+   "note": "Epoch AI says GPT-6 Astra solved the last unsolved Tier 4 problem"
+  },
+  {
+   "m": "anthropic-20260922-claude-opus-5-5",
+   "b": "frontiermath-t4-v2",
+   "v": 95,
+   "d": "2026-10-15",
+   "rep": "independent",
+   "by": "Epoch AI run, as relayed by a leaderboard aggregator",
+   "src": "https://llmlearner.com/rankings/frontier-math-tier-4-v2",
+   "sec": 1,
+   "note": ""
   }
  ]
 }

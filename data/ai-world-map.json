@@ -70,6 +70,31 @@
    "Malaysia",
    4.2,
    101.9
+  ],
+  "682": [
+   "Saudi Arabia",
+   24.0,
+   45.0
+  ],
+  "246": [
+   "Finland",
+   64.0,
+   26.0
+  ],
+  "724": [
+   "Spain",
+   40.2,
+   -3.7
+  ],
+  "380": [
+   "Italy",
+   42.8,
+   12.5
+  ],
+  "756": [
+   "Switzerland",
+   46.8,
+   8.2
   ]
  },
  "layers": [
@@ -146,7 +171,7 @@
   {
    "id": "sovereign",
    "tab": "🏛️ Sovereign compute",
-   "title": "Sovereign AI compute: GPUs in government-owned or government-funded national systems, operating (Nov 2026)",
+   "title": "Sovereign AI compute: GPUs in government-owned or government-funded national systems (Nov 2026)",
    "unit": "GPUs",
    "dec": 0,
    "values": {
@@ -156,7 +181,11 @@
     "410": 10500,
     "392": 6128,
     "826": 5448,
-    "250": 1456
+    "250": 1456,
+    "380": 13824,
+    "246": 11912,
+    "756": 10752,
+    "724": 4480
    },
    "detail": {
     "840": "US Department of Energy flagship systems only: Aurora 63,744 Intel GPUs (Argonne), El Capitan 44,544 AMD MI300A (Livermore), Frontier 37,632 AMD MI250X (Oak Ridge)",
@@ -165,12 +194,38 @@
     "410": "About 10,500 NVIDIA GPUs bought by the government in 2025 for public use ⚠️ secondary",
     "392": "ABCI 3.0 (AIST): 6,128 NVIDIA H200 (766 nodes × 8)",
     "826": "Isambard-AI (Bristol, AI Research Resource): 5,448 NVIDIA GH200",
-    "250": "Jean Zay H100 extension (GENCI/CNRS): 1,456 NVIDIA H100; older V100/A100 partitions not counted"
+    "250": "Jean Zay H100 extension (GENCI/CNRS): 1,456 NVIDIA H100; older V100/A100 partitions not counted",
+    "380": "Leonardo (CINECA, EuroHPC): 13,824 NVIDIA A100 (3,456 nodes × 4)",
+    "246": "LUMI (CSC, EuroHPC): 11,912 AMD MI250X ⚠️ count via an aggregator (Flopper.io)",
+    "756": "Alps (CSCS): 10,752 NVIDIA GH200 ⚠️ from the operator's node count, not re-read in this session",
+    "724": "MareNostrum 5 accelerated partition (BSC, EuroHPC): 4,480 NVIDIA H100 ⚠️ count via an aggregator (Flopper.io)"
    },
    "source": "Official system pages and announcements per country (see each country's line); India from the Indian government; South Korea from secondary reporting ⚠️",
    "src": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3",
    "sec": 1,
-   "note": "Counts accelerators in named national systems, not all compute a country can reach, and mixes GPU generations (an H100 ≠ an MI250X). China's state-owned AI compute is not disclosed, so it is blank. Announced or contracted but not counted: Saudi Arabia's HUMAIN (PIF-owned) first phase of 18,000 GB300 ⚠️, Italy's IT4LIA 8,000+ Blackwell GPUs (contracted Apr 2026 ⚠️), Canada's C$890M sovereign compute programme (no chip count yet), the EU AI Gigafactories. GPU counts for Frontier, Aurora and ABCI 3.0 come from their operators' published node counts and could not be re-read from this sandbox."
+   "note": "Solid bubbles = operating; dashed rings = announced or under way (not added to the totals). Counts accelerators in named national systems, not all compute a country can reach, and mixes GPU generations (an H100 ≠ an MI250X). China's state-owned AI compute is not disclosed, so it is blank. Saudi Arabia's HUMAIN and the UAE's G42 are state-owned or state-backed companies; no operating GPU count for either has been published, so they appear only as plans. Canada's C$890M sovereign compute programme and the EU AI Gigafactories have no chip counts yet. GPU counts for Frontier, Aurora, ABCI 3.0 and Alps come from their operators' published node counts and could not be re-read from this sandbox.",
+   "planned": {
+    "784": [
+     100000,
+     "Stargate UAE (G42/Khazna with OpenAI, Oracle, NVIDIA): ~100,000 GB300 announced for the 1 GW cluster; first 200 MW expected online Q4 2026, not yet documented as operating (Oct 2026) ⚠️"
+    ],
+    "682": [
+     27000,
+     "HUMAIN (PIF-owned): up to ~27,000 NVIDIA GPUs over 84 MW through 2027 (first phase ~6,000 B300 from Q4 2026, announced Oct 2026). AMD MI355X systems went live 31 Aug 2026, count not disclosed"
+    ],
+    "356": [
+     20000,
+     "IndiaAI: about 20,000 additional GPUs under process (13 Mar 2026), on top of the 38,231 onboarded"
+    ],
+    "410": [
+     15000,
+     "Haenam national AI computing centre: 15,000+ advanced GPUs planned by 2028 ⚠️"
+    ],
+    "380": [
+     8000,
+     "IT4LIA AI factory: 8,000+ NVIDIA Blackwell GPUs, contracted Apr 2026 ⚠️"
+    ]
+   }
   },
   {
    "id": "papers",

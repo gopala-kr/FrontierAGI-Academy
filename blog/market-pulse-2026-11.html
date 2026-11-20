@@ -721,12 +721,13 @@ lu = json.load(open(os.path.join(D, &quot;lab-updates.json&quot;)))[&quot;items&
 mr = json.load(open(os.path.join(D, &quot;model-releases.json&quot;)))[&quot;items&quot;]
 iv = json.load(open(os.path.join(D, &quot;ai-investments.json&quot;)))
 pr = json.load(open(os.path.join(D, &quot;predictions-2027.json&quot;)))[&quot;items&quot;]
-items = [x for x in lu if str(x[&quot;date&quot;]).startswith(MONTH)]
+CUTOFF = &quot;2026-11-18&quot;  # issue date: later items belong to the next issue
+items = [x for x in lu if str(x[&quot;date&quot;]).startswith(MONTH) and str(x[&quot;date&quot;]) &lt;= CUTOFF]
 by = {}
 for x in items: by[x[&quot;lab&quot;]] = by.get(x[&quot;lab&quot;], 0) + 1
 print(f&quot;{MONTH}: {len(items)} lab announcements, {sum(1 for x in items if x.get(&#x27;flagship&#x27;))} flagship&quot;)
 print(&quot;  by lab: &quot; + &quot;, &quot;.join(f&quot;{k} {v}&quot; for k, v in sorted(by.items(), key=lambda kv: -kv[1])))
-rel = [x for x in mr if str(x[&quot;date&quot;]).startswith(MONTH)]
+rel = [x for x in mr if str(x[&quot;date&quot;]).startswith(MONTH) and str(x[&quot;date&quot;]) &lt;= CUTOFF]
 mods = {}
 for x in rel:
     for m in x[&quot;mod&quot;]: mods[m] = mods.get(m, 0) + 1

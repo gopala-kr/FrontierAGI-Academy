@@ -585,6 +585,23 @@
 ],
 "items": [
 {
+"id": "google-20261118-gemini-4-neon",
+"ref": "google-20261118-gemini-4-neon",
+"date": "2026-11-18",
+"lab": "google",
+"mod": [
+"llm"
+],
+"fam": "gemini",
+"name": "Gemini 4 Neon",
+"full": "Gemini 4 Neon: mid-tier Gemini 4 model for agentic work",
+"src": "https://www.gsmarena.com/google_launches_gemini_4_neon_its_new_midtier_ai_model-news-75544.php",
+"flag": 0,
+"open": 0,
+"st": "ga",
+"sec": 1
+},
+{
 "id": "openai-20261117-gpt-6-2-astra-and-sol",
 "ref": "openai-20261117-gpt-6-2-astra-and-sol",
 "date": "2026-11-17",

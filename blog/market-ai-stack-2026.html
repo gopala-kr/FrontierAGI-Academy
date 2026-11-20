@@ -716,8 +716,9 @@ and the share of open-weight releases. Standard library only.
 import json, os
 m = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), &quot;..&quot;, &quot;..&quot;, &quot;model-releases.json&quot;)))
 rows = {}
+CUTOFF = &quot;2026-11-17&quot;  # data as it stood when this brief was written (18 Nov); later additions are left out
 for x in m[&quot;items&quot;]:
-    if not str(x[&quot;date&quot;]).startswith(&quot;2026&quot;): continue
+    if not str(x[&quot;date&quot;]).startswith(&quot;2026&quot;) or str(x[&quot;date&quot;]) &gt; CUTOFF: continue
     for mod in x[&quot;mod&quot;]:
         r = rows.setdefault(mod, {&quot;n&quot;: 0, &quot;labs&quot;: {}, &quot;open&quot;: 0})
         r[&quot;n&quot;] += 1; r[&quot;labs&quot;][x[&quot;lab&quot;]] = r[&quot;labs&quot;].get(x[&quot;lab&quot;], 0) + 1; r[&quot;open&quot;] += 1 if x.get(&quot;open&quot;) in (1, 2) else 0

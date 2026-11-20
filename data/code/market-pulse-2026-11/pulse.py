@@ -12,7 +12,7 @@ lu = json.load(open(os.path.join(D, "lab-updates.json")))["items"]
 mr = json.load(open(os.path.join(D, "model-releases.json")))["items"]
 iv = json.load(open(os.path.join(D, "ai-investments.json")))
 pr = json.load(open(os.path.join(D, "predictions-2027.json")))["items"]
-CUTOFF = "2026-11-18"  # issue date: later items belong to the next issue
+CUTOFF = "2026-11-17"  # last data date before this issue was published (18 Nov); later items belong to the next issue
 items = [x for x in lu if str(x["date"]).startswith(MONTH) and str(x["date"]) <= CUTOFF]
 by = {}
 for x in items: by[x["lab"]] = by.get(x["lab"], 0) + 1

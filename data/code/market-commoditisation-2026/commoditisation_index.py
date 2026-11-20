@@ -7,8 +7,9 @@ year, and number of serious competitors. Higher = more commoditised. Stdlib only
 """
 import json, os
 m = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "model-releases.json")))
+CUTOFF = "2026-11-17"  # data as it stood when this brief was written (18 Nov)
 for y in ("2023", "2024", "2025", "2026"):
-    xs = [x for x in m["items"] if str(x["date"]).startswith(y) and "llm" in x["mod"]]
+    xs = [x for x in m["items"] if str(x["date"]).startswith(y) and str(x["date"]) <= CUTOFF and "llm" in x["mod"]]
     op = sum(1 for x in xs if x.get("open") in (1, 2))
     print(f"{y}: {len(xs):3d} LLM releases, {op / len(xs):.0%} open-weight")
 L = [  # layer, open alternative (0-1), price decline per year (0-1), serious competitors

@@ -713,8 +713,9 @@ year, and number of serious competitors. Higher = more commoditised. Stdlib only
 &quot;&quot;&quot;
 import json, os
 m = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), &quot;..&quot;, &quot;..&quot;, &quot;model-releases.json&quot;)))
+CUTOFF = &quot;2026-11-17&quot;  # data as it stood when this brief was written (18 Nov)
 for y in (&quot;2023&quot;, &quot;2024&quot;, &quot;2025&quot;, &quot;2026&quot;):
-    xs = [x for x in m[&quot;items&quot;] if str(x[&quot;date&quot;]).startswith(y) and &quot;llm&quot; in x[&quot;mod&quot;]]
+    xs = [x for x in m[&quot;items&quot;] if str(x[&quot;date&quot;]).startswith(y) and str(x[&quot;date&quot;]) &lt;= CUTOFF and &quot;llm&quot; in x[&quot;mod&quot;]]
     op = sum(1 for x in xs if x.get(&quot;open&quot;) in (1, 2))
     print(f&quot;{y}: {len(xs):3d} LLM releases, {op / len(xs):.0%} open-weight&quot;)
 L = [  # layer, open alternative (0-1), price decline per year (0-1), serious competitors

@@ -8,7 +8,7 @@ import json, os
 d = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "lab-updates.json")))
 T = [t[0] for t in d["types"]]
 by = {}
-CUTOFF = "2026-11-18"  # this brief's publication date: later items are left out
+CUTOFF = "2026-11-17"  # last data date before this brief was published (18 Nov); later items are left out
 for x in d["items"]:
     if not str(x["date"]).startswith("2026") or str(x["date"]) > CUTOFF: continue
     r = by.setdefault(x["lab"], {t: 0 for t in T}); r[x["type"]] += 1; r["flag"] = r.get("flag", 0) + (1 if x.get("flagship") else 0)

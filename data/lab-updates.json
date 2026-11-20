@@ -132,6 +132,20 @@
    "flagship": false
   },
   {
+   "id": "google-20261118-gemini-4-neon",
+   "date": "2026-11-18",
+   "lab": "google",
+   "type": "model",
+   "title": "Gemini 4 Neon",
+   "summary": "The mid-tier Gemini 4 model, between Carbon and Hydrogen, aimed at long, tool-heavy agent work; in Google Antigravity it can coordinate Hydrogen subagents. 1M-token context, four thinking levels, text/image/video/audio/PDF input. In the Gemini API, AI Studio, Gemini for business, Antigravity and the Gemini app for Pro and Ultra subscribers; a Neon for cyber variant goes to vetted defenders. Reported via news coverage; Google's comparisons with Claude Opus 5.5 and GPT-6.2 Sol are company claims.",
+   "facts": [
+    "Reported price $3 / $15 per million input / output tokens (Carbon $4 / $20, Hydrogen $1.50 / $7.50) ⚠️",
+    "1M-token context window"
+   ],
+   "source": "https://www.gsmarena.com/google_launches_gemini_4_neon_its_new_midtier_ai_model-news-75544.php",
+   "flagship": false
+  },
+  {
    "id": "openai-20261117-gpt-6-2-astra-and-sol",
    "date": "2026-11-17",
    "lab": "openai",

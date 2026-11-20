@@ -164,6 +164,37 @@
       ]
     },
     {
+      "id": "sec-agentic",
+      "title": "Agentic AI System Designs: The Agent Systems the Labs Have Built, Taken Apart",
+      "short": "Agentic AI System Designs",
+      "icon": "🧩",
+      "slugs": [
+        "agentic-systems-map",
+        "agentic-agent-loop",
+        "agentic-claude-code",
+        "agentic-codex",
+        "agentic-gemini-jules",
+        "agentic-deep-agents",
+        "agentic-hermes-agent",
+        "agentic-frameworks-compared",
+        "agentic-openai-agents-sdk",
+        "agentic-google-adk",
+        "agentic-langgraph",
+        "agentic-crewai",
+        "agentic-claude-sdk-microsoft",
+        "agentic-runtimes-compared",
+        "agentic-bedrock-agentcore",
+        "agentic-langsmith-deployment",
+        "agentic-temporal",
+        "agentic-vertex-foundry",
+        "agentic-builders-compared",
+        "agentic-n8n",
+        "agentic-zapier",
+        "agentic-copilot-studio",
+        "agentic-make"
+      ]
+    },
+    {
       "id": "sec-mllayer",
       "title": "Inside the ML Layer: The Software That Turns GPUs into Models",
       "short": "Inside the ML Layer",
@@ -224,37 +255,6 @@
         "agent-memory-state",
         "agent-observability-cost",
         "agent-rl-environments"
-      ]
-    },
-    {
-      "id": "sec-agentic",
-      "title": "Agentic AI System Designs: The Agent Systems the Labs Have Built, Taken Apart",
-      "short": "Agentic AI System Designs",
-      "icon": "🧩",
-      "slugs": [
-        "agentic-systems-map",
-        "agentic-agent-loop",
-        "agentic-claude-code",
-        "agentic-codex",
-        "agentic-gemini-jules",
-        "agentic-deep-agents",
-        "agentic-hermes-agent",
-        "agentic-frameworks-compared",
-        "agentic-openai-agents-sdk",
-        "agentic-google-adk",
-        "agentic-langgraph",
-        "agentic-crewai",
-        "agentic-claude-sdk-microsoft",
-        "agentic-runtimes-compared",
-        "agentic-bedrock-agentcore",
-        "agentic-langsmith-deployment",
-        "agentic-temporal",
-        "agentic-vertex-foundry",
-        "agentic-builders-compared",
-        "agentic-n8n",
-        "agentic-zapier",
-        "agentic-copilot-studio",
-        "agentic-make"
       ]
     },
     {

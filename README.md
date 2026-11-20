@@ -735,7 +735,7 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 | 11 | 🧑‍🔬 [The AI Researcher Atlas: 50 People Who Built the Field](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-atlas.html) | 65 min |
 
 
-### 14 · Take a Course
+### 19 · Take a Course
 
 #### 🧱 Language Modeling from Scratch: A Guide to Stanford's CS336
 

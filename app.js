@@ -921,7 +921,7 @@ function initBackToTop() {
     'grp-run': ['#be123c', '#fff5f7'],
     'grp-market': ['#78350f', '#fbf8f4', 'Who competes at each layer of the AI stack, where AI investment is going, and monthly market briefs.', '09 · Market research'],
     'sec-llm-lifecycle': ['#0284c7', '#f0f9ff'], 'grp-models': ['#0e7490', '#effbfd'], 'grp-courses': ['#16a34a', '#f2fcf5'], 'grp-researcher': ['#9333ea', '#faf5ff'],
-    'grp-company': ['#ea580c', '#fff7f0'], 'Explore Everything': ['#475569', '#f6f8fa']
+    'grp-company': ['#ea580c', '#fff7f0'], 'grp-safety': ['#b91c1c', '#fff5f5'], 'grp-policy': ['#1d4ed8', '#f3f7ff'], 'grp-robotics': ['#0f766e', '#f0faf8'], 'grp-science': ['#7e22ce', '#faf5ff'], 'grp-economy': ['#a16207', '#fffbeb'], 'Explore Everything': ['#475569', '#f6f8fa']
   };
   function init() {
     var main = document.querySelector('.home-hero'); if (!main) return;

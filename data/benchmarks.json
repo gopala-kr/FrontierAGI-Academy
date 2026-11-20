@@ -41,6 +41,16 @@
    "cyber",
    "Cybersecurity",
    "#dc2626"
+  ],
+  [
+   "horizon",
+   "Long tasks (time horizon)",
+   "#0891b2"
+  ],
+  [
+   "factual",
+   "Factuality",
+   "#a16207"
   ]
  ],
  "benchmarks": [
@@ -214,6 +224,24 @@
    100,
    "",
    ""
+  ],
+  [
+   "metr-horizon",
+   "METR 50% time horizon",
+   "horizon",
+   "h",
+   null,
+   "Length of task (in human-expert hours) the agent completes with 50% success on METR's task suite; wide confidence intervals",
+   "METR"
+  ],
+  [
+   "simpleqa-verified",
+   "SimpleQA Verified",
+   "factual",
+   "%",
+   100,
+   "Short fact questions; percent correct (abstaining counts as wrong), so willingness to guess moves scores",
+   "Google DeepMind / Kaggle; tracked by Epoch AI"
   ]
  ],
  "scores": [
@@ -1250,6 +1278,61 @@
    "src": "https://felloai.com/gemini-4-hydrogen/",
    "sec": 1,
    "note": "Gemini 4 Hydrogen"
+  },
+  {
+   "m": "anthropic-20251124-claude-opus-4-5",
+   "b": "metr-horizon",
+   "v": 4.8,
+   "d": "2025-12-19",
+   "rep": "independent",
+   "by": "METR (post on X)",
+   "src": "https://x.com/METR_Evals/status/2002203627377574113",
+   "sec": 0,
+   "note": "~4 h 49 min; 95% CI 1 h 49 min to 20 h 25 min"
+  },
+  {
+   "m": "anthropic-20260407-claude-mythos-preview-and-project-glasswing",
+   "b": "metr-horizon",
+   "v": 16,
+   "d": "2026-05-19",
+   "rep": "independent",
+   "by": "METR, as summarised by Wikipedia",
+   "src": "https://en.wikipedia.org/wiki/METR",
+   "sec": 1,
+   "note": "'Likely at least 16 hours'; another source reads 17.4 h from METR's raw data. Newer models not yet published by METR"
+  },
+  {
+   "m": "google-20260930-gemini-4-argon",
+   "b": "simpleqa-verified",
+   "v": 76.0,
+   "d": "2026-11-01",
+   "rep": "independent",
+   "by": "Epoch AI data, as relayed by a leaderboard aggregator",
+   "src": "https://www.benchleader.com/benchmarks/simpleqa_verified",
+   "sec": 1,
+   "note": "Sources disagree by about a point"
+  },
+  {
+   "m": "openai-20260904-gpt-6-astra",
+   "b": "simpleqa-verified",
+   "v": 75.6,
+   "d": "2026-11-01",
+   "rep": "independent",
+   "by": "Epoch AI data, as relayed by a leaderboard aggregator",
+   "src": "https://www.benchleader.com/benchmarks/simpleqa_verified",
+   "sec": 1,
+   "note": "Another table has 75.8%"
+  },
+  {
+   "m": "anthropic-20260609-claude-fable-5-and-claude-mythos-5",
+   "b": "simpleqa-verified",
+   "v": 70.7,
+   "d": "2026-11-01",
+   "rep": "independent",
+   "by": "Leaderboard aggregator",
+   "src": "https://benchgecko.ai/benchmark/simpleqa-verified",
+   "sec": 1,
+   "note": "Claude Fable 5"
   }
  ]
 }

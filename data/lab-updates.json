@@ -2,7 +2,7 @@
  "about": "Frontier lab announcements, newest first. Curated by hand: every item links to its source. Dates are release/announcement dates; 'YYYY-MM' means only the month is confirmed. Benchmark and pricing facts are as announced by the lab.",
  "range": [
   "2021-10-01",
-  "2026-11-18"
+  "2026-11-19"
  ],
  "labs": [
   [
@@ -117,6 +117,20 @@
   ]
  ],
  "items": [
+  {
+   "id": "google-20261119-what-comes-after-agi",
+   "date": "2026-11-19",
+   "lab": "google",
+   "type": "research",
+   "title": "DeepMind Institute essay: \"What comes after AGI?\"",
+   "summary": "An essay on the DeepMind Institute site arguing that, as several technological routes toward artificial general superintelligence take shape, the regime beyond AGI is moving from philosophical speculation to empirical research and governance questions. It draws on the technical report \"From AGI to ASI\"; coverage describes four routes: scaling, paradigm shifts, coordination among many agents, and recursive self-improvement. Institute essays are not presented as Google's official view.",
+   "facts": [
+    "Published 19 Nov 2026; promoted by DeepMind co-founder Shane Legg",
+    "Four routes to ASI per coverage (⚠️ secondary): scaling, paradigm shifts, multi-agent coordination, RSI"
+   ],
+   "source": "https://institute.deepmind.com/essays/what-comes-after-agi/",
+   "flagship": false
+  },
   {
    "id": "openai-20261117-gpt-6-2-astra-and-sol",
    "date": "2026-11-17",

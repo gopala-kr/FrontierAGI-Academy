@@ -108,7 +108,7 @@ Series appear in the same order as on the homepage; 🆕 marks the two newest.
 
 <!-- SERIES:START -->
 
-### The Long View
+### 03 · The Long View
 
 #### 📅 AI Research Progress Through the Years
 
@@ -138,7 +138,7 @@ A year-by-year record of the papers and ideas that moved AI research forward —
 | 19 | 📟 [AI Research in 1950–1980: The Three Decades That Founded the Field](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-research-1950-1980-papers.html) | 50 min |
 
 
-### 00 · Follow the Frontier
+### 04 · Follow the Frontier
 
 #### 🔁 The Recursive Self-Improvement Series
 
@@ -180,7 +180,7 @@ Where frontier models actually stand, the six real levers of progress, per-lab r
 | 12 | 🔍 [The Interpretability Gap: Why Nobody Can Read a Frontier Model's Mind Anymore](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/interpretability-gap-reading-model-minds.html) | 27 min |
 
 
-### 01 · Build the Machine
+### 05 · Build the Machine
 
 #### 🖥️ The AI Compute Stack: From Electrons to Tokens
 
@@ -279,7 +279,7 @@ How governments, banks, drug makers and telcos get AI factories without building
 | 7 | 🚀 [Starting a Frontier Lab in 2026: Compute, Cost and Capital, with a Bangalore Playbook](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-startup-playbook.html) | 32 min |
 
 
-### 01b · Build the Software
+### 06 · Build the Software
 
 #### 🧠 Inside the ML Layer: The Software That Turns GPUs into Models
 
@@ -345,7 +345,7 @@ What runs between a request and the 400th tool call: the map → sandboxes → d
 | 8 | 🏋️ [Where Agents Learn: RL Environments as Infrastructure](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-rl-environments.html) | 22 min |
 
 
-### 01c · Agents in Production
+### 07 · Agents in Production
 
 #### 🧩 Agentic AI System Designs: The Agent Systems the Labs Have Built, Taken Apart
 
@@ -381,7 +381,7 @@ Four kinds of agent system (frameworks, harnesses, runtimes, builders), each sys
 | 23 | 🧩 [Make, Taken Apart: Visual Scenarios with an Agent Inside](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-make.html) | 11 min |
 
 
-### Run the Machine · The Maestro
+### 08 · Run the Machine · The Maestro
 
 #### 🎼 The Maestro: Building a Frontier AI Factory From Zero
 
@@ -468,7 +468,7 @@ Six research briefs, each with key takeaways, signals, evidence and a method sec
 | 6 | 🔮 [Ten Predictions for AI in 2027, Written Down to Be Scored](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-predictions-2027.html) | 7 min |
 
 
-### 02 · Become a Researcher
+### 10 · Become a Researcher
 
 #### 🎓 AGI Researcher Foundations: An 11-Part Curriculum
 
@@ -518,7 +518,7 @@ What it actually takes to work on AGI — papers to read, labs to target, a real
 | 3 | 🗺️ [The Research Frontier Map: What Every Major AI Lab Is Actually Betting On](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-research-frontier-map-labs-compared.html) | 75 min |
 
 
-### 03 · Build a Company
+### 11 · Build a Company
 
 #### 🚀 Founding an AGI Startup: The Complete 12-Part Series
 
@@ -567,7 +567,7 @@ Two pieces on the productivity paradox — what happens to jobs, growth, and the
 | 2 | 🌐 [The AI Productivity Paradox: When Economic Growth Stops Needing Humans](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-civilization.html) | 20 min |
 
 
-### 04 · Learn How LLMs Work
+### 12 · Learn How LLMs Work
 
 #### 🛠️ How LLMs Are Built: One In-Depth Article per Stage
 
@@ -640,7 +640,7 @@ Recursive self-improvement as it actually exists in 2026: agents that evolve the
 | 6 | 🧩 [Open Problems in Recursive Self-Improvement: A Research Map](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/open-problems-in-rsi.html) | 40 min |
 
 
-### 04b · Go Deeper · The Models
+### 13 · Go Deeper · The Models
 
 #### 🧬 Architecture & Learning Technique: How the Field Actually Got Here
 
@@ -735,7 +735,7 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 | 11 | 🧑‍🔬 [The AI Researcher Atlas: 50 People Who Built the Field](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-atlas.html) | 65 min |
 
 
-### 05 · Take a Course
+### 14 · Take a Course
 
 #### 🧱 Language Modeling from Scratch: A Guide to Stanford's CS336
 

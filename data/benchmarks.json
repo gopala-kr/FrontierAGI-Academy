@@ -1184,6 +1184,72 @@
    "src": "https://www.leptidigital.fr/intelligence-artificielle-ia/deepseek-v4-1-flash-vs-claude-mythos-cybersecurite-91792/",
    "sec": 1,
    "note": ""
+  },
+  {
+   "m": "openai-20261117-gpt-6-2-astra-and-sol",
+   "b": "terminal-bench-4",
+   "v": 63.13,
+   "d": "2026-11-17",
+   "rep": "independent",
+   "by": "Vals AI model page",
+   "src": "https://www.vals.ai/models/openai_gpt-6.2-astra",
+   "sec": 0,
+   "note": "GPT-6.2 Astra; Vals AI's own run"
+  },
+  {
+   "m": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "b": "terminal-bench-4",
+   "v": 65.15,
+   "d": "2026-11-18",
+   "rep": "independent",
+   "by": "Vals AI results, as relayed by 4sysops",
+   "src": "https://4sysops.com/archives/gpt-6-2-astra-and-sol-reviews-benchmarks-and-early-tester-bashing/",
+   "sec": 1,
+   "note": "Claude Fable 5.2; Vals AI run"
+  },
+  {
+   "m": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "b": "osworld-2-1",
+   "v": 89.3,
+   "d": "2026-11-09",
+   "rep": "lab",
+   "by": "Anthropic launch figures, as relayed by a secondary site",
+   "src": "https://neuraltrust.ai/blog/claude-fable-5-2",
+   "sec": 1,
+   "note": "Claude Fable 5.2; offline setup with partial credit"
+  },
+  {
+   "m": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "b": "tb-science",
+   "v": 74.6,
+   "d": "2026-11-09",
+   "rep": "lab",
+   "by": "Anthropic launch figures, as relayed by a secondary site",
+   "src": "https://neuraltrust.ai/blog/claude-fable-5-2",
+   "sec": 1,
+   "note": "Claude Fable 5.2"
+  },
+  {
+   "m": "google-20261112-gemini-4-hydrogen",
+   "b": "terminal-bench-4",
+   "v": 54,
+   "d": "2026-11-12",
+   "rep": "independent",
+   "by": "Artificial Analysis, as relayed by DataCamp",
+   "src": "https://www.datacamp.com/blog/gemini-4-hydrogen",
+   "sec": 1,
+   "note": "Another tracker lists 56.36%; unresolved"
+  },
+  {
+   "m": "google-20261112-gemini-4-hydrogen",
+   "b": "tb-science",
+   "v": 51.4,
+   "d": "2026-11-12",
+   "rep": "lab",
+   "by": "Google launch table, as relayed by a secondary site",
+   "src": "https://felloai.com/gemini-4-hydrogen/",
+   "sec": 1,
+   "note": "Gemini 4 Hydrogen"
   }
  ]
 }

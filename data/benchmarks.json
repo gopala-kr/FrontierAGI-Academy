@@ -1648,6 +1648,72 @@
    "src": "https://www.benchleader.com/benchmarks/lmarena_text",
    "sec": 1,
    "note": "Margins overlap with the top models"
+  },
+  {
+   "m": "google-20261118-gemini-4-neon",
+   "b": "tb-science",
+   "v": 70.5,
+   "d": "2026-11-18",
+   "rep": "lab",
+   "by": "Google launch figures, as relayed by a secondary site",
+   "src": "https://ahmetbalaman.com/en/blog/what-is-gemini-4-neon-en/",
+   "sec": 1,
+   "note": "Self-computed by Google; same table gives Opus 5.5 63.3%, GPT-6.2 Sol 68.0%"
+  },
+  {
+   "m": "google-20261118-gemini-4-neon",
+   "b": "riemannbench",
+   "v": 84.0,
+   "d": "2026-11-18",
+   "rep": "lab",
+   "by": "Google launch figures, as relayed by a secondary site",
+   "src": "https://felloai.com/gemini-4-neon/",
+   "sec": 1,
+   "note": "Gemini 4 Neon"
+  },
+  {
+   "m": "google-20261118-gemini-4-neon",
+   "b": "automationbench",
+   "v": 56.3,
+   "d": "2026-11-18",
+   "rep": "lab",
+   "by": "Google launch figures, as relayed by a secondary site",
+   "src": "https://felloai.com/gemini-4-neon/",
+   "sec": 1,
+   "note": "Google says #1 on Zapier's AutomationBench"
+  },
+  {
+   "m": "google-20261118-gemini-4-neon",
+   "b": "aa-index-5",
+   "v": 61,
+   "d": "2026-11-18",
+   "rep": "independent",
+   "by": "Artificial Analysis model page",
+   "src": "https://artificialanalysis.ai/models/gemini-4-neon",
+   "sec": 1,
+   "note": "xhigh effort; 60 at the default high setting; seen via search excerpt"
+  },
+  {
+   "m": "anthropic-20261109-claude-fable-5-2-and-mythos-5-2",
+   "b": "aa-index-5",
+   "v": 65,
+   "d": "2026-11-18",
+   "rep": "independent",
+   "by": "Artificial Analysis, as reported by The Next Web",
+   "src": "https://thenextweb.com/news/gemini-4-neon-google-third-intelligence-index-replaces-argon",
+   "sec": 1,
+   "note": "Claude Fable 5.2; index v5.0.1"
+  },
+  {
+   "m": "openai-20261117-gpt-6-2-astra-and-sol",
+   "b": "aa-index-5",
+   "v": 62,
+   "d": "2026-11-18",
+   "rep": "independent",
+   "by": "Artificial Analysis, as reported by The Next Web",
+   "src": "https://thenextweb.com/news/gemini-4-neon-google-third-intelligence-index-replaces-argon",
+   "sec": 1,
+   "note": "GPT-6.2 Astra; index v5.0.1"
   }
  ]
 }

@@ -144,6 +144,35 @@
    "note": "Modelled estimates, not an inventory. Of 27.4M H100-equivalents that arrived 2022 → Jun 2026, 19.8M went to the US; its yearly share rose from ~60% (2022–24) to 72% (2025) and 78% (H1 2026). China (incl. domestic chips) holds 18.2% of chip units but 9.6% of compute. The EU as a bloc is 5%; Malaysia ~2% (Epoch thread); no other country above 2%."
   },
   {
+   "id": "sovereign",
+   "tab": "🏛️ Sovereign compute",
+   "title": "Sovereign AI compute: GPUs in government-owned or government-funded national systems, operating (Nov 2026)",
+   "unit": "GPUs",
+   "dec": 0,
+   "values": {
+    "840": 145920,
+    "356": 38231,
+    "276": 23536,
+    "410": 10500,
+    "392": 6128,
+    "826": 5448,
+    "250": 1456
+   },
+   "detail": {
+    "840": "US Department of Energy flagship systems only: Aurora 63,744 Intel GPUs (Argonne), El Capitan 44,544 AMD MI300A (Livermore), Frontier 37,632 AMD MI250X (Oak Ridge)",
+    "356": "IndiaAI Mission common compute: 38,231 GPUs onboarded (government reply in Parliament, Mar 2026); a PIB factsheet reports 45,000+ by Jun 2026 ⚠️. Subsidised access to GPUs owned by private providers",
+    "276": "JUPITER (Jülich, EuroHPC): 23,536 NVIDIA GH200 in its June 2025 TOP500 run (~24,000 announced)",
+    "410": "About 10,500 NVIDIA GPUs bought by the government in 2025 for public use ⚠️ secondary",
+    "392": "ABCI 3.0 (AIST): 6,128 NVIDIA H200 (766 nodes × 8)",
+    "826": "Isambard-AI (Bristol, AI Research Resource): 5,448 NVIDIA GH200",
+    "250": "Jean Zay H100 extension (GENCI/CNRS): 1,456 NVIDIA H100; older V100/A100 partitions not counted"
+   },
+   "source": "Official system pages and announcements per country (see each country's line); India from the Indian government; South Korea from secondary reporting ⚠️",
+   "src": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=156786&lang=1&reg=3",
+   "sec": 1,
+   "note": "Counts accelerators in named national systems, not all compute a country can reach, and mixes GPU generations (an H100 ≠ an MI250X). China's state-owned AI compute is not disclosed, so it is blank. Announced or contracted but not counted: Saudi Arabia's HUMAIN (PIF-owned) first phase of 18,000 GB300 ⚠️, Italy's IT4LIA 8,000+ Blackwell GPUs (contracted Apr 2026 ⚠️), Canada's C$890M sovereign compute programme (no chip count yet), the EU AI Gigafactories. GPU counts for Frontier, Aurora and ABCI 3.0 come from their operators' published node counts and could not be re-read from this sandbox."
+  },
+  {
    "id": "papers",
    "tab": "📄 AI papers",
    "title": "Share of global AI publications, 2024",

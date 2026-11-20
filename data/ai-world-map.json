@@ -188,7 +188,7 @@
    "source": "Stanford AI Index 2026, Economy chapter (Quid data)",
    "src": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
    "sec": 0,
-   "note": "Latest full year (2025). Only the top three are stated in the text we could read; other countries are left blank, not zero. Worldwide, newly funded AI companies rose about 71% in 2025. 2024 (AI Index 2025): US 1,073, UK 116, China 98, India 74, Germany 67."
+   "note": "Latest full year (2025). Only the top three are stated in the text we could read; other countries are left blank, not zero. Worldwide, newly funded AI companies rose about 71% in 2025. 2024 (AI Index 2025): US 1,073, UK 116, China 98, India 74, Germany 67. No 2026 count of newly funded AI companies by country was found yet (Crunchbase reports 2026 money, not company counts; see the 2026 view on the AI investment tab)."
   },
   {
    "id": "models",
@@ -204,7 +204,36 @@
    "source": "Stanford AI Index 2026, Research & Development (Epoch AI data, April 2026 snapshot)",
    "src": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
    "sec": 0,
-   "note": "Latest full year (2025). 2024: US 40, China 15, France 3 (AI Index 2025). Some secondary write-ups give other 2025 counts (50/30); we use the report's."
+   "note": "Latest full year (2025). 2024: US 40, China 15, France 3 (AI Index 2025). Some secondary write-ups give other 2025 counts (50/30); we use the report's.",
+   "years": [
+    {
+     "title": "Notable AI models by country of the developing institution, 2025",
+     "values": {
+      "840": 59,
+      "156": 35,
+      "410": 8
+     },
+     "source": "Stanford AI Index 2026, Research & Development (Epoch AI data, April 2026 snapshot)",
+     "src": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+     "sec": 0,
+     "note": "Latest full year (2025). 2024: US 40, China 15, France 3 (AI Index 2025). Some secondary write-ups give other 2025 counts (50/30); we use the report's.",
+     "label": "2025 (full year)"
+    },
+    {
+     "label": "2026 so far",
+     "title": "Notable AI models by country, 2026 so far (Epoch AI snapshot, Oct 2026)",
+     "values": {
+      "840": 49,
+      "156": 29,
+      "410": 5,
+      "702": 1
+     },
+     "source": "Epoch AI notable-models database, October 2026 snapshot, as analysed by Uvik (84 notable models dated 2026)",
+     "src": "https://uvik.net/blog/top-countries-in-ai-development/",
+     "sec": 1,
+     "note": "Incomplete year: Epoch keeps adding models, so counts rise. Country 'credits' count a model once per developing country. In August 2026 South Korea's science ministry noted only the US, China and South Korea had notable 2026 models at that point."
+    }
+   ]
   },
   {
    "id": "compute",
@@ -220,7 +249,7 @@
    "source": "Epoch AI, AI Chip Imports explorer (launched 27 Oct 2026) and its methodology page",
    "src": "https://epoch.ai/data/ai-chip-imports-documentation/methodology",
    "sec": 0,
-   "note": "Modelled estimates, not an inventory. Of 27.4M H100-equivalents that arrived 2022 → Jun 2026, 19.8M went to the US; its yearly share rose from ~60% (2022–24) to 72% (2025) and 78% (H1 2026). China (incl. domestic chips) holds 18.2% of chip units but 9.6% of compute. The EU as a bloc is 5%; Malaysia ~2% (Epoch thread); no other country above 2%."
+   "note": "Modelled estimates, not an inventory. Of 27.4M H100-equivalents that arrived 2022 → Jun 2026, 19.8M went to the US; its yearly share rose from ~60% (2022–24) to 72% (2025) and 78% (H1 2026). China (incl. domestic chips) holds 18.2% of chip units but 9.6% of compute. The EU as a bloc is 5%; Malaysia ~2% (Epoch thread); no other country above 2%. Latest: the US took 78% of new AI compute in the first half of 2026."
   },
   {
    "id": "sovereign",
@@ -311,7 +340,35 @@
    "src": "https://digitalstrategy-ai.com/2026/04/17/us-china-standford-ai-index/",
    "sec": 1,
    "note": "Latest year in the AI Index (2024). The report says the US share fell 3 points but we could not read its exact share, so it is left blank rather than guessed. Publications count once per linked country. 2023 (AI Index 2025): China 23.2%, India 9.2%.",
-   "primary": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_1_research_development.pdf"
+   "primary": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_1_research_development.pdf",
+   "years": [
+    {
+     "title": "Share of global AI publications, 2024",
+     "values": {
+      "156": 17.8,
+      "356": 7.6
+     },
+     "source": "Stanford AI Index 2026, Research & Development chapter, via secondary coverage",
+     "src": "https://digitalstrategy-ai.com/2026/04/17/us-china-standford-ai-index/",
+     "sec": 1,
+     "note": "Latest year in the AI Index (2024). The report says the US share fell 3 points but we could not read its exact share, so it is left blank rather than guessed. Publications count once per linked country. 2023 (AI Index 2025): China 23.2%, India 9.2%.",
+     "primary": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_1_research_development.pdf",
+     "label": "2024 (AI Index)"
+    },
+    {
+     "label": "2025",
+     "title": "Share of global AI publications, 2025 (OpenAlex, fractional counts)",
+     "values": {
+      "156": 35.91,
+      "840": 12.01,
+      "356": 10
+     },
+     "source": "Trajectories and Comparative Analysis of Global Countries Dominating AI Publications, 2000–2025 (arXiv 2509.25298, v2 Mar 2026), Table 4",
+     "src": "https://arxiv.org/abs/2509.25298",
+     "sec": 0,
+     "note": "A different method from the AI Index: OpenAlex papers tagged AI or machine learning, fractional counts per country (they sum to 100%), so shares are not comparable with the 2024 view. India is given as 'about 10%'. The EU27 as a bloc holds 12.40%. A preprint."
+    }
+   ]
   },
   {
    "id": "frontier",

@@ -51,6 +51,16 @@
    "factual",
    "Factuality",
    "#a16207"
+  ],
+  [
+   "airnd",
+   "AI research & engineering",
+   "#4f46e5"
+  ],
+  [
+   "tools",
+   "Tool calling",
+   "#be185d"
   ]
  ],
  "benchmarks": [
@@ -242,6 +252,24 @@
    100,
    "Short fact questions; percent correct (abstaining counts as wrong), so willingness to guess moves scores",
    "Google DeepMind / Kaggle; tracked by Epoch AI"
+  ],
+  [
+   "mle-bench-lite",
+   "MLE-bench Lite",
+   "airnd",
+   "%",
+   100,
+   "Kaggle-style ML engineering tasks; share of tasks earning a medal. Frontier labs mostly report full MLE-bench or PaperBench only in system cards",
+   "OpenAI (benchmark); results self-reported"
+  ],
+  [
+   "mcp-atlas",
+   "MCP Atlas (Scale)",
+   "tools",
+   "%",
+   100,
+   "Multi-step tool use against real MCP servers",
+   "Scale Labs leaderboard"
   ]
  ],
  "scores": [
@@ -1333,6 +1361,50 @@
    "src": "https://benchgecko.ai/benchmark/simpleqa-verified",
    "sec": 1,
    "note": "Claude Fable 5"
+  },
+  {
+   "m": "deepseek-20260910-deepseek-v4-1-flash",
+   "b": "mle-bench-lite",
+   "v": 89.2,
+   "d": "2026-11-18",
+   "rep": "other",
+   "by": "Shanghai AI Lab's Sage S2.1-Flash model card comparison, as relayed by a secondary site",
+   "src": "https://explainx.ai/blog/sage-s2-1-flash-shanghai-ai-lab-science-agent-november-2026",
+   "sec": 1,
+   "note": "DeepSeek-V4.1-Flash-1017 checkpoint; Sage S2.1-Flash (90.3, vendor-reported) is not in our model map"
+  },
+  {
+   "m": "google-20260930-gemini-4-argon",
+   "b": "mcp-atlas",
+   "v": 90.7,
+   "d": "2026-11-19",
+   "rep": "independent",
+   "by": "Scale Labs leaderboard, as mirrored by BenchLM",
+   "src": "https://benchlm.ai/benchmarks/scale-mcp-atlas",
+   "sec": 1,
+   "note": "Snapshot 19 Nov 2026"
+  },
+  {
+   "m": "meta-20261015-muse-spark-open",
+   "b": "mcp-atlas",
+   "v": 89.2,
+   "d": "2026-11-18",
+   "rep": "independent",
+   "by": "Leaderboard aggregator",
+   "src": "https://benchlm.ai/benchmarks/mcpatlas",
+   "sec": 1,
+   "note": "Snapshot 18 Nov 2026"
+  },
+  {
+   "m": "anthropic-20260922-claude-opus-5-5",
+   "b": "mcp-atlas",
+   "v": 85.4,
+   "d": "2026-11-19",
+   "rep": "independent",
+   "by": "Scale Labs leaderboard (search snippet)",
+   "src": "https://labs.scale.com/leaderboard/mcp_atlas",
+   "sec": 1,
+   "note": "Could not open the leaderboard page directly"
   }
  ]
 }

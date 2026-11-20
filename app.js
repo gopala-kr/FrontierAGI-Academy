@@ -884,7 +884,7 @@ function initBackToTop() {
     }
     wrap.querySelector('.lt-prev').addEventListener('click', function () { go(-1); restart(); });
     wrap.querySelector('.lt-next').addEventListener('click', function () { go(1); restart(); });
-    function restart() { clearInterval(timer); if (!reduce) timer = setInterval(function () { if (!paused && !document.hidden) go(1); }, 3500); }
+    function restart() { clearInterval(timer); if (!reduce) timer = setInterval(function () { if (!paused && !document.hidden) go(1); }, 2000); }
     ['mouseenter', 'focusin', 'touchstart'].forEach(function (e) { wrap.addEventListener(e, function () { paused = true; }, { passive: true }); });
     ['mouseleave', 'focusout'].forEach(function (e) { wrap.addEventListener(e, function () { paused = false; }); });
     wrap.addEventListener('touchend', function () { setTimeout(function () { paused = false; }, 4000); }, { passive: true });

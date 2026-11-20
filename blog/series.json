@@ -340,6 +340,99 @@
       ]
     },
     {
+      "id": "sec-foundations",
+      "title": "AGI Researcher Foundations: An 11-Part Curriculum",
+      "short": "AGI Researcher Foundations",
+      "icon": "🎓",
+      "slugs": [
+        "agi-researcher-foundations-technical-stack",
+        "agi-researcher-foundations-self-assessment-deep-dive",
+        "agi-researcher-foundations-mathematical-foundations",
+        "agi-researcher-foundations-core-deep-learning-concepts",
+        "agi-researcher-foundations-generalization-learning-theory",
+        "agi-researcher-foundations-rl-foundations",
+        "agi-researcher-foundations-interpretability",
+        "agi-researcher-foundations-alignment",
+        "agi-researcher-foundations-world-models",
+        "agi-researcher-foundations-systems",
+        "agi-researcher-foundations-capstone"
+      ]
+    },
+    {
+      "id": "sec-practicum",
+      "title": "Frontier Lab Engineering Practicum: A 9-Part Practitioner's Companion",
+      "short": "Frontier Lab Engineering Practicum",
+      "icon": "🧑‍💻",
+      "slugs": [
+        "frontier-lab-engineering-day-one-onboarding",
+        "frontier-lab-engineering-production-training-code",
+        "frontier-lab-engineering-debugging-distributed-jobs",
+        "frontier-lab-engineering-compute-economics",
+        "frontier-lab-engineering-custom-kernels",
+        "frontier-lab-engineering-oncall-reality",
+        "frontier-lab-engineering-other-teams-code",
+        "frontier-lab-engineering-idea-to-merged-pr",
+        "frontier-lab-engineering-week-in-the-life"
+      ]
+    },
+    {
+      "id": "sec-path",
+      "title": "The Researcher's Path: Careers, Labs & Field Notes",
+      "short": "The Researcher's Path",
+      "icon": "🧭",
+      "slugs": [
+        "ai-researcher-field-guide",
+        "agi-researcher-day-in-life",
+        "ai-research-frontier-map-labs-compared"
+      ]
+    },
+    {
+      "id": "sec-startup",
+      "title": "Founding an AGI Startup: The Complete 12-Part Series",
+      "short": "Founding an AGI Startup",
+      "icon": "🚀",
+      "slugs": [
+        "founding-agi-startup-series",
+        "founding-agi-startup-01-finding-idea",
+        "founding-agi-startup-02-legal-foundations",
+        "founding-agi-startup-03-founding-team",
+        "founding-agi-startup-04-seed-capital",
+        "founding-agi-startup-05-office-ops-infrastructure",
+        "founding-agi-startup-06-building-product",
+        "founding-agi-startup-07-research-function",
+        "founding-agi-startup-08-gtm-marketing",
+        "founding-agi-startup-09-sales-early-customers",
+        "founding-agi-startup-10-scaling-series-a",
+        "founding-agi-startup-11-surviving-market",
+        "founding-agi-startup-12-financial-modeling"
+      ]
+    },
+    {
+      "id": "sec-lanes",
+      "title": "AGI Startup Lane Deep Dives: Three Bets, Two Angles Each",
+      "short": "AGI Startup Lane Deep Dives",
+      "icon": "🎯",
+      "slugs": [
+        "building-agi-startup-lane1-frontier-scale",
+        "building-agi-startup-lane2-applied-agentic",
+        "building-agi-startup-lane3-narrow-research-bet",
+        "building-agi-startup-team-profiles-resumes",
+        "inside-agi-team-lane1-frontier-scale",
+        "inside-agi-team-lane2-applied-agentic",
+        "inside-agi-team-lane3-narrow-research-bet"
+      ]
+    },
+    {
+      "id": "sec-econ",
+      "title": "Economics & Society: What AI Progress Does to the Rest of the World",
+      "short": "Economics & Society",
+      "icon": "💼",
+      "slugs": [
+        "ai-productivity-paradox-layoffs",
+        "ai-productivity-paradox-civilization"
+      ]
+    },
+    {
       "id": "sec-llm-pipeline",
       "title": "How LLMs Are Built: One In-Depth Article per Stage",
       "short": "How LLMs Are Built",
@@ -499,99 +592,6 @@
         "agi-benchmarks-measuring-the-undefined",
         "stanford-ai-index-2026-research-directions",
         "ai-researcher-atlas"
-      ]
-    },
-    {
-      "id": "sec-foundations",
-      "title": "AGI Researcher Foundations: An 11-Part Curriculum",
-      "short": "AGI Researcher Foundations",
-      "icon": "🎓",
-      "slugs": [
-        "agi-researcher-foundations-technical-stack",
-        "agi-researcher-foundations-self-assessment-deep-dive",
-        "agi-researcher-foundations-mathematical-foundations",
-        "agi-researcher-foundations-core-deep-learning-concepts",
-        "agi-researcher-foundations-generalization-learning-theory",
-        "agi-researcher-foundations-rl-foundations",
-        "agi-researcher-foundations-interpretability",
-        "agi-researcher-foundations-alignment",
-        "agi-researcher-foundations-world-models",
-        "agi-researcher-foundations-systems",
-        "agi-researcher-foundations-capstone"
-      ]
-    },
-    {
-      "id": "sec-practicum",
-      "title": "Frontier Lab Engineering Practicum: A 9-Part Practitioner's Companion",
-      "short": "Frontier Lab Engineering Practicum",
-      "icon": "🧑‍💻",
-      "slugs": [
-        "frontier-lab-engineering-day-one-onboarding",
-        "frontier-lab-engineering-production-training-code",
-        "frontier-lab-engineering-debugging-distributed-jobs",
-        "frontier-lab-engineering-compute-economics",
-        "frontier-lab-engineering-custom-kernels",
-        "frontier-lab-engineering-oncall-reality",
-        "frontier-lab-engineering-other-teams-code",
-        "frontier-lab-engineering-idea-to-merged-pr",
-        "frontier-lab-engineering-week-in-the-life"
-      ]
-    },
-    {
-      "id": "sec-path",
-      "title": "The Researcher's Path: Careers, Labs & Field Notes",
-      "short": "The Researcher's Path",
-      "icon": "🧭",
-      "slugs": [
-        "ai-researcher-field-guide",
-        "agi-researcher-day-in-life",
-        "ai-research-frontier-map-labs-compared"
-      ]
-    },
-    {
-      "id": "sec-startup",
-      "title": "Founding an AGI Startup: The Complete 12-Part Series",
-      "short": "Founding an AGI Startup",
-      "icon": "🚀",
-      "slugs": [
-        "founding-agi-startup-series",
-        "founding-agi-startup-01-finding-idea",
-        "founding-agi-startup-02-legal-foundations",
-        "founding-agi-startup-03-founding-team",
-        "founding-agi-startup-04-seed-capital",
-        "founding-agi-startup-05-office-ops-infrastructure",
-        "founding-agi-startup-06-building-product",
-        "founding-agi-startup-07-research-function",
-        "founding-agi-startup-08-gtm-marketing",
-        "founding-agi-startup-09-sales-early-customers",
-        "founding-agi-startup-10-scaling-series-a",
-        "founding-agi-startup-11-surviving-market",
-        "founding-agi-startup-12-financial-modeling"
-      ]
-    },
-    {
-      "id": "sec-lanes",
-      "title": "AGI Startup Lane Deep Dives: Three Bets, Two Angles Each",
-      "short": "AGI Startup Lane Deep Dives",
-      "icon": "🎯",
-      "slugs": [
-        "building-agi-startup-lane1-frontier-scale",
-        "building-agi-startup-lane2-applied-agentic",
-        "building-agi-startup-lane3-narrow-research-bet",
-        "building-agi-startup-team-profiles-resumes",
-        "inside-agi-team-lane1-frontier-scale",
-        "inside-agi-team-lane2-applied-agentic",
-        "inside-agi-team-lane3-narrow-research-bet"
-      ]
-    },
-    {
-      "id": "sec-econ",
-      "title": "Economics & Society: What AI Progress Does to the Rest of the World",
-      "short": "Economics & Society",
-      "icon": "💼",
-      "slugs": [
-        "ai-productivity-paradox-layoffs",
-        "ai-productivity-paradox-civilization"
       ]
     },
     {

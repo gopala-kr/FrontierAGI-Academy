@@ -468,6 +468,105 @@ Six research briefs, each with key takeaways, signals, evidence and a method sec
 | 6 | 🔮 [Ten Predictions for AI in 2027, Written Down to Be Scored](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/market-predictions-2027.html) | 7 min |
 
 
+### 04 · Become a Researcher
+
+#### 🎓 AGI Researcher Foundations: An 11-Part Curriculum
+
+The math, deep learning theory, RL, interpretability, alignment, world models, and systems knowledge an AGI researcher actually needs — plus a technical stack primer and self-assessment.  
+<sub>11 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🧰 [AGI Researcher Foundations: The Technical Stack](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-technical-stack.html) | 100+ min |
+| 2 | ✅ [AGI Researcher Foundations: The Self-Assessment Deep Dive](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-self-assessment-deep-dive.html) | 65 min |
+| 3 | 📐 [AGI Researcher Foundations: The Mathematical Foundations](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-mathematical-foundations.html) | 75 min |
+| 4 | 🧠 [AGI Researcher Foundations: Core Deep Learning Concepts](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-core-deep-learning-concepts.html) | 75 min |
+| 5 | 📊 [AGI Researcher Foundations: Generalization & Learning Theory](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-generalization-learning-theory.html) | 70 min |
+| 6 | 🎮 [AGI Researcher Foundations: Reinforcement Learning Foundations](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-rl-foundations.html) | 75 min |
+| 7 | 🔬 [AGI Researcher Foundations: Interpretability](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-interpretability.html) | 75 min |
+| 8 | 🎯 [AGI Researcher Foundations: Alignment](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-alignment.html) | 75 min |
+| 9 | 🌍 [AGI Researcher Foundations: World Models](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-world-models.html) | 75 min |
+| 10 | 🖧 [AGI Researcher Foundations: Systems](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-systems.html) | 80 min |
+| 11 | 🗺️ [AGI Researcher Foundations: The Capstone](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-capstone.html) | 65 min |
+
+#### 🧑‍💻 Frontier Lab Engineering Practicum: A 9-Part Practitioner's Companion
+
+Onboarding, production training code, distributed debugging, compute economics, custom kernels, on-call reality, cross-team code, and a full experiment shipped from idea to merged PR.  
+<sub>9 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🧑‍💻 [Day One at a Frontier Lab: The Engineering Onboarding Nobody Writes Down](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-day-one-onboarding.html) | 55 min |
+| 2 | 📜 [Reading and Writing Production Training Code](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-production-training-code.html) | 55 min |
+| 3 | 🧯 [Debugging a Distributed Job That Won't Converge (Or Won't Start)](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-debugging-distributed-jobs.html) | 60 min |
+| 4 | 💳 [Compute Economics: Requesting, Scheduling, and Not Wasting a GPU-Hour](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-compute-economics.html) | 55 min |
+| 5 | 🧵 [Writing Custom Kernels and Why You Occasionally Have To](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-custom-kernels.html) | 55 min |
+| 6 | 📟 [The On-Call Reality: Monitoring, Alerts, and 2am Incidents](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-oncall-reality.html) | 50 min |
+| 7 | 🧩 [Working With (and Around) Other Teams' Code](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-other-teams-code.html) | 50 min |
+| 8 | 🔀 [Shipping an Experiment From Idea to Merged PR](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-idea-to-merged-pr.html) | 55 min |
+| 9 | 🗓️ [Capstone: A Week in the Life of a Research Engineer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-week-in-the-life.html) | 50 min |
+
+#### 🧭 The Researcher's Path: Careers, Labs & Field Notes
+
+What it actually takes to work on AGI — papers to read, labs to target, a real day in the life, and a full investigation into one of the field's most secretive labs.  
+<sub>3 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🎓 [The Researcher's Field Guide: Papers, Labs, People, and How to Get Hired](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-field-guide.html) | 80 min |
+| 2 | ☀️ [A Day in the Life of an AGI Researcher: The Complete Operating Manual](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-day-in-life.html) | 85 min |
+| 3 | 🗺️ [The Research Frontier Map: What Every Major AI Lab Is Actually Betting On](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-research-frontier-map-labs-compared.html) | 75 min |
+
+
+### 05 · Build a Company
+
+#### 🚀 Founding an AGI Startup: The Complete 12-Part Series
+
+From finding your idea and choosing your lane through legal foundations, seed capital, building product, go-to-market, scaling, and surviving the market — a full startup lifecycle.  
+<sub>13 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🗂️ [Founding an AGI Startup: The Complete 12-Part Series](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-series.html) | 5 min |
+| 2 | 💡 [Founding an AGI Startup, Part 1: Finding the Idea & Choosing Your Lane](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-01-finding-idea.html) | 22 min |
+| 3 | 📜 [Founding an AGI Startup, Part 2: Legal Foundations](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-02-legal-foundations.html) | 30 min |
+| 4 | 👥 [Founding an AGI Startup, Part 3: The Founding Team](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-03-founding-team.html) | 29 min |
+| 5 | 💰 [Founding an AGI Startup, Part 4: Seed Capital](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-04-seed-capital.html) | 28 min |
+| 6 | 🖥️ [Founding an AGI Startup, Part 5: Office, Ops & Infrastructure](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-05-office-ops-infrastructure.html) | 26 min |
+| 7 | 🏗️ [Founding an AGI Startup, Part 6: Building the Product](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-06-building-product.html) | 27 min |
+| 8 | 🔬 [Founding an AGI Startup, Part 7: The Research Function](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-07-research-function.html) | 26 min |
+| 9 | 📣 [Founding an AGI Startup, Part 8: Go-to-Market & Marketing](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-08-gtm-marketing.html) | 27 min |
+| 10 | 🤝 [Founding an AGI Startup, Part 9: Sales & Early Customers](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-09-sales-early-customers.html) | 27 min |
+| 11 | 📈 [Founding an AGI Startup, Part 10: Scaling & Series A](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-10-scaling-series-a.html) | 27 min |
+| 12 | ⚔️ [Founding an AGI Startup, Part 11: Surviving the Market (Series Finale)](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-11-surviving-market.html) | 28 min |
+| 13 | 🧮 [Founding an AGI Startup, Part 12 (Bonus): Financial Modeling](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-12-financial-modeling.html) | 29 min |
+
+#### 🎯 AGI Startup Lane Deep Dives: Three Bets, Two Angles Each
+
+Team profiles and a look inside each of the three strategic lanes — frontier scale-first, the applied & agentic layer, and the narrow research bet.  
+<sub>7 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🔴 [Building an AGI Startup: Frontier Scale-First](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-lane1-frontier-scale.html) | 50 min |
+| 2 | 🔵 [Building an AGI Startup: The Applied & Agentic Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-lane2-applied-agentic.html) | 50 min |
+| 3 | 🟢 [Building an AGI Startup: The Narrow Research Bet](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-lane3-narrow-research-bet.html) | 50 min |
+| 4 | 🧑‍💼 [Building an AGI Startup: Who You'd Actually Hire](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-team-profiles-resumes.html) | 45 min |
+| 5 | 🔴 [Inside an AGI Startup Team: Frontier Scale-First](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/inside-agi-team-lane1-frontier-scale.html) | 55 min |
+| 6 | 🔵 [Inside an AGI Startup Team: The Applied & Agentic Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/inside-agi-team-lane2-applied-agentic.html) | 55 min |
+| 7 | 🟢 [Inside an AGI Startup Team: The Narrow Research Bet](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/inside-agi-team-lane3-narrow-research-bet.html) | 55 min |
+
+#### 💼 Economics & Society: What AI Progress Does to the Rest of the World
+
+Two pieces on the productivity paradox — what happens to jobs, growth, and the shape of the economy as AI adoption accelerates.  
+<sub>2 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | ⚖️ [The AI Productivity Paradox: Adoption, Mass Layoffs & What the Data Actually Shows](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-layoffs.html) | 24 min |
+| 2 | 🌐 [The AI Productivity Paradox: When Economic Growth Stops Needing Humans](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-civilization.html) | 20 min |
+
+
 ### 02 · Learn How LLMs Work
 
 #### 🛠️ How LLMs Are Built: One In-Depth Article per Stage
@@ -634,105 +733,6 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 | 9 | 🧭 [AGI Benchmarks: How the Field Tries to Measure the Thing It Can't Yet Define](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-benchmarks-measuring-the-undefined.html) | 55 min |
 | 10 | 📈 [What Stanford's 2026 AI Index Says About Where AI Research Is Heading](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/stanford-ai-index-2026-research-directions.html) | 40 min |
 | 11 | 🧑‍🔬 [The AI Researcher Atlas: 50 People Who Built the Field](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-atlas.html) | 65 min |
-
-
-### 04 · Become a Researcher
-
-#### 🎓 AGI Researcher Foundations: An 11-Part Curriculum
-
-The math, deep learning theory, RL, interpretability, alignment, world models, and systems knowledge an AGI researcher actually needs — plus a technical stack primer and self-assessment.  
-<sub>11 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 🧰 [AGI Researcher Foundations: The Technical Stack](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-technical-stack.html) | 100+ min |
-| 2 | ✅ [AGI Researcher Foundations: The Self-Assessment Deep Dive](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-self-assessment-deep-dive.html) | 65 min |
-| 3 | 📐 [AGI Researcher Foundations: The Mathematical Foundations](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-mathematical-foundations.html) | 75 min |
-| 4 | 🧠 [AGI Researcher Foundations: Core Deep Learning Concepts](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-core-deep-learning-concepts.html) | 75 min |
-| 5 | 📊 [AGI Researcher Foundations: Generalization & Learning Theory](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-generalization-learning-theory.html) | 70 min |
-| 6 | 🎮 [AGI Researcher Foundations: Reinforcement Learning Foundations](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-rl-foundations.html) | 75 min |
-| 7 | 🔬 [AGI Researcher Foundations: Interpretability](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-interpretability.html) | 75 min |
-| 8 | 🎯 [AGI Researcher Foundations: Alignment](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-alignment.html) | 75 min |
-| 9 | 🌍 [AGI Researcher Foundations: World Models](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-world-models.html) | 75 min |
-| 10 | 🖧 [AGI Researcher Foundations: Systems](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-systems.html) | 80 min |
-| 11 | 🗺️ [AGI Researcher Foundations: The Capstone](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-foundations-capstone.html) | 65 min |
-
-#### 🧑‍💻 Frontier Lab Engineering Practicum: A 9-Part Practitioner's Companion
-
-Onboarding, production training code, distributed debugging, compute economics, custom kernels, on-call reality, cross-team code, and a full experiment shipped from idea to merged PR.  
-<sub>9 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 🧑‍💻 [Day One at a Frontier Lab: The Engineering Onboarding Nobody Writes Down](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-day-one-onboarding.html) | 55 min |
-| 2 | 📜 [Reading and Writing Production Training Code](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-production-training-code.html) | 55 min |
-| 3 | 🧯 [Debugging a Distributed Job That Won't Converge (Or Won't Start)](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-debugging-distributed-jobs.html) | 60 min |
-| 4 | 💳 [Compute Economics: Requesting, Scheduling, and Not Wasting a GPU-Hour](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-compute-economics.html) | 55 min |
-| 5 | 🧵 [Writing Custom Kernels and Why You Occasionally Have To](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-custom-kernels.html) | 55 min |
-| 6 | 📟 [The On-Call Reality: Monitoring, Alerts, and 2am Incidents](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-oncall-reality.html) | 50 min |
-| 7 | 🧩 [Working With (and Around) Other Teams' Code](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-other-teams-code.html) | 50 min |
-| 8 | 🔀 [Shipping an Experiment From Idea to Merged PR](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-idea-to-merged-pr.html) | 55 min |
-| 9 | 🗓️ [Capstone: A Week in the Life of a Research Engineer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/frontier-lab-engineering-week-in-the-life.html) | 50 min |
-
-#### 🧭 The Researcher's Path: Careers, Labs & Field Notes
-
-What it actually takes to work on AGI — papers to read, labs to target, a real day in the life, and a full investigation into one of the field's most secretive labs.  
-<sub>3 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 🎓 [The Researcher's Field Guide: Papers, Labs, People, and How to Get Hired](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-field-guide.html) | 80 min |
-| 2 | ☀️ [A Day in the Life of an AGI Researcher: The Complete Operating Manual](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-researcher-day-in-life.html) | 85 min |
-| 3 | 🗺️ [The Research Frontier Map: What Every Major AI Lab Is Actually Betting On](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-research-frontier-map-labs-compared.html) | 75 min |
-
-
-### 05 · Build a Company
-
-#### 🚀 Founding an AGI Startup: The Complete 12-Part Series
-
-From finding your idea and choosing your lane through legal foundations, seed capital, building product, go-to-market, scaling, and surviving the market — a full startup lifecycle.  
-<sub>13 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 🗂️ [Founding an AGI Startup: The Complete 12-Part Series](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-series.html) | 5 min |
-| 2 | 💡 [Founding an AGI Startup, Part 1: Finding the Idea & Choosing Your Lane](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-01-finding-idea.html) | 22 min |
-| 3 | 📜 [Founding an AGI Startup, Part 2: Legal Foundations](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-02-legal-foundations.html) | 30 min |
-| 4 | 👥 [Founding an AGI Startup, Part 3: The Founding Team](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-03-founding-team.html) | 29 min |
-| 5 | 💰 [Founding an AGI Startup, Part 4: Seed Capital](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-04-seed-capital.html) | 28 min |
-| 6 | 🖥️ [Founding an AGI Startup, Part 5: Office, Ops & Infrastructure](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-05-office-ops-infrastructure.html) | 26 min |
-| 7 | 🏗️ [Founding an AGI Startup, Part 6: Building the Product](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-06-building-product.html) | 27 min |
-| 8 | 🔬 [Founding an AGI Startup, Part 7: The Research Function](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-07-research-function.html) | 26 min |
-| 9 | 📣 [Founding an AGI Startup, Part 8: Go-to-Market & Marketing](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-08-gtm-marketing.html) | 27 min |
-| 10 | 🤝 [Founding an AGI Startup, Part 9: Sales & Early Customers](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-09-sales-early-customers.html) | 27 min |
-| 11 | 📈 [Founding an AGI Startup, Part 10: Scaling & Series A](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-10-scaling-series-a.html) | 27 min |
-| 12 | ⚔️ [Founding an AGI Startup, Part 11: Surviving the Market (Series Finale)](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-11-surviving-market.html) | 28 min |
-| 13 | 🧮 [Founding an AGI Startup, Part 12 (Bonus): Financial Modeling](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/founding-agi-startup-12-financial-modeling.html) | 29 min |
-
-#### 🎯 AGI Startup Lane Deep Dives: Three Bets, Two Angles Each
-
-Team profiles and a look inside each of the three strategic lanes — frontier scale-first, the applied & agentic layer, and the narrow research bet.  
-<sub>7 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 🔴 [Building an AGI Startup: Frontier Scale-First](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-lane1-frontier-scale.html) | 50 min |
-| 2 | 🔵 [Building an AGI Startup: The Applied & Agentic Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-lane2-applied-agentic.html) | 50 min |
-| 3 | 🟢 [Building an AGI Startup: The Narrow Research Bet](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-lane3-narrow-research-bet.html) | 50 min |
-| 4 | 🧑‍💼 [Building an AGI Startup: Who You'd Actually Hire](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/building-agi-startup-team-profiles-resumes.html) | 45 min |
-| 5 | 🔴 [Inside an AGI Startup Team: Frontier Scale-First](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/inside-agi-team-lane1-frontier-scale.html) | 55 min |
-| 6 | 🔵 [Inside an AGI Startup Team: The Applied & Agentic Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/inside-agi-team-lane2-applied-agentic.html) | 55 min |
-| 7 | 🟢 [Inside an AGI Startup Team: The Narrow Research Bet](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/inside-agi-team-lane3-narrow-research-bet.html) | 55 min |
-
-#### 💼 Economics & Society: What AI Progress Does to the Rest of the World
-
-Two pieces on the productivity paradox — what happens to jobs, growth, and the shape of the economy as AI adoption accelerates.  
-<sub>2 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | ⚖️ [The AI Productivity Paradox: Adoption, Mass Layoffs & What the Data Actually Shows](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-layoffs.html) | 24 min |
-| 2 | 🌐 [The AI Productivity Paradox: When Economic Growth Stops Needing Humans](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-civilization.html) | 20 min |
 
 
 ### 03 · Take a Course

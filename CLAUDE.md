@@ -116,6 +116,8 @@ Owner's request: `#grp-models` ("02b · Go Deeper · The Models", h2 "Models in 
 
 Owner's request (20 Nov 2026): "Full University Courses, Lecture by Lecture" (`#grp-courses`) is the last main section, right before Explore Everything (after the Company / Three Lanes blocks); its jump-nav group moved to the end too.
 
+Owner's request (20 Nov 2026): "How LLMs Are Built" (`#sec-llm-lifecycle` plus its follow-on spotlights) and "Models in Depth" (`#grp-models`) now sit right after the Three Lanes / Company section and before Courses. Homepage main-section order: hero → What's new + Pulse → Latest → Labs → AI Research Progress → 00 Frontier → 01 Build the Machine → 01b AI Software Stack → 01c Agentic Systems → Maestro → Season 2 → Market → Researcher → Company / Three Lanes → 02 How LLMs Are Built → 02b Models in Depth → 03 Courses → Explore Everything.
+
 ## Homepage section "Inside the AI Software Stack" (20 Nov 2026)
 Owner's request: `#grp-software` ("01b · Build the Software", h2 "AI Software Stack: ML, Data, Evals & Agents", band colour `#4f46e5` in `THEME`) is its own main section right after "01 · Build the Machine" and before the Maestro. It holds the AI Software Stack, Live embed (`#grp-softstack`) followed by the ML, Data, Evaluation and Agent Layer spotlights (moved out of `#grp-build`; their `grp-*layer` anchors kept). Agentic AI System Designs and the 3D factory stay in `#grp-build`. Jump-nav group link added.
 

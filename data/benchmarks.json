@@ -1714,6 +1714,28 @@
    "src": "https://thenextweb.com/news/gemini-4-neon-google-third-intelligence-index-replaces-argon",
    "sec": 1,
    "note": "GPT-6.2 Astra; index v5.0.1"
+  },
+  {
+   "m": "qwen-20261116-qwen4-max",
+   "b": "terminal-bench-4",
+   "v": 48.5,
+   "d": "2026-11-16",
+   "rep": "lab",
+   "by": "Alibaba launch figures, as relayed by DataCamp",
+   "src": "https://www.datacamp.com/blog/qwen4-max",
+   "sec": 1,
+   "note": "Qwen4-Max; an independent Vals AI run reportedly measured 48.48%, matching it. ~48% fewer tokens per attempt than Qwen3.8-Max (company claim)"
+  },
+  {
+   "m": "qwen-20261116-qwen4-max",
+   "b": "deepswe-1-1",
+   "v": 75.7,
+   "d": "2026-11-16",
+   "rep": "lab",
+   "by": "Alibaba launch figures, as relayed by DataCamp",
+   "src": "https://www.datacamp.com/blog/qwen4-max",
+   "sec": 1,
+   "note": "Qwen4-Max; Kimi K3.1 at 75.5 in the same table"
   }
  ]
 }

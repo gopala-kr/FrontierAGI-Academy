@@ -1075,7 +1075,7 @@ function initBackToTop() {
       }
       btn.addEventListener('click', function (e) { e.stopPropagation(); set(!el.classList.contains('sub-collapsed'), true); });
       head.forEach(function (h) { h.addEventListener('click', function (e) { if (e.target.closest('a, button, input, select')) return; set(!el.classList.contains('sub-collapsed'), true); }); });
-      set(saved[key] !== 0, false);
+      set(key in saved ? saved[key] !== 0 : !el.hasAttribute('data-open'), false);  // data-open = expanded by default
       blocks.push({ el: el, set: set });
     });
     function openFor(id) {

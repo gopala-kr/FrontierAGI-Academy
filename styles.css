@@ -6892,7 +6892,7 @@ body {
 .sec-collapsed { padding-bottom: 18px !important; }
 .sec-collapsed .home-section-hd { margin-bottom: 0; }
 .sec-collapsed .home-section-hd > p, .sec-collapsed .home-section-hd > .home-model-embed-hd { display: none; }
-.sec-hidden { display: none !important; }
+body:not(.home-searching) .sec-hidden { display: none !important; }
 .sec-all { display: flex; justify-content: center; gap: 8px; padding: 14px 16px 0; }
 .sec-all button { padding: 6px 14px; border-radius: 99px; border: 1px solid #e5e7eb; background: #fff; color: #374151; font-weight: 700; font-size: .8rem; cursor: pointer; }
 .sec-all button:hover { border-color: #c7d2fe; color: #4338ca; }
@@ -6917,7 +6917,7 @@ body {
 .sec-band[aria-expanded="true"] .sec-toggle { transform: rotate(180deg); }
 .sec-collapsed .sec-band { margin-bottom: 0; }
 .sec-collapsed { padding-bottom: 0 !important; }
-.sec-collapsed > .container > *:not(.sec-band) { display: none !important; }
+body:not(.home-searching) .sec-collapsed > .container > *:not(.sec-band) { display: none !important; }
 .sec-all { padding: 18px 16px 10px; }
 @media (max-width: 768px) {
   .sec-band { padding: 16px 0 16px 12px; gap: 10px; }
@@ -6960,7 +6960,7 @@ body {
 .sub-block > .sub-toggle { position: absolute; top: 14px; right: 14px; z-index: 3; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--sp-accent, var(--sc, #4f46e5)); background: #fff; color: var(--sp-accent, var(--sc, #4f46e5)); font-size: 1.5rem; line-height: 1; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 3px 10px rgba(15,23,42,.1); transition: background .15s, color .15s; }
 .sub-block > .sub-toggle:hover { background: var(--sp-accent, var(--sc, #4f46e5)); color: #fff; }
 .sub-block .sub-head { cursor: pointer; padding-right: 56px; }
-.sub-block.sub-collapsed > *:not(.sub-head):not(.sub-toggle) { display: none !important; }
+body:not(.home-searching) .sub-block.sub-collapsed > *:not(.sub-head):not(.sub-toggle) { display: none !important; }
 .sub-block.sub-collapsed { padding-bottom: 14px !important; }
 @media (max-width: 768px) { .sub-block > .sub-toggle { width: 34px; height: 34px; font-size: 1.3rem; top: 10px; right: 10px; } .sub-block .sub-head { padding-right: 44px; } }
 
@@ -6975,3 +6975,6 @@ body {
 .home-dash .wn-k { color: #4f46e5; }
 .home-dash .wn-card strong { color: #0f172a; }
 .home-dash .wn-m { color: #64748b; }
+
+/* while the article search is active, collapsed sections and blocks open so matches are visible */
+body.home-searching .sec-peek { display: none; }

@@ -1025,7 +1025,7 @@ function initBackToTop() {
     var KEY = 'fa-sub', saved = {};
     try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
     var blocks = [];
-    document.querySelectorAll('.home-series-spotlight, .home-idea-embed').forEach(function (el) {
+    document.querySelectorAll('.home-series-spotlight, .home-rsi-spotlight, .home-lineage-spotlight, .home-idea-embed').forEach(function (el) {
       var isEmb = el.classList.contains('home-idea-embed'), head = [];
       if (isEmb) {
         var hd = el.querySelector(':scope > .home-model-embed-hd');
@@ -1036,10 +1036,10 @@ function initBackToTop() {
         }
         head = [hd];
       } else {
-        head = [].filter.call(el.children, function (c) { return c.matches('.home-layer-label, .home-series-tag, .home-series-title, .home-series-desc'); });
+        head = [].filter.call(el.children, function (c) { return c.matches('.home-layer-label, .home-series-tag, .home-series-title, .home-series-desc, .home-rsi-tag, .home-rsi-title, .home-rsi-desc, .home-lineage-tag, .home-lineage-title, .home-lineage-desc'); });
       }
       if (!head.length) return;
-      var tEl = el.querySelector('.home-series-title, .home-rsimap-title'), title = tEl ? tEl.textContent.trim() : '';
+      var tEl = el.querySelector('.home-series-title, .home-rsi-title, .home-lineage-title, .home-rsimap-title'), title = tEl ? tEl.textContent.trim() : '';
       var key = el.id || title; if (!key) return;
       head.forEach(function (h) { h.classList.add('sub-head'); });
       var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sub-toggle';

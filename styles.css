@@ -6931,3 +6931,25 @@ body {
 /* align the LLM pipeline section band with the other sections (its own rule adds 24px side padding) */
 .pipeline-section.sec-band-on { padding-right: 0; }
 @media (max-width: 1099px) { .pipeline-section.sec-band-on { padding-left: 0; } }
+
+
+/* ── Homepage hero: What's new strip + compact Pulse + band previews (20 Nov 2026) ── */
+.whats-new { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: min(1240px, calc(100vw - 32px)); margin: 30px auto 0; position: relative; left: 50%; transform: translateX(-50%); text-align: left; }
+.wn-card { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); color: #e2e8f0; text-decoration: none; backdrop-filter: blur(6px); transition: background .15s, transform .15s; min-width: 0; }
+.wn-card:hover { background: rgba(255,255,255,.16); transform: translateY(-2px); }
+.wn-ic { font-size: 1.4rem; line-height: 1; }
+.wn-tx { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.wn-k { font-size: .66rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #a5b4fc; }
+.wn-card strong { font-size: .88rem; color: #fff; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.wn-m { font-size: .72rem; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 1000px) { .whats-new { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .whats-new { grid-template-columns: 1fr; gap: 8px; } }
+.agi-pulse:not(.show-all) .pulse-more { display: none; }
+.pulse-all { display: block; margin: 12px auto 0; padding: 6px 16px; border-radius: 99px; border: 1px solid #c7d2fe; background: #eef2ff; color: #4338ca; font-weight: 700; font-size: .8rem; cursor: pointer; }
+.pulse-all:hover { background: #e0e7ff; }
+.sec-peek { display: none; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.sec-collapsed .sec-peek { display: flex; }
+.sec-peek a { font-size: .76rem; font-weight: 600; padding: 4px 10px; border-radius: 99px; background: #fff; border: 1px solid color-mix(in srgb, var(--sc) 30%, #fff); color: #1f2937; text-decoration: none; max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sec-peek a:hover { border-color: var(--sc); color: var(--sc); }
+.sec-peek .pk-new { color: var(--sc); font-weight: 800; margin-right: 2px; }
+@media (max-width: 768px) { .sec-peek a:nth-child(n+3) { display: none; } .sec-peek a { max-width: 100%; } }

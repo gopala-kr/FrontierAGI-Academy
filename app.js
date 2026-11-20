@@ -944,6 +944,7 @@ function initBackToTop() {
       var right = document.createElement('div'); right.className = 'sec-band-r';
       var cnt = document.createElement('div'); cnt.className = 'sec-count'; right.appendChild(cnt);
       var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sec-toggle'; btn.tabIndex = -1; right.appendChild(btn);
+      var peek = document.createElement('div'); peek.className = 'sec-peek'; left.appendChild(peek);
       band.appendChild(left); band.appendChild(right);
       hd.classList.add('sec-hd-orig'); c.insertBefore(band, hd);
       var linked = [], nx = sec.nextElementSibling;
@@ -966,9 +967,23 @@ function initBackToTop() {
       band.addEventListener('click', tog);
       band.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(e); } });
       set(saved[key] !== 0, false);  // collapsed by default; a section the visitor opened stays open
-      secs.push({ sec: sec, set: set, linked: linked });
+      secs.push({ sec: sec, set: set, linked: linked, peek: peek });
     });
     if (!secs.length) return;
+    // newest 3 articles of each section as chips (visible while the section is collapsed)
+    fetch('blog/index.json').then(function (r) { return r.json(); }).then(function (m) {
+      var dt = {}; (m.posts || []).forEach(function (p) { dt[p.slug] = p.date || ''; });
+      var wk = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10);
+      secs.forEach(function (s) {
+        var seen = {}, list = [];
+        [s.sec].concat(s.linked).forEach(function (x) { x.querySelectorAll('a.home-series-card[href^="blog/"]').forEach(function (a) {
+          var slug = a.getAttribute('href').replace(/^blog\//, '').replace(/\.html.*$/, ''); if (seen[slug] || !(slug in dt)) return; seen[slug] = 1;
+          var t = a.querySelector('.home-series-card-title'); list.push({ slug: slug, d: dt[slug], t: (t ? t.textContent : a.textContent).trim() });
+        }); });
+        list.sort(function (x, y) { return x.d < y.d ? 1 : x.d > y.d ? -1 : 0; });
+        s.peek.innerHTML = list.slice(0, 3).map(function (x) { return '<a href="blog/' + x.slug + '.html" title="' + x.t.replace(/"/g, '&quot;') + '">' + (x.d >= wk ? '<span class="pk-new">New</span> ' : '') + x.t.replace(/</g, '&lt;') + '</a>'; }).join('');
+      });
+    }).catch(function () {});
     var bar = document.createElement('div'); bar.className = 'sec-all';
     bar.innerHTML = '<button type="button" data-a="0">+ Expand all sections</button><button type="button" data-a="1">− Collapse all</button>';
     bar.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; secs.forEach(function (s) { s.set(b.dataset.a === '1', true); }); });
@@ -980,6 +995,22 @@ function initBackToTop() {
     document.addEventListener('click', function (e) { var a = e.target.closest('a[href^="#"]'); if (a) openFor(a.getAttribute('href').slice(1)); }, true);
     if (location.hash) openFor(location.hash.slice(1));
     window.addEventListener('hashchange', function () { openFor(location.hash.slice(1)); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+
+
+/* ── Compact hero Pulse: "Show all N benchmarks" toggle ── */
+(function () {
+  function init() {
+    var b = document.querySelector('.pulse-all'); if (!b) return;
+    var box = b.closest('.agi-pulse'), n = b.dataset.n;
+    b.addEventListener('click', function () {
+      var on = box.classList.toggle('show-all'); b.setAttribute('aria-expanded', String(on));
+      b.textContent = on ? 'Show fewer ▴' : 'Show all ' + n + ' benchmarks ▾';
+      if (on) box.querySelectorAll('.pulse-more .agi-pulse-fill').forEach(function (f) { f.style.width = f.dataset.target + '%'; });
+      window.dispatchEvent(new Event('resize'));
+    });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

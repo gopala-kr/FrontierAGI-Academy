@@ -911,7 +911,7 @@ function initBackToTop() {
     'grp-progress': ['#7c3aed', '#f8f5ff'], 'grp-frontier': ['#0d9488', '#f0fbf9'], 'grp-build': ['#d97706', '#fffaf0'],
     'grp-run': ['#be123c', '#fff5f7'],
     'grp-market': ['#78350f', '#fbf8f4', 'Who competes at each layer of the AI stack, where AI investment is going, and monthly market briefs.', 'Market research'],
-    'sec-llm-lifecycle': ['#0284c7', '#f0f9ff'], 'grp-courses': ['#16a34a', '#f2fcf5'], 'grp-researcher': ['#9333ea', '#faf5ff'],
+    'sec-llm-lifecycle': ['#0284c7', '#f0f9ff'], 'grp-models': ['#0e7490', '#effbfd'], 'grp-courses': ['#16a34a', '#f2fcf5'], 'grp-researcher': ['#9333ea', '#faf5ff'],
     'grp-company': ['#ea580c', '#fff7f0'], 'Explore Everything': ['#475569', '#f6f8fa']
   };
   function init() {

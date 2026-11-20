@@ -534,6 +534,9 @@ Recursive self-improvement as it actually exists in 2026: agents that evolve the
 | 5 | 📈 [From Automated R&D to Effective RSI: Frontier, Evidence and Open Problems](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/automated-rd-to-effective-rsi.html) | 35 min |
 | 6 | 🧩 [Open Problems in Recursive Self-Improvement: A Research Map](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/open-problems-in-rsi.html) | 40 min |
 
+
+### 02b · Go Deeper · The Models
+
 #### 🧬 Architecture & Learning Technique: How the Field Actually Got Here
 
 The history of neural network architectures, the separate thread of learning techniques layered on top, and the live debate over what comes after Transformers.  

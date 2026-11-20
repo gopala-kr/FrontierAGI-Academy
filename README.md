@@ -630,35 +630,6 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 | 11 | 🧑‍🔬 [The AI Researcher Atlas: 50 People Who Built the Field](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-atlas.html) | 65 min |
 
 
-### 03 · Take a Course
-
-#### 🧱 Language Modeling from Scratch: A Guide to Stanford's CS336
-
-A lecture-by-lecture deep-dive series on Stanford's from-scratch LLM-building course — tokenization, architectures, systems, scaling laws, data, and alignment, with real citations, original code walkthroughs, and hands-on directions tied to the actual public assignment repos. One full article per lecture, no length cap.  
-<sub>4 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 🧱 [Language Modeling from Scratch, Part 1: Course Primer & Overview](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-language-modeling-from-scratch-part1-overview.html) | 20 min |
-| 2 | 🔡 [Language Modeling from Scratch, Part 2: Tokenization & Byte-Pair Encoding](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-tokenization-byte-pair-encoding-part2.html) | 28 min |
-| 3 | 🧮 [Language Modeling from Scratch, Part 3: PyTorch & Resource Accounting](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-pytorch-resource-accounting-part3.html) | 22 min |
-| 4 | 🧩 [Language Modeling from Scratch, Part 4: Architectures & Hyperparameters](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-architectures-hyperparameters-part4.html) | 42 min |
-
-#### 🎓 Self-Improving AI Agents: A Guide to Stanford's CS329A
-
-A standalone companion to Stanford's course on the mechanics behind self-improving agents — test-time compute, verification, agentic feedback loops, planning as search, RL for reasoning, and long-horizon evaluation. A different branch of "self-improvement" from this site's RSI series, covered on its own.  
-<sub>6 articles</sub>
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 📘 [Self-Improving AI Agents: A Field Handbook](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-self-improving-agents-handbook.html) | 32 min |
-| 2 | 🔁 [Agentic Feedback Loops in Practice](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-agentic-feedback-loops.html) | 24 min |
-| 3 | 🌳 [Planning as Search](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-planning-as-search.html) | 22 min |
-| 4 | 🏋️ [Training on What Search Finds](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-training-on-what-search-finds.html) | 23 min |
-| 5 | 🔍 [Competitive Programming and Retrieval Agents](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-competitive-programming-and-retrieval-agents.html) | 22 min |
-| 6 | 📏 [Evaluation and the Open Problems](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-evaluation-and-open-problems.html) | 24 min |
-
-
 ### 04 · Become a Researcher
 
 #### 🎓 AGI Researcher Foundations: An 11-Part Curriculum
@@ -756,6 +727,35 @@ Two pieces on the productivity paradox — what happens to jobs, growth, and the
 |---|---|---|
 | 1 | ⚖️ [The AI Productivity Paradox: Adoption, Mass Layoffs & What the Data Actually Shows](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-layoffs.html) | 24 min |
 | 2 | 🌐 [The AI Productivity Paradox: When Economic Growth Stops Needing Humans](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-productivity-paradox-civilization.html) | 20 min |
+
+
+### 03 · Take a Course
+
+#### 🧱 Language Modeling from Scratch: A Guide to Stanford's CS336
+
+A lecture-by-lecture deep-dive series on Stanford's from-scratch LLM-building course — tokenization, architectures, systems, scaling laws, data, and alignment, with real citations, original code walkthroughs, and hands-on directions tied to the actual public assignment repos. One full article per lecture, no length cap.  
+<sub>4 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🧱 [Language Modeling from Scratch, Part 1: Course Primer & Overview](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-language-modeling-from-scratch-part1-overview.html) | 20 min |
+| 2 | 🔡 [Language Modeling from Scratch, Part 2: Tokenization & Byte-Pair Encoding](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-tokenization-byte-pair-encoding-part2.html) | 28 min |
+| 3 | 🧮 [Language Modeling from Scratch, Part 3: PyTorch & Resource Accounting](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-pytorch-resource-accounting-part3.html) | 22 min |
+| 4 | 🧩 [Language Modeling from Scratch, Part 4: Architectures & Hyperparameters](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs336-architectures-hyperparameters-part4.html) | 42 min |
+
+#### 🎓 Self-Improving AI Agents: A Guide to Stanford's CS329A
+
+A standalone companion to Stanford's course on the mechanics behind self-improving agents — test-time compute, verification, agentic feedback loops, planning as search, RL for reasoning, and long-horizon evaluation. A different branch of "self-improvement" from this site's RSI series, covered on its own.  
+<sub>6 articles</sub>
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 📘 [Self-Improving AI Agents: A Field Handbook](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-self-improving-agents-handbook.html) | 32 min |
+| 2 | 🔁 [Agentic Feedback Loops in Practice](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-agentic-feedback-loops.html) | 24 min |
+| 3 | 🌳 [Planning as Search](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-planning-as-search.html) | 22 min |
+| 4 | 🏋️ [Training on What Search Finds](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-training-on-what-search-finds.html) | 23 min |
+| 5 | 🔍 [Competitive Programming and Retrieval Agents](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-competitive-programming-and-retrieval-agents.html) | 22 min |
+| 6 | 📏 [Evaluation and the Open Problems](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/cs329a-evaluation-and-open-problems.html) | 24 min |
 
 <!-- SERIES:END -->
 

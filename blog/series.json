@@ -502,32 +502,6 @@
       ]
     },
     {
-      "id": "sec-cs336",
-      "title": "Language Modeling from Scratch: A Guide to Stanford's CS336",
-      "short": "Language Modeling from Scratch",
-      "icon": "🧱",
-      "slugs": [
-        "cs336-language-modeling-from-scratch-part1-overview",
-        "cs336-tokenization-byte-pair-encoding-part2",
-        "cs336-pytorch-resource-accounting-part3",
-        "cs336-architectures-hyperparameters-part4"
-      ]
-    },
-    {
-      "id": "sec-cs329a",
-      "title": "Self-Improving AI Agents: A Guide to Stanford's CS329A",
-      "short": "Self-Improving AI Agents",
-      "icon": "🎓",
-      "slugs": [
-        "cs329a-self-improving-agents-handbook",
-        "cs329a-agentic-feedback-loops",
-        "cs329a-planning-as-search",
-        "cs329a-training-on-what-search-finds",
-        "cs329a-competitive-programming-and-retrieval-agents",
-        "cs329a-evaluation-and-open-problems"
-      ]
-    },
-    {
       "id": "sec-foundations",
       "title": "AGI Researcher Foundations: An 11-Part Curriculum",
       "short": "AGI Researcher Foundations",
@@ -618,6 +592,32 @@
       "slugs": [
         "ai-productivity-paradox-layoffs",
         "ai-productivity-paradox-civilization"
+      ]
+    },
+    {
+      "id": "sec-cs336",
+      "title": "Language Modeling from Scratch: A Guide to Stanford's CS336",
+      "short": "Language Modeling from Scratch",
+      "icon": "🧱",
+      "slugs": [
+        "cs336-language-modeling-from-scratch-part1-overview",
+        "cs336-tokenization-byte-pair-encoding-part2",
+        "cs336-pytorch-resource-accounting-part3",
+        "cs336-architectures-hyperparameters-part4"
+      ]
+    },
+    {
+      "id": "sec-cs329a",
+      "title": "Self-Improving AI Agents: A Guide to Stanford's CS329A",
+      "short": "Self-Improving AI Agents",
+      "icon": "🎓",
+      "slugs": [
+        "cs329a-self-improving-agents-handbook",
+        "cs329a-agentic-feedback-loops",
+        "cs329a-planning-as-search",
+        "cs329a-training-on-what-search-finds",
+        "cs329a-competitive-programming-and-retrieval-agents",
+        "cs329a-evaluation-and-open-problems"
       ]
     }
   ]

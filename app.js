@@ -912,8 +912,7 @@ function initBackToTop() {
     'grp-software': [['pages/ml-layer.html', 'ML Layer at a Glance'], ['pages/data-layer.html', 'Data Layer at a Glance'], ['pages/eval-layer.html', 'Evaluation at a Glance'], ['pages/agent-layer.html', 'Agent Layer at a Glance']],
     'grp-agentsys': [['pages/agentic-systems.html', 'Agentic Systems at a Glance']],
     'grp-run': [['pages/maestro-journey.html', "Gopala's Journey"], ['pages/maestro.html', 'Maestro Mission Control']],
-    'sec-llm-lifecycle': [['pages/frontier-model-learning.html', 'Interactive LLM Course']],
-    'grp-world': [['pages/ai-world-map.html', 'AI World Map']]
+    'sec-llm-lifecycle': [['pages/frontier-model-learning.html', 'Interactive LLM Course']]
   };
   var THEME = {
     latestThreads: ['#4f46e5', '#f5f5ff', 'The newest articles on the site, with where each sits in its series.', '01 · New this week'],
@@ -922,7 +921,7 @@ function initBackToTop() {
     'grp-run': ['#be123c', '#fff5f7'],
     'grp-market': ['#78350f', '#fbf8f4', 'Who competes at each layer of the AI stack, where AI investment is going, and monthly market briefs.', '09 · Market research'],
     'sec-llm-lifecycle': ['#0284c7', '#f0f9ff'], 'grp-models': ['#0e7490', '#effbfd'], 'grp-courses': ['#16a34a', '#f2fcf5'], 'grp-researcher': ['#9333ea', '#faf5ff'],
-    'grp-company': ['#ea580c', '#fff7f0'], 'grp-world': ['#1e3a8a', '#f2f5ff'], 'Explore Everything': ['#475569', '#f6f8fa']
+    'grp-company': ['#ea580c', '#fff7f0'], 'Explore Everything': ['#475569', '#f6f8fa']
   };
   function init() {
     var main = document.querySelector('.home-hero'); if (!main) return;

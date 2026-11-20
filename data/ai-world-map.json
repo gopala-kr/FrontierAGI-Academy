@@ -1,37 +1,207 @@
 {
-  "about": "Country figures for the AI World Map (pages/ai-world-map.html). Every value comes from the source named on its layer; sec 1 = read from a secondary reproduction of the primary report (shown with ⚠️). Countries not listed have no figure in that source, which is not the same as zero.",
-  "points": {
-    "840": ["United States", 39.8, -98.6], "156": ["China", 35.0, 103.0], "826": ["United Kingdom", 54.0, -2.0],
-    "752": ["Sweden", 62.0, 15.0], "124": ["Canada", 56.0, -106.0], "250": ["France", 46.6, 2.4], "276": ["Germany", 51.2, 10.4],
-    "784": ["United Arab Emirates", 24.0, 54.0], "376": ["Israel", 31.0, 35.0], "410": ["South Korea", 36.5, 127.8],
-    "356": ["India", 22.0, 79.0], "392": ["Japan", 36.5, 138.5], "702": ["Singapore", 1.35, 103.8]
-  },
-  "layers": [
-    {"id": "invest", "tab": "💰 AI investment", "title": "Private AI investment, 2024", "unit": "$B", "dec": 2,
-     "values": {"840": 109.08, "156": 9.29, "826": 4.52, "752": 4.34, "124": 2.89, "250": 2.62, "276": 1.97, "784": 1.77, "376": 1.36, "410": 1.33, "356": 1.16},
-     "source": "Stanford AI Index 2025, Economy chapter (Quid data), as charted by Statista", "src": "https://www.statista.com/statistics/1472716/global-private-investment-in-ai-by-region", "primary": "https://hai.stanford.edu/ai-index/2025-ai-index-report/economy", "sec": 1,
-     "note": "US, China and UK figures also appear in the AI Index text ($109.1B, $9.3B, $4.5B). The 2026 edition (2025 data) was not yet read country by country."},
-    {"id": "startups", "tab": "🚀 New AI start-ups", "title": "Newly funded AI companies, 2024", "unit": "companies", "dec": 0,
-     "values": {"840": 1073, "826": 116, "156": 98, "356": 74, "276": 67, "250": 59, "410": 52, "124": 51, "392": 42, "702": 39},
-     "source": "Stanford AI Index 2025 (Quid data), as reproduced in a MUFG Americas chart", "src": "https://www.mufgamericas.com/sites/default/files/document/mufgamericas_com/2026-02/The_AI_Weekly_2_27_Venture_Capital_and_Private_Sector_Activity.pdf", "primary": "https://hai.stanford.edu/ai-index/2025-ai-index-report/economy", "sec": 1,
-     "note": "Top 10 countries only. The AI Index 2026 reports 2025 counts of 1,953 (US), 172 (UK) and 161 (China)."},
-    {"id": "models", "tab": "🧠 Notable models", "title": "Notable AI models by country of the developing institution, 2024", "unit": "models", "dec": 0,
-     "values": {"840": 40, "156": 15, "250": 3},
-     "source": "Stanford AI Index 2025, Research & Development chapter (Epoch AI data)", "src": "https://hai.stanford.edu/ai-index/2025-ai-index-report/research-and-development", "sec": 0,
-     "note": "Europe's three notable models all came from France (IEEE Spectrum's summary of the report)."},
-    {"id": "compute", "tab": "⚡ AI compute", "title": "Share of tracked AI supercomputer (GPU cluster) performance, May 2025", "unit": "%", "dec": 0,
-     "values": {"840": 75, "156": 15},
-     "source": "Epoch AI, AI supercomputers dataset: performance share by country", "src": "https://epoch.ai/data-insights/ai-supercomputers-performance-share-by-country", "sec": 0,
-     "note": "Epoch's dataset covers roughly 10–20% of global AI compute, and it warns shares could differ by 5+ points. The EU as a bloc is around 5% in secondary reports (not shown per country)."},
-    {"id": "papers", "tab": "📄 AI papers", "title": "Share of global AI journal publications, 2023", "unit": "%", "dec": 1,
-     "values": {"156": 23.2, "356": 9.2},
-     "source": "Stanford AI Index 2025, Research & Development chapter", "src": "https://hai.stanford.edu/ai-index/2025-ai-index-report/research-and-development", "sec": 0,
-     "note": "Only China and India have country shares in the text we could read; Europe as a region holds 15.2%. The US share (stable until 2021, slightly declining since) was not stated as a number, so it is left blank rather than guessed. Total AI publications: about 242,000 in 2023."},
-    {"id": "frontier", "tab": "🏁 Frontier releases", "title": "Model releases tracked on this site, by lab headquarters", "unit": "releases", "dec": 0, "live": "data/model-releases.json",
-     "source": "This site's Model Release Map (each release links its own source); lab → headquarters country is our assignment", "src": "https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/model-releases.html", "sec": 0,
-     "note": "Counts every release in our dataset (LLM, image, video, speech, world models), Jun 2017 → Nov 2026. Google DeepMind is counted under the United States (parent company), although DeepMind is headquartered in London. BigScience (an international collaboration) is not counted. ElevenLabs (offices in New York and London) is counted under the United States."}
+ "about": "Country figures for the AI World Map (pages/ai-world-map.html). Every value comes from the source named on its layer; sec 1 = read from a secondary reproduction of the primary report (shown with ⚠️). Countries not listed have no figure in that source, which is not the same as zero.",
+ "points": {
+  "840": [
+   "United States",
+   39.8,
+   -98.6
   ],
-  "labCountry": {"openai": "840", "anthropic": "840", "google": "840", "meta": "840", "xai": "840", "microsoft": "840", "amazon": "840", "nvidia": "840", "midjourney": "840", "runway": "840", "luma": "840", "sesame": "840", "ideogram": "840", "worldlabs": "840", "thinkingmachines": "840", "elevenlabs": "840",
-    "deepseek": "156", "qwen": "156", "moonshot": "156", "zhipu": "156", "kuaishou": "156", "bytedance": "156", "tencent": "156", "minimax": "156",
-    "mistral": "250", "kyutai": "250", "bfl": "276", "stability": "826", "wayve": "826"}
+  "156": [
+   "China",
+   35.0,
+   103.0
+  ],
+  "826": [
+   "United Kingdom",
+   54.0,
+   -2.0
+  ],
+  "752": [
+   "Sweden",
+   62.0,
+   15.0
+  ],
+  "124": [
+   "Canada",
+   56.0,
+   -106.0
+  ],
+  "250": [
+   "France",
+   46.6,
+   2.4
+  ],
+  "276": [
+   "Germany",
+   51.2,
+   10.4
+  ],
+  "784": [
+   "United Arab Emirates",
+   24.0,
+   54.0
+  ],
+  "376": [
+   "Israel",
+   31.0,
+   35.0
+  ],
+  "410": [
+   "South Korea",
+   36.5,
+   127.8
+  ],
+  "356": [
+   "India",
+   22.0,
+   79.0
+  ],
+  "392": [
+   "Japan",
+   36.5,
+   138.5
+  ],
+  "702": [
+   "Singapore",
+   1.35,
+   103.8
+  ],
+  "458": [
+   "Malaysia",
+   4.2,
+   101.9
+  ]
+ },
+ "layers": [
+  {
+   "id": "invest",
+   "tab": "💰 AI investment",
+   "title": "Private AI investment, 2025",
+   "unit": "$B",
+   "dec": 2,
+   "values": {
+    "840": 285.9,
+    "156": 12.4,
+    "826": 5.9,
+    "250": 4.36,
+    "124": 4.28,
+    "356": 4.09,
+    "276": 3.89,
+    "376": 3.58
+   },
+   "source": "Stanford AI Index 2026, Economy chapter (Quid data): US $285.9B and China $12.4B from the report page; the other six from a country list reproducing it",
+   "src": "https://www.secondtalent.com/resources/countries-leading-ai-development/",
+   "primary": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+   "sec": 1,
+   "note": "Latest full year (2025, published April 2026). The AI Index notes private figures likely understate China's AI spending because of government guidance funds. 2024 figures (AI Index 2025): US $109.1B, China $9.3B, UK $4.5B. For 2026 so far, see the AI Investment Tracker (venture totals Q1–Q3)."
+  },
+  {
+   "id": "startups",
+   "tab": "🚀 New AI start-ups",
+   "title": "Newly funded AI companies, 2025",
+   "unit": "companies",
+   "dec": 0,
+   "values": {
+    "840": 1953,
+    "826": 172,
+    "156": 161
+   },
+   "source": "Stanford AI Index 2026, Economy chapter (Quid data)",
+   "src": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf",
+   "sec": 0,
+   "note": "Latest full year (2025). Only the top three are stated in the text we could read; other countries are left blank, not zero. Worldwide, newly funded AI companies rose about 71% in 2025. 2024 (AI Index 2025): US 1,073, UK 116, China 98, India 74, Germany 67."
+  },
+  {
+   "id": "models",
+   "tab": "🧠 Notable models",
+   "title": "Notable AI models by country of the developing institution, 2025",
+   "unit": "models",
+   "dec": 0,
+   "values": {
+    "840": 59,
+    "156": 35,
+    "410": 8
+   },
+   "source": "Stanford AI Index 2026, Research & Development (Epoch AI data, April 2026 snapshot)",
+   "src": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+   "sec": 0,
+   "note": "Latest full year (2025). 2024: US 40, China 15, France 3 (AI Index 2025). Some secondary write-ups give other 2025 counts (50/30); we use the report's."
+  },
+  {
+   "id": "compute",
+   "tab": "⚡ AI compute",
+   "title": "Share of the world's AI compute received, 2022 → June 2026 (H100-equivalents)",
+   "unit": "%",
+   "dec": 1,
+   "values": {
+    "840": 72.2,
+    "156": 9.6,
+    "458": 2
+   },
+   "source": "Epoch AI, AI Chip Imports explorer (launched 27 Oct 2026) and its methodology page",
+   "src": "https://epoch.ai/data/ai-chip-imports-documentation/methodology",
+   "sec": 0,
+   "note": "Modelled estimates, not an inventory. Of 27.4M H100-equivalents that arrived 2022 → Jun 2026, 19.8M went to the US; its yearly share rose from ~60% (2022–24) to 72% (2025) and 78% (H1 2026). China (incl. domestic chips) holds 18.2% of chip units but 9.6% of compute. The EU as a bloc is 5%; Malaysia ~2% (Epoch thread); no other country above 2%."
+  },
+  {
+   "id": "papers",
+   "tab": "📄 AI papers",
+   "title": "Share of global AI publications, 2024",
+   "unit": "%",
+   "dec": 1,
+   "values": {
+    "156": 17.8,
+    "356": 7.6
+   },
+   "source": "Stanford AI Index 2026, Research & Development chapter, via secondary coverage",
+   "src": "https://digitalstrategy-ai.com/2026/04/17/us-china-standford-ai-index/",
+   "sec": 1,
+   "note": "Latest year in the AI Index (2024). The report says the US share fell 3 points but we could not read its exact share, so it is left blank rather than guessed. Publications count once per linked country. 2023 (AI Index 2025): China 23.2%, India 9.2%.",
+   "primary": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_1_research_development.pdf"
+  },
+  {
+   "id": "frontier",
+   "tab": "🏁 Frontier releases",
+   "title": "Model releases tracked on this site, by lab headquarters",
+   "unit": "releases",
+   "dec": 0,
+   "live": "data/model-releases.json",
+   "source": "This site's Model Release Map (each release links its own source); lab → headquarters country is our assignment",
+   "src": "https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/model-releases.html",
+   "sec": 0,
+   "note": "Counts every release in our dataset (LLM, image, video, speech, world models), Jun 2017 → Nov 2026. Google DeepMind is counted under the United States (parent company), although DeepMind is headquartered in London. BigScience (an international collaboration) is not counted. ElevenLabs (offices in New York and London) is counted under the United States."
+  }
+ ],
+ "labCountry": {
+  "openai": "840",
+  "anthropic": "840",
+  "google": "840",
+  "meta": "840",
+  "xai": "840",
+  "microsoft": "840",
+  "amazon": "840",
+  "nvidia": "840",
+  "midjourney": "840",
+  "runway": "840",
+  "luma": "840",
+  "sesame": "840",
+  "ideogram": "840",
+  "worldlabs": "840",
+  "thinkingmachines": "840",
+  "elevenlabs": "840",
+  "deepseek": "156",
+  "qwen": "156",
+  "moonshot": "156",
+  "zhipu": "156",
+  "kuaishou": "156",
+  "bytedance": "156",
+  "tencent": "156",
+  "minimax": "156",
+  "mistral": "250",
+  "kyutai": "250",
+  "bfl": "276",
+  "stability": "826",
+  "wayve": "826"
+ },
+ "asof": "2026-11-20"
 }

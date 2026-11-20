@@ -463,9 +463,7 @@ def render_latest_block(manifest, series_owner):
             f'<span class="lt-new" hidden>New</span><strong>{html.escape(p["title"])}</strong>'
             f'<span class="lt-meta">{d} · {html.escape(p.get("readTime", ""))}</span></a>{trail}</article>')
     return (f'{LATEST_START}\n<div class="home-section latest-threads" id="latestThreads">\n  <div class="container">\n'
-            '    <div class="home-section-hd">\n      <div class="eyebrow">Latest from the Academy</div>\n'
-            '      <h2>New articles and the threads they continue</h2>\n'
-            '      <p>The newest posts on the site. The dots under each one trace its series: click any dot to read the earlier or later parts.</p>\n'
+            '    <div class="home-section-hd">\n      <h2>Latest from the Academy</h2>\n'
             '    </div>\n    <div class="lt-personal" id="ltPersonal" hidden></div>\n'
             '    <div class="lt-carousel" id="ltCarousel" aria-roledescription="carousel">\n'
             '      <button type="button" class="lt-nav lt-prev" aria-label="Previous articles">‹</button>\n'

@@ -6963,3 +6963,15 @@ body {
 .sub-block.sub-collapsed > *:not(.sub-head):not(.sub-toggle) { display: none !important; }
 .sub-block.sub-collapsed { padding-bottom: 14px !important; }
 @media (max-width: 768px) { .sub-block > .sub-toggle { width: 34px; height: 34px; font-size: 1.3rem; top: 10px; right: 10px; } .sub-block .sub-head { padding-right: 44px; } }
+
+
+/* ── What's new + Capability Pulse moved below the hero (20 Nov 2026) ── */
+.home-dash { padding: 28px 0 8px !important; background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%) !important; }
+.home-dash .whats-new, .home-dash .agi-pulse { width: auto; left: auto; transform: none; }
+.home-dash .whats-new { margin: 0; }
+.home-dash .agi-pulse { margin: 18px 0 0; background: #fff; }
+.home-dash .wn-card { background: #fff; border: 1px solid #e0e7ff; color: #334155; box-shadow: 0 4px 14px rgba(15,23,42,.05); backdrop-filter: none; }
+.home-dash .wn-card:hover { background: #f5f7ff; border-color: #c7d2fe; }
+.home-dash .wn-k { color: #4f46e5; }
+.home-dash .wn-card strong { color: #0f172a; }
+.home-dash .wn-m { color: #64748b; }

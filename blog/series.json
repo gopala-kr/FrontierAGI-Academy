@@ -263,7 +263,8 @@
       "short": "Production Agent Blueprints",
       "icon": "🏗️",
       "slugs": [
-        "agentic-blueprint-gcp"
+        "agentic-blueprint-gcp",
+        "agentic-blueprint-aws"
       ]
     },
     {

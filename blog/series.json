@@ -271,6 +271,17 @@
       ]
     },
     {
+      "id": "sec-agentstack",
+      "title": "The Modern AI Agent Tech Stack: Every Tool, Layer by Layer",
+      "short": "The Modern AI Agent Tech Stack",
+      "icon": "🧰",
+      "slugs": [
+        "agent-tech-stack-map",
+        "agent-ui-layer",
+        "agent-production-layer"
+      ]
+    },
+    {
       "id": "sec-maestro",
       "title": "The Maestro: Building a Frontier AI Factory From Zero",
       "short": "The Maestro",

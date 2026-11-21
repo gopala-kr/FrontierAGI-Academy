@@ -1,6 +1,51 @@
 {
   "posts": [
     {
+      "slug": "agent-tech-stack-map",
+      "title": "The Modern AI Agent Tech Stack, Mapped",
+      "excerpt": "Six layers, a production layer and the agent loop, after Denis Panjuta's infographic, with every tool linked to where this site covers it and the gaps marked.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-21",
+      "readTime": "5 min",
+      "tags": [
+        "Agents",
+        "Map"
+      ],
+      "emoji": "🧰",
+      "featured": false
+    },
+    {
+      "slug": "agent-ui-layer",
+      "title": "The Agent UI Layer: Streaming, Tool Cards and Human Approval",
+      "excerpt": "AG-UI, Vercel AI SDK, assistant-ui, CopilotKit, Streamlit and Gradio: how an agent talks to the person on the screen, traced with a refund that needs approval.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-21",
+      "readTime": "5 min",
+      "tags": [
+        "Agents",
+        "UI"
+      ],
+      "emoji": "🖥️",
+      "featured": false
+    },
+    {
+      "slug": "agent-production-layer",
+      "title": "The Agent Production Layer, Tool by Tool",
+      "excerpt": "Observability, evaluation, guardrails, agent identity and LLM gateways compared tool by tool, with three sensible combinations and a checklist.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-21",
+      "readTime": "5 min",
+      "tags": [
+        "Agents",
+        "Production"
+      ],
+      "emoji": "🛡️",
+      "featured": false
+    },
+    {
       "slug": "agentic-blueprint-compared",
       "title": "Production AI Agents Compared: Google Cloud, AWS, Azure and Open-Source",
       "excerpt": "The same refund-ticket agent built four ways, side by side: a 13-layer matrix, what really differs, a four-question chooser, what you can move later, and where per-token cloud and self-hosted costs cross.",

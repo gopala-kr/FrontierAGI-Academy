@@ -389,7 +389,7 @@ The whole production system, not one product: users, entry point, planner and sp
 
 | # | Article | Read |
 |---|---|---|
-| 1 | 🏗️ [A Production-Ready AI Agent on Google Cloud, Layer by Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-gcp.html) | 17 min |
+| 1 | 🏗️ [A Production-Ready AI Agent on Google Cloud, Layer by Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-gcp.html) | 13 min |
 
 
 ### 08 · Run the Machine · The Maestro

@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**355 articles** · **35 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-21
+**355 articles** · **35 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-21
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -65,6 +65,19 @@ Click any picture to open the live map. 🎞️ marks an animated preview.
 </tr>
 <tr>
 <td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/stack-innovations.html"><img src="assets/readme/stack-innovations.webp" alt="Stack Innovation Map" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/stack-innovations.html">Stack Innovation Map</a></b><br>Hardware and software milestones across 19 layers, 2001 → today.<br><sub>Data: <code>data/stack-innovations.json</code></sub></td>
+<td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/llm-api-journey.html"><img src="assets/readme/llm-api-journey.webp" alt="What Happens When You Call an LLM API" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/llm-api-journey.html">What Happens When You Call an LLM API</a></b><br>One request through 13 layers: rate limiter, tokenizer, router, prefill/decode, attention, GPU memory, billing and logging, all interactive.</td>
+</tr>
+</table>
+
+### 🤖 Agents in production
+
+<table>
+<tr>
+<td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/agent-anatomy-stack.html"><img src="assets/readme/agent-anatomy-stack.webp" alt="AI Agent Anatomy and Tech Stack" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/agent-anatomy-stack.html">AI Agent Anatomy and Tech Stack</a></b><br>How every agent works (perceive, think, plan, act, remember), the tools that fill each block, and one task followed end to end.</td>
+<td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/claude-code-kit.html"><img src="assets/readme/claude-code-kit.webp" alt="Claude Code: The Agent Development Kit" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/claude-code-kit.html">Claude Code: The Agent Development Kit</a></b><br>CLAUDE.md, skills, hooks, subagents and plugins, with a playable session in a mock terminal.</td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-coding-layers.html"><img src="assets/readme/ai-coding-layers.webp" alt="AI Coding in Five Layers" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-coding-layers.html">AI Coding in Five Layers</a></b><br>Model → harness → loop → graph → software factory, original vs corrected, with a ticket run through all five.</td>
 <td width="50%"></td>
 </tr>
 </table>
@@ -75,6 +88,19 @@ Click any picture to open the live map. 🎞️ marks an animated preview.
 <tr>
 <td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro-journey.html"><img src="assets/readme/maestro-journey.gif" alt="Gopala's Journey" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro-journey.html">Gopala's Journey</a></b> 🎞️<br>The whole Maestro story as one road, Season 1 and Season 2; press play.</td>
 <td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro.html"><img src="assets/readme/maestro.webp" alt="Maestro Mission Control" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro.html">Maestro Mission Control</a></b><br>Every phase, hat, budget line and risk, plus a 2-minute primer and a live system map.</td>
+</tr>
+</table>
+
+### 🌍 Markets and the world
+
+<table>
+<tr>
+<td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-market-map.html"><img src="assets/readme/ai-market-map.webp" alt="AI Market Map" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-market-map.html">AI Market Map</a></b><br>Layers, investments, start-ups, customers and predictions for the AI market.<br><sub>Data: <code>data/ai-investments.json</code></sub></td>
+<td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-investment-history.html"><img src="assets/readme/ai-investment-history.webp" alt="AI Investment Tracker" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-investment-history.html">AI Investment Tracker</a></b><br>Yearly AI investment 2013→2026 and where the money went.<br><sub>Data: <code>data/ai-investment-history.json</code></sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-world-map.html"><img src="assets/readme/ai-world-map.webp" alt="AI World Map" width="100%"></a><br><b><a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/ai-world-map.html">AI World Map</a></b><br>Money, models, compute, sovereign GPUs and papers by country.<br><sub>Data: <code>data/ai-world-map.json</code></sub></td>
+<td width="50%"></td>
 </tr>
 </table>
 

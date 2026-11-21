@@ -1090,3 +1090,27 @@ function initBackToTop() {
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
+
+/* ═══ Homepage: main-section bands float in 3D while scrolling (owner's request, 21 Nov 2026) ═══ */
+(function () {
+  if (!document.getElementById('homeDash') || !window.requestAnimationFrame) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var bands = [], ticking = false;
+  function collect() { bands = [].slice.call(document.querySelectorAll('.sec-band')); bands.forEach(function (b) { b.classList.add('sec-float'); }); }
+  function frame() {
+    ticking = false; var vh = innerHeight || 800;
+    bands.forEach(function (b) {
+      var r = b.getBoundingClientRect(); if (r.bottom < -100 || r.top > vh + 100) return;
+      var c = (r.top + r.height / 2 - vh / 2) / (vh / 2);           // -1 (top) … 0 (centre) … 1 (bottom)
+      c = Math.max(-1, Math.min(1, c));
+      b.style.setProperty('--fx', (c * 7).toFixed(2) + 'deg');        // tilt back as it enters, flat at centre
+      b.style.setProperty('--fz', (-Math.abs(c) * 40).toFixed(1) + 'px');
+      b.style.setProperty('--fy', (c * 10).toFixed(1) + 'px');
+      b.style.setProperty('--fs', (0.16 + (1 - Math.abs(c)) * 0.18).toFixed(3));
+      if (!b.classList.contains('sec-in') && r.top < vh * 0.92) b.classList.add('sec-in');
+    });
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
+  setTimeout(function () { collect(); frame(); }, 400);
+  addEventListener('scroll', onScroll, { passive: true }); addEventListener('resize', onScroll);
+})();

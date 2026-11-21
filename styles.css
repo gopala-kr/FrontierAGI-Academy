@@ -7005,3 +7005,9 @@ body.home-searching .sec-maps { display: none; }
 /* ═══ Benchmark Tracker + Model Release Map right under the Capability Pulse (owner's request 20 Nov 2026) ═══ */
 .home-dash-maps { margin-top: 18px; display: grid; gap: 14px; }
 .home-dash-maps .home-idea-embed { margin: 0; border: 1.5px solid rgba(165,180,252,.55); }
+
+/* ═══ Homepage: 3D float of the main-section bands while scrolling (owner's request, 21 Nov 2026) ═══ */
+.sec-band.sec-float { transform: perspective(1200px) rotateX(var(--fx, 0deg)) translate3d(0, var(--fy, 0px), var(--fz, 0px)); transform-origin: 50% 50%; transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, opacity .6s ease; box-shadow: 0 calc(30px * var(--fs, .2)) calc(70px * var(--fs, .2)) rgba(15, 23, 42, calc(var(--fs, .2) * .9)); will-change: transform; opacity: .35; }
+.sec-band.sec-float.sec-in { opacity: 1; }
+.sec-band.sec-float:hover { transform: perspective(1200px) rotateX(0deg) translate3d(0, -4px, 12px); box-shadow: 0 22px 50px rgba(15, 23, 42, .22); }
+@media (prefers-reduced-motion: reduce) { .sec-band.sec-float { transform: none !important; opacity: 1; transition: none; } }

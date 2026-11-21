@@ -1049,6 +1049,7 @@ function initBackToTop() {
     try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
     var blocks = [];
     document.querySelectorAll('.home-series-spotlight, .home-rsi-spotlight, .home-lineage-spotlight, .home-idea-embed').forEach(function (el) {
+      if (el.hasAttribute('data-fixed')) return;  // data-fixed = always expanded, no +/− button
       var isEmb = el.classList.contains('home-idea-embed'), head = [];
       if (isEmb) {
         var hd = el.querySelector(':scope > .home-model-embed-hd');

@@ -556,6 +556,7 @@
         <a href="pages/ai-investment-history.html" class="panel-btn">💹 AI Investment Tracker</a>
         <a href="pages/ai-world-map.html" class="panel-btn">🌍 AI World Map</a>
         <a href="pages/agent-anatomy-stack.html" class="panel-btn">🧬 Agent Anatomy + Tech Stack</a>
+        <a href="pages/llm-api-journey.html" class="panel-btn">⚡ LLM API Journey</a>
         <a href="pages/hf-paper-themes.html" class="panel-btn">📈 HF Paper Themes</a>
         <a href="pages/model-releases.html" class="panel-btn">🧭 Model Release Map</a>
         <a href="pages/benchmarks.html" class="panel-btn">📊 Benchmark Tracker</a>
@@ -1311,6 +1312,13 @@
       <iframe src="pages/ai-factory-3d.html?embed=1&v=1" title="The AI Factory in 3D: an animated model of a 100 MW AI campus with hardware and software overlays" loading="lazy"></iframe>
       <a href="pages/ai-factory-3d.html" class="home-idea-embed-link">🏗️ Open the full 3D model: hardware and software overlays, rack rows, and land needed from 1 MW to 1 TW →</a>
     </div>
+    <div class="home-layer-anchor" id="grp-llmapi"></div>
+    <div class="home-idea-embed home-llmapi-embed" id="home-llmapi" data-open>
+      <div class="home-model-embed-hd"><span class="home-rsimap-tag">New · Interactive</span><div class="home-rsimap-title">What happens when you call an LLM API: the full journey in ~400 ms</div></div>
+      <iframe id="ljFrame" src="pages/llm-api-journey.html?embed=1" title="Interactive journey of one LLM API call through gateway, load balancer, tokenizer, router, inference, post-processing, billing and logging" loading="lazy" style="height:1150px"></iframe>
+      <a href="pages/llm-api-journey.html" class="home-idea-embed-link">⚡ Open the full LLM API journey: rate limiter, tokenizer, decode loop, attention, GPU memory and billing, all interactive →</a>
+      <script>addEventListener('message',function(e){if(e.data&&e.data.ljHeight){var f=document.getElementById('ljFrame');if(f&&Math.abs(f.offsetHeight-e.data.ljHeight)>6)f.style.height=e.data.ljHeight+'px';}});</script>
+    </div>
   </div>
 </div>
 
@@ -2028,6 +2036,7 @@
     <a href="#grp-whoruns">Who Runs the AI Factory</a>
     <a href="#grp-cases">AI Factory Case Studies</a>
     <a href="#grp-managed">AI Factory as a Service</a>
+    <a href="#grp-llmapi">What Happens When You Call an LLM API</a>
     <a href="#grp-software" class="jn-group">06 · AI Software Stack</a>
     <a href="#grp-mllayer">Inside the ML Layer</a>
     <a href="#grp-datalayer">Inside the Data Layer</a>

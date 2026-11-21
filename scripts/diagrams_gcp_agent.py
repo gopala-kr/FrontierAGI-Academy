@@ -151,7 +151,7 @@ save('7-cicd.svg',s)
 
 # 8. Trace waterfall (from blueprint_sim output t1)
 W,H=1280,450
-s=head(W,H,'What the trace shows: one ticket as spans','Spans from the runnable mini-build below (scripted timings, illustrative only); in production these come from Cloud Trace / OpenTelemetry')
+s=head(W,H,'What the trace shows: one ticket as spans','Illustrative timings for one refund ticket; in production these spans come from Cloud Trace / OpenTelemetry')
 sp=[('entry: auth + rate limit',0,8,0),('guard.in: pass',8,3,1),('planner: decompose (model call)',11,420,0),('research: crm.read + kb.search',431,95,1),('analysis: decide (model call)',526,380,1),('action: refunded',906,60,1),('gateway: denied research-agent write',966,2,1),('guard.out: pass',968,3,0),('memory: session + memory bank write',971,12,0)]
 sc=900/983
 for i,(n,st0,ms,ind) in enumerate(sp):

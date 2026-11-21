@@ -257,7 +257,8 @@
         "agentic-make",
         "agent-tech-stack-map",
         "agent-ui-layer",
-        "agent-production-layer"
+        "agent-production-layer",
+        "agentic-software-factory"
       ]
     },
     {

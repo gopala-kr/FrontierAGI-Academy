@@ -32,7 +32,7 @@ def note(x,y,t,c='#475569',fs=12,anchor='start',bold=False):
 def save(n,s): open(OUT+n,'w').write(s+'</svg>')
 # 1 stack map
 W,H=1280,880
-s=head(W,H,'The modern AI agent tech stack: six layers, one production layer, one loop','Layers after a third-party infographic by Denis Panjuta, redrawn; ✓ = covered in depth on this site · ~ = only mentioned · ✗ = not yet')
+s=head(W,H,'The modern AI agent tech stack: six layers, one production layer, one loop','✓ = covered in depth on this site · ~ = only mentioned · ✗ = not yet')
 L=[('06 Interface & UI','#2563eb',[('Vercel AI SDK','◐'),('CopilotKit','○'),('assistant-ui','○'),('Streamlit','○'),('Gradio','○'),('AG-UI protocol','○')]),
 ('05 Runtime & hosting','#7c3aed',[('AgentCore','✓'),('Foundry','✓'),('Gemini Ent. ⚠️','✓'),('LangSmith Dep.','✓'),('Temporal','✓'),('Modal · Docker · K8s','◐')]),
 ('04 Memory & knowledge','#0d9488',[('Mem0 · Zep · Letta','✓'),('pgvector · Qdrant','✓'),('Pinecone · Weaviate','◐'),('Redis','✓'),('Neo4j (graph)','◐')]),

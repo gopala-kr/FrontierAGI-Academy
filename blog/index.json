@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "slug": "agentic-blueprint-azure",
+      "title": "A Production-Ready AI Agent on Azure, Layer by Layer",
+      "excerpt": "The same refund-ticket system built from Microsoft parts — Agent Framework in Foundry Agent Service, Foundry Models, Cosmos DB and memory, MCP tools behind API Management, Prompt Shields, Application Insights, evals and GitHub Actions — in ten diagrams, mapped against Google Cloud and AWS.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-21",
+      "readTime": "10 min",
+      "tags": [
+        "Agents",
+        "Azure",
+        "Architecture"
+      ],
+      "emoji": "🟦",
+      "featured": false
+    },
+    {
       "slug": "agentic-blueprint-aws",
       "title": "A Production-Ready AI Agent on AWS, Layer by Layer",
       "excerpt": "The same refund-ticket system as Part 1, built from AWS parts — Strands agents on AgentCore Runtime, Bedrock models, AgentCore Memory and Gateway, RAG, five guardrails, CloudWatch traces, evals and CI/CD — in ten architecture diagrams, with a Google Cloud vs AWS mapping.",

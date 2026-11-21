@@ -57,6 +57,25 @@
     .aa-sf { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 8px; } .aa-sf button { border:1px solid #cbd5e1; background:#f8fafc; border-radius:99px; padding:5px 11px; font-weight:700; cursor:pointer; font-size:.8rem; } .aa-sf button.on { background:#1e3a8a; color:#fff; } .aa-sf input { border:1px solid #cbd5e1; border-radius:99px; padding:5px 11px; font:inherit; font-size:.82rem; }
     .aa-tc.off { opacity:.15; } .aa-tc.glow { box-shadow:0 0 0 3px #facc15; }
     @media (max-width:860px) { .aa-row { grid-template-columns:1fr; } }
+    .et { margin-top:18px; border-top:1px dashed #cbd5e1; padding-top:14px; }
+    .et-hd { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:8px; } .et-hd h3 { margin:0; font-size:1.05rem; flex:1; min-width:240px; }
+    .et-hd button { border:1px solid #cbd5e1; background:#1e3a8a; color:#fff; border-radius:99px; padding:7px 14px; font-weight:700; cursor:pointer; font-size:.84rem; }
+    .et-goal { background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:8px 12px; font-size:.9rem; margin-bottom:10px; }
+    .et-wrap { position:relative; padding-left:46px; }
+    .et-loop { position:absolute; left:22px; width:22px; border:3px solid #64748b; border-right:0; border-radius:12px 0 0 12px; }
+    .et-loop span { position:absolute; left:-30px; width:20px; text-align:center; top:50%; transform:translateY(-50%); writing-mode:vertical-rl; rotate:180deg; font:800 .78rem Inter,sans-serif; color:#334155; white-space:nowrap; background:#fff; padding:4px 0; }
+    .et-st { border:2px solid var(--c); border-radius:12px; margin-bottom:12px; overflow:hidden; background:#fff; transition:box-shadow .3s, transform .3s; }
+    .et-st.hot { box-shadow:0 0 0 4px #facc15; transform:translateX(4px); }
+    .et-st > b { display:flex; justify-content:space-between; background:var(--c); color:#fff; padding:6px 12px; font-size:.98rem; }
+    .et-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:8px; padding:10px; }
+    .et-c { background:color-mix(in srgb,var(--c) 7%,#fff); border:1px solid color-mix(in srgb,var(--c) 35%,#fff); border-radius:8px; padding:7px 9px; font-size:.82rem; transition:background .3s; position:relative; }
+    .et-c h4 { margin:0 0 4px; font-size:.82rem; color:var(--c); } .et-c code { font-size:.78rem; }
+    .et-c.on { background:#fef9c3; border-color:#facc15; }
+    .et-c:not(:last-child)::after { content:'→'; position:absolute; right:-9px; top:40%; color:#64748b; font-weight:900; }
+    .et-note { font-style:italic; font-size:.82rem; color:#334155; padding:0 12px 8px; }
+    .et-bar { height:8px; background:#e2e8f0; border-radius:4px; margin:3px 0; } .et-bar i { display:block; height:100%; border-radius:4px; background:var(--c); width:0; transition:width .8s; }
+    .et-turn { font:700 .8rem ui-monospace,monospace; color:#7c3aed; }
+    @media (max-width:700px) { .et-c:not(:last-child)::after { content:'↓'; right:auto; left:50%; top:auto; bottom:-14px; } .et-row { gap:14px; } }
   </style>
 </head>
 <body>
@@ -213,7 +232,13 @@
       <div id="aaRows"></div>
       <p style="font-size:.78rem;color:#475569;margin:4px 0 0">✓ covered in depth on this site · ~ only mentioned. Hover or tap a layer to light up its block in the diagram.</p>
     </div>
-    <p class="aa-cred">Layouts adapted from public infographics by Brij Kishore Pandey and Denis Panjuta. Applies to ChatGPT, Claude, Copilot, custom agents, multi-agent systems and autonomous workflows. <b>Disclosure:</b> Claude, made by Anthropic, helps write this site; Claude, the Claude Agent SDK and MCP (introduced by Anthropic) appear here, and Amazon, Google and Microsoft, whose products appear, are investors in Anthropic.</p>
+    <div class="et" id="etBox">
+      <div class="et-hd"><h3>🧭 Follow one task end to end: from a user's goal to a finished, checked task</h3><button id="etPlay">▶ Play the task</button></div>
+      <div class="et-goal"><b>User goal:</b> "Email me our top 3 customers from last quarter." Watch it move through six steps; steps 2–5 repeat as a loop (two turns here) until the goal is met or a limit is hit. The blocks in the diagram above light up as it goes.</div>
+      <div class="et-wrap"><div class="et-loop" id="etLoop"><span>↺ Agent loop: steps 2–5</span></div><div id="etSteps"></div></div>
+      <p style="font-size:.76rem;color:#64748b;margin:4px 0 0">Illustrative example; customer names and figures are made up.</p>
+    </div>
+    <p class="aa-cred">Layouts adapted from public infographics by Brij Kishore Pandey, Denis Panjuta and Prashant Rathi. Applies to ChatGPT, Claude, Copilot, custom agents, multi-agent systems and autonomous workflows. <b>Disclosure:</b> Claude, made by Anthropic, helps write this site; Claude, the Claude Agent SDK and MCP (introduced by Anthropic) appear here, and Amazon, Google and Microsoft, whose products appear, are investors in Anthropic.</p>
   </div>
   <div class="aa-more aa-box"><b>Go deeper:</b> <a href="../blog/agentic-agent-loop.html">the agent loop</a> · <a href="../blog/agent-tech-stack-map.html">the modern agent tech stack</a> · <a href="../blog/agentic-blueprint-gcp.html">production agent blueprints</a> · <a href="../blog/agent-ui-layer.html">agent UI layer</a> · <a href="../blog/agent-production-layer.html">production layer</a></div>
 </div>
@@ -380,6 +405,38 @@
   // scenario tool glow
   var GLOW = { act: ['MCP'], mem: ['Mem0', 'pgvector', 'Redis'], ltm: ['Mem0', 'Zep'], reason: ['Claude', 'GPT', 'Gemini', 'LiteLLM'], plan: ['LangGraph', 'Google ADK'], guard: ['Llama Guard', 'Guardrails AI'], obs: ['OpenTelemetry', 'Langfuse'], perc: ['Vercel AI SDK', 'CopilotKit'] };
   var _sw = show; show = function (k) { _sw(k); rh.querySelectorAll('.aa-tc.glow').forEach(function (c) { c.classList.remove('glow'); }); (GLOW[k] || []).forEach(function (n) { rh.querySelectorAll('.aa-tc').forEach(function (c) { if (c.firstChild.textContent == n) c.classList.add('glow'); }); }); };
+
+  // ---- end-to-end task graph ----
+  var ET = [
+    ['01', 'Input and context', '#16a34a', ['perc'], [['User goal', '"Email me our top 3 customers from last quarter"'], ['System prompt', '<b>Role:</b> sales analyst<br><b>Rules:</b> read-only data<br><b>Tone:</b> short and clear'], ['Tool definitions', '<code>run_sql</code> · <code>search_crm</code> · <code>send_email</code>'], ['Memory + knowledge', 'chat history · user preferences · retrieved docs'], ['Context window', 'system prompt + tools + memory + user goal']], 'Everything the model can see is packed into one context window.'],
+    ['02', 'Reason and plan', '#2563eb', ['reason', 'plan'], [['LLM reads context', 'reasoning engine'], ['Reason', '"I need the sales numbers first. Then I can write the email."'], ['Plan', '1 query sales data · 2 rank customers · 3 draft summary · 4 send'], ['Decide next step', '<span id="etDec">call a tool / give final answer</span>']], 'The model never acts directly; it outputs a tool request or an answer.'],
+    ['03', 'Act: tool calling', '#7c3aed', ['act', 'guard'], [['Tool call', '<code id="etCall">run_sql({"quarter":"Q3","top":3})</code>'], ['Safety check', 'agent identity · allowed scope · human approval if risky'], ['Execute', 'API · database · code · web search · MCP server'], ['Tool result', '<div id="etRes">Acme<div class="et-bar"><i data-w="92"></i></div>Zence<div class="et-bar"><i data-w="71"></i></div>Nova<div class="et-bar"><i data-w="58"></i></div></div>']], 'Your application runs the tool, not the model, and sends the result back.'],
+    ['04', 'Observe and remember', '#0d9488', ['mem', 'stm'], [['Observation', 'context so far + tool result'], ['Short-term memory', 'this task: steps taken, results, what is left'], ['Long-term memory', 'across sessions: preferences, past tasks, learned procedures'], ['Reflect', '<span id="etRef">data is complete · email not sent yet</span>']], 'Each result becomes new context for the next round of reasoning.'],
+    ['05', 'Loop control', '#9333ea', ['goalR'], [['Goal met?', '<span id="etGoal">is the whole task finished?</span>'], ['Stop limits', 'max steps · token budget · time limit · repeated errors'], ['Next move', '<span id="etNext">not done, within limits → loop to step 2</span>']], 'Most real tasks take several turns of reason, act and observe.'],
+    ['06', 'Respond and oversee', '#1d4ed8', ['out', 'obs'], [['Output guardrails', 'no harmful content · no private data leaked · grounded in results'], ['Final answer', '"Sent. Top 3: Acme, Zence, Nova."'], ['Trace', 'every step logged: prompts, tool calls, results'], ['Evaluate', 'task success<div class="et-bar"><i data-w="95"></i></div>cost<div class="et-bar"><i data-w="35"></i></div>latency<div class="et-bar"><i data-w="55"></i></div>']], 'Traces and evaluations feed back into better prompts, tools and guardrails.']
+  ];
+  var eh = document.getElementById('etSteps'), ES = [];
+  ET.forEach(function (e) { var d = document.createElement('div'); d.className = 'et-st'; d.style.setProperty('--c', e[2]); d.innerHTML = '<b><span>' + e[1] + ' <span class="et-turn" style="color:#fde68a"></span></span><span>' + e[0] + '</span></b><div class="et-row">' + e[4].map(function (c) { return '<div class="et-c"><h4>' + c[0] + '</h4>' + c[1] + '</div>'; }).join('') + '</div><div class="et-note">' + e[5] + '</div>'; d.onclick = function () { show(e[3][0]); }; eh.appendChild(d); ES.push(d); });
+  function placeLoop() { var a = ES[1], b = ES[4], L = document.getElementById('etLoop'); L.style.top = (a.offsetTop + 18) + 'px'; L.style.height = (b.offsetTop + b.offsetHeight - a.offsetTop - 36) + 'px'; }
+  placeLoop(); addEventListener('resize', placeLoop);
+  var etT = [];
+  function etHot(i, cells, turn) { ES.forEach(function (x, j) { x.classList.toggle('hot', j == i); x.querySelector('.et-turn').textContent = j == i && turn ? '· turn ' + turn : ''; }); svg.classList.add('dim'); svg.querySelectorAll('.nd').forEach(function (n) { n.classList.toggle('hot', ET[i][3].indexOf(n.dataset.k) >= 0); }); show(ET[i][3][0]);
+    var cs = ES[i].querySelectorAll('.et-c'); cs.forEach(function (c) { c.classList.remove('on'); }); (cells || []).forEach(function (k, n) { etT.push(setTimeout(function () { cs[k] && cs[k].classList.add('on'); cs[k] && cs[k].querySelectorAll('.et-bar i').forEach(function (b) { b.style.width = b.dataset.w + '%'; }); }, n * 450)); });
+    if (!embed) ES[i].scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+  function setTxt(id, t) { var e = document.getElementById(id); if (e) e.innerHTML = t; }
+  document.getElementById('etPlay').onclick = function () { etT.forEach(clearTimeout); etT = []; ES.forEach(function (x) { x.querySelectorAll('.et-bar i').forEach(function (b) { b.style.width = 0; }); });
+    var Q = [[0, [0, 1, 2, 3, 4], 0, function () {}],
+      [1, [0, 1, 2, 3], 1, function () { setTxt('etDec', '<b>→ call a tool</b>'); }],
+      [2, [0, 1, 2, 3], 1, function () { setTxt('etCall', 'run_sql({"quarter":"Q3","top":3})'); }],
+      [3, [0, 1, 2, 3], 1, function () { setTxt('etRef', 'data is complete · <b>email not sent yet</b>'); }],
+      [4, [0, 1, 2], 1, function () { setTxt('etGoal', '<b>No</b>: email not sent'); setTxt('etNext', '<b>not done, within limits (2 of 10 steps) → loop to step 2</b>'); }],
+      [1, [1, 3], 2, function () { setTxt('etDec', '<b>→ call a tool</b> (send the email)'); }],
+      [2, [0, 1, 2], 2, function () { setTxt('etCall', 'send_email({"to":"you","body":"Top 3: Acme, Zence, Nova"})'); }],
+      [3, [0, 3], 2, function () { setTxt('etRef', '<b>email sent</b> · task complete'); }],
+      [4, [0, 2], 2, function () { setTxt('etGoal', '<b>Yes</b>: task finished'); setTxt('etNext', '<b>done → go to step 6</b>'); }],
+      [5, [0, 1, 2, 3], 0, function () {}]];
+    Q.forEach(function (q, n) { etT.push(setTimeout(function () { q[3](); etHot(q[0], q[1], q[2]); }, n * 2600)); });
+    etT.push(setTimeout(function () { ES.forEach(function (x) { x.classList.remove('hot'); }); svg.classList.remove('dim'); svg.querySelectorAll('.nd.hot').forEach(function (n) { n.classList.remove('hot'); }); }, Q.length * 2600 + 1500)); };
   function tell() { if (embed && parent !== window) parent.postMessage({ asHeight: Math.ceil(document.querySelector('.aa').getBoundingClientRect().bottom + 8) }, '*'); }
   addEventListener('load', tell); addEventListener('resize', tell); setTimeout(tell, 600);
 })();

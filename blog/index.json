@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "slug": "agentic-blueprint-oss",
+      "title": "A Production-Ready AI Agent, Open-Source and Self-Hosted",
+      "excerpt": "The same refund-ticket system with no managed services — LangGraph on Kubernetes, vLLM behind LiteLLM, Postgres for state and memory, MCP tools behind OPA, Llama Guard, Keycloak, Vault, OpenTelemetry, promptfoo and Argo CD — in ten diagrams, with the team and GPU cost of running it.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-21",
+      "readTime": "10 min",
+      "tags": [
+        "Agents",
+        "Open source",
+        "Architecture"
+      ],
+      "emoji": "🐧",
+      "featured": false
+    },
+    {
       "slug": "agentic-blueprint-azure",
       "title": "A Production-Ready AI Agent on Azure, Layer by Layer",
       "excerpt": "The same refund-ticket system built from Microsoft parts — Agent Framework in Foundry Agent Service, Foundry Models, Cosmos DB and memory, MCP tools behind API Management, Prompt Shields, Application Insights, evals and GitHub Actions — in ten diagrams, mapped against Google Cloud and AWS.",

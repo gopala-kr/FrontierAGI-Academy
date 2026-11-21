@@ -254,7 +254,10 @@
         "agentic-n8n",
         "agentic-zapier",
         "agentic-copilot-studio",
-        "agentic-make"
+        "agentic-make",
+        "agent-tech-stack-map",
+        "agent-ui-layer",
+        "agent-production-layer"
       ]
     },
     {
@@ -268,17 +271,6 @@
         "agentic-blueprint-azure",
         "agentic-blueprint-oss",
         "agentic-blueprint-compared"
-      ]
-    },
-    {
-      "id": "sec-agentstack",
-      "title": "The Modern AI Agent Tech Stack: Every Tool, Layer by Layer",
-      "short": "The Modern AI Agent Tech Stack",
-      "icon": "🧰",
-      "slugs": [
-        "agent-tech-stack-map",
-        "agent-ui-layer",
-        "agent-production-layer"
       ]
     },
     {

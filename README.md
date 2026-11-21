@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**354 articles** · **36 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-21
+**354 articles** · **35 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-21
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -350,7 +350,9 @@ What runs between a request and the 400th tool call: the map → sandboxes → d
 #### 🧩 Agentic AI System Designs: The Agent Systems the Labs Have Built, Taken Apart
 
 Four kinds of agent system (frameworks, harnesses, runtimes, builders), each system dismantled layer by layer: an eight-layer architecture, one task traced through it, failure modes, security, how to build one from scratch and what it costs. Wave 1: the map, the agent loop and five harnesses. Wave 2: six frameworks, one triage agent. Wave 3: four runtimes, one production workload. Wave 4: four builders, one support agent. Series complete.  
-<sub>23 articles</sub>
+<sub>26 articles</sub>
+
+🆕 *Newest series.*
 
 | # | Article | Read |
 |---|---|---|
@@ -377,6 +379,9 @@ Four kinds of agent system (frameworks, harnesses, runtimes, builders), each sys
 | 21 | 🧩 [Zapier Agents, Taken Apart: Thousands of Apps as Tools](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-zapier.html) | 11 min |
 | 22 | 🧩 [Microsoft Copilot Studio, Taken Apart: Agents Inside the Tenant](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-copilot-studio.html) | 11 min |
 | 23 | 🧩 [Make, Taken Apart: Visual Scenarios with an Agent Inside](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-make.html) | 11 min |
+| 24 | 🧰 [The Modern AI Agent Tech Stack, Mapped](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-tech-stack-map.html) | 5 min |
+| 25 | 🖥️ [The Agent UI Layer: Streaming, Tool Cards and Human Approval](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-ui-layer.html) | 5 min |
+| 26 | 🛡️ [The Agent Production Layer, Tool by Tool](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-production-layer.html) | 5 min |
 
 #### 🏗️ Production Agent Blueprints: Reference Architectures by Cloud
 
@@ -392,19 +397,6 @@ The whole production system, not one product: users, entry point, planner and sp
 | 3 | 🟦 [A Production-Ready AI Agent on Azure, Layer by Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-azure.html) | 10 min |
 | 4 | 🐧 [A Production-Ready AI Agent, Open-Source and Self-Hosted](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-oss.html) | 10 min |
 | 5 | ⚖️ [Production AI Agents Compared: Google Cloud, AWS, Azure and Open-Source](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-compared.html) | 7 min |
-
-#### 🧰 The Modern AI Agent Tech Stack: Every Tool, Layer by Layer
-
-Six layers from models to interface, the production layer underneath and the loop they serve, after Denis Panjuta's infographic: a map of every tool linked to where this site covers it, then the two layers we had not covered — the agent UI and the production services.  
-<sub>3 articles</sub>
-
-🆕 *Newest series.*
-
-| # | Article | Read |
-|---|---|---|
-| 1 | 🧰 [The Modern AI Agent Tech Stack, Mapped](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-tech-stack-map.html) | 5 min |
-| 2 | 🖥️ [The Agent UI Layer: Streaming, Tool Cards and Human Approval](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-ui-layer.html) | 5 min |
-| 3 | 🛡️ [The Agent Production Layer, Tool by Tool](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agent-production-layer.html) | 5 min |
 
 
 ### 08 · Run the Machine · The Maestro

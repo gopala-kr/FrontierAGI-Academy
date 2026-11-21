@@ -40,7 +40,8 @@
     .wm-leg { display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; font-size:.76rem; color:#c7d2fe; margin-top:8px; }
     .wm-ramp { display:flex; align-items:center; gap:6px; } .wm-ramp i { display:inline-block; width:150px; height:10px; border-radius:5px; }
     .wm-leg b.sw { display:inline-block; width:12px; height:12px; border-radius:3px; vertical-align:-2px; margin-right:4px; }
-    .wm-rank { background:#0a1428; border-radius:12px; padding:10px 12px; }
+    .wm-rank { background:#0a1428; border-radius:12px; padding:10px 12px; max-height:520px; overflow-y:auto; scrollbar-width:thin; }
+    @media (max-width:860px) { .wm-rank { max-height:420px; } }
     .wm-rank h3 { margin:0 0 8px; font-size:.86rem; color:#fff; }
     .wm-row { display:grid; grid-template-columns:22px 1fr auto; gap:6px; align-items:center; font-size:.8rem; margin:5px 0; cursor:pointer; }
     .wm-row .bar { grid-column:2 / 4; height:5px; border-radius:3px; background:#fbbf24; transform-origin:left; animation:wmG .6s ease both; }
@@ -252,7 +253,7 @@
       setTimeout(tell, 50);
       $('wmRank').querySelectorAll('.wm-row').forEach(function (row) { row.addEventListener('mouseenter', function () { mark(row.dataset.id); }); row.addEventListener('mouseleave', function () { mark(null); }); row.addEventListener('click', function () { mark(row.dataset.id); }); });
     }
-    function tell() { if (embed && parent !== window) parent.postMessage({ wmHeight: document.documentElement.scrollHeight }, '*'); }
+    function tell() { if (embed && parent !== window) { var w = document.querySelector('.wm'); parent.postMessage({ wmHeight: Math.ceil(w.getBoundingClientRect().bottom + 8) }, '*'); } }
     window.addEventListener('resize', function () { setTimeout(tell, 100); });
     function mark(id) { if (hl && paths[hl]) paths[hl].style.stroke = ''; hl = id; if (id && paths[id]) { paths[id].style.stroke = '#fff'; paths[id].style.strokeWidth = '1.5'; } else Object.keys(paths).forEach(function (k) { paths[k].style.strokeWidth = ''; }); }
     D.layers.forEach(function (L, i) { var b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.textContent = L.tab; b.addEventListener('click', function () { show(i); }); $('wmTabs').appendChild(b); });

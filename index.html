@@ -3090,7 +3090,7 @@
     <div class="home-world-hd"><span class="home-rsimap-tag">Interactive map · updated 20 Nov 2026</span></div>
     <div class="home-world-embed">
       <iframe src="pages/ai-world-map.html?embed=1" title="AI World Map: AI investment, start-ups, notable models, compute, papers and frontier releases by country" loading="lazy"></iframe>
-      <script>window.addEventListener('message', function (e) { var h = e.data && e.data.wmHeight, f = document.querySelector('#grp-world iframe'); if (h && f && e.source === f.contentWindow) f.style.height = Math.min(Math.max(h + 4, 400), 2400) + 'px'; });</script>
+      <script>window.addEventListener('message', function (e) { var h = e.data && e.data.wmHeight, f = document.querySelector('#grp-world iframe'); if (h && f && e.source === f.contentWindow && Math.abs(h - f.offsetHeight) > 6) f.style.height = Math.min(Math.max(h, 400), 2400) + 'px'; });</script>
       <a href="pages/ai-world-map.html" class="home-idea-embed-link">🌍 Open the full AI World Map: six layers, rankings and sources</a>
     </div>
   </div>

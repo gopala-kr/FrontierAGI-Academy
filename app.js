@@ -1008,8 +1008,8 @@ function initBackToTop() {
       });
     }).catch(function () {});
     var bar = document.createElement('div'); bar.className = 'sec-all';
-    bar.innerHTML = '<button type="button" data-a="0">+ Expand all sections</button><button type="button" data-a="1">− Collapse all</button>';
-    bar.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; secs.forEach(function (s) { s.set(b.dataset.a === '1', true); }); });
+    bar.innerHTML = '<button type="button" data-a="0">+ Expand all sections</button><button type="button" data-a="1">− Collapse all</button>'; bar.title = 'Applies to every main section and every sub-section and map';
+    bar.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; secs.forEach(function (s) { s.set(b.dataset.a === '1', true); }); document.dispatchEvent(new CustomEvent('fa-all', { detail: b.dataset.a === '1' })); });
     secs[0].sec.parentNode.insertBefore(bar, secs[0].sec);
     function openFor(id) {
       var el = id && document.getElementById(id); if (!el) return;
@@ -1078,6 +1078,7 @@ function initBackToTop() {
       set(key in saved ? saved[key] !== 0 : !el.hasAttribute('data-open'), false);  // data-open = expanded by default
       blocks.push({ el: el, set: set });
     });
+    document.addEventListener('fa-all', function (e) { blocks.forEach(function (b) { b.set(e.detail, true); }); });  // Expand / Collapse all also reaches every sub-section
     function openFor(id) {
       var t = id && document.getElementById(id); if (!t) return;
       // jump-nav targets are often an empty anchor placed just before the block (.home-layer-anchor)

@@ -125,7 +125,7 @@ Owner's request (20 Nov 2026): "How LLMs Are Built" (`#sec-llm-lifecycle` plus i
 ## Homepage section "Inside the AI Software Stack" (20 Nov 2026)
 Owner's request: `#grp-software` ("01b · Build the Software", h2 "AI Software Stack: ML, Data, Evals & Agents", band colour `#4f46e5` in `THEME`) is its own main section right after "01 · Build the Machine" and before the Maestro. It holds the AI Software Stack, Live embed (`#grp-softstack`) followed by the ML, Data, Evaluation and Agent Layer spotlights (moved out of `#grp-build`; their `grp-*layer` anchors kept). Agentic AI System Designs and the 3D factory stay in `#grp-build`. Jump-nav group link added.
 
-## Homepage section "Agentic System Designs in Production" (20 Nov 2026)
+## Homepage section "Agentic AI System in Production" (renamed 21 Nov 2026) (20 Nov 2026)
 Owner's request: `#grp-agentsys` ("01c · Agents in Production", band colour `#15803d` in `THEME`) is its own main section right after the AI Software Stack section and before the Maestro; it holds the Agentic AI System Designs spotlight (`#grp-agentic` anchor kept). The 3D factory embed stays at the end of `#grp-build`. Jump-nav group link added.
 
 ## Homepage section collapse (20 Nov 2026)

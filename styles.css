@@ -7011,3 +7011,8 @@ body.home-searching .sec-maps { display: none; }
 .sec-band.sec-float.sec-in { opacity: 1; }
 .sec-band.sec-float:hover { transform: perspective(1200px) rotateX(0deg) translate3d(0, -4px, 12px); box-shadow: 0 22px 50px rgba(15, 23, 42, .22); }
 @media (prefers-reduced-motion: reduce) { .sec-band.sec-float { transform: none !important; opacity: 1; transition: none; } }
+
+/* coming-soon cards inside normal spotlight grids (Production Agent Blueprints, 21 Nov 2026) */
+.home-series-grid .tp-card { display:block; border:1px dashed var(--sp-accent, #94a3b8); border-radius:12px; padding:12px 14px; background: repeating-linear-gradient(135deg, #fafafa 0 10px, #f4f4f5 10px 20px); }
+.home-series-grid .tp-card .home-series-card-title { font-weight:700; font-size:.9rem; color:#334155; margin-top:4px; }
+.home-series-grid .tp-card .home-series-card-meta { margin-top:6px; }

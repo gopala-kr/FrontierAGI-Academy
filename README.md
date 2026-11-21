@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**346 articles** · **34 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-18
+**347 articles** · **35 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-21
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -380,6 +380,17 @@ Four kinds of agent system (frameworks, harnesses, runtimes, builders), each sys
 | 22 | 🧩 [Microsoft Copilot Studio, Taken Apart: Agents Inside the Tenant](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-copilot-studio.html) | 11 min |
 | 23 | 🧩 [Make, Taken Apart: Visual Scenarios with an Agent Inside](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-make.html) | 11 min |
 
+#### 🏗️ Production Agent Blueprints: Reference Architectures by Cloud
+
+The whole production system, not one product: users, entry point, planner and specialist agents, models, memory, MCP tools, guardrails, traces, evals and CI/CD, redrawn as architecture diagrams and traced with one refund ticket. One cloud per part, same task and layers so they compare side by side.  
+<sub>1 articles</sub>
+
+🆕 *Newest series.*
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🏗️ [A Production-Ready AI Agent on Google Cloud, Layer by Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-gcp.html) | 17 min |
+
 
 ### 08 · Run the Machine · The Maestro
 
@@ -413,8 +424,6 @@ Phase 0 (the idea) → Phase 1 (securing the machine) → Phase 2 (building the 
 
 Phase 5 (founder to CEO) → Phase 6 (the research engine) → Phase 7 (Maestro-2) → Phase 8 (the product grows up) → Phase 9 (competing at the frontier). 23 parts, published phase by phase; Phase 5 is out now.  
 <sub>25 articles · 🧭 [Hub page](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/maestro-journey.html)</sub>
-
-🆕 *Newest series.*
 
 | # | Article | Read |
 |---|---|---|

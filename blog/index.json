@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "slug": "agentic-blueprint-gcp",
+      "title": "A Production-Ready AI Agent on Google Cloud, Layer by Layer",
+      "excerpt": "The whole system an enterprise assembles on Google Cloud — entry point, a planner with three specialist agents, models, memory, MCP tools, five guardrails, traces, evals and CI/CD — redrawn as nine architecture diagrams and traced with one refund ticket.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-21",
+      "readTime": "17 min",
+      "tags": [
+        "Agents",
+        "Google Cloud",
+        "Architecture"
+      ],
+      "emoji": "🏗️",
+      "featured": false
+    },
+    {
       "slug": "market-pulse-2026-11",
       "title": "AI Market Pulse, November 2026: Issue #1",
       "excerpt": "The month in the AI market: GPT-6.2, Gemini 4 Hydrogen, Fable 5.2, Qwen4-Max and Inkling 2 Small's open weights; the latest funding numbers; and a check on our 2027 predictions.",

@@ -258,6 +258,15 @@
       ]
     },
     {
+      "id": "sec-blueprints",
+      "title": "Production Agent Blueprints: Reference Architectures by Cloud",
+      "short": "Production Agent Blueprints",
+      "icon": "🏗️",
+      "slugs": [
+        "agentic-blueprint-gcp"
+      ]
+    },
+    {
       "id": "sec-maestro",
       "title": "The Maestro: Building a Frontier AI Factory From Zero",
       "short": "The Maestro",

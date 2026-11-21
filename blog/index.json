@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "slug": "agentic-blueprint-compared",
+      "title": "Production AI Agents Compared: Google Cloud, AWS, Azure and Open-Source",
+      "excerpt": "The same refund-ticket agent built four ways, side by side: a 13-layer matrix, what really differs, a four-question chooser, what you can move later, and where per-token cloud and self-hosted costs cross.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-21",
+      "readTime": "7 min",
+      "tags": [
+        "Agents",
+        "Architecture",
+        "Comparison"
+      ],
+      "emoji": "⚖️",
+      "featured": false
+    },
+    {
       "slug": "agentic-blueprint-oss",
       "title": "A Production-Ready AI Agent, Open-Source and Self-Hosted",
       "excerpt": "The same refund-ticket system with no managed services — LangGraph on Kubernetes, vLLM behind LiteLLM, Postgres for state and memory, MCP tools behind OPA, Llama Guard, Keycloak, Vault, OpenTelemetry, promptfoo and Argo CD — in ten diagrams, with the team and GPU cost of running it.",

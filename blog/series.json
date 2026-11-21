@@ -266,7 +266,8 @@
         "agentic-blueprint-gcp",
         "agentic-blueprint-aws",
         "agentic-blueprint-azure",
-        "agentic-blueprint-oss"
+        "agentic-blueprint-oss",
+        "agentic-blueprint-compared"
       ]
     },
     {

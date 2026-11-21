@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**350 articles** · **35 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-21
+**351 articles** · **35 series** · **15 interactive maps** + **9 series hubs** · newest post 2026-11-21
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -383,7 +383,7 @@ Four kinds of agent system (frameworks, harnesses, runtimes, builders), each sys
 #### 🏗️ Production Agent Blueprints: Reference Architectures by Cloud
 
 The whole production system, not one product: users, entry point, planner and specialist agents, models, memory, MCP tools, guardrails, traces, evals and CI/CD, redrawn as architecture diagrams and traced with one refund ticket. One cloud per part, same task and layers so they compare side by side.  
-<sub>4 articles</sub>
+<sub>5 articles</sub>
 
 🆕 *Newest series.*
 
@@ -393,6 +393,7 @@ The whole production system, not one product: users, entry point, planner and sp
 | 2 | 🟧 [A Production-Ready AI Agent on AWS, Layer by Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-aws.html) | 12 min |
 | 3 | 🟦 [A Production-Ready AI Agent on Azure, Layer by Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-azure.html) | 10 min |
 | 4 | 🐧 [A Production-Ready AI Agent, Open-Source and Self-Hosted](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-oss.html) | 10 min |
+| 5 | ⚖️ [Production AI Agents Compared: Google Cloud, AWS, Azure and Open-Source](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-compared.html) | 7 min |
 
 
 ### 08 · Run the Machine · The Maestro

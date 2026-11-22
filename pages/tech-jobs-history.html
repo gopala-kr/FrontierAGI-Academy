@@ -30,7 +30,7 @@
     .tj-ctl { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; align-items:center; }
     .tj-ctl select { max-width:100%; }
     .tj-ctl button, .tj-ctl select { border:1px solid #d6d3d1; background:#fafaf9; border-radius:99px; padding:6px 12px; font-weight:700; cursor:pointer; font-size:.82rem; font-family:inherit; }
-    .tj-grid { display:grid; grid-template-columns:300px max-content; overflow:auto; max-height:min(78vh, 720px); height:720px; flex:1; min-width:0; border:1px solid #e7e5e4; border-radius:12px; background:#fff; position:relative; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif; }
+    .tj-grid { display:grid; grid-template-columns:170px max-content; overflow:auto; max-height:min(78vh, 720px); height:720px; flex:1; min-width:0; border:1px solid #e7e5e4; border-radius:12px; background:#fff; position:relative; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif; }
     .tj-grid svg { display:block; }
     .tj-corner { position:sticky; top:0; left:0; z-index:4; background:#fafaf9; border-bottom:1px solid #d6d3d1; border-right:1px solid #e7e5e4; display:flex; align-items:center; padding-left:12px; font-size:12px; font-weight:800; color:#78716c; }
     .tj-corner::after { content:'Job family ↓  Year →'; }
@@ -40,11 +40,6 @@
     .tj-lane-in { position:sticky; top:48px; padding:10px 8px 10px 12px; display:flex; flex-direction:column; gap:2px; }
     .tj-lane-in b { color:var(--lc); font-size:14px; line-height:1.2; } .tj-lane-in span { font-size:11.5px; color:#78716c; }
     .tj-lanes { position:sticky; }
-    .tj-lane-in { width:104px; }
-    .tj-lane-jobs { position:absolute; left:112px; right:6px; top:0; bottom:0; }
-    .tj-jn { position:absolute; left:0; right:0; height:22px; line-height:22px; padding:0 6px; font-size:12px; font-weight:700; color:#1c1917; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; border-radius:6px; cursor:pointer; border-left:3px solid var(--jc); background:rgba(255,255,255,.75); }
-    .tj-jn:hover, .tj-jn.on { background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.12); }
-    .tj-jn.dim { opacity:.3; }
     .tj-wrap { display:flex; gap:4px; align-items:stretch; }
     .tj-vbar { width:16px; flex:0 0 16px; overflow-y:auto; overflow-x:hidden; border:1px solid #e7e5e4; border-radius:8px; background:#fafaf9; height:720px; max-height:min(78vh, 720px); scrollbar-width:auto; scrollbar-color:#a8a29e #fafaf9; }
     .tj-vbar > div { width:1px; }
@@ -55,7 +50,7 @@
     .tj-grid::-webkit-scrollbar, .tj-topbar::-webkit-scrollbar { width:12px; height:12px; } .tj-grid::-webkit-scrollbar-thumb, .tj-topbar::-webkit-scrollbar-thumb { background:#d6d3d1; border-radius:8px; border:3px solid #fafaf9; } .tj-grid::-webkit-scrollbar-track, .tj-topbar::-webkit-scrollbar-track { background:#fafaf9; }
     .tj-grid, .tj-topbar { scrollbar-width:auto; scrollbar-color:#d6d3d1 #fafaf9; }
     .tj-body .ln { cursor:pointer; } .tj-body .ln:hover path { stroke-width:2.6; }
-    @media (max-width:640px){ .tj-lane-in b { font-size:11px; } .tj-grid { grid-template-columns:150px max-content; max-height:560px; height:560px; } .tj-lane-in { display:none; } .tj-lane-jobs { left:6px; } .tj-corner::after { content:'Family ↓'; } }
+    @media (max-width:640px){ .tj-lane-in b { font-size:11px; } .tj-grid { grid-template-columns:110px max-content; max-height:560px; height:560px; } .tj-corner::after { content:'Family ↓'; } }
     .tj-note { font-size:.82rem; color:#57534e; margin:4px 0 8px; }
     #tjCats button.on { color:#fff; }
     .tj-ctl button.on { background:#a16207; color:#fff; border-color:#a16207; }
@@ -236,8 +231,8 @@
       box.innerHTML = '<b>Lanes:</b>'; CATS.forEach(function (c) { var bt = document.createElement('button'); bt.textContent = c[1]; bt.style.borderColor = c[2]; if (pick.indexOf(c[0]) >= 0) { bt.className = 'on'; bt.style.background = c[2]; }
         bt.onclick = function () { var i = pick.indexOf(c[0]); if (i >= 0) { if (pick.length > 1) pick.splice(i, 1); } else pick.push(c[0]); pick.sort(function (x, y) { return CATS.findIndex(function (k) { return k[0] == x; }) - CATS.findIndex(function (k) { return k[0] == y; }); }); drawCats(); drawRoles(); }; box.appendChild(bt); }); }
     var RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function drawRoles() { var s = $('tjRoles'), ax = $('tjAxis'), lb = $('tjLanes'); s.innerHTML = ''; ax.innerHTML = ''; lb.innerHTML = ''; lb.style.width = (window.innerWidth < 640 ? 150 : 300) + 'px';
-      LW = window.innerWidth < 640 ? 150 : 300; var NF = LW < 150 ? 10.5 : 14; var cs = CATS.filter(function (c) { return pick.indexOf(c[0]) >= 0; }), RH = 58, AH = 40, pos = {}, y0 = 4;
+    function drawRoles() { var s = $('tjRoles'), ax = $('tjAxis'), lb = $('tjLanes'); s.innerHTML = ''; ax.innerHTML = ''; lb.innerHTML = ''; lb.style.width = (window.innerWidth < 640 ? 110 : 170) + 'px'; var LBS = [];
+      LW = window.innerWidth < 640 ? 110 : 170; var NF = LW < 150 ? 10.5 : 14; var cs = CATS.filter(function (c) { return pick.indexOf(c[0]) >= 0; }), RH = 58, AH = 40, pos = {}, y0 = 4;
       var H = 8 + cs.reduce(function (n, c) { return n + Math.max(2, D.roles.filter(function (r) { return r.cat == c[0]; }).length) * RH + 14; }, 0);
       [s, ax].forEach(function (v) { v.setAttribute('width', PW); v.setAttribute('height', v === ax ? AH : H); v.setAttribute('viewBox', '0 0 ' + PW + ' ' + (v === ax ? AH : H)); }); lb.style.height = H + 'px'; $('tjTopIn').style.width = (LW + PW) + 'px';
       $('tjCorner').style.height = AH + 'px';
@@ -252,7 +247,7 @@
       var lk = el(s, 'g', {}), fx = el(s, 'g', {});
       cs.forEach(function (c) { var R = D.roles.filter(function (r) { return r.cat == c[0]; }).sort(function (a, b) { return a.born - b.born; }), LH = Math.max(2, R.length) * RH + 8;
         el(s, 'rect', { x: 0, y: y0, width: PW, height: LH, fill: c[2], opacity: .05 });
-        var lane = document.createElement('div'); lane.className = 'tj-lane'; lane.style.cssText = 'top:' + y0 + 'px;height:' + LH + 'px;--lc:' + c[2]; lane.innerHTML = '<div class="tj-lane-jobs"></div><div class="tj-lane-in"><b>' + c[1] + '</b><span>' + R.length + ' jobs</span></div>'; lb.appendChild(lane);
+        var lane = document.createElement('div'); lane.className = 'tj-lane'; lane.style.cssText = 'top:' + y0 + 'px;height:' + LH + 'px;--lc:' + c[2]; lane.innerHTML = '<div class="tj-lane-in"><b>' + c[1] + '</b><span>' + R.length + ' jobs</span></div>'; lb.appendChild(lane);
         R.forEach(function (r, i) { var on = filt == 'all' || r.state == filt, g = el(s, 'g', { class: 'ln', opacity: on ? 1 : .15 }), base = y0 + 4 + (i + 1) * RH, A = RH - 18, pts = [], segs = [], cur = null;
           el(g, 'line', { x1: 0, y1: base, x2: PW, y2: base, stroke: '#d6d3d1', 'stroke-width': 1 });
           var e = Math.min(2030, r.end || 2030);
@@ -276,15 +271,17 @@
           }
           if (pk) el(g, 'circle', { cx: xOf(pk), cy: base - wave(r, pk)[0] * A, r: 3.2, fill: '#fff', stroke: '#1c1917', 'stroke-width': 1.4 });
           var tx = x0 + 8, anc = 'start'; if (tx > XL - 230) { tx = x0 - 8; anc = 'end'; }
-          var jn = document.createElement('div'); jn.className = 'tj-jn' + (on ? '' : ' dim'); jn.style.cssText = 'top:' + (base - y0 - 30) + 'px;--jc:' + C[r.state] + (r.src ? '' : ';font-style:italic'); jn.textContent = r.name; jn.title = r.name + ' · ' + r.born + (r.end ? '–' + r.end : '–today'); lane.firstChild.appendChild(jn);
+          var tx0 = Math.max(4, x0 + 8), lbl = el(g, 'text', { x: tx0, y: base - 6, 'font-size': 12.5, 'font-weight': 700, fill: '#1c1917', 'font-style': r.src ? 'normal' : 'italic', 'paint-order': 'stroke', stroke: '#fff', 'stroke-width': 3.5, class: 'tj-lbl' }, r.name); LBS.push({ t: lbl, x0: tx0, xe: xOf(e) });
           el(g, 'rect', { x: 0, y: base - RH + 4, width: PW, height: RH - 4, fill: 'transparent' });
           el(g, 'title', {}, r.name + ' · ' + r.born + (r.end ? '–' + r.end : '–today'));
           pos[r.name] = { x: x0, y: base, e: xOf(e) };
-          jn.onclick = function () { g.onclick(); }; g.onclick = function () { $('tjRinfo').innerHTML = '<b>' + r.name + '</b> · ' + c[1] + ' · ' + r.born + (r.end ? '–' + r.end : '–today') + (r.peak ? ' · peak ' + r.peak : '') + ' · <span style="color:' + C[r.state] + ';font-weight:700">' + r.state + '</span><br>' + r.note + (r.src ? ' <a href=\x22' + r.src + '\x22 target="_blank" rel="noopener">source</a>' + (r.sec ? ' ⚠️' : '') : ' <i>(our reading)</i>') + (r.art ? ' · <a href=\x22../blog/' + r.art + '.html\x22' + tgt + '>Read our article →</a>' : ''); }; });
+          g.onclick = function () { $('tjRinfo').innerHTML = '<b>' + r.name + '</b> · ' + c[1] + ' · ' + r.born + (r.end ? '–' + r.end : '–today') + (r.peak ? ' · peak ' + r.peak : '') + ' · <span style="color:' + C[r.state] + ';font-weight:700">' + r.state + '</span><br>' + r.note + (r.src ? ' <a href=\x22' + r.src + '\x22 target="_blank" rel="noopener">source</a>' + (r.sec ? ' ⚠️' : '') : ' <i>(our reading)</i>') + (r.art ? ' · <a href=\x22../blog/' + r.art + '.html\x22' + tgt + '>Read our article →</a>' : ''); }; });
         y0 += LH + 6; });
       (D.roleLinks || []).forEach(function (l) { var a = pos[l[0]], b = pos[l[1]]; if (!a || !b) return; var bx = b.x + 2, axx = Math.min(a.e, bx - 4) > a.x ? Math.max(a.x + 8, bx - 30) : a.x;
         el(lk, 'path', { d: 'M' + axx + ' ' + a.y + ' C' + axx + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + b.y, fill: 'none', stroke: '#78716c', 'stroke-width': 1.4, 'stroke-dasharray': '5 4', opacity: .75, 'marker-end': 'url(#tjAr)' }); });
-      var sc = $('tjGrid'), tb = $('tjTop'); if (sc && !sc.dataset.done) { sc.dataset.done = 1; sc.addEventListener('scroll', function () { if (Math.abs(tb.scrollLeft - sc.scrollLeft) > 1) tb.scrollLeft = sc.scrollLeft; }); tb.addEventListener('scroll', function () { if (Math.abs(tb.scrollLeft - sc.scrollLeft) > 1) sc.scrollLeft = tb.scrollLeft; }); sc.scrollLeft = sc.scrollWidth; tb.scrollLeft = tb.scrollWidth; var vb = $('tjV'); sc.addEventListener('scroll', function () { if (Math.abs(vb.scrollTop - sc.scrollTop) > 1) vb.scrollTop = sc.scrollTop; }); vb.addEventListener('scroll', function () { if (Math.abs(vb.scrollTop - sc.scrollTop) > 1) sc.scrollTop = vb.scrollTop; }); }
+      var sc = $('tjGrid'), tb = $('tjTop');
+      window.tjFloat = function () { var L = sc.scrollLeft + 8; LBS.forEach(function (o) { var w = o.w || (o.w = o.t.getComputedTextLength ? o.t.getComputedTextLength() : 120), x = Math.max(o.x0, Math.min(L, o.xe - w - 6)); o.t.setAttribute('x', x.toFixed(1)); }); };
+      requestAnimationFrame(window.tjFloat); if (sc && !sc.dataset.done) { sc.dataset.done = 1; sc.addEventListener('scroll', function () { if (Math.abs(tb.scrollLeft - sc.scrollLeft) > 1) tb.scrollLeft = sc.scrollLeft; if (window.tjFloat) window.tjFloat(); }); tb.addEventListener('scroll', function () { if (Math.abs(tb.scrollLeft - sc.scrollLeft) > 1) sc.scrollLeft = tb.scrollLeft; }); sc.scrollLeft = sc.scrollWidth; tb.scrollLeft = tb.scrollWidth; var vb = $('tjV'); sc.addEventListener('scroll', function () { if (Math.abs(vb.scrollTop - sc.scrollTop) > 1) vb.scrollTop = sc.scrollTop; }); vb.addEventListener('scroll', function () { if (Math.abs(vb.scrollTop - sc.scrollTop) > 1) sc.scrollTop = vb.scrollTop; }); }
       $('tjVIn').style.height = (H + AH + 2) + 'px';
       if (window.tjTell) window.tjTell(); }
     document.querySelectorAll('#tjRf button').forEach(function (b) { b.onclick = function () { document.querySelectorAll('#tjRf button').forEach(function (x) { x.classList.toggle('on', x == b); }); filt = b.dataset.s; drawRoles(); }; }); drawCats(); drawRoles();

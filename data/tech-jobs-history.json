@@ -88,7 +88,8 @@
    "state": "rising",
    "note": "No. 1 on LinkedIn Jobs on the Rise 2025 (US).",
    "src": "https://www.cbsnews.com/amp/news/artificial-intelligence-entry-level-role-linkedin-study/",
-   "sec": 1
+   "sec": 1,
+   "cat": "data"
   },
   {
    "name": "Prompt engineer",
@@ -98,7 +99,8 @@
    "state": "faded",
    "note": "A 2023 posting at up to $335,000 made headlines; by May 2025 coverage called the title obsolete.",
    "src": "https://fortune.com/2025/05/07/prompt-engineering-200k-six-figure-role-now-obsolete-thanks-to-ai/",
-   "sec": 1
+   "sec": 1,
+   "cat": "data"
   },
   {
    "name": "AI red-teamer / safety evaluator",
@@ -108,7 +110,8 @@
    "state": "rising",
    "note": "Our reading: grew with frontier-model safety testing.",
    "src": null,
-   "sec": 0
+   "sec": 0,
+   "cat": "sec"
   },
   {
    "name": "Data scientist",
@@ -118,7 +121,8 @@
    "state": "changing",
    "note": "Glassdoor's 'best job in America' 2016–2019; work is shifting toward ML and AI engineering (our reading).",
    "src": "https://www.kdnuggets.com/2018/01/glassdoor-data-scientist-best-job-america-3years.html",
-   "sec": 1
+   "sec": 1,
+   "cat": "data"
   },
   {
    "name": "Data engineer",
@@ -128,7 +132,8 @@
    "state": "rising",
    "note": "Our reading: grew with cloud data warehouses and pipelines.",
    "src": null,
-   "sec": 0
+   "sec": 0,
+   "cat": "data"
   },
   {
    "name": "ML engineer",
@@ -138,7 +143,8 @@
    "state": "rising",
    "note": "Our reading: the production side of data science, now merging into AI engineering.",
    "src": null,
-   "sec": 0
+   "sec": 0,
+   "cat": "data"
   },
   {
    "name": "DevOps → platform engineer",
@@ -148,7 +154,8 @@
    "state": "changing",
    "note": "Our reading: DevOps (from 2009) became platform engineering from about 2020.",
    "src": null,
-   "sec": 0
+   "sec": 0,
+   "cat": "infra"
   },
   {
    "name": "Site reliability engineer",
@@ -158,7 +165,8 @@
    "state": "rising",
    "note": "Started at Google in 2003; spread after Google's SRE book (2016).",
    "src": "https://sre.google/sre-book/introduction/",
-   "sec": 0
+   "sec": 0,
+   "cat": "infra"
   },
   {
    "name": "Cloud architect",
@@ -168,7 +176,8 @@
    "state": "rising",
    "note": "Our reading: grew with AWS, Azure and Google Cloud.",
    "src": null,
-   "sec": 0
+   "sec": 0,
+   "cat": "infra"
   },
   {
    "name": "Blockchain / web3 developer",
@@ -178,7 +187,8 @@
    "state": "faded",
    "note": "Our reading: boomed with crypto in 2017 and 2021, shrank after the 2022 crash.",
    "src": null,
-   "sec": 0
+   "sec": 0,
+   "cat": "web"
   },
   {
    "name": "Flash developer",
@@ -188,7 +198,8 @@
    "state": "gone",
    "note": "Adobe ended Flash Player support on 31 Dec 2020.",
    "src": "https://www.adobe.com/products/flashplayer/end-of-life.html",
-   "sec": 0
+   "sec": 0,
+   "cat": "web"
   },
   {
    "name": "On-premises sysadmin",
@@ -198,7 +209,8 @@
    "state": "shrinking",
    "note": "Our reading: work moved to cloud and platform teams.",
    "src": null,
-   "sec": 0
+   "sec": 0,
+   "cat": "infra"
   },
   {
    "name": "Manual QA tester",
@@ -208,7 +220,8 @@
    "state": "shrinking",
    "note": "Our reading: automated testing absorbed much of it; BLS still counts QA analysts and testers (median $102,610, 2024).",
    "src": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
-   "sec": 0
+   "sec": 0,
+   "cat": "swe"
   },
   {
    "name": "Entry-level software developer",
@@ -218,6 +231,84 @@
    "state": "shrinking",
    "note": "Employment of 22–25-year-old software developers fell about 20% from late 2022 (Stanford Digital Economy Lab).",
    "src": "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine",
+   "sec": 0,
+   "cat": "swe"
+  },
+  {
+   "name": "Webmaster",
+   "born": 1993,
+   "peak": 2000,
+   "end": 2010,
+   "state": "gone",
+   "cat": "web",
+   "note": "One person ran a company website end to end in the early web; the job split into web developer, designer and content roles. Approximate dates, our reading; detailed figures come in the later parts of the series.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Web developer",
+   "born": 1993,
+   "peak": null,
+   "end": null,
+   "state": "changing",
+   "cat": "web",
+   "note": "Grew with the web and later split into front-end, back-end and full-stack roles. Approximate dates, our reading; detailed figures come in the later parts of the series.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Mobile app developer",
+   "born": 2008,
+   "peak": null,
+   "end": null,
+   "state": "changing",
+   "cat": "web",
+   "note": "Born with the iPhone App Store (July 2008) and Android Market (October 2008). Approximate dates, our reading; detailed figures come in the later parts of the series.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Security analyst",
+   "born": 1995,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "sec",
+   "note": "Grew with networked business systems; cloud and AI widened the job. Approximate dates, our reading; detailed figures come in the later parts of the series.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Chip design engineer",
+   "born": 1971,
+   "peak": null,
+   "end": null,
+   "state": "changing",
+   "cat": "hw",
+   "note": "From the first microprocessors (Intel 4004, 1971) to AI accelerators; tools moved from hand layout to EDA software. Approximate dates, our reading; detailed figures come in the later parts of the series.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "UX designer",
+   "born": 1993,
+   "peak": null,
+   "end": null,
+   "state": "changing",
+   "cat": "prod",
+   "note": "\"User experience\" became a job title in the 1990s; AI tools are changing the work. Approximate dates, our reading; detailed figures come in the later parts of the series.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Product manager",
+   "born": 1995,
+   "peak": null,
+   "end": null,
+   "state": "changing",
+   "cat": "prod",
+   "note": "Software product management spread in the 1990s and 2000s. Approximate dates, our reading; detailed figures come in the later parts of the series.",
+   "src": "",
    "sec": 0
   }
  ],
@@ -531,5 +622,80 @@
     ]
    ]
   }
- }
+ },
+ "roleCats": [
+  [
+   "swe",
+   "Software engineering",
+   "#2563eb"
+  ],
+  [
+   "data",
+   "Data & AI",
+   "#7c3aed"
+  ],
+  [
+   "infra",
+   "Infrastructure, cloud & ops",
+   "#0d9488"
+  ],
+  [
+   "web",
+   "Web & mobile",
+   "#ea580c"
+  ],
+  [
+   "sec",
+   "Security & safety",
+   "#dc2626"
+  ],
+  [
+   "hw",
+   "Hardware & semiconductors",
+   "#57534e"
+  ],
+  [
+   "prod",
+   "Product, design & support",
+   "#db2777"
+  ]
+ ],
+ "roleLinks": [
+  [
+   "On-premises sysadmin",
+   "DevOps → platform engineer"
+  ],
+  [
+   "On-premises sysadmin",
+   "Cloud architect"
+  ],
+  [
+   "Data scientist",
+   "ML engineer"
+  ],
+  [
+   "ML engineer",
+   "AI engineer"
+  ],
+  [
+   "Prompt engineer",
+   "AI engineer"
+  ],
+  [
+   "Webmaster",
+   "Web developer"
+  ],
+  [
+   "Flash developer",
+   "Web developer"
+  ],
+  [
+   "Web developer",
+   "Mobile app developer"
+  ],
+  [
+   "Security analyst",
+   "AI red-teamer / safety evaluator"
+  ]
+ ]
 }

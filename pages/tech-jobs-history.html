@@ -30,6 +30,8 @@
     .tj-ctl { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; align-items:center; }
     .tj-ctl select { max-width:100%; }
     .tj-ctl button, .tj-ctl select { border:1px solid #d6d3d1; background:#fafaf9; border-radius:99px; padding:6px 12px; font-weight:700; cursor:pointer; font-size:.82rem; font-family:inherit; }
+    .tj-note { font-size:.82rem; color:#57534e; margin:4px 0 8px; }
+    #tjCats button.on { color:#fff; }
     .tj-ctl button.on { background:#a16207; color:#fff; border-color:#a16207; }
     .tj-svg { width:100%; height:auto; display:block; font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif; }
     .tj-svg .ln { cursor:pointer; } .tj-svg .ln:hover rect.bar { opacity:1; stroke:#0f172a; stroke-width:1.5; }
@@ -170,9 +172,9 @@
 <div class="tj">
   <div class="tj-hero"><h1>Tech Jobs Through Time</h1><p>How tech jobs emerged, changed and disappeared, from the human computers of the 1940s to the AI engineers of 2026: periods, role lanes, pay in real dollars, demand, layoffs, H-1B and India's workforce. US data is the backbone, with an India and global thread. Parts are published newest first.</p></div>
   <div class="tj-box"><h2>🗓️ The periods</h2><div class="tj-per" id="tjPer"></div><div class="tj-info" id="tjPinfo">Tap a period. Highlighted periods have a published article; the rest are coming.</div></div>
-  <div class="tj-box"><h2>🧑‍💻 Roles: born, peaked, faded</h2>
+  <div class="tj-box"><h2>🧑‍💻 Job lanes: born, peaked, faded</h2>
     <div class="tj-ctl" id="tjRf"><button data-s="all" class="on">All</button><button data-s="rising">Rising</button><button data-s="changing">Changing</button><button data-s="faded">Faded</button><button data-s="shrinking">Shrinking</button><button data-s="gone">Gone</button></div>
-    <svg class="tj-svg" id="tjRoles" viewBox="0 0 1000 560"></svg><div class="tj-info" id="tjRinfo">Tap a role for its story and source.</div></div>
+    <div class="tj-ctl" id="tjCats"></div><p class="tj-note">Time runs up: newest at the top. Each lane is a job family; a bar runs from when a role was born to when it faded (▲ = still going), ○ = peak, dashed arrows = one role turning into another, dashed chips = approximate dates (our reading).</p><svg class="tj-svg" id="tjRoles" viewBox="0 0 1000 900"></svg><div class="tj-info" id="tjRinfo">Tap a role for its story and source.</div></div>
   <div class="tj-box"><h2>📈 The numbers</h2>
     <div class="tj-ctl"><select id="tjM" aria-label="Choose a measure"></select><button id="tjReal" class="on">2024 dollars</button></div>
     <svg class="tj-svg" id="tjChart" viewBox="0 0 1000 380"></svg><div class="tj-info" id="tjMinfo"></div></div>
@@ -194,15 +196,35 @@
       d.onclick = function () { document.querySelectorAll('.tj-p').forEach(function (x) { x.classList.toggle('sel', x == d); }); $('tjPinfo').innerHTML = '<b>' + p.label + ': ' + p.title + '.</b> ' + (p.slug ? '<a href=\x22../blog/' + p.slug + '.html\x22' + tgt + '>Read the article →</a>' : 'This part is coming in a later batch.'); };
       $('tjPer').appendChild(d); });
     // roles
-    var C = { rising: '#16a34a', changing: '#2563eb', faded: '#d97706', gone: '#dc2626', shrinking: '#9333ea' }, Y0 = 1945, Y1 = 2027, X0 = 250, X1 = 985;
-    function px(y) { return X0 + (Math.max(y, Y0) - Y0) / (Y1 - Y0) * (X1 - X0); }
-    function drawRoles(f) { var s = $('tjRoles'); s.innerHTML = ''; var R = D.roles.filter(function (r) { return f == 'all' || r.state == f; }), h = 40 + R.length * 34 + 30; s.setAttribute('viewBox', '0 0 1000 ' + h);
-      for (var y = 1950; y <= 2025; y += 10) { el(s, 'line', { x1: px(y), y1: 20, x2: px(y), y2: h - 26, stroke: '#e7e5e4' }); el(s, 'text', { x: px(y), y: h - 8, 'font-size': 12, fill: '#78716c', 'text-anchor': 'middle' }, y); }
-      R.forEach(function (r, i) { var y = 30 + i * 34, g = el(s, 'g', { class: 'ln' }); el(g, 'text', { x: 10, y: y + 15, 'font-size': 13, 'font-weight': 700, fill: '#1c1917' }, r.name);
-        var e = r.end || 2026.9; el(g, 'rect', { class: 'bar', x: px(r.born), y: y + 3, width: Math.max(6, px(e) - px(r.born)), height: 18, rx: 6, fill: C[r.state], opacity: .85 });
-        if (r.peak) el(g, 'circle', { cx: px(r.peak), cy: y + 12, r: 5, fill: '#fff', stroke: '#1c1917', 'stroke-width': 2 });
-        g.onclick = function () { $('tjRinfo').innerHTML = '<b>' + r.name + '</b> · ' + r.born + (r.end ? '–' + r.end : '–today') + ' · <span style="color:' + C[r.state] + ';font-weight:700">' + r.state + '</span><br>' + r.note + (r.src ? ' <a href=\x22' + r.src + '\x22 target="_blank" rel="noopener">source</a>' + (r.sec ? ' ⚠️' : '') : ''); }; }); }
-    document.querySelectorAll('#tjRf button').forEach(function (b) { b.onclick = function () { document.querySelectorAll('#tjRf button').forEach(function (x) { x.classList.toggle('on', x == b); }); drawRoles(b.dataset.s); }; }); drawRoles('all');
+    var C = { rising: '#16a34a', changing: '#2563eb', faded: '#d97706', gone: '#dc2626', shrinking: '#9333ea' }, CATS = D.roleCats, PH = function () { return window.innerWidth < 640; }, pick = null, filt = 'all';
+    function yOf(y) { y = Math.max(1945, Math.min(2027, y)); return y >= 1990 ? 40 + (2027 - y) * 15 : 40 + 37 * 15 + (1990 - y) * 4; }
+    function drawCats() { var box = $('tjCats'); if (!pick) pick = PH() ? CATS.slice(0, 2).map(function (c) { return c[0]; }) : CATS.map(function (c) { return c[0]; });
+      box.innerHTML = '<b>Lanes' + (PH() ? ' (pick up to 2)' : '') + ':</b>'; CATS.forEach(function (c) { var bt = document.createElement('button'); bt.textContent = c[1]; bt.style.borderColor = c[2]; if (pick.indexOf(c[0]) >= 0) { bt.className = 'on'; bt.style.background = c[2]; }
+        bt.onclick = function () { var i = pick.indexOf(c[0]); if (i >= 0) { if (pick.length > 1) pick.splice(i, 1); } else { pick.push(c[0]); if (PH() && pick.length > 2) pick.shift(); } pick.sort(function (x, y) { return CATS.findIndex(function (k) { return k[0] == x; }) - CATS.findIndex(function (k) { return k[0] == y; }); }); drawCats(); drawRoles(); }; box.appendChild(bt); }); }
+    function drawRoles() { var s = $('tjRoles'); s.innerHTML = ''; var cs = CATS.filter(function (c) { return pick.indexOf(c[0]) >= 0; }), LW = 52, CW = PH() ? 215 : 160, W = LW + cs.length * CW + 8, H = yOf(1945) + 20, pos = {};
+      s.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      [2025, 2020, 2015, 2010, 2005, 2000, 1995, 1990, 1980, 1970, 1960, 1950].forEach(function (y) { el(s, 'line', { x1: LW, y1: yOf(y), x2: W, y2: yOf(y), stroke: '#e7e5e4' }); el(s, 'text', { x: LW - 6, y: yOf(y) + 4, 'font-size': 12, fill: '#78716c', 'text-anchor': 'end' }, y); });
+      el(s, 'text', { x: 4, y: yOf(1990) + 18, 'font-size': 10, fill: '#a8a29e' }, '↓ squeezed');
+      var lk = el(s, 'g', {});
+      cs.forEach(function (c, ci) { var x0 = LW + ci * CW + 4; el(s, 'rect', { x: x0, y: 4, width: CW - 8, height: H - 8, rx: 10, fill: c[2], opacity: .05 }); el(s, 'text', { x: x0 + (CW - 8) / 2, y: 24, 'font-size': 12.5, 'font-weight': 800, fill: c[2], 'text-anchor': 'middle' }, c[1].length > 22 ? c[1].split(',')[0] : c[1]);
+        var R = D.roles.filter(function (r) { return r.cat == c[0]; }).sort(function (a, b) { return a.born - b.born; }), prev = 1e9;
+        R.forEach(function (r, i) { var bx = x0 + 8 + (i % 6) * 9, on = filt == 'all' || r.state == filt, e = r.end || 2027, cy = Math.min(yOf(r.born), prev - 30); prev = cy;
+          var g = el(s, 'g', { class: 'ln', opacity: on ? 1 : .15 });
+          el(g, 'rect', { x: bx, y: yOf(e), width: 6, height: Math.max(4, yOf(r.born) - yOf(e)), rx: 3, fill: C[r.state] });
+          if (!r.end) el(g, 'path', { d: 'M' + (bx - 2) + ' ' + (yOf(e) + 2) + 'l5 -8l5 8z', fill: C[r.state] });
+          if (r.peak) el(g, 'circle', { cx: bx + 3, cy: yOf(r.peak), r: 4.5, fill: '#fff', stroke: '#1c1917', 'stroke-width': 2 });
+          var cx = x0 + 22 + Math.min(R.length, 6) * 9, cw = x0 + CW - 18 - cx, mc = Math.floor(cw / 6.7), nm = r.name.length > mc ? r.name.slice(0, mc - 1) + '…' : r.name;
+          el(g, 'line', { x1: bx + 6, y1: yOf(r.born), x2: cx - 8, y2: cy, stroke: C[r.state], 'stroke-width': 1, opacity: .6 });
+          el(g, 'rect', { x: cx - 8, y: cy - 12, width: cw + 4, height: 24, rx: 12, fill: '#fff', stroke: C[r.state], 'stroke-width': 1.5, 'stroke-dasharray': r.src ? '' : '4 3' });
+          el(g, 'text', { x: cx - 2, y: cy + 4, 'font-size': 11.5, 'font-weight': 700, fill: '#1c1917' }, nm); el(g, 'title', {}, r.name + ' · ' + r.born + (r.end ? '–' + r.end : '–today'));
+          pos[r.name] = { x: cx - 8, y: cy, w: cw + 4 };
+          g.onclick = function () { $('tjRinfo').innerHTML = '<b>' + r.name + '</b> · ' + c[1] + ' · ' + r.born + (r.end ? '–' + r.end : '–today') + (r.peak ? ' · peak ' + r.peak : '') + ' · <span style="color:' + C[r.state] + ';font-weight:700">' + r.state + '</span><br>' + r.note + (r.src ? ' <a href=\x22' + r.src + '\x22 target="_blank" rel="noopener">source</a>' + (r.sec ? ' ⚠️' : '') : ' <i>(our reading)</i>'); }; }); });
+      (D.roleLinks || []).forEach(function (l) { var a = pos[l[0]], b = pos[l[1]]; if (!a || !b) return; var ax = a.x + a.w / 2, bx2 = b.x + b.w / 2, ay = a.y - 12, by = b.y + 12; if (Math.abs(ax - bx2) > 30) { ax = ax < bx2 ? a.x + a.w : a.x; bx2 = ax < bx2 ? b.x : b.x + b.w; ay = a.y; by = b.y; }
+        el(lk, 'path', { d: 'M' + ax + ' ' + ay + ' C' + ax + ' ' + (ay + by) / 2 + ' ' + bx2 + ' ' + (ay + by) / 2 + ' ' + bx2 + ' ' + by, fill: 'none', stroke: '#78716c', 'stroke-width': 1.5, 'stroke-dasharray': '5 4', opacity: .7, 'marker-end': 'url(#tjAr)' }); });
+      var df = el(s, 'defs', {}), mk = el(df, 'marker', { id: 'tjAr', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto' }); el(mk, 'path', { d: 'M0 0L10 5L0 10z', fill: '#78716c' });
+      if (window.tjTell) window.tjTell(); }
+    document.querySelectorAll('#tjRf button').forEach(function (b) { b.onclick = function () { document.querySelectorAll('#tjRf button').forEach(function (x) { x.classList.toggle('on', x == b); }); filt = b.dataset.s; drawRoles(); }; }); drawCats(); drawRoles();
+    var rw = PH(); window.addEventListener('resize', function () { if (PH() != rw) { rw = PH(); pick = null; drawCats(); drawRoles(); } });
     // metrics
     var M = D.metrics, sel = $('tjM'), real = true;
     Object.keys(M).forEach(function (k) { var o = document.createElement('option'); o.value = k; o.textContent = M[k].label; sel.appendChild(o); });
@@ -221,7 +243,7 @@
     sel.onchange = drawM; $('tjReal').onclick = function () { real = !real; this.classList.toggle('on', real); this.textContent = real ? '2024 dollars' : 'As reported'; drawM(); }; drawM();
     setTimeout(tell, 300);
   });
-  function tell() { if (embed && parent !== window) parent.postMessage({ tjHeight: Math.ceil(document.querySelector('.tj').getBoundingClientRect().bottom + 8) }, '*'); }
+  window.tjTell = tell; function tell() { if (embed && parent !== window) parent.postMessage({ tjHeight: Math.ceil(document.querySelector('.tj').getBoundingClientRect().bottom + 8) }, '*'); }
   addEventListener('resize', tell);
 })();
 </script>

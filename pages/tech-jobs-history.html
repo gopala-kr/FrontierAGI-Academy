@@ -30,6 +30,8 @@
     .tj-ctl { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; align-items:center; }
     .tj-ctl select { max-width:100%; }
     .tj-ctl button, .tj-ctl select { border:1px solid #d6d3d1; background:#fafaf9; border-radius:99px; padding:6px 12px; font-weight:700; cursor:pointer; font-size:.82rem; font-family:inherit; }
+    .tj-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    @media (max-width:640px){ .tj-scroll #tjRoles { width:900px; max-width:none; } }
     .tj-note { font-size:.82rem; color:#57534e; margin:4px 0 8px; }
     #tjCats button.on { color:#fff; }
     .tj-ctl button.on { background:#a16207; color:#fff; border-color:#a16207; }
@@ -174,7 +176,7 @@
   <div class="tj-box"><h2>🗓️ The periods</h2><div class="tj-per" id="tjPer"></div><div class="tj-info" id="tjPinfo">Tap a period. Highlighted periods have a published article; the rest are coming.</div></div>
   <div class="tj-box"><h2>🧑‍💻 Job lanes: born, peaked, faded</h2>
     <div class="tj-ctl" id="tjRf"><button data-s="all" class="on">All</button><button data-s="rising">Rising</button><button data-s="changing">Changing</button><button data-s="faded">Faded</button><button data-s="shrinking">Shrinking</button><button data-s="gone">Gone</button></div>
-    <div class="tj-ctl" id="tjCats"></div><p class="tj-note">Time runs up: newest at the top. Each lane is a job family; a bar runs from when a role was born to when it faded (▲ = still going), ○ = peak, dashed arrows = one role turning into another, dashed chips = approximate dates (our reading).</p><svg class="tj-svg" id="tjRoles" viewBox="0 0 1000 900"></svg><div class="tj-info" id="tjRinfo">Tap a role for its story and source.</div></div>
+    <div class="tj-ctl" id="tjCats"></div><p class="tj-note">Years run left to right along the top; each lane is a job family. Each wave is one role: it swells as the role grows, peaks (○) and thins out as it fades. Colour = today's state; dashed arrows = one role turning into another; dashed outlines = approximate dates (our reading). On phones, swipe sideways.</p><div class="tj-scroll"><svg class="tj-svg" id="tjRoles" viewBox="0 0 1000 900"></svg></div><div class="tj-info" id="tjRinfo">Tap a role for its story and source.</div></div>
   <div class="tj-box"><h2>📈 The numbers</h2>
     <div class="tj-ctl"><select id="tjM" aria-label="Choose a measure"></select><button id="tjReal" class="on">2024 dollars</button></div>
     <svg class="tj-svg" id="tjChart" viewBox="0 0 1000 380"></svg><div class="tj-info" id="tjMinfo"></div></div>
@@ -197,34 +199,40 @@
       $('tjPer').appendChild(d); });
     // roles
     var C = { rising: '#16a34a', changing: '#2563eb', faded: '#d97706', gone: '#dc2626', shrinking: '#9333ea' }, CATS = D.roleCats, PH = function () { return window.innerWidth < 640; }, pick = null, filt = 'all';
-    function yOf(y) { y = Math.max(1945, Math.min(2027, y)); return y >= 1990 ? 40 + (2027 - y) * 15 : 40 + 37 * 15 + (1990 - y) * 4; }
-    function drawCats() { var box = $('tjCats'); if (!pick) pick = PH() ? CATS.slice(0, 2).map(function (c) { return c[0]; }) : CATS.map(function (c) { return c[0]; });
-      box.innerHTML = '<b>Lanes' + (PH() ? ' (pick up to 2)' : '') + ':</b>'; CATS.forEach(function (c) { var bt = document.createElement('button'); bt.textContent = c[1]; bt.style.borderColor = c[2]; if (pick.indexOf(c[0]) >= 0) { bt.className = 'on'; bt.style.background = c[2]; }
-        bt.onclick = function () { var i = pick.indexOf(c[0]); if (i >= 0) { if (pick.length > 1) pick.splice(i, 1); } else { pick.push(c[0]); if (PH() && pick.length > 2) pick.shift(); } pick.sort(function (x, y) { return CATS.findIndex(function (k) { return k[0] == x; }) - CATS.findIndex(function (k) { return k[0] == y; }); }); drawCats(); drawRoles(); }; box.appendChild(bt); }); }
-    function drawRoles() { var s = $('tjRoles'); s.innerHTML = ''; var cs = CATS.filter(function (c) { return pick.indexOf(c[0]) >= 0; }), LW = 52, CW = PH() ? 215 : 160, W = LW + cs.length * CW + 8, H = yOf(1945) + 20, pos = {};
+    var LBL = 150, XL = 990;
+    function xOf(y) { y = Math.max(1945, Math.min(2027, y)); var k = 1990 - 1945, f = y >= 1990 ? (k * 0.35 + (y - 1990)) / (k * 0.35 + 37) : (y - 1945) * 0.35 / (k * 0.35 + 37); return LBL + f * (XL - LBL); }
+    function amp(r, t) { var b = r.born, e = r.end || 2027.5, p = r.peak || (r.end ? (b + e) / 2 : 2027), sh = r.state == 'shrinking' || r.state == 'faded' || r.state == 'gone';
+      if (t < b || t > e) return 0; var up = Math.min(1, (t - b) / Math.max(2, Math.min(p - b, 12))), v = t <= p ? up : (r.end ? 1 - (t - p) / Math.max(1, e - p) : (sh ? 1 - 0.55 * (t - p) / Math.max(1, 2027 - p) : 1));
+      return Math.max(0, Math.sin(Math.min(1, v) * Math.PI / 2)); }
+    function drawCats() { var box = $('tjCats'); if (!pick) pick = CATS.map(function (c) { return c[0]; });
+      box.innerHTML = '<b>Lanes:</b>'; CATS.forEach(function (c) { var bt = document.createElement('button'); bt.textContent = c[1]; bt.style.borderColor = c[2]; if (pick.indexOf(c[0]) >= 0) { bt.className = 'on'; bt.style.background = c[2]; }
+        bt.onclick = function () { var i = pick.indexOf(c[0]); if (i >= 0) { if (pick.length > 1) pick.splice(i, 1); } else pick.push(c[0]); pick.sort(function (x, y) { return CATS.findIndex(function (k) { return k[0] == x; }) - CATS.findIndex(function (k) { return k[0] == y; }); }); drawCats(); drawRoles(); }; box.appendChild(bt); }); }
+    function drawRoles() { var s = $('tjRoles'); s.innerHTML = ''; var cs = CATS.filter(function (c) { return pick.indexOf(c[0]) >= 0; }), LH = 118, T = 46, H = T + cs.length * LH + 10, pos = {}, W = 1000;
       s.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-      [2025, 2020, 2015, 2010, 2005, 2000, 1995, 1990, 1980, 1970, 1960, 1950].forEach(function (y) { el(s, 'line', { x1: LW, y1: yOf(y), x2: W, y2: yOf(y), stroke: '#e7e5e4' }); el(s, 'text', { x: LW - 6, y: yOf(y) + 4, 'font-size': 12, fill: '#78716c', 'text-anchor': 'end' }, y); });
-      el(s, 'text', { x: 4, y: yOf(1990) + 18, 'font-size': 10, fill: '#a8a29e' }, '↓ squeezed');
+      [1950, 1960, 1970, 1980, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025].forEach(function (y) { el(s, 'line', { x1: xOf(y), y1: T - 6, x2: xOf(y), y2: H - 6, stroke: '#e7e5e4' }); el(s, 'text', { x: xOf(y), y: T - 14, 'font-size': 12, fill: '#57534e', 'font-weight': 700, 'text-anchor': 'middle' }, y); });
+      el(s, 'text', { x: (xOf(1945) + xOf(1990)) / 2, y: 14, 'font-size': 10.5, fill: '#a8a29e', 'text-anchor': 'middle' }, '← squeezed before 1990');
       var lk = el(s, 'g', {});
-      cs.forEach(function (c, ci) { var x0 = LW + ci * CW + 4; el(s, 'rect', { x: x0, y: 4, width: CW - 8, height: H - 8, rx: 10, fill: c[2], opacity: .05 }); el(s, 'text', { x: x0 + (CW - 8) / 2, y: 24, 'font-size': 12.5, 'font-weight': 800, fill: c[2], 'text-anchor': 'middle' }, c[1].length > 22 ? c[1].split(',')[0] : c[1]);
-        var R = D.roles.filter(function (r) { return r.cat == c[0]; }).sort(function (a, b) { return a.born - b.born; }), prev = 1e9;
-        R.forEach(function (r, i) { var bx = x0 + 8 + (i % 6) * 9, on = filt == 'all' || r.state == filt, e = r.end || 2027, cy = Math.min(yOf(r.born), prev - 30); prev = cy;
-          var g = el(s, 'g', { class: 'ln', opacity: on ? 1 : .15 });
-          el(g, 'rect', { x: bx, y: yOf(e), width: 6, height: Math.max(4, yOf(r.born) - yOf(e)), rx: 3, fill: C[r.state] });
-          if (!r.end) el(g, 'path', { d: 'M' + (bx - 2) + ' ' + (yOf(e) + 2) + 'l5 -8l5 8z', fill: C[r.state] });
-          if (r.peak) el(g, 'circle', { cx: bx + 3, cy: yOf(r.peak), r: 4.5, fill: '#fff', stroke: '#1c1917', 'stroke-width': 2 });
-          var cx = x0 + 22 + Math.min(R.length, 6) * 9, cw = x0 + CW - 18 - cx, mc = Math.floor(cw / 6.7), nm = r.name.length > mc ? r.name.slice(0, mc - 1) + '…' : r.name;
-          el(g, 'line', { x1: bx + 6, y1: yOf(r.born), x2: cx - 8, y2: cy, stroke: C[r.state], 'stroke-width': 1, opacity: .6 });
-          el(g, 'rect', { x: cx - 8, y: cy - 12, width: cw + 4, height: 24, rx: 12, fill: '#fff', stroke: C[r.state], 'stroke-width': 1.5, 'stroke-dasharray': r.src ? '' : '4 3' });
-          el(g, 'text', { x: cx - 2, y: cy + 4, 'font-size': 11.5, 'font-weight': 700, fill: '#1c1917' }, nm); el(g, 'title', {}, r.name + ' · ' + r.born + (r.end ? '–' + r.end : '–today'));
-          pos[r.name] = { x: cx - 8, y: cy, w: cw + 4 };
+      cs.forEach(function (c, ci) { var y0 = T + ci * LH, mid = y0 + LH / 2;
+        el(s, 'rect', { x: 4, y: y0 + 3, width: W - 8, height: LH - 6, rx: 12, fill: c[2], opacity: .06 });
+        var nm = c[1].split(/, | & /); el(s, 'text', { x: 14, y: mid - (nm.length > 1 ? 4 : -4), 'font-size': 13, 'font-weight': 800, fill: c[2] }, nm[0] + (nm.length > 1 ? ' &' : '')); if (nm.length > 1) el(s, 'text', { x: 14, y: mid + 13, 'font-size': 13, 'font-weight': 800, fill: c[2] }, nm.slice(1).join(', '));
+        el(s, 'line', { x1: LBL, y1: mid, x2: XL, y2: mid, stroke: c[2], 'stroke-width': 1, opacity: .25 });
+        var R = D.roles.filter(function (r) { return r.cat == c[0]; }).sort(function (a, b) { return a.born - b.born; }), used = [];
+        R.forEach(function (r, i) { var on = filt == 'all' || r.state == filt, g = el(s, 'g', { class: 'ln', opacity: on ? 1 : .12 }), A = (LH / 2 - 14) * (0.45 + 0.55 / Math.sqrt(R.length)), top = [], bot = [];
+          for (var t = Math.max(1945, r.born); t <= Math.min(2027, r.end || 2027); t += 0.5) { var a = amp(r, t) * A, wob = Math.sin((t - r.born) * 0.9 + i) * 2.2 * (a > 3 ? 1 : 0); top.push(xOf(t).toFixed(1) + ' ' + (mid - a + wob).toFixed(1)); bot.unshift(xOf(t).toFixed(1) + ' ' + (mid + a + wob).toFixed(1)); }
+          if (top.length < 2) return;
+          el(g, 'path', { d: 'M' + top.join(' L') + ' L' + bot.join(' L') + 'Z', fill: C[r.state], 'fill-opacity': .28, stroke: C[r.state], 'stroke-width': 1.6, 'stroke-dasharray': r.src ? '' : '5 3' });
+          if (r.peak) el(g, 'circle', { cx: xOf(r.peak), cy: mid - amp(r, r.peak) * A, r: 4, fill: '#fff', stroke: '#1c1917', 'stroke-width': 2 });
+          var lx = Math.max(LBL + 4, xOf(r.born) + 4), ly = y0 + 16 + (i % 3) * 14; var tw = r.name.length * 6.6; for (var k = 0; k < 6; k++) { var hit = used.some(function (u) { return lx < u[0] + u[2] + 6 && u[0] < lx + tw + 6 && Math.abs(u[1] - ly) < 12; }); if (!hit) break; ly += 14; } if (ly > y0 + LH - 8) ly = y0 + LH - 8; used.push([lx, ly, tw]);
+          var tx = el(g, 'text', { x: Math.min(lx, XL - 4), y: ly, 'font-size': 11.5, 'font-weight': 700, fill: '#1c1917', 'text-anchor': lx > XL - 120 ? 'end' : 'start', 'paint-order': 'stroke', stroke: '#fff', 'stroke-width': 3 }, r.name);
+          el(g, 'title', {}, r.name + ' · ' + r.born + (r.end ? '–' + r.end : '–today'));
+          pos[r.name] = { x: xOf(r.born), y: mid, e: xOf(r.end || 2027) };
           g.onclick = function () { $('tjRinfo').innerHTML = '<b>' + r.name + '</b> · ' + c[1] + ' · ' + r.born + (r.end ? '–' + r.end : '–today') + (r.peak ? ' · peak ' + r.peak : '') + ' · <span style="color:' + C[r.state] + ';font-weight:700">' + r.state + '</span><br>' + r.note + (r.src ? ' <a href=\x22' + r.src + '\x22 target="_blank" rel="noopener">source</a>' + (r.sec ? ' ⚠️' : '') : ' <i>(our reading)</i>'); }; }); });
-      (D.roleLinks || []).forEach(function (l) { var a = pos[l[0]], b = pos[l[1]]; if (!a || !b) return; var ax = a.x + a.w / 2, bx2 = b.x + b.w / 2, ay = a.y - 12, by = b.y + 12; if (Math.abs(ax - bx2) > 30) { ax = ax < bx2 ? a.x + a.w : a.x; bx2 = ax < bx2 ? b.x : b.x + b.w; ay = a.y; by = b.y; }
-        el(lk, 'path', { d: 'M' + ax + ' ' + ay + ' C' + ax + ' ' + (ay + by) / 2 + ' ' + bx2 + ' ' + (ay + by) / 2 + ' ' + bx2 + ' ' + by, fill: 'none', stroke: '#78716c', 'stroke-width': 1.5, 'stroke-dasharray': '5 4', opacity: .7, 'marker-end': 'url(#tjAr)' }); });
+      (D.roleLinks || []).forEach(function (l) { var a = pos[l[0]], b = pos[l[1]]; if (!a || !b) return; var bx = b.x + 2, ax = Math.min(a.e, bx - 4) > a.x ? Math.max(a.x + 8, bx - 30) : a.x;
+        el(lk, 'path', { d: 'M' + ax + ' ' + a.y + ' C' + ax + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + b.y, fill: 'none', stroke: '#78716c', 'stroke-width': 1.4, 'stroke-dasharray': '5 4', opacity: .75, 'marker-end': 'url(#tjAr)' }); });
       var df = el(s, 'defs', {}), mk = el(df, 'marker', { id: 'tjAr', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto' }); el(mk, 'path', { d: 'M0 0L10 5L0 10z', fill: '#78716c' });
+      var sc = s.parentNode; if (sc && sc.scrollWidth > sc.clientWidth && !sc.dataset.done) { sc.scrollLeft = sc.scrollWidth; sc.dataset.done = 1; }
       if (window.tjTell) window.tjTell(); }
     document.querySelectorAll('#tjRf button').forEach(function (b) { b.onclick = function () { document.querySelectorAll('#tjRf button').forEach(function (x) { x.classList.toggle('on', x == b); }); filt = b.dataset.s; drawRoles(); }; }); drawCats(); drawRoles();
-    var rw = PH(); window.addEventListener('resize', function () { if (PH() != rw) { rw = PH(); pick = null; drawCats(); drawRoles(); } });
     // metrics
     var M = D.metrics, sel = $('tjM'), real = true;
     Object.keys(M).forEach(function (k) { var o = document.createElement('option'); o.value = k; o.textContent = M[k].label; sel.appendChild(o); });

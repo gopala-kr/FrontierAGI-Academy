@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**363 articles** · **36 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
+**365 articles** · **36 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -781,7 +781,7 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 #### 🧑‍💻 Tech Jobs Through Time: How Tech Work Emerged, Changed and Disappeared
 
 Half-decade by half-decade back to 2001, then decade by decade to the 1940s: jobs born and gone, pay in real dollars, demand and layoffs, employers, skills, who did the work, and the India and global thread.  
-<sub>8 articles</sub>
+<sub>10 articles</sub>
 
 🆕 *Newest series.*
 
@@ -795,6 +795,8 @@ Half-decade by half-decade back to 2001, then decade by decade to the 1940s: job
 | 6 | 🌐 [Tech Jobs in the 1990s: The Web, Y2K and the Boom](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-1990s.html) | 6 min |
 | 7 | 💾 [Tech Jobs in the 1980s: The PC Revolution](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-1980s.html) | 5 min |
 | 8 | 🔌 [Tech Jobs in the 1970s: Microprocessors and the First Software Companies](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-1970s.html) | 4 min |
+| 9 | 🖥️ [Tech Jobs in the 1960s: Mainframes and the Software Crisis](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-1960s.html) | 4 min |
+| 10 | 🧮 [Tech Jobs in the 1940s and 1950s: Human Computers and the First Programmers](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-1940s-50s.html) | 4 min |
 
 
 ### 19 · Take a Course

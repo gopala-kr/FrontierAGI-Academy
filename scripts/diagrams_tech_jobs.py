@@ -141,7 +141,7 @@ for i,p in enumerate(C):
     h=p[1]/200000*280; x=70+i*85
     s+=f'<rect x="{x}" y="{440-h}" width="64" height="{h}" rx="6" fill="#0891b2"/>'+note(x+32,434-h,f'{p[1]//1000}k','#0f172a',13,'middle',True)+note(x+32,464,'FY'+str(p[0]),'#64748b',12,'middle')
 s+=note(60,500,'FY2001–03: 195k cap never reached (bust).','#64748b',11)
-P=M['us_programmers']['points']
+P=[p for p in M['us_programmers']['points'] if p[0]>=2000]
 s+=note(440,110,'US computer programmers','#0f172a',15,'start',True)
 for i,(lab,p) in enumerate(zip(['H1 2000','after the bust'],P)):
     h=p[1]/800000*280; x=460+i*150

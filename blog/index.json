@@ -121,6 +121,36 @@
       "featured": false
     },
     {
+      "slug": "tech-jobs-1960s",
+      "title": "Tech Jobs in the 1960s: Mainframes and the Software Crisis",
+      "excerpt": "About 100,000 programmers and a shortage of 50,000 more, aptitude tests, COBOL and the birth of 'software engineering'.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "4 min",
+      "tags": [
+        "Jobs",
+        "History"
+      ],
+      "emoji": "🖥️",
+      "featured": false
+    },
+    {
+      "slug": "tech-jobs-1940s-50s",
+      "title": "Tech Jobs in the 1940s and 1950s: Human Computers and the First Programmers",
+      "excerpt": "Human computers, the six women who programmed ENIAC, UNIVAC, FORTRAN and COBOL: how programming was invented as a job.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "4 min",
+      "tags": [
+        "Jobs",
+        "History"
+      ],
+      "emoji": "🧮",
+      "featured": false
+    },
+    {
       "slug": "agentic-software-factory",
       "title": "The Software Factory: The Layer Above the Agent",
       "excerpt": "Model, harness, loop, graph, and the layer above them: running many coding workflows as one measured operation, with routing, budgets, human gates, owners and the numbers that tell you whether it works.",

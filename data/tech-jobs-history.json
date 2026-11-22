@@ -70,15 +70,15 @@
    "id": "1960s",
    "label": "1960s",
    "title": "Mainframes and the programmer",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-1960s",
+   "status": "published"
   },
   {
    "id": "1940s-50s",
    "label": "1940s–50s",
    "title": "Human computers to the first programmers",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-1940s-50s",
+   "status": "published"
   }
  ],
  "roles": [
@@ -714,6 +714,14 @@
    "label": "US computer programmers (employed)",
    "unit": "count",
    "points": [
+    [
+     1967,
+     100000,
+     "Industry estimate (Fortune, 1967), with a claimed need for 50,000 more; no official count before 1970",
+     "https://homes.luddy.indiana.edu/nensmeng/files/Ensmenger2010-MPM.pdf",
+     1,
+     1
+    ],
     [
      2000,
      764000,

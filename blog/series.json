@@ -275,6 +275,16 @@
       ]
     },
     {
+      "id": "sec-adlc",
+      "title": "From SDLC to ADLC: How Software Gets Built When Agents Build It",
+      "short": "From SDLC to ADLC",
+      "icon": "🔁",
+      "slugs": [
+        "adlc-sdlc-history",
+        "adlc-what-is-adlc"
+      ]
+    },
+    {
       "id": "sec-maestro",
       "title": "The Maestro: Building a Frontier AI Factory From Zero",
       "short": "The Maestro",

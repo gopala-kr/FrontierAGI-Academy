@@ -151,6 +151,36 @@
       "featured": false
     },
     {
+      "slug": "adlc-sdlc-history",
+      "title": "From SDLC to ADLC, Part 1: Sixty Years of the Software Lifecycle",
+      "excerpt": "Stagewise, \"waterfall\", spiral, agile, DevOps and DORA: what each lifecycle fixed, what it assumed, and which assumptions break for agents.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "11 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "📜",
+      "featured": false
+    },
+    {
+      "slug": "adlc-what-is-adlc",
+      "title": "From SDLC to ADLC, Part 2: What an Agent Development Lifecycle Is",
+      "excerpt": "Why software with a model inside breaks the old cycle: tests become evals, prompts and tools become code, and the loop never stops.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "11 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "🔁",
+      "featured": false
+    },
+    {
       "slug": "ai-economy-jobs-evidence",
       "title": "Which Jobs Is AI Changing? The Evidence So Far",
       "excerpt": "No economy-wide job loss yet, but a growing hiring gap for young workers in the jobs AI can do most of: payroll, usage and occupation data compared.",

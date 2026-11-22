@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**372 articles** · **37 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
+**374 articles** · **38 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -421,6 +421,18 @@ The whole production system, not one product: users, entry point, planner and sp
 | 4 | 🐧 [A Production-Ready AI Agent, Open-Source and Self-Hosted](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-oss.html) | 10 min |
 | 5 | ⚖️ [Production AI Agents Compared: Google Cloud, AWS, Azure and Open-Source](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-compared.html) | 7 min |
 
+#### 🔁 From SDLC to ADLC: How Software Gets Built When Agents Build It
+
+A 12-part series, published in waves: sixty years of the software lifecycle, what an agent development lifecycle is, then one stage at a time (requirements → eval sets, design → agent architecture, code → context and tools, test → evaluation, security → guardrails, release → staged rollout, operations → traces and drift, maintenance → continuous improvement), roles, and a playbook. Start with the interactive lifecycle map above.  
+<sub>2 articles</sub>
+
+🆕 *Newest series.*
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 📜 [From SDLC to ADLC, Part 1: Sixty Years of the Software Lifecycle](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-sdlc-history.html) | 11 min |
+| 2 | 🔁 [From SDLC to ADLC, Part 2: What an Agent Development Lifecycle Is](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-what-is-adlc.html) | 11 min |
+
 
 ### 08 · Run the Machine · The Maestro
 
@@ -803,8 +815,6 @@ Half-decade by half-decade back to 2001, then decade by decade to the 1940s: job
 
 What the best evidence says in November 2026: which jobs AI is changing, whether it raises productivity, who is adopting it, and what happens as its price collapses. Animated charts, interactive explorers and every figure sourced.  
 <sub>4 articles</sub>
-
-🆕 *Newest series.*
 
 | # | Article | Read |
 |---|---|---|

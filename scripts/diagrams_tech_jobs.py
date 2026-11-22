@@ -132,3 +132,25 @@ for i,p in enumerate(I):
     h=p[1]/5*280; x=850+i*150
     s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#ea580c"/>'+note(x+48,434-h,f'{p[1]}M','#0f172a',13,'middle',True)+note(x+48,464,'FY'+str(p[0]),'#64748b',12,'middle')
 save('6-2006-2015.svg',s)
+
+# 7: 1990s-2005 panel (batch 3)
+s=head(1200,540,'Tech jobs 1990–2005 in three numbers','Sources: CRS RL31973 and FindLaw (H-1B caps); InformationWeek ⚠️ (programmers); NASSCOM via academic papers ⚠️ (India).')
+C=M['h1b_cap']['points']
+s+=note(60,110,'H-1B cap set by law','#0f172a',15,'start',True)
+for i,p in enumerate(C):
+    h=p[1]/200000*280; x=70+i*85
+    s+=f'<rect x="{x}" y="{440-h}" width="64" height="{h}" rx="6" fill="#0891b2"/>'+note(x+32,434-h,f'{p[1]//1000}k','#0f172a',13,'middle',True)+note(x+32,464,'FY'+str(p[0]),'#64748b',12,'middle')
+s+=note(60,500,'FY2001–03: 195k cap never reached (bust).','#64748b',11)
+P=M['us_programmers']['points']
+s+=note(440,110,'US computer programmers','#0f172a',15,'start',True)
+for i,(lab,p) in enumerate(zip(['H1 2000','after the bust'],P)):
+    h=p[1]/800000*280; x=460+i*150
+    s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#dc2626" opacity="{0.6 if i else 1}"/>'+note(x+48,434-h,f'{p[1]//1000}k','#0f172a',13,'middle',True)+note(x+48,464,lab,'#64748b',12,'middle')
+s+=note(440,500,'−17%: about 132,000 programmer jobs gone.','#64748b',11)
+I=[p for p in M['india_tech_workforce']['points'] if p[0] in (2000,2005)]
+s+=note(830,110,'India IT workforce (NASSCOM)','#0f172a',15,'start',True)
+for i,p in enumerate(I):
+    h=p[1]/1.2*280; x=850+i*150
+    s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#ea580c"/>'+note(x+48,434-h,(f'{int(p[1]*1000)}k' if p[1]<1 else f'{p[1]:.1f}M'),'#0f172a',13,'middle',True)+note(x+48,464,'FY'+str(p[0]),'#64748b',12,'middle')
+s+=note(830,500,'FY2005 includes IT-enabled services (BPO).','#64748b',11)
+save('7-1990-2005.svg',s)

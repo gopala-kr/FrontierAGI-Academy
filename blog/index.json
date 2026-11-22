@@ -61,6 +61,36 @@
       "featured": false
     },
     {
+      "slug": "tech-jobs-2001-2005",
+      "title": "Tech Jobs 2001–2005: Dot-com Bust and Offshoring",
+      "excerpt": "Over 600,000 IT jobs lost, programmers down 17%, the first offshoring wave to India and the quiet rise of Google and Amazon.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "6 min",
+      "tags": [
+        "Jobs",
+        "History"
+      ],
+      "emoji": "🏚️",
+      "featured": false
+    },
+    {
+      "slug": "tech-jobs-1990s",
+      "title": "Tech Jobs in the 1990s: The Web, Y2K and the Boom",
+      "excerpt": "The web created webmasters and web developers, Y2K cost the US about $100 billion, and the dot-com boom drove the biggest tech hiring rush yet.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "6 min",
+      "tags": [
+        "Jobs",
+        "History"
+      ],
+      "emoji": "🌐",
+      "featured": false
+    },
+    {
       "slug": "agentic-software-factory",
       "title": "The Software Factory: The Layer Above the Agent",
       "excerpt": "Model, harness, loop, graph, and the layer above them: running many coding workflows as one measured operation, with routing, budgets, human gates, owners and the numbers that tell you whether it works.",

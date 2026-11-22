@@ -42,15 +42,15 @@
    "id": "2001-2005",
    "label": "2001–2005",
    "title": "Dot-com bust and offshoring",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-2001-2005",
+   "status": "published"
   },
   {
    "id": "1990s",
    "label": "1990s",
    "title": "The web, Y2K and the boom",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-1990s",
+   "status": "published"
   },
   {
    "id": "1980s",
@@ -523,6 +523,22 @@
    "unit": "million",
    "points": [
     [
+     2000,
+     0.284,
+     "NASSCOM FY2000 software professionals, via academic papers",
+     "https://faculty.washington.edu/karyiu/confer/seoul06/papers/mathur.pdf",
+     1,
+     0
+    ],
+    [
+     2005,
+     1.0,
+     "NASSCOM FY2005, includes ITeS-BPO; scope differs",
+     "same",
+     1,
+     0
+    ],
+    [
      2015,
      3.5,
      "NASSCOM FY2015 direct employment",
@@ -652,6 +668,66 @@
      74067,
      "",
      "https://itiger.com/news/2528067039",
+     1
+    ]
+   ]
+  },
+  "h1b_cap": {
+   "label": "H-1B annual cap (regular, set by law)",
+   "unit": "count",
+   "points": [
+    [
+     1991,
+     65000,
+     "Cap first set by the Immigration Act of 1990",
+     "https://corporate.findlaw.com/human-resources/the-economics-of-h-1bs-a-call-to-strengthen-the-system.html",
+     1,
+     0
+    ],
+    [
+     1999,
+     115000,
+     "ACWIA, FY1999–2000",
+     "same",
+     1,
+     0
+    ],
+    [
+     2001,
+     195000,
+     "AC21, FY2001–2003; never reached",
+     "https://www.everycrsreport.com/files/20050428_RL31973_4bf48d144f3bef68c0745184eea8d5d9784e7340.html",
+     0,
+     0
+    ],
+    [
+     2004,
+     65000,
+     "Back to 65,000 from FY2004; +20,000 for US advanced degrees from FY2005",
+     "same",
+     0,
+     0
+    ]
+   ]
+  },
+  "us_programmers": {
+   "label": "US computer programmers (employed)",
+   "unit": "count",
+   "points": [
+    [
+     2000,
+     764000,
+     "First half of 2000",
+     "https://www.informationweek.com/it-leadership/it-jobs-continue-to-disappear",
+     1,
+     0
+    ],
+    [
+     2003,
+     632000,
+     "After the bust (InformationWeek, early 2000s; exact month not given)",
+     "same",
+     1,
      1
     ]
    ]

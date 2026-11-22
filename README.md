@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**359 articles** · **36 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
+**361 articles** · **36 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -781,7 +781,7 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 #### 🧑‍💻 Tech Jobs Through Time: How Tech Work Emerged, Changed and Disappeared
 
 Half-decade by half-decade back to 2001, then decade by decade to the 1940s: jobs born and gone, pay in real dollars, demand and layoffs, employers, skills, who did the work, and the India and global thread.  
-<sub>4 articles</sub>
+<sub>6 articles</sub>
 
 🆕 *Newest series.*
 
@@ -791,6 +791,8 @@ Half-decade by half-decade back to 2001, then decade by decade to the 1940s: job
 | 2 | ☁️ [Tech Jobs 2016–2020: Cloud, Data Science and the Pandemic Surge](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-2016-2020.html) | 7 min |
 | 3 | 📱 [Tech Jobs 2011–2015: Mobile, Social and the New Titles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-2011-2015.html) | 8 min |
 | 4 | 📉 [Tech Jobs 2006–2010: iPhone, AWS and the Crash](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-2006-2010.html) | 7 min |
+| 5 | 🏚️ [Tech Jobs 2001–2005: Dot-com Bust and Offshoring](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-2001-2005.html) | 6 min |
+| 6 | 🌐 [Tech Jobs in the 1990s: The Web, Y2K and the Boom](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-1990s.html) | 6 min |
 
 
 ### 19 · Take a Course

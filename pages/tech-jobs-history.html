@@ -218,7 +218,7 @@
       $('tjPer').appendChild(d); });
     // roles
     var C = { rising: '#16a34a', changing: '#2563eb', faded: '#d97706', gone: '#dc2626', shrinking: '#9333ea' }, CATS = D.roleCats, PH = function () { return window.innerWidth < 640; }, pick = null, filt = 'all';
-    var LBL = 24, XL = 1676, PW = 1720, LW = 170;
+    var LBL = 24, XL = 1676, PW = 1800, LW = 170;
     function xOf(y) { y = Math.max(1945, Math.min(2030, y)); var a = 45 * 0.3, b = 30, c = 10 * 2.6, u = y < 1990 ? (y - 1945) * 0.3 : y < 2020 ? a + (y - 1990) : a + b + (y - 2020) * 2.6; return LBL + u / (a + b + c) * (XL - LBL); }
     function sm(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
     // one wave per job: h(t) in 0..1 and the phase at t
@@ -269,6 +269,8 @@
             // fading out: an ember drops at the end of a faded or gone job
             if (ex) { var em = el(fx, 'circle', { cx: ex, cy: base, r: 4, fill: C[r.state] }); el(em, 'animate', { attributeName: 'r', values: '4;11;4', dur: '2s', repeatCount: 'indefinite' }); el(em, 'animate', { attributeName: 'opacity', values: '.8;0;.8', dur: '2s', repeatCount: 'indefinite' }); }
           }
+          var SL = { rising: 'Rising', changing: 'Changing', shrinking: 'Shrinking', faded: 'Faded', gone: 'Gone' }, ey = base - wave(r, e)[0] * A, bw = SL[r.state].length * 6.6 + 14, bx = Math.min(xOf(e) + 8, PW - bw - 4), bgp = el(g, 'g', { class: 'tj-st' });
+          el(bgp, 'rect', { x: bx, y: ey - 9, width: bw, height: 18, rx: 9, fill: '#fff', stroke: C[r.state], 'stroke-width': 1.2 }); el(bgp, 'text', { x: bx + bw / 2, y: ey + 4, 'font-size': 10.5, 'font-weight': 800, fill: C[r.state], 'text-anchor': 'middle' }, SL[r.state]);
           if (pk) el(g, 'circle', { cx: xOf(pk), cy: base - wave(r, pk)[0] * A, r: 3.2, fill: '#fff', stroke: '#1c1917', 'stroke-width': 1.4 });
           var tx = x0 + 8, anc = 'start'; if (tx > XL - 230) { tx = x0 - 8; anc = 'end'; }
           var tx0 = Math.max(4, x0 + 8), lbl = el(g, 'text', { x: tx0, y: base - 6, 'font-size': 12.5, 'font-weight': 700, fill: '#1c1917', 'font-style': r.src ? 'normal' : 'italic', 'paint-order': 'stroke', stroke: '#fff', 'stroke-width': 3.5, class: 'tj-lbl' }, r.name); LBS.push({ t: lbl, x0: tx0, xe: xOf(e) });

@@ -312,6 +312,490 @@
    "note": "Software product management spread in the 1990s and 2000s. Approximate dates, our reading; detailed figures come in the later parts of the series.",
    "src": "",
    "sec": 0
+  },
+  {
+   "name": "Mainframe / COBOL programmer",
+   "born": 1959,
+   "peak": 1985,
+   "end": null,
+   "state": "shrinking",
+   "cat": "swe",
+   "note": "Business programming on IBM mainframes; still needed to maintain old banking and government systems. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Systems analyst",
+   "born": 1960,
+   "peak": 1990,
+   "end": null,
+   "state": "changing",
+   "cat": "swe",
+   "note": "Turned business needs into specifications; the work moved into business analysis and product roles. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Embedded software engineer",
+   "born": 1975,
+   "peak": 2015,
+   "end": null,
+   "state": "changing",
+   "cat": "swe",
+   "note": "Software inside devices, cars and machines. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Game developer",
+   "born": 1975,
+   "peak": 2010,
+   "end": null,
+   "state": "changing",
+   "cat": "swe",
+   "note": "From arcade and home consoles to mobile and online games. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Back-end engineer",
+   "born": 2005,
+   "peak": 2018,
+   "end": null,
+   "state": "changing",
+   "cat": "swe",
+   "note": "Builds servers, APIs and databases behind web and mobile apps. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Full-stack developer",
+   "born": 2010,
+   "peak": 2020,
+   "end": null,
+   "state": "changing",
+   "cat": "swe",
+   "note": "Front end and back end in one role. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Test automation engineer (SDET)",
+   "born": 2005,
+   "peak": 2018,
+   "end": null,
+   "state": "changing",
+   "cat": "swe",
+   "note": "Writes automated tests; replaced much manual QA. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Database administrator",
+   "born": 1980,
+   "peak": 2005,
+   "end": null,
+   "state": "shrinking",
+   "cat": "data",
+   "note": "Ran company databases; much of the work moved to managed cloud databases. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "BI / data analyst",
+   "born": 1995,
+   "peak": 2020,
+   "end": null,
+   "state": "changing",
+   "cat": "data",
+   "note": "Reports and dashboards on company data. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "AI research scientist",
+   "born": 2012,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "data",
+   "note": "Invents new models and training methods; grew after deep learning took off. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Data labeler / annotator",
+   "born": 2016,
+   "peak": 2023,
+   "end": null,
+   "state": "changing",
+   "cat": "data",
+   "note": "Labels data and rates model outputs for training. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Analytics engineer",
+   "born": 2018,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "data",
+   "note": "Models data in the warehouse with SQL and tools such as dbt. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "MLOps engineer",
+   "born": 2019,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "data",
+   "note": "Runs the pipelines that train, deploy and monitor models. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "AI agent engineer",
+   "born": 2025,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "data",
+   "note": "Builds and evaluates AI agents that use tools. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Keypunch operator",
+   "born": 1950,
+   "peak": 1970,
+   "end": 1990,
+   "state": "gone",
+   "cat": "infra",
+   "note": "Typed programs and data onto punched cards. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Computer operator",
+   "born": 1955,
+   "peak": 1975,
+   "end": 2005,
+   "state": "gone",
+   "cat": "infra",
+   "note": "Ran the machine room: tapes, printers and job queues. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Network administrator",
+   "born": 1985,
+   "peak": 2005,
+   "end": null,
+   "state": "shrinking",
+   "cat": "infra",
+   "note": "Ran office networks; much of it moved to the cloud and managed services. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "IT help desk / support",
+   "born": 1985,
+   "peak": 2005,
+   "end": null,
+   "state": "changing",
+   "cat": "infra",
+   "note": "Supports staff with PCs, accounts and software. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Data centre technician",
+   "born": 2000,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "infra",
+   "note": "Installs and repairs servers; demand grew with AI data centres. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "GPU / AI infrastructure engineer",
+   "born": 2020,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "infra",
+   "note": "Builds and runs GPU clusters for training and serving. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Front-end engineer",
+   "born": 2010,
+   "peak": 2020,
+   "end": null,
+   "state": "changing",
+   "cat": "web",
+   "note": "Builds rich browser apps. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Social media manager",
+   "born": 2008,
+   "peak": 2015,
+   "end": null,
+   "state": "changing",
+   "cat": "web",
+   "note": "Runs company accounts on social platforms. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Growth hacker",
+   "born": 2011,
+   "peak": 2015,
+   "end": 2020,
+   "state": "faded",
+   "cat": "web",
+   "note": "Start-up title for growth experiments; merged back into product and marketing. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "WordPress / CMS developer",
+   "born": 2005,
+   "peak": 2014,
+   "end": null,
+   "state": "shrinking",
+   "cat": "web",
+   "note": "Builds sites on content systems; site builders took much of the work. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Low-code / no-code builder",
+   "born": 2018,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "web",
+   "note": "Builds apps and automations with visual tools. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Penetration tester",
+   "born": 1995,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "sec",
+   "note": "Attacks systems with permission to find weaknesses. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Chief information security officer",
+   "born": 1995,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "sec",
+   "note": "Executive in charge of security. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "SOC analyst",
+   "born": 2005,
+   "peak": 2020,
+   "end": null,
+   "state": "changing",
+   "cat": "sec",
+   "note": "Watches alerts in a security operations centre; AI tools are changing the work. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Cloud security engineer",
+   "born": 2014,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "sec",
+   "note": "Secures cloud accounts, identities and networks. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Privacy engineer",
+   "born": 2018,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "sec",
+   "note": "Builds data-protection controls; grew after GDPR (2018). Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Hardware engineer",
+   "born": 1950,
+   "peak": 1985,
+   "end": null,
+   "state": "changing",
+   "cat": "hw",
+   "note": "Designs computer hardware and boards. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Semiconductor process engineer",
+   "born": 1965,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "hw",
+   "note": "Runs chip-making processes in fabs; new fabs are raising demand. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Minicomputer engineer",
+   "born": 1965,
+   "peak": 1980,
+   "end": 1995,
+   "state": "gone",
+   "cat": "hw",
+   "note": "Built minicomputers (DEC, Data General); the PC and Unix servers replaced them. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "FPGA engineer",
+   "born": 1990,
+   "peak": 2015,
+   "end": null,
+   "state": "changing",
+   "cat": "hw",
+   "note": "Designs logic for programmable chips. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Chip verification engineer",
+   "born": 1990,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "hw",
+   "note": "Tests chip designs before manufacture. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "AI accelerator architect",
+   "born": 2016,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "hw",
+   "note": "Designs chips for AI (GPUs, TPUs and custom accelerators). Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Technical writer",
+   "born": 1960,
+   "peak": 2000,
+   "end": null,
+   "state": "shrinking",
+   "cat": "prod",
+   "note": "Writes manuals and documentation; AI tools now draft much of it. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Technical support engineer",
+   "born": 1985,
+   "peak": 2010,
+   "end": null,
+   "state": "changing",
+   "cat": "prod",
+   "note": "Solves customer technical problems. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Program manager",
+   "born": 1990,
+   "peak": 2015,
+   "end": null,
+   "state": "changing",
+   "cat": "prod",
+   "note": "Coordinates large projects across teams. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "UI / web designer",
+   "born": 1995,
+   "peak": 2012,
+   "end": null,
+   "state": "changing",
+   "cat": "prod",
+   "note": "Designs screens and websites. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Developer advocate",
+   "born": 2010,
+   "peak": 2021,
+   "end": null,
+   "state": "changing",
+   "cat": "prod",
+   "note": "Helps developers use a company’s platform. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Customer success manager",
+   "born": 2010,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "prod",
+   "note": "Keeps software customers successful and renewing. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Product designer",
+   "born": 2014,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "prod",
+   "note": "Designs whole product experiences, not just screens. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "AI product manager",
+   "born": 2023,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "prod",
+   "note": "Product manager for AI features and agents. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
   }
  ],
  "metrics": {
@@ -896,6 +1380,42 @@
   [
    "Security analyst",
    "AI red-teamer / safety evaluator"
+  ],
+  [
+   "Keypunch operator",
+   "Computer operator"
+  ],
+  [
+   "Computer operator",
+   "On-premises sysadmin"
+  ],
+  [
+   "Network administrator",
+   "Cloud architect"
+  ],
+  [
+   "Database administrator",
+   "Data engineer"
+  ],
+  [
+   "ML engineer",
+   "MLOps engineer"
+  ],
+  [
+   "AI engineer",
+   "AI agent engineer"
+  ],
+  [
+   "UI / web designer",
+   "Product designer"
+  ],
+  [
+   "Manual QA tester",
+   "Test automation engineer (SDET)"
+  ],
+  [
+   "Systems analyst",
+   "Product manager"
   ]
  ]
 }

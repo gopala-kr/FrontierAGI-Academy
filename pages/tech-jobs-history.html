@@ -30,8 +30,14 @@
     .tj-ctl { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; align-items:center; }
     .tj-ctl select { max-width:100%; }
     .tj-ctl button, .tj-ctl select { border:1px solid #d6d3d1; background:#fafaf9; border-radius:99px; padding:6px 12px; font-weight:700; cursor:pointer; font-size:.82rem; font-family:inherit; }
-    .tj-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
-    @media (max-width:640px){ .tj-scroll #tjRoles { width:900px; max-width:none; } }
+    .tj-grid { display:grid; grid-template-columns:170px max-content; overflow:auto; max-height:78vh; border:1px solid #e7e5e4; border-radius:12px; background:#fff; position:relative; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif; }
+    .tj-grid svg { display:block; }
+    .tj-corner { position:sticky; top:0; left:0; z-index:4; background:#fafaf9; border-bottom:1px solid #d6d3d1; border-right:1px solid #e7e5e4; display:flex; align-items:center; padding-left:12px; font-size:12px; font-weight:800; color:#78716c; }
+    .tj-corner::after { content:'Job family ↓  Year →'; }
+    .tj-axis { position:sticky; top:0; z-index:3; background:#fafaf9; border-bottom:1px solid #d6d3d1; }
+    .tj-lanes { position:sticky; left:0; z-index:2; background:#fff; border-right:1px solid #e7e5e4; }
+    .tj-body .ln { cursor:pointer; } .tj-body .ln:hover path { stroke-width:4.4; }
+    @media (max-width:640px){ .tj-grid { grid-template-columns:110px max-content; max-height:70vh; } .tj-corner::after { content:'Family ↓'; } }
     .tj-note { font-size:.82rem; color:#57534e; margin:4px 0 8px; }
     #tjCats button.on { color:#fff; }
     .tj-ctl button.on { background:#a16207; color:#fff; border-color:#a16207; }
@@ -176,7 +182,7 @@
   <div class="tj-box"><h2>🗓️ The periods</h2><div class="tj-per" id="tjPer"></div><div class="tj-info" id="tjPinfo">Tap a period. Highlighted periods have a published article; the rest are coming.</div></div>
   <div class="tj-box"><h2>🧑‍💻 Job lanes: born, peaked, faded</h2>
     <div class="tj-ctl" id="tjRf"><button data-s="all" class="on">All</button><button data-s="rising"><svg viewBox="0 0 40 14" width="40" height="14"><path d="M0 7 Q2.5 6.5 5 7 T10 7 Q12.5 5 15 7 T20 7 Q22.5 3 25 7 T30 7 Q32.5 0 35 7 T40 7" fill="none" stroke="#16a34a" stroke-width="2"/></svg> Rising</button><button data-s="changing"><svg viewBox="0 0 40 14" width="40" height="14"><path d="M0 7 Q3 1 6 7 T12 7 T18 7 Q19.5 1 21 7 T24 7 T27 7 T30 7 T33 7 T36 7 T39 7" fill="none" stroke="#2563eb" stroke-width="2"/></svg> Changing</button><button data-s="shrinking"><svg viewBox="0 0 40 14" width="40" height="14"><path d="M0 7 Q2.5 0 5 7 T10 7 Q12.5 1 15 7 T20 7 Q22.5 2 25 7 T30 7 Q32.5 3.5 35 7 T40 7" fill="none" stroke="#9333ea" stroke-width="2"/></svg> Shrinking</button><button data-s="faded"><svg viewBox="0 0 40 14" width="40" height="14"><path d="M0 7 Q2.5 3 5 7 T10 7 Q12.5 0 15 7 T20 7 Q22.5 3 25 7 T30 7 L40 7" fill="none" stroke="#d97706" stroke-width="2"/></svg> Faded</button><button data-s="gone"><svg viewBox="0 0 40 14" width="40" height="14"><path d="M0 7 Q2.5 0 5 7 T10 7 Q12.5 3 15 7 T20 7 L26 7" fill="none" stroke="#dc2626" stroke-width="2"/></svg> Gone</button></div>
-    <div class="tj-ctl" id="tjCats"></div><p class="tj-note">Years run left to right along the top; each lane is a job family. Each job is one wave on its own line: it climbs while the job is rising (green), moves gently up and down while it is changing (blue), slopes down while shrinking (purple), and falls back to the line when it faded (amber) or is gone (red, ● = end year). Height is illustrative, not job counts. 2027–2030 (grey band, dashed) is an outlook: our reading of where each job is heading, not a forecast from data. Colour = today's state; dashed arrows = one role turning into another; paler waves = approximate dates (our reading). On phones, swipe sideways.</p><div class="tj-scroll"><svg class="tj-svg" id="tjRoles" viewBox="0 0 1000 900"></svg></div><div class="tj-info" id="tjRinfo">Tap a role for its story and source.</div></div>
+    <div class="tj-ctl" id="tjCats"></div><p class="tj-note">Years run left to right along the top; each lane is a job family. Each job is one wave on its own line: it climbs while the job is rising (green), moves gently up and down while it is changing (blue), slopes down while shrinking (purple), and falls back to the line when it faded (amber) or is gone (red, ● = end year). Height is illustrative, not job counts. 2027–2030 (grey band, dashed) is an outlook: our reading of where each job is heading, not a forecast from data. Colour = today's state; dashed arrows = one role turning into another; paler waves = approximate dates (our reading). Scroll inside the map: the years and job families stay pinned. Moving dots flow along each job; green rings fire where a job is born, amber sparks burst at its peak, and a fading ember marks where it ended.</p><div class="tj-grid" id="tjGrid"><div class="tj-corner" id="tjCorner"></div><svg class="tj-axis" id="tjAxis"></svg><svg class="tj-lanes" id="tjLanes"></svg><svg class="tj-body" id="tjRoles"></svg></div><div class="tj-info" id="tjRinfo">Tap a role for its story and source.</div></div>
   <div class="tj-box"><h2>📈 The numbers</h2>
     <div class="tj-ctl"><select id="tjM" aria-label="Choose a measure"></select><button id="tjReal" class="on">2024 dollars</button></div>
     <svg class="tj-svg" id="tjChart" viewBox="0 0 1000 380"></svg><div class="tj-info" id="tjMinfo"></div></div>
@@ -199,7 +205,7 @@
       $('tjPer').appendChild(d); });
     // roles
     var C = { rising: '#16a34a', changing: '#2563eb', faded: '#d97706', gone: '#dc2626', shrinking: '#9333ea' }, CATS = D.roleCats, PH = function () { return window.innerWidth < 640; }, pick = null, filt = 'all';
-    var LBL = 150, XL = 972;
+    var LBL = 24, XL = 1676, PW = 1720, LW = 170;
     function xOf(y) { y = Math.max(1945, Math.min(2030, y)); var a = 45 * 0.3, b = 30, c = 10 * 2.6, u = y < 1990 ? (y - 1945) * 0.3 : y < 2020 ? a + (y - 1990) : a + b + (y - 2020) * 2.6; return LBL + u / (a + b + c) * (XL - LBL); }
     function sm(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
     // one wave per job: h(t) in 0..1 and the phase at t
@@ -211,35 +217,58 @@
     function drawCats() { var box = $('tjCats'); if (!pick) pick = CATS.map(function (c) { return c[0]; });
       box.innerHTML = '<b>Lanes:</b>'; CATS.forEach(function (c) { var bt = document.createElement('button'); bt.textContent = c[1]; bt.style.borderColor = c[2]; if (pick.indexOf(c[0]) >= 0) { bt.className = 'on'; bt.style.background = c[2]; }
         bt.onclick = function () { var i = pick.indexOf(c[0]); if (i >= 0) { if (pick.length > 1) pick.splice(i, 1); } else pick.push(c[0]); pick.sort(function (x, y) { return CATS.findIndex(function (k) { return k[0] == x; }) - CATS.findIndex(function (k) { return k[0] == y; }); }); drawCats(); drawRoles(); }; box.appendChild(bt); }); }
-    function drawRoles() { var s = $('tjRoles'); s.innerHTML = ''; var cs = CATS.filter(function (c) { return pick.indexOf(c[0]) >= 0; }), RH = 40, T = 46, pos = {}, W = 1000, y0 = T;
-      var H = T + 10 + cs.reduce(function (n, c) { return n + Math.max(2, D.roles.filter(function (r) { return r.cat == c[0]; }).length) * RH + 14; }, 0);
-      s.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-      [1950, 1960, 1970, 1980, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030].forEach(function (y) { var yr = y >= 2020; el(s, 'line', { x1: xOf(y), y1: T - 6, x2: xOf(y), y2: H - 6, stroke: yr ? '#eeeceb' : '#e7e5e4' }); el(s, 'text', { x: xOf(y), y: T - 14, 'font-size': yr ? 10.5 : 12, fill: '#57534e', 'font-weight': 700, 'text-anchor': 'middle' }, yr && y > 2020 ? '\u2019' + String(y).slice(2) : y); });
-      el(s, 'text', { x: (xOf(1945) + xOf(1990)) / 2, y: 14, 'font-size': 10.5, fill: '#a8a29e', 'text-anchor': 'middle' }, '← squeezed before 1990 · year by year from 2020 →');
-      el(s, 'rect', { x: xOf(2026.9), y: T - 6, width: xOf(2030) - xOf(2026.9), height: H - T, fill: '#f5f5f4' }); el(s, 'text', { x: (xOf(2026.9) + xOf(2030)) / 2, y: 14, 'font-size': 10.5, fill: '#78716c', 'text-anchor': 'middle' }, 'outlook →');
-      var lk = el(s, 'g', {});
+    var RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function drawRoles() { var s = $('tjRoles'), ax = $('tjAxis'), lb = $('tjLanes'); s.innerHTML = ''; ax.innerHTML = ''; lb.innerHTML = '';
+      LW = window.innerWidth < 640 ? 110 : 170; var NF = LW < 150 ? 10.5 : 14; var cs = CATS.filter(function (c) { return pick.indexOf(c[0]) >= 0; }), RH = 58, AH = 40, pos = {}, y0 = 4;
+      var H = 8 + cs.reduce(function (n, c) { return n + Math.max(2, D.roles.filter(function (r) { return r.cat == c[0]; }).length) * RH + 14; }, 0);
+      [s, ax, lb].forEach(function (v) { v.setAttribute('width', v === lb ? LW : PW); v.setAttribute('height', v === ax ? AH : H); v.setAttribute('viewBox', '0 0 ' + (v === lb ? LW : PW) + ' ' + (v === ax ? AH : H)); });
+      $('tjCorner').style.height = AH + 'px';
+      var df = el(s, 'defs', {}), mk = el(df, 'marker', { id: 'tjAr', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto' }); el(mk, 'path', { d: 'M0 0L10 5L0 10z', fill: '#78716c' });
+      // frozen year axis
+      el(ax, 'rect', { x: xOf(2026.9), y: 0, width: xOf(2030) - xOf(2026.9), height: AH, fill: '#f5f5f4' });
+      [1950, 1960, 1970, 1980, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030].forEach(function (y) { var yr = y >= 2020;
+        el(ax, 'text', { x: xOf(y), y: 25, 'font-size': yr ? 12 : 13, fill: y > 2026 ? '#78716c' : '#44403c', 'font-weight': 800, 'text-anchor': 'middle' }, y); el(ax, 'line', { x1: xOf(y), y1: 32, x2: xOf(y), y2: AH, stroke: '#a8a29e' });
+        el(s, 'line', { x1: xOf(y), y1: 0, x2: xOf(y), y2: H, stroke: yr ? '#efedec' : '#e7e5e4' }); });
+      el(ax, 'text', { x: xOf(1967), y: 11, 'font-size': 10.5, fill: '#a8a29e', 'text-anchor': 'middle' }, '← squeezed before 1990'); el(ax, 'text', { x: (xOf(2026.9) + xOf(2030)) / 2, y: 11, 'font-size': 10.5, fill: '#78716c', 'text-anchor': 'middle' }, 'outlook →');
+      el(s, 'rect', { x: xOf(2026.9), y: 0, width: xOf(2030) - xOf(2026.9), height: H, fill: '#f5f5f4' });
+      var lk = el(s, 'g', {}), fx = el(s, 'g', {});
       cs.forEach(function (c) { var R = D.roles.filter(function (r) { return r.cat == c[0]; }).sort(function (a, b) { return a.born - b.born; }), LH = Math.max(2, R.length) * RH + 8;
-        el(s, 'rect', { x: 4, y: y0, width: W - 8, height: LH, rx: 12, fill: c[2], opacity: .06 });
-        var nm = c[1].split(/, | & /), my = y0 + LH / 2; el(s, 'text', { x: 14, y: my - (nm.length > 1 ? 4 : -4), 'font-size': 13, 'font-weight': 800, fill: c[2] }, nm[0] + (nm.length > 1 ? ' &' : '')); if (nm.length > 1) el(s, 'text', { x: 14, y: my + 13, 'font-size': 13, 'font-weight': 800, fill: c[2] }, nm.slice(1).join(', '));
-        R.forEach(function (r, i) { var on = filt == 'all' || r.state == filt, g = el(s, 'g', { class: 'ln', opacity: on ? 1 : .15 }), base = y0 + 4 + (i + 1) * RH, A = RH - 16, pts = [], segs = [], cur = null;
-          el(g, 'line', { x1: LBL, y1: base, x2: XL, y2: base, stroke: '#d6d3d1', 'stroke-width': 1 });
+        el(s, 'rect', { x: 0, y: y0, width: PW, height: LH, fill: c[2], opacity: .05 });
+        el(lb, 'rect', { x: 4, y: y0, width: LW - 8, height: LH, rx: 12, fill: c[2], opacity: .12 }); el(lb, 'rect', { x: 4, y: y0, width: 5, height: LH, rx: 2, fill: c[2] });
+        var nm = c[1].split(/, | & /), my = y0 + Math.min(LH / 2, 60); el(lb, 'text', { x: 18, y: my - (nm.length > 1 ? 4 : -4), 'font-size': NF, 'font-weight': 800, fill: c[2] }, nm[0] + (nm.length > 1 ? ' &' : '')); if (nm.length > 1) el(lb, 'text', { x: 18, y: my + 14, 'font-size': NF, 'font-weight': 800, fill: c[2] }, nm.slice(1).join(', '));
+        el(lb, 'text', { x: 18, y: my + (nm.length > 1 ? 32 : 22), 'font-size': 11.5, fill: '#78716c' }, R.length + ' jobs');
+        R.forEach(function (r, i) { var on = filt == 'all' || r.state == filt, g = el(s, 'g', { class: 'ln', opacity: on ? 1 : .15 }), base = y0 + 4 + (i + 1) * RH, A = RH - 18, pts = [], segs = [], cur = null;
+          el(g, 'line', { x1: 0, y1: base, x2: PW, y2: base, stroke: '#d6d3d1', 'stroke-width': 1 });
           var e = Math.min(2030, r.end || 2030);
           for (var t = Math.max(1945, r.born); t <= e + 0.001; t += 0.125) { var w = wave(r, t), x = xOf(t), y = base - w[0] * A; pts.push(x.toFixed(1) + ' ' + y.toFixed(1)); var key = w[1] + (t > 2026.9 ? '~' : ''); if (!cur || cur.p != key) { cur = { p: key, ph: w[1], fut: t > 2026.9, d: cur ? [cur.d[cur.d.length - 1]] : [] }; segs.push(cur); } cur.d.push(x.toFixed(1) + ' ' + y.toFixed(1)); }
           if (pts.length < 2) return;
-          el(g, 'path', { d: 'M' + pts[0].split(' ')[0] + ' ' + base + ' L' + pts.join(' L') + ' L' + pts[pts.length - 1].split(' ')[0] + ' ' + base + 'Z', fill: C[r.state], 'fill-opacity': .1 });
-          segs.forEach(function (sg) { if (sg.d.length > 1) el(g, 'path', { d: 'M' + sg.d.join(' L'), fill: 'none', stroke: C[sg.ph], 'stroke-width': 3, 'stroke-dasharray': sg.fut ? '5 4' : '', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-opacity': r.src ? 1 : .6 }); });
-          if (r.end && r.end < 2030) el(g, 'circle', { cx: xOf(e), cy: base, r: 3.5, fill: C[r.state] });
-          var tx = xOf(r.born) + 6, anc = 'start'; if (tx > XL - 170) { tx = xOf(r.born) - 6; anc = 'end'; }
-          el(g, 'text', { x: tx, y: base - 5, 'font-size': 11.5, 'font-weight': 700, fill: '#1c1917', 'text-anchor': anc, 'paint-order': 'stroke', stroke: '#fff', 'stroke-width': 3 }, r.name);
-          el(g, 'rect', { x: LBL, y: base - RH + 4, width: XL - LBL, height: RH - 4, fill: 'transparent' });
+          el(g, 'path', { d: 'M' + pts[0].split(' ')[0] + ' ' + base + ' L' + pts.join(' L') + ' L' + pts[pts.length - 1].split(' ')[0] + ' ' + base + 'Z', fill: C[r.state], 'fill-opacity': .12 });
+          segs.forEach(function (sg) { if (sg.d.length > 1) el(g, 'path', { d: 'M' + sg.d.join(' L'), fill: 'none', stroke: C[sg.ph], 'stroke-width': 3.2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-opacity': r.src ? 1 : .6, 'stroke-dasharray': sg.fut ? '6 5' : '' }); });
+          var pid = 'tjw' + c[0] + i; el(df, 'path', { id: pid, d: 'M' + pts.join(' L') });
+          var x0 = xOf(r.born), pk = r.peak || null, ex = r.end && r.end < 2030 ? xOf(r.end) : null;
+          if (ex) el(g, 'circle', { cx: ex, cy: base, r: 4, fill: C[r.state] });
+          if (!RM) { var dur = (6 + (pts.length / 40)).toFixed(1) + 's';
+            // firing: a ring pulses out from where the job is born
+            var fr = el(fx, 'circle', { cx: x0, cy: base, r: 3, fill: 'none', stroke: '#16a34a', 'stroke-width': 2 }); el(fr, 'animate', { attributeName: 'r', values: '3;16', dur: '2.4s', begin: (i * 0.37 % 2.4).toFixed(2) + 's', repeatCount: 'indefinite' }); el(fr, 'animate', { attributeName: 'opacity', values: '.9;0', dur: '2.4s', begin: (i * 0.37 % 2.4).toFixed(2) + 's', repeatCount: 'indefinite' });
+            // flowing: particles ride the wave
+            [0, 0.5].forEach(function (o) { var pc = el(fx, 'circle', { r: 3.4, fill: '#fff', stroke: C[r.state], 'stroke-width': 2 }); var am = el(pc, 'animateMotion', { dur: dur, begin: (-o * parseFloat(dur) - i * 0.6).toFixed(2) + 's', repeatCount: 'indefinite' }); el(am, 'mpath', { href: '#' + pid }); });
+            // bursting: sparks at the peak
+            if (pk && pk < 2030) { var px = xOf(pk), py = base - wave(r, pk)[0] * A; for (var k = 0; k < 6; k++) { var an = k * Math.PI / 3, sp = el(fx, 'line', { x1: px, y1: py, x2: px, y2: py, stroke: '#f59e0b', 'stroke-width': 2, 'stroke-linecap': 'round' }), bg = (i * 0.53 % 3).toFixed(2) + 's';
+                el(sp, 'animate', { attributeName: 'x2', values: px + ';' + (px + Math.cos(an) * 13).toFixed(1), dur: '1.6s', begin: bg, repeatCount: 'indefinite' }); el(sp, 'animate', { attributeName: 'y2', values: py + ';' + (py + Math.sin(an) * 13).toFixed(1), dur: '1.6s', begin: bg, repeatCount: 'indefinite' }); el(sp, 'animate', { attributeName: 'opacity', values: '1;0', dur: '1.6s', begin: bg, repeatCount: 'indefinite' }); } }
+            // fading out: an ember drops at the end of a faded or gone job
+            if (ex) { var em = el(fx, 'circle', { cx: ex, cy: base, r: 4, fill: C[r.state] }); el(em, 'animate', { attributeName: 'r', values: '4;11;4', dur: '2s', repeatCount: 'indefinite' }); el(em, 'animate', { attributeName: 'opacity', values: '.8;0;.8', dur: '2s', repeatCount: 'indefinite' }); }
+          }
+          if (pk) el(g, 'circle', { cx: xOf(pk), cy: base - wave(r, pk)[0] * A, r: 4.5, fill: '#fff', stroke: '#1c1917', 'stroke-width': 2 });
+          var tx = x0 + 8, anc = 'start'; if (tx > XL - 230) { tx = x0 - 8; anc = 'end'; }
+          el(g, 'text', { x: tx, y: base - 6, 'font-size': 12.5, 'font-weight': 700, fill: '#1c1917', 'text-anchor': anc, 'paint-order': 'stroke', stroke: '#fff', 'stroke-width': 3.5 }, r.name);
+          el(g, 'rect', { x: 0, y: base - RH + 4, width: PW, height: RH - 4, fill: 'transparent' });
           el(g, 'title', {}, r.name + ' · ' + r.born + (r.end ? '–' + r.end : '–today'));
-          pos[r.name] = { x: xOf(r.born), y: base, e: xOf(e) };
+          pos[r.name] = { x: x0, y: base, e: xOf(e) };
           g.onclick = function () { $('tjRinfo').innerHTML = '<b>' + r.name + '</b> · ' + c[1] + ' · ' + r.born + (r.end ? '–' + r.end : '–today') + (r.peak ? ' · peak ' + r.peak : '') + ' · <span style="color:' + C[r.state] + ';font-weight:700">' + r.state + '</span><br>' + r.note + (r.src ? ' <a href=\x22' + r.src + '\x22 target="_blank" rel="noopener">source</a>' + (r.sec ? ' ⚠️' : '') : ' <i>(our reading)</i>') + (r.art ? ' · <a href=\x22../blog/' + r.art + '.html\x22' + tgt + '>Read our article →</a>' : ''); }; });
         y0 += LH + 6; });
-      (D.roleLinks || []).forEach(function (l) { var a = pos[l[0]], b = pos[l[1]]; if (!a || !b) return; var bx = b.x + 2, ax = Math.min(a.e, bx - 4) > a.x ? Math.max(a.x + 8, bx - 30) : a.x;
-        el(lk, 'path', { d: 'M' + ax + ' ' + a.y + ' C' + ax + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + b.y, fill: 'none', stroke: '#78716c', 'stroke-width': 1.4, 'stroke-dasharray': '5 4', opacity: .75, 'marker-end': 'url(#tjAr)' }); });
-      var df = el(s, 'defs', {}), mk = el(df, 'marker', { id: 'tjAr', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto' }); el(mk, 'path', { d: 'M0 0L10 5L0 10z', fill: '#78716c' });
-      var sc = s.parentNode; if (sc && sc.scrollWidth > sc.clientWidth && !sc.dataset.done) { sc.scrollLeft = sc.scrollWidth; sc.dataset.done = 1; }
+      (D.roleLinks || []).forEach(function (l) { var a = pos[l[0]], b = pos[l[1]]; if (!a || !b) return; var bx = b.x + 2, axx = Math.min(a.e, bx - 4) > a.x ? Math.max(a.x + 8, bx - 30) : a.x;
+        el(lk, 'path', { d: 'M' + axx + ' ' + a.y + ' C' + axx + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + (a.y + b.y) / 2 + ' ' + bx + ' ' + b.y, fill: 'none', stroke: '#78716c', 'stroke-width': 1.4, 'stroke-dasharray': '5 4', opacity: .75, 'marker-end': 'url(#tjAr)' }); });
+      var sc = $('tjGrid'); if (sc && !sc.dataset.done) { sc.scrollLeft = sc.scrollWidth; sc.dataset.done = 1; }
       if (window.tjTell) window.tjTell(); }
     document.querySelectorAll('#tjRf button').forEach(function (b) { b.onclick = function () { document.querySelectorAll('#tjRf button').forEach(function (x) { x.classList.toggle('on', x == b); }); filt = b.dataset.s; drawRoles(); }; }); drawCats(); drawRoles();
     // metrics

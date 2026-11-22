@@ -281,7 +281,11 @@
       "icon": "🔁",
       "slugs": [
         "adlc-sdlc-history",
-        "adlc-what-is-adlc"
+        "adlc-what-is-adlc",
+        "adlc-requirements-evals",
+        "adlc-design-architecture",
+        "adlc-code-context",
+        "adlc-test-evaluation"
       ]
     },
     {

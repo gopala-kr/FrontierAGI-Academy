@@ -151,6 +151,66 @@
       "featured": false
     },
     {
+      "slug": "adlc-requirements-evals",
+      "title": "From SDLC to ADLC, Part 3: Requirements Become Task Specs and Eval Sets",
+      "excerpt": "A requirement becomes real example tasks, a grading rule and a target rate: how to write one, and how many tasks you need.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "9 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "📋",
+      "featured": false
+    },
+    {
+      "slug": "adlc-design-architecture",
+      "title": "From SDLC to ADLC, Part 4: Design Becomes Agent Architecture",
+      "excerpt": "Single call, workflow, gated agent or autonomous agent: seven design decisions, a decision tree and the refund agent designed.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "9 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "🏗️",
+      "featured": false
+    },
+    {
+      "slug": "adlc-code-context",
+      "title": "From SDLC to ADLC, Part 5: Code Becomes Context, Tools and Prompts",
+      "excerpt": "Coding agents write the code; behaviour lives in instructions, tools, context files and skills. Context engineering in practice.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "9 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "🧩",
+      "featured": false
+    },
+    {
+      "slug": "adlc-test-evaluation",
+      "title": "From SDLC to ADLC, Part 6: Testing Becomes Evaluation",
+      "excerpt": "Code checks, model judges and humans; eval results as estimates with error bars; and a release gate.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "8 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "🎯",
+      "featured": false
+    },
+    {
       "slug": "adlc-sdlc-history",
       "title": "From SDLC to ADLC, Part 1: Sixty Years of the Software Lifecycle",
       "excerpt": "Stagewise, \"waterfall\", spiral, agile, DevOps and DORA: what each lifecycle fixed, what it assumed, and which assumptions break for agents.",

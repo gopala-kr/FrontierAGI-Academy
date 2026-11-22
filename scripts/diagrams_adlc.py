@@ -70,4 +70,37 @@ for j,t in enumerate(['Answer A','Answer B','Answer C']):
     s+=f'<g class="fd" style="animation-delay:{.4+j*.3}s">'+box(900,100+j*60,150,44,t,None,'#c2410c')+'</g>'+arr(850,175,898,122+j*60)
 s+=note(600,300,'Same input → a range of outputs. Quality is a rate,','#0f172a',14)+note(600,324,'measured with evals; models, prompts and data all change.','#0f172a',14)
 save('3-determinism.svg',s)
+# 4 spec: story -> eval set
+W,H=1200,420; s=head(W,H,'From a user story to an eval set','Part 3: requirements become example tasks with a pass rule and a target rate')+ANIM
+B=[('User story','"As a customer I want a refund"',['for a faulty order"'],'#2563eb'),('Task examples','200 real tickets',['(sampled from history)'],'#7c3aed'),('Grading rule','Correct decision?',['Policy kept? Tone ok?'],'#0d9488'),('Edge + attack cases','limits, missing data,',['prompt injection'],'#dc2626'),('Target','90% correct,',['0 policy breaks'],'#c2410c')]
+for i,(t,a,b,c) in enumerate(B):
+    x=24+i*236; s+=f'<g class="fd" style="animation-delay:{i*.2}s">'+box(x,110,210,110,t,[a]+b,c,fs=16)+'</g>'
+    if i: s+=arr(x-24,165,x-2,165)
+s+=note(24,280,'Illustrative numbers. The eval set is written before the agent is built, and grows every time production finds a new failure (Part 10).','#334155',13)
+save('4-spec.svg',s)
+# 5 autonomy spectrum
+W,H=1200,380; s=head(W,H,'Design: how much does the system decide?','Part 4: from fixed workflows to autonomous agents (after Anthropic’s "workflows vs agents" distinction)')+ANIM
+s+='<defs><linearGradient id="g5" x1="0" x2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#dc2626"/></linearGradient></defs><rect class="gr" x="40" y="120" width="1120" height="18" rx="9" fill="url(#g5)"/>'
+for i,(t,a,b) in enumerate([('Single call','one prompt, one answer','cheapest, most predictable'),('Workflow','fixed steps in code','prompt chain, router, parallel'),('Agent with gates','model picks tools','humans approve risky steps'),('Autonomous agent','model plans and acts','long tasks, least predictable')]):
+    x=110+i*330; s+=f'<g class="fd" style="animation-delay:{.3+i*.2}s"><circle cx="{x}" cy="129" r="13" fill="#fff" stroke="#0f172a" stroke-width="2"/>'+note(x,180,t,'#0f172a',16,'middle',True)+note(x,204,a,'#334155',13,'middle')+note(x,224,b,'#64748b',12.5,'middle')+'</g>'
+s+=note(40,300,'← more control, cost and reliability','#2563eb',13,'start',True)+note(1160,300,'more flexibility and capability →','#dc2626',13,'end',True)+note(600,350,'Rule of thumb: use the simplest option that meets the eval target.','#0f172a',14,'middle',True)
+save('5-autonomy.svg',s)
+# 6 context window stack
+W,H=1100,460; s=head(W,H,'Code becomes context: what fills the window','Part 5: one agent turn, by share of tokens (illustrative)')+ANIM
+L=[('System prompt and instructions',8,'#2563eb'),('Tool definitions',10,'#7c3aed'),('Context files and skills (e.g. CLAUDE.md)',12,'#0d9488'),('Retrieved documents',25,'#ca8a04'),('Conversation and tool results so far',35,'#ea580c'),('Room left for the answer',10,'#94a3b8')]
+y=80
+for i,(t,p,c) in enumerate(L):
+    h=p*3.3; s+=f'<rect class="gr" style="animation-delay:{i*.15}s" x="60" y="{y}" width="420" height="{h-3}" rx="5" fill="{c}"/>'+note(500,y+h/2+5,f'{t}  ·  {p}%','#0f172a',13.5,'start',True); y+=h
+s+=note(60,y+30,'Shares are an example, not a measurement. Long agent runs fill the window with tool results, which is why context engineering matters.','#475569',12.5)
+save('6-context.svg',s)
+# 7 eval gate pipeline
+W,H=1200,380; s=head(W,H,'Test becomes evaluation: the release gate','Part 6: every change to model, prompt, tools or context runs the same eval set')+ANIM
+P=[('Change','model, prompt, tool','#2563eb'),('Run eval set','200 tasks × 3 runs','#7c3aed'),('Grade','code checks, LLM judge,','#0d9488'),('Compare','vs last release','#ca8a04')]
+for i,(t,a,c) in enumerate(P):
+    x=24+i*230; s+=f'<g class="fd" style="animation-delay:{i*.2}s">'+box(x,120,200,90,t,[a]+(['human spot-checks'] if i==2 else []),c,fs=16)+'</g>'
+    if i: s+=arr(x-30,165,x-2,165)
+s+='<polygon points="1010,115 1080,165 1010,215 940,165" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>'+note(1010,162,'Pass','#0f172a',13,'middle',True)+note(1010,178,'threshold?','#0f172a',12,'middle')+arr(944,165,936,165)+arr(1080,165,1150,165)+note(1150,150,'Release','#16a34a',14,'end',True)
+s+=arr(1010,215,1010,280,'no',"#dc2626",m='r')+note(1010,300,'Back to change; add the failures to the eval set','#dc2626',13,'middle',True)
+s+=note(24,345,'Numbers are an example. Unlike a unit test, the result is a rate with uncertainty: see the calculator in Part 6.','#475569',12.5)
+save('7-evalgate.svg',s)
 print('adlc ok')

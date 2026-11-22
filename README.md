@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**374 articles** · **38 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
+**378 articles** · **38 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -424,7 +424,7 @@ The whole production system, not one product: users, entry point, planner and sp
 #### 🔁 From SDLC to ADLC: How Software Gets Built When Agents Build It
 
 A 12-part series, published in waves: sixty years of the software lifecycle, what an agent development lifecycle is, then one stage at a time (requirements → eval sets, design → agent architecture, code → context and tools, test → evaluation, security → guardrails, release → staged rollout, operations → traces and drift, maintenance → continuous improvement), roles, and a playbook. Start with the interactive lifecycle map above.  
-<sub>2 articles</sub>
+<sub>6 articles</sub>
 
 🆕 *Newest series.*
 
@@ -432,6 +432,10 @@ A 12-part series, published in waves: sixty years of the software lifecycle, wha
 |---|---|---|
 | 1 | 📜 [From SDLC to ADLC, Part 1: Sixty Years of the Software Lifecycle](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-sdlc-history.html) | 11 min |
 | 2 | 🔁 [From SDLC to ADLC, Part 2: What an Agent Development Lifecycle Is](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-what-is-adlc.html) | 11 min |
+| 3 | 📋 [From SDLC to ADLC, Part 3: Requirements Become Task Specs and Eval Sets](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-requirements-evals.html) | 9 min |
+| 4 | 🏗️ [From SDLC to ADLC, Part 4: Design Becomes Agent Architecture](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-design-architecture.html) | 9 min |
+| 5 | 🧩 [From SDLC to ADLC, Part 5: Code Becomes Context, Tools and Prompts](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-code-context.html) | 9 min |
+| 6 | 🎯 [From SDLC to ADLC, Part 6: Testing Becomes Evaluation](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-test-evaluation.html) | 8 min |
 
 
 ### 08 · Run the Machine · The Maestro

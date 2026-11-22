@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**368 articles** · **36 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
+**372 articles** · **37 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -377,8 +377,6 @@ What runs between a request and the 400th tool call: the map → sandboxes → d
 
 Four kinds of agent system (frameworks, harnesses, runtimes, builders), each system dismantled layer by layer: an eight-layer architecture, one task traced through it, failure modes, security, how to build one from scratch and what it costs. Wave 1: the map, the agent loop and five harnesses. Wave 2: six frameworks, one triage agent. Wave 3: four runtimes, one production workload. Wave 4: four builders, one support agent. Series complete.  
 <sub>27 articles</sub>
-
-🆕 *Newest series.*
 
 | # | Article | Read |
 |---|---|---|
@@ -800,6 +798,20 @@ Half-decade by half-decade back to 2001, then decade by decade to the 1940s: job
 | 11 | 🔀 [The Great Consolidation: Which Tech Roles AI Is Merging, Flattening or Splitting](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-ai-consolidation.html) | 7 min |
 | 12 | 🌏 [Offshoring, 1990 to 2026: From Y2K to GCCs, and What AI Changes](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-offshoring-ai.html) | 11 min |
 | 13 | 🧭 [Consulting Jobs in the AI Era: The Pyramid Under Pressure](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-consulting-ai.html) | 11 min |
+
+#### 📊 AI and the Economy, 2026: Jobs, Productivity, Adoption and Cheap Intelligence
+
+What the best evidence says in November 2026: which jobs AI is changing, whether it raises productivity, who is adopting it, and what happens as its price collapses. Animated charts, interactive explorers and every figure sourced.  
+<sub>4 articles</sub>
+
+🆕 *Newest series.*
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 📊 [Which Jobs Is AI Changing? The Evidence So Far](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-economy-jobs-evidence.html) | 12 min |
+| 2 | 📈 [AI and Productivity: What the Studies Show](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-economy-productivity.html) | 12 min |
+| 3 | 🏢 [Adoption by Sector: Who Uses AI for What](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-economy-adoption-sectors.html) | 11 min |
+| 4 | 💡 [Cheap Intelligence: What Happens When Thinking Costs Almost Nothing](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-economy-cheap-intelligence.html) | 11 min |
 
 
 ### 19 · Take a Course

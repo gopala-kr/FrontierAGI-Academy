@@ -151,6 +151,66 @@
       "featured": false
     },
     {
+      "slug": "ai-economy-jobs-evidence",
+      "title": "Which Jobs Is AI Changing? The Evidence So Far",
+      "excerpt": "No economy-wide job loss yet, but a growing hiring gap for young workers in the jobs AI can do most of: payroll, usage and occupation data compared.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "12 min",
+      "tags": [
+        "Economy",
+        "AI"
+      ],
+      "emoji": "📊",
+      "featured": false
+    },
+    {
+      "slug": "ai-economy-productivity",
+      "title": "AI and Productivity: What the Studies Show",
+      "excerpt": "Randomised trials, worker and firm surveys, and the 2026 productivity data: big gains on some tasks, little in profits so far.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "12 min",
+      "tags": [
+        "Economy",
+        "AI"
+      ],
+      "emoji": "📈",
+      "featured": false
+    },
+    {
+      "slug": "ai-economy-adoption-sectors",
+      "title": "Adoption by Sector: Who Uses AI for What",
+      "excerpt": "Two in five workers, one in five firms: industries, firm sizes, business functions and tasks that lead AI adoption in 2026.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "11 min",
+      "tags": [
+        "Economy",
+        "AI"
+      ],
+      "emoji": "🏢",
+      "featured": false
+    },
+    {
+      "slug": "ai-economy-cheap-intelligence",
+      "title": "Cheap Intelligence: What Happens When Thinking Costs Almost Nothing",
+      "excerpt": "AI capability gets about ten times cheaper a year, yet spending keeps rising: what gets cheap, what stays scarce, and what it means for work.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-22",
+      "readTime": "11 min",
+      "tags": [
+        "Economy",
+        "AI"
+      ],
+      "emoji": "💡",
+      "featured": false
+    },
+    {
       "slug": "tech-jobs-consulting-ai",
       "title": "Consulting Jobs in the AI Era: The Pyramid Under Pressure",
       "excerpt": "Big Four graduate cuts, flat starting pay, consultants vs forward deployed engineers, and which consulting roles are shrinking or rising.",

@@ -633,6 +633,18 @@
       ]
     },
     {
+      "id": "sec-aiecon",
+      "title": "AI and the Economy, 2026: Jobs, Productivity, Adoption and Cheap Intelligence",
+      "short": "AI and the Economy, 2026",
+      "icon": "📊",
+      "slugs": [
+        "ai-economy-jobs-evidence",
+        "ai-economy-productivity",
+        "ai-economy-adoption-sectors",
+        "ai-economy-cheap-intelligence"
+      ]
+    },
+    {
       "id": "sec-cs336",
       "title": "Language Modeling from Scratch: A Guide to Stanford's CS336",
       "short": "Language Modeling from Scratch",

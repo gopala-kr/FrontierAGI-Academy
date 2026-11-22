@@ -612,6 +612,16 @@
       ]
     },
     {
+      "id": "sec-techjobs",
+      "title": "Tech Jobs Through Time: How Tech Work Emerged, Changed and Disappeared",
+      "short": "Tech Jobs Through Time",
+      "icon": "🧑‍💻",
+      "slugs": [
+        "tech-jobs-2021-2026",
+        "tech-jobs-2016-2020"
+      ]
+    },
+    {
       "id": "sec-cs336",
       "title": "Language Modeling from Scratch: A Guide to Stanford's CS336",
       "short": "Language Modeling from Scratch",

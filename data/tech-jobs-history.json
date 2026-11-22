@@ -1,0 +1,535 @@
+{
+ "about": "Tech jobs through time: US backbone with an India and global thread. Every figure has a source; sec=1 marks a secondary source; est=1 marks our own estimate or arithmetic. Real dollars use CPI-U annual averages (BLS) to 2024 dollars.",
+ "cpi": {
+  "2005": 195.3,
+  "2016": 240.007,
+  "2019": 255.657,
+  "2022": 292.655,
+  "2024": 313.689
+ },
+ "periods": [
+  {
+   "id": "2021-2026",
+   "label": "2021–2026",
+   "title": "AI arrives, the boom ends",
+   "slug": "tech-jobs-2021-2026",
+   "status": "published"
+  },
+  {
+   "id": "2016-2020",
+   "label": "2016–2020",
+   "title": "Cloud, data science and the pandemic surge",
+   "slug": "tech-jobs-2016-2020",
+   "status": "published"
+  },
+  {
+   "id": "2011-2015",
+   "label": "2011–2015",
+   "title": "Mobile, social and the new titles",
+   "slug": null,
+   "status": "coming"
+  },
+  {
+   "id": "2006-2010",
+   "label": "2006–2010",
+   "title": "iPhone, AWS and the crash",
+   "slug": null,
+   "status": "coming"
+  },
+  {
+   "id": "2001-2005",
+   "label": "2001–2005",
+   "title": "Dot-com bust and offshoring",
+   "slug": null,
+   "status": "coming"
+  },
+  {
+   "id": "1990s",
+   "label": "1990s",
+   "title": "The web, Y2K and the boom",
+   "slug": null,
+   "status": "coming"
+  },
+  {
+   "id": "1980s",
+   "label": "1980s",
+   "title": "PCs and the software company",
+   "slug": null,
+   "status": "coming"
+  },
+  {
+   "id": "1970s",
+   "label": "1970s",
+   "title": "Minicomputers and microprocessors",
+   "slug": null,
+   "status": "coming"
+  },
+  {
+   "id": "1960s",
+   "label": "1960s",
+   "title": "Mainframes and the programmer",
+   "slug": null,
+   "status": "coming"
+  },
+  {
+   "id": "1940s-50s",
+   "label": "1940s–50s",
+   "title": "Human computers to the first programmers",
+   "slug": null,
+   "status": "coming"
+  }
+ ],
+ "roles": [
+  {
+   "name": "AI engineer",
+   "born": 2023,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "note": "No. 1 on LinkedIn Jobs on the Rise 2025 (US).",
+   "src": "https://www.cbsnews.com/amp/news/artificial-intelligence-entry-level-role-linkedin-study/",
+   "sec": 1
+  },
+  {
+   "name": "Prompt engineer",
+   "born": 2022,
+   "peak": 2023,
+   "end": 2025,
+   "state": "faded",
+   "note": "A 2023 posting at up to $335,000 made headlines; by May 2025 coverage called the title obsolete.",
+   "src": "https://fortune.com/2025/05/07/prompt-engineering-200k-six-figure-role-now-obsolete-thanks-to-ai/",
+   "sec": 1
+  },
+  {
+   "name": "AI red-teamer / safety evaluator",
+   "born": 2022,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "note": "Our reading: grew with frontier-model safety testing.",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "Data scientist",
+   "born": 2008,
+   "peak": 2019,
+   "end": null,
+   "state": "changing",
+   "note": "Glassdoor's 'best job in America' 2016–2019; work is shifting toward ML and AI engineering (our reading).",
+   "src": "https://www.kdnuggets.com/2018/01/glassdoor-data-scientist-best-job-america-3years.html",
+   "sec": 1
+  },
+  {
+   "name": "Data engineer",
+   "born": 2014,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "note": "Our reading: grew with cloud data warehouses and pipelines.",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "ML engineer",
+   "born": 2015,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "note": "Our reading: the production side of data science, now merging into AI engineering.",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "DevOps → platform engineer",
+   "born": 2009,
+   "peak": null,
+   "end": null,
+   "state": "changing",
+   "note": "Our reading: DevOps (from 2009) became platform engineering from about 2020.",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "Site reliability engineer",
+   "born": 2003,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "note": "Started at Google in 2003; spread after Google's SRE book (2016).",
+   "src": "https://sre.google/sre-book/introduction/",
+   "sec": 0
+  },
+  {
+   "name": "Cloud architect",
+   "born": 2010,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "note": "Our reading: grew with AWS, Azure and Google Cloud.",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "Blockchain / web3 developer",
+   "born": 2017,
+   "peak": 2021,
+   "end": 2023,
+   "state": "faded",
+   "note": "Our reading: boomed with crypto in 2017 and 2021, shrank after the 2022 crash.",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "Flash developer",
+   "born": 1996,
+   "peak": 2008,
+   "end": 2020,
+   "state": "gone",
+   "note": "Adobe ended Flash Player support on 31 Dec 2020.",
+   "src": "https://www.adobe.com/products/flashplayer/end-of-life.html",
+   "sec": 0
+  },
+  {
+   "name": "On-premises sysadmin",
+   "born": 1970,
+   "peak": 2008,
+   "end": null,
+   "state": "shrinking",
+   "note": "Our reading: work moved to cloud and platform teams.",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "Manual QA tester",
+   "born": 1980,
+   "peak": 2010,
+   "end": null,
+   "state": "shrinking",
+   "note": "Our reading: automated testing absorbed much of it; BLS still counts QA analysts and testers (median $102,610, 2024).",
+   "src": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+   "sec": 0
+  },
+  {
+   "name": "Entry-level software developer",
+   "born": 1950,
+   "peak": 2022,
+   "end": null,
+   "state": "shrinking",
+   "note": "Employment of 22–25-year-old software developers fell about 20% from late 2022 (Stanford Digital Economy Lab).",
+   "src": "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine",
+   "sec": 0
+  }
+ ],
+ "metrics": {
+  "us_swdev_median_wage": {
+   "label": "US software developer median wage (BLS)",
+   "unit": "$",
+   "points": [
+    [
+     2016,
+     100090,
+     "Software Developers, Applications: $48.12/h × 2,080 (est.)",
+     "https://www.bls.gov/oes/2016/may/oes151132.htm",
+     1
+    ],
+    [
+     2019,
+     107510,
+     "Software developers (OOH 2019)",
+     "https://www.bls.gov/oes/2019/may/naics4_511200.htm",
+     0
+    ],
+    [
+     2024,
+     133080,
+     "Software developers, May 2024 (OOH)",
+     "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+     0
+    ]
+   ]
+  },
+  "us_tech_avg_salary_dice": {
+   "label": "Average US tech salary (Dice survey)",
+   "unit": "$",
+   "points": [
+    [
+     2005,
+     69700,
+     "Dice 2005",
+     "https://www.dice.com/hiring/recruitment/reports/dice-tech-salary-report",
+     0
+    ],
+    [
+     2022,
+     111348,
+     "Dice (restated)",
+     "https://fortune.com/education/articles/dice-tech-salary-trends-report-2024",
+     1
+    ],
+    [
+     2023,
+     111193,
+     "Dice 2023",
+     "https://www.staffingindustry.com/average-tech-salary-us-now-111193",
+     1
+    ],
+    [
+     2024,
+     112521,
+     "Dice 2025 report",
+     "https://www.dice.com/hiring/recruitment/reports/dice-tech-salary-report",
+     0
+    ]
+   ]
+  },
+  "data_scientist_glassdoor": {
+   "label": "Data scientist median base (Glassdoor)",
+   "unit": "$",
+   "points": [
+    [
+     2016,
+     116840,
+     "Glassdoor 2016",
+     "https://insights.dice.com/2016/01/25/is-data-scientist-the-best-job-in-america/",
+     1
+    ],
+    [
+     2017,
+     110000,
+     "Glassdoor 2017",
+     "https://tdwi.org/articles/2017/02/14/best-jobs-are-in-tech.aspx",
+     1
+    ],
+    [
+     2018,
+     110000,
+     "Glassdoor 2018",
+     "https://www.kdnuggets.com/2018/01/glassdoor-data-scientist-best-job-america-3years.html",
+     1
+    ],
+    [
+     2019,
+     108000,
+     "Glassdoor 2019",
+     "https://www.entrepreneur.com/article/326831",
+     1
+    ]
+   ]
+  },
+  "layoffs": {
+   "label": "Tech layoffs (Layoffs.fyi via TechCrunch)",
+   "unit": "people",
+   "points": [
+    [
+     2022,
+     165000,
+     "Estimated: 2023 was 59% higher than 2022",
+     "https://techcrunch.com/2024/01/11/tech-layoffs-2023-list",
+     1,
+     1
+    ],
+    [
+     2023,
+     262735,
+     "Layoffs.fyi 2023 total",
+     "https://techcrunch.com/2024/01/11/tech-layoffs-2023-list",
+     1
+    ],
+    [
+     2024,
+     150000,
+     "More than 150,000 across 549 companies",
+     "https://techcrunch.com/2024/12/31/a-comprehensive-archive-of-2024-tech-layoffs/",
+     1
+    ],
+    [
+     2025,
+     118000,
+     "Sum of TechCrunch's monthly figures, incomplete",
+     "https://techcrunch.com/2025/06/30/tech-layoffs-2025-list",
+     1,
+     1
+    ]
+   ]
+  },
+  "h1b_registrations": {
+   "label": "H-1B cap registrations (USCIS)",
+   "unit": "registrations",
+   "points": [
+    [
+     2020,
+     274237,
+     "FY2021",
+     "https://www.business-standard.com/immigration/h-1b-visa-2026-registrations-fall-27-as-us-tightens-rules-for-immigrants-125051501037_1.html",
+     1
+    ],
+    [
+     2021,
+     308613,
+     "FY2022",
+     "same",
+     1
+    ],
+    [
+     2022,
+     483927,
+     "FY2023",
+     "same",
+     1
+    ],
+    [
+     2023,
+     780884,
+     "FY2024",
+     "same",
+     1
+    ],
+    [
+     2024,
+     479953,
+     "FY2025",
+     "same",
+     1
+    ],
+    [
+     2025,
+     358737,
+     "FY2026",
+     "same",
+     1
+    ]
+   ]
+  },
+  "india_tech_workforce": {
+   "label": "India tech industry workforce (NASSCOM, millions)",
+   "unit": "million",
+   "points": [
+    [
+     2016,
+     3.7,
+     "IT-ITeS direct employment",
+     "https://nasscom.in/sites/default/files/media_pdf/Press%20Release%20-IT-ITeS%20Sector%20Skills%20Council%20NASSCOM%20launches%20Talent%20Demand%20and%20Supply%20Report.pdf",
+     0
+    ],
+    [
+     2020,
+     4.36,
+     "FY2020",
+     "https://nasscom.in/sites/default/files/media_pdf/pr_nasscom_strategic_review_ntlf_2020_final_for_media_2020.pdf",
+     0
+    ],
+    [
+     2022,
+     5.0,
+     "FY2022 (over 5 million)",
+     "https://nasscom.in/sites/default/files/media_pdf/India-set-for-the-rising-techade-as-industry-revenues-soars-past-dollar-200-billion.pdf",
+     0
+    ],
+    [
+     2025,
+     5.82,
+     "FY2025 (estimate)",
+     "https://www.dqindia.com/news/nasscom-outlook-indias-tech-industry-to-grow-61-to-315-bn-in-fy26-11151228",
+     1
+    ],
+    [
+     2026,
+     5.95,
+     "FY2026 (projection)",
+     "https://www.dqindia.com/news/nasscom-outlook-indias-tech-industry-to-grow-61-to-315-bn-in-fy26-11151228",
+     1
+    ]
+   ]
+  },
+  "indeed_swdev_postings": {
+   "label": "US software development postings on Indeed (Feb 2020 = 100)",
+   "unit": "index",
+   "points": [
+    [
+     2020,
+     100,
+     "Baseline, 1 Feb 2020",
+     "https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE",
+     0
+    ],
+    [
+     2024.5,
+     68.6,
+     "Jul 2024: 31.4% below",
+     "https://hiringlab.org/?p=18877",
+     0
+    ],
+    [
+     2025.2,
+     65,
+     "Q1 2025: about 35% below",
+     "https://www.hiringlab.org/2025/02/06/software-development-postings-remain-in-the-doldrums/",
+     0
+    ],
+    [
+     2025.5,
+     64,
+     "Jul 2025: 36% below",
+     "https://www.hiringlab.org/2025/07/30/the-us-tech-hiring-freeze-continues/",
+     0
+    ],
+    [
+     2026.8,
+     80.8,
+     "Oct 2026",
+     "https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE",
+     0
+    ]
+   ]
+  },
+  "meta_headcount": {
+   "label": "Meta employees at year end",
+   "unit": "people",
+   "points": [
+    [
+     2019,
+     44942,
+     "",
+     "https://stockanalysis.com:443/stocks/meta/employees/",
+     1
+    ],
+    [
+     2020,
+     58604,
+     "",
+     "same",
+     1
+    ],
+    [
+     2021,
+     71970,
+     "",
+     "same",
+     1
+    ],
+    [
+     2022,
+     86482,
+     "",
+     "same",
+     1
+    ],
+    [
+     2023,
+     67317,
+     "",
+     "same",
+     1
+    ],
+    [
+     2024,
+     74067,
+     "",
+     "https://itiger.com/news/2528067039",
+     1
+    ]
+   ]
+  }
+ }
+}

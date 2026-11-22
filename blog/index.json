@@ -1,6 +1,36 @@
 {
   "posts": [
     {
+      "slug": "tech-jobs-2021-2026",
+      "title": "Tech Jobs 2021–2026: The Boom, the Bust and the AI Reshaping",
+      "excerpt": "From the pandemic hiring frenzy to 262,735 layoffs in 2023 and the rise of the AI engineer: which tech jobs emerged, changed and faded, what they paid in real dollars, who hired, and how India and the H-1B system shifted.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "10 min",
+      "tags": [
+        "Jobs",
+        "History"
+      ],
+      "emoji": "🤖",
+      "featured": false
+    },
+    {
+      "slug": "tech-jobs-2016-2020",
+      "title": "Tech Jobs 2016–2020: Cloud, Data Science and the Pandemic Surge",
+      "excerpt": "Data scientist as the best job in America, SRE and cloud roles going mainstream, GDPR, the Transformer paper and a pandemic that moved tech work home: the five years that built the boom.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "7 min",
+      "tags": [
+        "Jobs",
+        "History"
+      ],
+      "emoji": "☁️",
+      "featured": false
+    },
+    {
       "slug": "agentic-software-factory",
       "title": "The Software Factory: The Layer Above the Agent",
       "excerpt": "Model, harness, loop, graph, and the layer above them: running many coding workflows as one measured operation, with routing, budgets, human gates, owners and the numbers that tell you whether it works.",

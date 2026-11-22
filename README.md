@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**355 articles** · **35 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-21
+**357 articles** · **36 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-22
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -415,8 +415,6 @@ Four kinds of agent system (frameworks, harnesses, runtimes, builders), each sys
 The whole production system, not one product: users, entry point, planner and specialist agents, models, memory, MCP tools, guardrails, traces, evals and CI/CD, redrawn as architecture diagrams and traced with one refund ticket. One cloud per part, same task and layers so they compare side by side.  
 <sub>5 articles</sub>
 
-🆕 *Newest series.*
-
 | # | Article | Read |
 |---|---|---|
 | 1 | 🏗️ [A Production-Ready AI Agent on Google Cloud, Layer by Layer](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agentic-blueprint-gcp.html) | 13 min |
@@ -776,6 +774,21 @@ Cross-lab reference pieces this site's lineage articles cite back to — how cap
 | 9 | 🧭 [AGI Benchmarks: How the Field Tries to Measure the Thing It Can't Yet Define](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/agi-benchmarks-measuring-the-undefined.html) | 55 min |
 | 10 | 📈 [What Stanford's 2026 AI Index Says About Where AI Research Is Heading](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/stanford-ai-index-2026-research-directions.html) | 40 min |
 | 11 | 🧑‍🔬 [The AI Researcher Atlas: 50 People Who Built the Field](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/ai-researcher-atlas.html) | 65 min |
+
+
+### 18 · Live With It
+
+#### 🧑‍💻 Tech Jobs Through Time: How Tech Work Emerged, Changed and Disappeared
+
+Half-decade by half-decade back to 2001, then decade by decade to the 1940s: jobs born and gone, pay in real dollars, demand and layoffs, employers, skills, who did the work, and the India and global thread.  
+<sub>2 articles</sub>
+
+🆕 *Newest series.*
+
+| # | Article | Read |
+|---|---|---|
+| 1 | 🤖 [Tech Jobs 2021–2026: The Boom, the Bust and the AI Reshaping](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-2021-2026.html) | 10 min |
+| 2 | ☁️ [Tech Jobs 2016–2020: Cloud, Data Science and the Pandemic Surge](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/tech-jobs-2016-2020.html) | 7 min |
 
 
 ### 19 · Take a Course

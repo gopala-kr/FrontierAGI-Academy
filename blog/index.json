@@ -136,6 +136,36 @@
       "featured": false
     },
     {
+      "slug": "tech-jobs-offshoring-ai",
+      "title": "Offshoring, 1990 to 2026: From Y2K to GCCs, and What AI Changes",
+      "excerpt": "From H-1B caps and Y2K to India's 2.36 million GCC staff, and why AI is shrinking contracts rather than bringing work home.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "4 min",
+      "tags": [
+        "Jobs",
+        "AI"
+      ],
+      "emoji": "🌏",
+      "featured": false
+    },
+    {
+      "slug": "tech-jobs-consulting-ai",
+      "title": "Consulting Jobs in the AI Era: The Pyramid Under Pressure",
+      "excerpt": "Big Four graduate cuts, flat starting pay, consultants vs forward deployed engineers, and which consulting roles are shrinking or rising.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "4 min",
+      "tags": [
+        "Jobs",
+        "AI"
+      ],
+      "emoji": "🧭",
+      "featured": false
+    },
+    {
       "slug": "tech-jobs-ai-consolidation",
       "title": "The Great Consolidation: Which Tech Roles AI Is Merging, Flattening or Splitting",
       "excerpt": "Builders replacing PM, design and engineering tracks, management layers cut, India's pyramid hollowing out, and the new roles splitting off.",

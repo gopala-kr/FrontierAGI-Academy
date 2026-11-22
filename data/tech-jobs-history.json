@@ -831,6 +831,88 @@
    "src": "https://careers.linkedin.com/pathways-programs/entry-level/apb",
    "sec": 0,
    "art": "tech-jobs-ai-consolidation"
+  },
+  {
+   "name": "Management consultant",
+   "born": 1950,
+   "peak": null,
+   "end": null,
+   "state": "changing",
+   "cat": "cons",
+   "note": "Less desk research, more judgement and client work as AI takes analyst tasks (our reading).",
+   "src": null,
+   "sec": 0,
+   "art": "tech-jobs-consulting-ai"
+  },
+  {
+   "name": "Junior business analyst / associate",
+   "born": 1970,
+   "peak": 2021,
+   "end": null,
+   "state": "shrinking",
+   "cat": "cons",
+   "note": "PwC US planned to cut graduate hiring by about a third; UK Big Four executives expected graduate hiring to fall by about half.",
+   "src": "https://www.peoplematters.in/news/recruiting-and-onboarding/big-four-cut-entry-level-jobs-amid-ai-and-cost-pressures-42164",
+   "sec": 1,
+   "art": "tech-jobs-consulting-ai"
+  },
+  {
+   "name": "SAP / ERP consultant",
+   "born": 1992,
+   "peak": 2000,
+   "end": null,
+   "state": "changing",
+   "cat": "cons",
+   "note": "Born with the 1990s ERP wave and Y2K replacements; now AI-assisted migrations (our reading).",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "Offshore delivery manager",
+   "born": 1998,
+   "peak": 2021,
+   "end": null,
+   "state": "shrinking",
+   "cat": "cons",
+   "note": "Coordinates large offshore teams; the middle of the services pyramid is where cuts fall (our reading).",
+   "src": null,
+   "sec": 0,
+   "art": "tech-jobs-offshoring-ai"
+  },
+  {
+   "name": "Onsite coordinator",
+   "born": 1995,
+   "peak": 2008,
+   "end": null,
+   "state": "shrinking",
+   "cat": "cons",
+   "note": "The onshore link for an offshore team (our reading).",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "name": "GCC engineer (India)",
+   "born": 2004,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "cons",
+   "note": "India had 2,117 global capability centres with 2.36 million staff in FY26 (Nasscom–Zinnov via Business Today).",
+   "src": "https://www.businesstoday.in/technology/news/story/the-big-boom-how-indias-gcc-story-hits-2030-target-4-years-early-530265-2026-05-07",
+   "sec": 1,
+   "art": "tech-jobs-offshoring-ai"
+  },
+  {
+   "name": "AI transformation consultant",
+   "born": 2023,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "cons",
+   "note": "Consulting firms advertise more AI implementation roles while overall postings fell ~20% from peak (Revelio via secondary).",
+   "src": "https://finance.yahoo.com/news/4-key-ways-ai-changed-202826358.html",
+   "sec": 1,
+   "art": "tech-jobs-consulting-ai"
   }
  ],
  "metrics": {
@@ -1377,6 +1459,11 @@
    "prod",
    "Product, design & support",
    "#db2777"
+  ],
+  [
+   "cons",
+   "Consulting & IT services",
+   "#a16207"
   ]
  ],
  "roleLinks": [
@@ -1523,6 +1610,38 @@
    "kind": "flatten",
    "note": "Management and coordination layers cut: 41% of employees say their organisation removed layers (Korn Ferry Workforce 2025).",
    "src": "https://www.kornferry.com/insights/featured-topics/workforce-management-articles/workforce-planning-insights",
+   "sec": 0
+  },
+  {
+   "from": [
+    "Offshore delivery manager",
+    "Onsite coordinator"
+   ],
+   "to": "GCC engineer (India)",
+   "kind": "flatten",
+   "note": "Work moves from rented vendor teams to company-owned GCCs; GCCs added ~2× the net staff of IT services in FY26 (Nasscom–Zinnov via secondary).",
+   "src": "https://www.businesstoday.in/technology/news/story/the-big-boom-how-indias-gcc-story-hits-2030-target-4-years-early-530265-2026-05-07",
+   "sec": 1
+  },
+  {
+   "from": [
+    "Junior business analyst / associate"
+   ],
+   "to": "AI transformation consultant",
+   "kind": "merge",
+   "note": "Analyst work done with AI; firms hire fewer juniors and more AI implementation staff (secondary reports).",
+   "src": "https://finance.yahoo.com/news/4-key-ways-ai-changed-202826358.html",
+   "sec": 1
+  },
+  {
+   "from": [
+    "Management consultant",
+    "SAP / ERP consultant"
+   ],
+   "to": "Forward deployed engineer (FDE)",
+   "kind": "split",
+   "note": "Implementation work increasingly done by the technology vendor's own embedded engineers (our reading).",
+   "src": null,
    "sec": 0
   }
  ]

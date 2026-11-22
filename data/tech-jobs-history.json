@@ -56,15 +56,15 @@
    "id": "1980s",
    "label": "1980s",
    "title": "PCs and the software company",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-1980s",
+   "status": "published"
   },
   {
    "id": "1970s",
    "label": "1970s",
    "title": "Minicomputers and microprocessors",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-1970s",
+   "status": "published"
   },
   {
    "id": "1960s",
@@ -729,6 +729,88 @@
      "same",
      1,
      1
+    ]
+   ]
+  },
+  "us_it_workers": {
+   "label": "US IT workers (Census, 2010 occupation codes)",
+   "unit": "count",
+   "points": [
+    [
+     1970,
+     450000,
+     "First census to identify IT occupations",
+     "https://www.census.gov/newsroom/archives/2016-pr/cb16-139.html",
+     0,
+     0
+    ],
+    [
+     2014,
+     4600000,
+     "2.9% of the labour force",
+     "same",
+     0,
+     0
+    ]
+   ]
+  },
+  "women_it_share": {
+   "label": "Women’s share of US IT workers (%)",
+   "unit": "%",
+   "points": [
+    [
+     1990,
+     31,
+     "Peak",
+     "https://www.census.gov/newsroom/archives/2016-pr/cb16-139.html",
+     0,
+     0
+    ],
+    [
+     2014,
+     25,
+     "",
+     "same",
+     0,
+     0
+    ]
+   ]
+  },
+  "women_cs_degrees": {
+   "label": "Women’s share of US computer-science bachelor’s degrees (%)",
+   "unit": "%",
+   "points": [
+    [
+     1984,
+     37.2,
+     "Peak (NSF data)",
+     "https://cs.stanford.edu/people/eroberts/courses/cs181/projects/2000-01/women-in-cs/statistics.html",
+     1,
+     0
+    ],
+    [
+     2000,
+     28,
+     "",
+     "same",
+     1,
+     0
+    ],
+    [
+     2010,
+     18,
+     "Low point",
+     "https://www.randalolson.com/2026/03/26/bachelors-degrees-women-by-major-1970-2022/",
+     1,
+     0
+    ],
+    [
+     2022,
+     23,
+     "",
+     "same",
+     1,
+     0
     ]
    ]
   }

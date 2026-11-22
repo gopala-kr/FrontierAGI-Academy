@@ -154,3 +154,24 @@ for i,p in enumerate(I):
     s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#ea580c"/>'+note(x+48,434-h,(f'{int(p[1]*1000)}k' if p[1]<1 else f'{p[1]:.1f}M'),'#0f172a',13,'middle',True)+note(x+48,464,'FY'+str(p[0]),'#64748b',12,'middle')
 s+=note(830,500,'FY2005 includes IT-enabled services (BPO).','#64748b',11)
 save('7-1990-2005.svg',s)
+
+# 8: 1970s-1980s panel (batch 4)
+s=head(1200,540,'Tech jobs 1970–1990 in three numbers','Sources: US Census Bureau CB16-139 (IT workers, women in IT); NSF data via Stanford and Olson ⚠️ (degrees).')
+P=M['us_it_workers']['points']
+s+=note(60,110,'US IT workers (Census)','#0f172a',15,'start',True)
+for i,p in enumerate(P):
+    h=p[1]/5000000*280; x=80+i*150
+    s+=f'<rect x="{x}" y="{440-max(h,3)}" width="96" height="{max(h,3)}" rx="6" fill="#2563eb"/>'+note(x+48,434-max(h,3),(f'{p[1]//1000}k' if p[1]<1e6 else f'{p[1]/1e6:.1f}M'),'#0f172a',13,'middle',True)+note(x+48,464,str(p[0]),'#64748b',12,'middle')
+s+=note(60,500,'Tenfold growth; 1970 was the first IT count.','#64748b',11)
+P=M['women_cs_degrees']['points']
+s+=note(440,110,'Women, % of CS bachelor’s degrees','#0f172a',15,'start',True)
+for i,p in enumerate(P):
+    h=p[1]/40*280; x=450+i*85
+    s+=f'<rect x="{x}" y="{440-h}" width="64" height="{h}" rx="6" fill="#db2777"/>'+note(x+32,434-h,f'{p[1]:g}%','#0f172a',13,'middle',True)+note(x+32,464,str(p[0]),'#64748b',12,'middle')
+P=M['women_it_share']['points']
+s+=note(830,110,'Women, % of US IT workers (Census)','#0f172a',15,'start',True)
+for i,p in enumerate(P):
+    h=p[1]/40*280; x=850+i*150
+    s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#9333ea"/>'+note(x+48,434-h,f'{p[1]}%','#0f172a',13,'middle',True)+note(x+48,464,str(p[0]),'#64748b',12,'middle')
+s+=note(830,500,'1990 was the peak.','#64748b',11)
+save('8-1970-1990.svg',s)

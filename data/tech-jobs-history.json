@@ -819,6 +819,18 @@
    "src": "",
    "sec": 0,
    "art": "forward-deployed-engineers-great-role-merge"
+  },
+  {
+   "name": "Product builder",
+   "born": 2024,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "cat": "prod",
+   "note": "One person who designs, specifies and builds a product with AI tools. LinkedIn replaced its Associate Product Manager programme with an Associate Product Builder programme; strong performers may continue as Full Stack Builders.",
+   "src": "https://careers.linkedin.com/pathways-programs/entry-level/apb",
+   "sec": 0,
+   "art": "tech-jobs-ai-consolidation"
   }
  ],
  "metrics": {
@@ -1448,5 +1460,70 @@
    "Technical support engineer",
    "Forward deployed engineer (FDE)"
   ]
+ ],
+ "merges": [
+  {
+   "from": [
+    "Product manager",
+    "UX designer",
+    "Full-stack developer"
+   ],
+   "to": "Product builder",
+   "kind": "merge",
+   "note": "LinkedIn's Associate Product Builder programme replaced its APM track: one hybrid product and engineering role.",
+   "src": "https://careers.linkedin.com/pathways-programs/entry-level/apb",
+   "sec": 0
+  },
+  {
+   "from": [
+    "Software development engineer (SDE)",
+    "Technical support engineer"
+   ],
+   "to": "Forward deployed engineer (FDE)",
+   "kind": "split",
+   "note": "A new role split off software and solutions work: postings up more than 1,000% in Jan–Aug 2026 vs 2025 (Lightcast via Fortune).",
+   "src": "https://fortune.com/2026/09/03/forward-deployed-engineers-fast-growing-six-figure-silicon-valley-job-integrate-ai-with-customers-tech-careers-palantir/",
+   "sec": 1
+  },
+  {
+   "from": [
+    "Manual QA tester"
+   ],
+   "to": "Software development engineer (SDE)",
+   "kind": "merge",
+   "note": "Testing folded into developers' work with AI-generated tests. Widely claimed; no count found (our reading).",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "from": [
+    "BI / data analyst"
+   ],
+   "to": "Analytics engineer",
+   "kind": "merge",
+   "note": "Analysts writing SQL and pipelines with AI help (our reading).",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "from": [
+    "Security analyst"
+   ],
+   "to": "AI red-teamer / safety evaluator",
+   "kind": "split",
+   "note": "Security and safety research grew a specialist AI testing role (our reading; no count found).",
+   "src": null,
+   "sec": 0
+  },
+  {
+   "from": [
+    "Program manager"
+   ],
+   "to": "Product manager",
+   "kind": "flatten",
+   "note": "Management and coordination layers cut: 41% of employees say their organisation removed layers (Korn Ferry Workforce 2025).",
+   "src": "https://www.kornferry.com/insights/featured-topics/workforce-management-articles/workforce-planning-insights",
+   "sec": 0
+  }
  ]
 }

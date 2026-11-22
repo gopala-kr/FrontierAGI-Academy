@@ -136,6 +136,21 @@
       "featured": false
     },
     {
+      "slug": "tech-jobs-ai-consolidation",
+      "title": "The Great Consolidation: Which Tech Roles AI Is Merging, Flattening or Splitting",
+      "excerpt": "Builders replacing PM, design and engineering tracks, management layers cut, India's pyramid hollowing out, and the new roles splitting off.",
+      "author": "FrontierAGI Team",
+      "authorInitials": "FL",
+      "date": "2026-11-22",
+      "readTime": "7 min",
+      "tags": [
+        "Jobs",
+        "AI"
+      ],
+      "emoji": "🔀",
+      "featured": false
+    },
+    {
       "slug": "tech-jobs-1940s-50s",
       "title": "Tech Jobs in the 1940s and 1950s: Human Computers and the First Programmers",
       "excerpt": "Human computers, the six women who programmed ENIAC, UNIVAC, FORTRAN and COBOL: how programming was invented as a job.",

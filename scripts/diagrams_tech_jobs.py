@@ -84,7 +84,7 @@ s+='<polyline fill="none" stroke="#2563eb" stroke-width="3" stroke-dasharray="6 
 for p in P: s+=f'<circle cx="{ix(p[0])}" cy="{iy(p[1])}" r="5" fill="#2563eb"/>'+note(ix(p[0])+6,iy(p[1])-8,str(p[1]),'#0f172a',11)
 s+=note(ix(2021.2),iy(112),'2021–22: far above 100 (exact peak not in our sources)','#475569',12)
 s+=note(X0,490,'Dashed = only the sourced points are joined; the line is not the full series.','#64748b',12)
-L=M['layoffs']['points']; bx=700
+L=[p for p in M['layoffs']['points'] if p[0]>=2022]; bx=700
 for i,p in enumerate(L):
     h=p[1]/280000*300; x=bx+i*130
     s+=f'<rect x="{x}" y="{450-h}" width="90" height="{h}" rx="6" fill="{"#fca5a5" if len(p)>5 else "#dc2626"}"/>'+note(x+45,445-h,f'{p[1]/1000:.0f}k'+(' est.' if len(p)>5 else ''),'#0f172a',13,'middle',True)+note(x+45,472,str(p[0]),'#64748b',12,'middle')
@@ -97,7 +97,7 @@ P=M['h1b_registrations']['points']
 for i,p in enumerate(P):
     h=p[1]/800000*280; x=80+i*90
     s+=f'<rect x="{x}" y="{420-h}" width="64" height="{h}" rx="6" fill="#0891b2"/>'+note(x+32,414-h,f'{p[1]/1000:.0f}k','#0f172a',12,'middle',True)+note(x+32,442,'FY'+str(p[0]+1)[2:],'#64748b',12,'middle')
-P=M['india_tech_workforce']['points']
+P=[p for p in M['india_tech_workforce']['points'] if p[0]>=2016]
 for i,p in enumerate(P):
     h=p[1]/6.5*280; x=700+i*105
     s+=f'<rect x="{x}" y="{420-h}" width="74" height="{h}" rx="6" fill="#ea580c" opacity="{0.6 if p[0]==2026 else 1}"/>'+note(x+37,414-h,f'{p[1]}M','#0f172a',12,'middle',True)+note(x+37,442,('FY' if p[0]>2016 else '')+str(p[0]),'#64748b',12,'middle')
@@ -112,3 +112,23 @@ for i,p in enumerate(P):
     s+=f'<rect x="{x}" y="{370-h}" width="120" height="{h}" rx="8" fill="{"#dc2626" if p[0]==2023 else "#2563eb"}"/>'+note(x+60,364-h,f'{p[1]:,}','#0f172a',13,'middle',True)+note(x+60,392,str(p[0]),'#64748b',13,'middle')
 save('5-meta.svg',s)
 print(sorted(os.listdir(OUT)))
+
+# 6: 2006-2015 panel (batch 2)
+s=head(1200,520,'Tech jobs 2006–2015 in three numbers','Sources: Challenger via eWeek ⚠️; BLS OES; NASSCOM via press ⚠️. Real dollars via CPI-U, our arithmetic.')
+L=[p for p in M['layoffs']['points'] if p[0]<2012]
+s+=note(60,110,'US tech-sector job cuts announced (Challenger)','#0f172a',15,'start',True)
+for i,p in enumerate(L):
+    h=p[1]/200000*280; x=80+i*140
+    s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#dc2626"/>'+note(x+48,434-h,f'{p[1]/1000:.0f}k','#0f172a',13,'middle',True)+note(x+48,464,str(p[0]),'#64748b',12,'middle')
+W=M['us_swdev_median_wage']['points']; W=[p for p in W if p[0] in (2010,2016)]
+s+=note(440,110,'Software developer median pay (BLS)','#0f172a',15,'start',True)
+for i,p in enumerate(W):
+    r=real(p[0],p[1]); h=r/140000*280; x=460+i*150
+    s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#2563eb"/>'+note(x+48,434-h,f'${r/1000:.0f}k','#0f172a',13,'middle',True)+note(x+48,464,str(p[0]),'#64748b',12,'middle')+note(x+48,486,f'(${p[1]/1000:.1f}k reported)','#64748b',11,'middle')
+s+=note(440,508,'Bars in 2024 dollars. 2010 = applications developers.','#64748b',11)
+I=[p for p in M['india_tech_workforce']['points'] if p[0] in (2015,2020)]
+s+=note(830,110,'India IT-BPM direct jobs (NASSCOM)','#0f172a',15,'start',True)
+for i,p in enumerate(I):
+    h=p[1]/5*280; x=850+i*150
+    s+=f'<rect x="{x}" y="{440-h}" width="96" height="{h}" rx="6" fill="#ea580c"/>'+note(x+48,434-h,f'{p[1]}M','#0f172a',13,'middle',True)+note(x+48,464,'FY'+str(p[0]),'#64748b',12,'middle')
+save('6-2006-2015.svg',s)

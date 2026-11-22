@@ -2,6 +2,8 @@
  "about": "Tech jobs through time: US backbone with an India and global thread. Every figure has a source; sec=1 marks a secondary source; est=1 marks our own estimate or arithmetic. Real dollars use CPI-U annual averages (BLS) to 2024 dollars.",
  "cpi": {
   "2005": 195.3,
+  "2010": 218.056,
+  "2015": 237.017,
   "2016": 240.007,
   "2019": 255.657,
   "2022": 292.655,
@@ -26,15 +28,15 @@
    "id": "2011-2015",
    "label": "2011–2015",
    "title": "Mobile, social and the new titles",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-2011-2015",
+   "status": "published"
   },
   {
    "id": "2006-2010",
    "label": "2006–2010",
    "title": "iPhone, AWS and the crash",
-   "slug": null,
-   "status": "coming"
+   "slug": "tech-jobs-2006-2010",
+   "status": "published"
   },
   {
    "id": "2001-2005",
@@ -318,6 +320,14 @@
    "unit": "$",
    "points": [
     [
+     2010,
+     87790,
+     "Software developers, applications (May 2010)",
+     "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+     0,
+     0
+    ],
+    [
      2016,
      100090,
      "Software Developers, Applications: $48.12/h × 2,080 (est.)",
@@ -413,6 +423,22 @@
    "unit": "people",
    "points": [
     [
+     2008,
+     155570,
+     "Challenger announced tech-sector cuts (incl. telecom, electronics); a different measure from Layoffs.fyi",
+     "https://www.eweek.com/it-management/tech-sector-saw-nearly-175-000-jobs-cut-in-2009/",
+     1,
+     0
+    ],
+    [
+     2009,
+     174629,
+     "Challenger announced tech-sector cuts",
+     "same",
+     1,
+     0
+    ],
+    [
      2022,
      165000,
      "Estimated: 2023 was 59% higher than 2022",
@@ -496,6 +522,14 @@
    "label": "India tech industry workforce (NASSCOM, millions)",
    "unit": "million",
    "points": [
+    [
+     2015,
+     3.5,
+     "NASSCOM FY2015 direct employment",
+     "https://www.domain-b.com/infotech/itnews/20150211_segment.html",
+     1,
+     0
+    ],
     [
      2016,
      3.7,

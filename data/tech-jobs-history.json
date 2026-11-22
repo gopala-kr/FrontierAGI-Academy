@@ -796,6 +796,29 @@
    "note": "Product manager for AI features and agents. Approximate dates, our reading.",
    "src": "",
    "sec": 0
+  },
+  {
+   "name": "Software development engineer (SDE)",
+   "cat": "swe",
+   "born": 1995,
+   "peak": 2021,
+   "end": null,
+   "state": "changing",
+   "note": "The title Microsoft and Amazon use for software engineers (SDE I, II, III), copied by many big-tech and Indian employers; the same job as \"software engineer\" under another name. Hiring peaked in 2021–22 and AI coding tools are now changing the work. Approximate dates, our reading.",
+   "src": "",
+   "sec": 0
+  },
+  {
+   "name": "Forward deployed engineer (FDE)",
+   "cat": "swe",
+   "born": 2006,
+   "peak": null,
+   "end": null,
+   "state": "rising",
+   "note": "An engineer who works inside the customer’s environment to make the product deliver; usually traced to Palantir in the mid-2000s (origin firm well supported, year approximate). AI labs and start-ups made it one of the fastest-growing titles of 2025–26.",
+   "src": "",
+   "sec": 0,
+   "art": "forward-deployed-engineers-great-role-merge"
   }
  ],
  "metrics": {
@@ -1416,6 +1439,14 @@
   [
    "Systems analyst",
    "Product manager"
+  ],
+  [
+   "Entry-level software developer",
+   "Software development engineer (SDE)"
+  ],
+  [
+   "Technical support engineer",
+   "Forward deployed engineer (FDE)"
   ]
  ]
 }

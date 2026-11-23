@@ -151,6 +151,66 @@
       "featured": false
     },
     {
+      "slug": "adlc-security-guardrails",
+      "title": "From SDLC to ADLC, Part 7: Security Becomes Guardrails, Red-Teaming and Supply Chain",
+      "excerpt": "Prompt injection, excessive agency and the agent supply chain: defence in layers, OWASP LLM Top 10 and red-teaming.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-23",
+      "readTime": "8 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "🛡️",
+      "featured": false
+    },
+    {
+      "slug": "adlc-release-rollout",
+      "title": "From SDLC to ADLC, Part 8: Release Becomes Staged Rollout",
+      "excerpt": "Ship model, prompt, tools and context as one bundle: shadow mode, canaries, guard metrics and when to stop.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-23",
+      "readTime": "7 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "🚦",
+      "featured": false
+    },
+    {
+      "slug": "adlc-operations-observability",
+      "title": "From SDLC to ADLC, Part 9: Operations Becomes Observability, Cost and Drift",
+      "excerpt": "Traces of every step, the metrics that matter, cost per task, drift nobody shipped and incidents.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-23",
+      "readTime": "7 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "📡",
+      "featured": false
+    },
+    {
+      "slug": "adlc-maintenance-improvement",
+      "title": "From SDLC to ADLC, Part 10: Maintenance Becomes Continuous Improvement",
+      "excerpt": "Failures become eval cases, fixes pass a fixed gate, and agents propose their own improvements.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-23",
+      "readTime": "7 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "♻️",
+      "featured": false
+    },
+    {
       "slug": "adlc-requirements-evals",
       "title": "From SDLC to ADLC, Part 3: Requirements Become Task Specs and Eval Sets",
       "excerpt": "A requirement becomes real example tasks, a grading rule and a target rate: how to write one, and how many tasks you need.",

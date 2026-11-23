@@ -285,7 +285,11 @@
         "adlc-requirements-evals",
         "adlc-design-architecture",
         "adlc-code-context",
-        "adlc-test-evaluation"
+        "adlc-test-evaluation",
+        "adlc-security-guardrails",
+        "adlc-release-rollout",
+        "adlc-operations-observability",
+        "adlc-maintenance-improvement"
       ]
     },
     {

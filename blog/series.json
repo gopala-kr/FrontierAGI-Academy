@@ -289,7 +289,9 @@
         "adlc-security-guardrails",
         "adlc-release-rollout",
         "adlc-operations-observability",
-        "adlc-maintenance-improvement"
+        "adlc-maintenance-improvement",
+        "adlc-teams-roles",
+        "adlc-playbook"
       ]
     },
     {

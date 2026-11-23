@@ -151,6 +151,36 @@
       "featured": false
     },
     {
+      "slug": "adlc-teams-roles",
+      "title": "From SDLC to ADLC, Part 11: Teams and Roles",
+      "excerpt": "Product builders, AI engineers, eval engineers, agent ops and FDEs: who owns each stage, three team shapes and what happens to junior roles.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-23",
+      "readTime": "7 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "👥",
+      "featured": false
+    },
+    {
+      "slug": "adlc-playbook",
+      "title": "From SDLC to ADLC, Part 12: The ADLC Playbook and Maturity Self-Assessment",
+      "excerpt": "The whole series as a 90-day plan, eight checklists, ten anti-patterns and a five-level maturity self-assessment.",
+      "author": "FrontierAGI Research",
+      "authorInitials": "FR",
+      "date": "2026-11-23",
+      "readTime": "7 min",
+      "tags": [
+        "Agents",
+        "Engineering"
+      ],
+      "emoji": "🗺️",
+      "featured": false
+    },
+    {
       "slug": "adlc-security-guardrails",
       "title": "From SDLC to ADLC, Part 7: Security Becomes Guardrails, Red-Teaming and Supply Chain",
       "excerpt": "Prompt injection, excessive agency and the agent supply chain: defence in layers, OWASP LLM Top 10 and red-teaming.",

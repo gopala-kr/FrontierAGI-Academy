@@ -141,4 +141,24 @@ for i in range(6):
     a=N[i];b=N[(i+1)%6]; s+=arr(a[0]+(b[0]-a[0])*.32,a[1]+(b[1]-a[1])*.32,a[0]+(b[0]-a[0])*.68,a[1]+(b[1]-a[1])*.68)
 s+=note(600,250,'Who proposes the fix?','#0f172a',15,'middle',True)+note(600,274,'L1–L2: people · L3: agents suggest · L4+: agents apply','#475569',13,'middle')+note(600,296,'(levels from our RSI map)','#64748b',12,'middle')
 save('11-loop.svg',s)
+# 12 roles x stages
+W,H=1200,470; s=head(W,H,'Who owns which stage of the ADLC','Part 11: main owner (●) and contributors (○) per stage; our reading of typical 2026 teams')+ANIM
+ST=['Spec','Design','Build','Eval','Secure','Release','Operate','Improve']
+RO=[('Product manager / builder','●○  ○ ○  ○'),('AI engineer','○●●○○○○●'),('Eval engineer','○  ●   ○'),('Domain expert','○  ○   ○'),('Security engineer',' ○  ●   '),('Platform / agent ops','  ○  ●● '),('Forward deployed engineer','●○○    ○')]
+for j,t in enumerate(ST): s+=note(330+j*108,96,t,'#0f172a',13,'middle',True)
+for i,(r,m) in enumerate(RO):
+    y=130+i*44; s+=note(24,y+5,r,'#0f172a',13.5,'start',True)
+    for j,ch in enumerate(m.ljust(8)):
+        if ch=='●': s+=f'<circle class="fd" style="animation-delay:{.05*(i*8+j)}s" cx="{330+j*108}" cy="{y}" r="10" fill="#c2410c"/>'
+        elif ch=='○': s+=f'<circle class="fd" style="animation-delay:{.05*(i*8+j)}s" cx="{330+j*108}" cy="{y}" r="9" fill="#fff" stroke="#c2410c" stroke-width="2"/>'
+s+=note(24,450,'Small teams merge these roles; large ones split them further. See Part 11 for the evidence on each role.','#475569',12.5)
+save('12-roles.svg',s)
+# 13 maturity
+W,H=1200,420; s=head(W,H,'ADLC maturity: five levels','Part 12: where most teams are, and what the next level adds (our framework, modelled loosely on CMM)')+ANIM
+LV=[('1 Ad hoc','prompts edited by hand;','tested on a few examples','#dc2626'),('2 Repeatable','fixed eval set','before releases','#ea580c'),('3 Defined','evals in CI, versioned bundle,','guardrails, tracing','#ca8a04'),('4 Managed','staged rollout, drift + cost','dashboards, red-team','#16a34a'),('5 Optimising','failures flow into evals;','agents propose, people gate','#0d9488')]
+for i,(t,a,b,c) in enumerate(LV):
+    x=30+i*232; y=290-i*45; h=80+i*45
+    s+=f'<rect class="gu" style="animation-delay:{i*.15}s" x="{x}" y="{y}" width="216" height="{h}" rx="10" fill="{c}22" stroke="{c}" stroke-width="2"/>'+note(x+108,y+28,t,'#0f172a',16,'middle',True)+note(x+108,y+52,a,'#334155',12.5,'middle')+note(x+108,y+70,b,'#334155',12.5,'middle')
+s+=note(600,405,'Score yourself with the self-assessment in Part 12.','#0f172a',13,'middle',True)
+save('13-maturity.svg',s)
 print('adlc ok')

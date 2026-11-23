@@ -5,7 +5,7 @@
 🌐 **[Open the live site](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy)** · 🧭 **[Start here](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/start-here.html)** · 📚 **[All articles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/pages/blog.html)**
 
 <!-- STATS:START -->
-**382 articles** · **38 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-23
+**384 articles** · **38 series** · **22 interactive maps** + **9 series hubs** · newest post 2026-11-23
 <!-- STATS:END -->
 
 <a href="https://gopalakrbiec-ui.github.io/FrontierAGI-Academy"><img src="assets/readme/home.webp" alt="FrontierAGI Academy homepage" width="100%"></a>
@@ -423,8 +423,8 @@ The whole production system, not one product: users, entry point, planner and sp
 
 #### 🔁 From SDLC to ADLC: How Software Gets Built When Agents Build It
 
-A 12-part series, published in waves: sixty years of the software lifecycle, what an agent development lifecycle is, then one stage at a time (requirements → eval sets, design → agent architecture, code → context and tools, test → evaluation, security → guardrails, release → staged rollout, operations → traces and drift, maintenance → continuous improvement), roles, and a playbook. Start with the interactive lifecycle map above.  
-<sub>10 articles</sub>
+A 12-part series, complete: sixty years of the software lifecycle, what an agent development lifecycle is, then one stage at a time (requirements → eval sets, design → agent architecture, code → context and tools, test → evaluation, security → guardrails, release → staged rollout, operations → traces and drift, maintenance → continuous improvement), roles, and a playbook. Start with the interactive lifecycle map above.  
+<sub>12 articles</sub>
 
 🆕 *Newest series.*
 
@@ -440,6 +440,8 @@ A 12-part series, published in waves: sixty years of the software lifecycle, wha
 | 8 | 🚦 [From SDLC to ADLC, Part 8: Release Becomes Staged Rollout](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-release-rollout.html) | 7 min |
 | 9 | 📡 [From SDLC to ADLC, Part 9: Operations Becomes Observability, Cost and Drift](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-operations-observability.html) | 7 min |
 | 10 | ♻️ [From SDLC to ADLC, Part 10: Maintenance Becomes Continuous Improvement](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-maintenance-improvement.html) | 7 min |
+| 11 | 👥 [From SDLC to ADLC, Part 11: Teams and Roles](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-teams-roles.html) | 7 min |
+| 12 | 🗺️ [From SDLC to ADLC, Part 12: The ADLC Playbook and Maturity Self-Assessment](https://gopalakrbiec-ui.github.io/FrontierAGI-Academy/blog/adlc-playbook.html) | 7 min |
 
 
 ### 08 · Run the Machine · The Maestro
